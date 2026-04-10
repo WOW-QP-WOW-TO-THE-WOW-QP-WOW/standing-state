@@ -586,3 +586,275 @@ body::before {
   .footerInner { flex-direction: column; gap: 0.8rem; text-align: center; }
   .navLinks { display: none; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   GLOSSARY — /system/glossary
+   ══════════════════════════════════════════════════════════ */
+
+/* Header */
+.glossHeader {
+  padding: 8rem 0 4rem;
+  border-bottom: var(--rule);
+  position: relative;
+  z-index: 1;
+}
+.glossBreadcrumb {
+  font-family: var(--display);
+  font-size: 8px;
+  letter-spacing: 0.28em;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.glossBreadcrumb a {
+  color: var(--gray-mid);
+  text-decoration: none;
+  transition: color .2s;
+}
+.glossBreadcrumb a:hover { color: var(--gold-dim); }
+.glossBreadSep { color: var(--gray-dim); }
+
+.glossEyebrow {
+  font-family: var(--display);
+  font-size: 8px;
+  letter-spacing: 0.38em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  opacity: 0.8;
+}
+.glossH1 {
+  font-family: var(--display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+.glossIntro {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--gray-lt);
+  max-width: 620px;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+.glossMandate {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gold-dim);
+  border-left: 2px solid var(--gold-dim);
+  padding-left: 1.2rem;
+}
+
+/* Governing Equations Grid */
+.glossEqSec { padding: 5rem 0; border-bottom: var(--rule); }
+.glossEqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--border);
+}
+.glossEqCard {
+  background: var(--black);
+  padding: 2.5rem 2rem;
+  transition: background .3s;
+}
+.glossEqCard:hover { background: var(--panel); }
+.glossEqLabel {
+  font-family: var(--display);
+  font-size: 8px;
+  letter-spacing: 0.32em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+.glossEqDisplay {
+  margin-bottom: 1.2rem;
+  overflow-x: auto;
+}
+.glossEqNote {
+  font-size: 0.82rem;
+  color: var(--gray-lt);
+  line-height: 1.65;
+  border-top: var(--rule);
+  padding-top: 0.9rem;
+}
+
+/* Variable List */
+.glossVarSec { padding: 5rem 0; border-bottom: var(--rule); }
+.glossVarList { display: flex; flex-direction: column; gap: 2px; }
+
+.glossVarCard {
+  background: var(--black);
+  border: var(--rule);
+  position: relative;
+  overflow: hidden;
+  transition: background .3s;
+}
+.glossVarCard::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--gold-dim);
+  transition: background .3s;
+}
+.glossVarCard:hover { background: var(--panel); }
+.glossVarCard:hover::before { background: var(--gold); }
+
+.glossVarHeader {
+  display: grid;
+  grid-template-columns: 5rem 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.8rem 2rem 1.8rem 2.5rem;
+  border-bottom: var(--rule);
+  background: var(--panel);
+}
+.glossVarSymbol {
+  font-size: 1.5rem;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glossVarName {
+  font-family: var(--display);
+  font-size: 0.95rem;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+.glossVarRole {
+  font-size: 0.78rem;
+  color: var(--gray-mid);
+  font-style: italic;
+  font-family: var(--serif);
+}
+.glossVarAnchor {
+  font-family: var(--display);
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--gray-dim);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.glossVarBody {
+  padding: 2rem 2rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.glossVarSection {}
+.glossVarSectionLabel {
+  font-family: var(--display);
+  font-size: 8px;
+  letter-spacing: 0.3em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+.glossVarDef {
+  font-size: 0.92rem;
+  color: var(--offwhite);
+  line-height: 1.8;
+  max-width: 700px;
+}
+.glossVarLogicWrap {
+  border: var(--rule);
+  background: var(--panel);
+}
+.glossVarLogicEq {
+  padding: 1.4rem 1.6rem;
+  border-bottom: var(--rule);
+  overflow-x: auto;
+}
+.glossVarLogicNote {
+  padding: 0.8rem 1.6rem;
+  font-size: 0.78rem;
+  color: var(--gray-lt);
+  font-style: italic;
+  font-family: var(--serif);
+}
+.glossVarConditions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: var(--rule);
+}
+.glossVarCond { padding: 1rem 1.2rem; background: var(--black); }
+.glossVarCondOn  { border-left: 2px solid var(--gold-dim); }
+.glossVarCondOff { border-left: 2px solid var(--gray-mid); }
+.glossVarCondLabel {
+  font-family: var(--display);
+  font-size: 7px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.glossVarCondOn  .glossVarCondLabel { color: var(--gold-dim); }
+.glossVarCondOff .glossVarCondLabel { color: var(--gray-mid); }
+.glossVarCondText {
+  font-size: 0.8rem;
+  color: var(--gray-lt);
+  line-height: 1.6;
+}
+
+/* Terminal */
+.glossTerminal { padding: 6rem 0; }
+.glossTerminalInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.4rem;
+}
+.glossTerminalEq {
+  border: 1px solid var(--gold-dim);
+  background: var(--panel);
+  padding: 2rem 3rem;
+  position: relative;
+}
+.glossTerminalEq::before {
+  content: 'GOVERNING CONDITION';
+  position: absolute;
+  top: -9px; left: 50%; transform: translateX(-50%);
+  background: var(--black);
+  padding: 0 1rem;
+  font-family: var(--display);
+  font-size: 8px;
+  letter-spacing: 0.32em;
+  color: var(--gold-dim);
+  white-space: nowrap;
+}
+.glossTerminalChain {
+  font-family: var(--display);
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  color: var(--gold-dim);
+  text-transform: uppercase;
+}
+.glossTerminalAxiom {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold-dim);
+}
+
+/* Glossary responsive */
+@media (max-width: 860px) {
+  .glossEqGrid { grid-template-columns: 1fr; }
+  .glossVarHeader { grid-template-columns: 3.5rem 1fr; }
+  .glossVarAnchor { display: none; }
+  .glossVarConditions { grid-template-columns: 1fr; }
+}
