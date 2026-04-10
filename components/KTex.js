@@ -1,8 +1,3 @@
-/**
- * KTex — Central KaTeX render component.
- * Single source of truth for all symbol rendering across standingstate.com.
- * All variables on the site route through this component.
- */
 import katex from 'katex'
 
 export default function KTex({ math, display = false, className = '' }) {
@@ -10,11 +5,12 @@ export default function KTex({ math, display = false, className = '' }) {
     throwOnError: false,
     displayMode: display,
   })
+
   return (
     <span
       className={className}
       dangerouslySetInnerHTML={{ __html: html }}
-      style={display ? { display: 'block' } : undefined}
+      style={display ? { display: 'block' } : {}}
     />
   )
 }
