@@ -109,6 +109,7 @@ export default function Home() {
             <li><a href="#system">System</a></li>
             <li><a href="#corpus">Corpus</a></li>
             <li><a href="/system/glossary">Glossary</a></li>
+            <li><a href="/system/plates">Plates</a></li>
             <li><a href="#registers">Registers</a></li>
             <li><a href="#about">Author</a></li>
           </ul>
