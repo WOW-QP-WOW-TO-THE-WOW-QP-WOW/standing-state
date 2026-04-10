@@ -1,21 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import { useEffect, useRef } from 'react'
-import katex from 'katex'
-
-// ── Server-side KaTeX render helper ──────────────────────
-function KTex({ math, display = false }) {
-  const html = katex.renderToString(math, {
-    throwOnError: false,
-    displayMode: display,
-  })
-  return (
-    <span
-      dangerouslySetInnerHTML={{ __html: html }}
-      style={display ? { display: 'block' } : undefined}
-    />
-  )
-}
+import { useEffect } from 'react'
+import KTex from '../components/KTex'
 
 // ── Corpus data ───────────────────────────────────────────
 const CORPUS = [
@@ -95,7 +80,7 @@ const REGISTERS = [
 export default function Home() {
 
   // scroll reveal
-  const revealRef = useRef(null)
+  const revealRef = undefined // unused — kept for future ref
   useEffect(() => {
     const obs = new IntersectionObserver(
       entries => entries.forEach(e => {
@@ -123,6 +108,7 @@ export default function Home() {
           <ul className="navLinks">
             <li><a href="#system">System</a></li>
             <li><a href="#corpus">Corpus</a></li>
+            <li><a href="/system/glossary">Glossary</a></li>
             <li><a href="#registers">Registers</a></li>
             <li><a href="#about">Author</a></li>
           </ul>
@@ -165,7 +151,7 @@ export default function Home() {
                       <span className="efArr">→</span>
                       <span className="efVar"><KTex math="\\Phi(x)" /></span>
                       <span className="efArr">→</span>
-                      <span className="efVar"><KTex math="K_{\text{auto}}" /></span>
+                      <span className="efVar"><KTex math="K_{\\text{auto}}" /></span>
                     </div>
                     <div className="efStack">
                       <span className="efTick">↑</span>
@@ -220,8 +206,8 @@ export default function Home() {
                 bNode: (
                   <>
                     Health is not the result of input accumulation. It is the result of cycles that complete.
-                    When <KTex math="\Sigma \downarrow" /> and <KTex math="B(t)" /> holds,{' '}
-                    <KTex math="\Phi(x)" /> converges toward <KTex math="K_{\text{auto}}" />.
+                    When <KTex math="\\Sigma \\downarrow" /> and <KTex math="B(t)" /> holds,{' '}
+                    <KTex math="\\Phi(x)" /> converges toward <KTex math="K_{\\text{auto}}" />.
                   </>
                 ),
                 arr: true,
