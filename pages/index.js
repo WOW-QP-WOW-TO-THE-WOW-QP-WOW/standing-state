@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
 import KTex from '../components/KTex'
+import GateGrid from '../components/GateGrid'
 
 // ── Corpus data ───────────────────────────────────────────
 const CORPUS = [
@@ -110,6 +111,7 @@ export default function Home() {
             <li><a href="#corpus">Corpus</a></li>
             <li><a href="/system/glossary">Glossary</a></li>
             <li><a href="/system/plates">Plates</a></li>
+            <li><a href="/system/gates">Gates</a></li>
             <li><a href="#registers">Registers</a></li>
             <li><a href="#about">Author</a></li>
           </ul>
@@ -284,7 +286,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── REGISTERS ── */}
+      {/* ── REGISTERS / GATES ── */}
       <section className="regSec" id="registers">
         <div className="wrap">
           <div className="secHead reveal">
@@ -311,6 +313,17 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Gate Grid — enter each register */}
+          <div style={{ marginTop: '3rem' }} className="reveal">
+            <div className="secHead" style={{ marginBottom: '1.5rem' }}>
+              <span className="secLabel">Enter a Register</span>
+              <div className="secRule" />
+              <a href="/system/gates" className="gatesFootLink" style={{ whiteSpace: 'nowrap', marginLeft: '1rem' }}>All Gates →</a>
+            </div>
+            <GateGrid />
+          </div>
+
           <div className="regAxiom reveal">
             The invariant was never divided. Only the lenses were.<br />
             When the lenses align, the system is seen as one.
