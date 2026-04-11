@@ -152,23 +152,22 @@ export default function Home() {
                 <p className="eqBridge">
                   The system returns to baseline when total load decreases<br />
                   and completion is allowed.
-                </p>
-                <div className="eqField">
-                  <div className="eqCausal">
-                    <div className="efRow">
-                      <span className="efVar"><KTex math="\\Sigma" /></span>
-                      <span className="efArr">→</span>
-                      <span className="efVar"><KTex math="\\Phi(x)" /></span>
-                      <span className="efArr">→</span>
-                      <span className="efVar"><KTex math="K_{\\text{auto}}" /></span>
-                    </div>
-                    <div className="efStack">
-                      <span className="efTick">↑</span>
-                      <span className="efSideVar"><KTex math="B(t)" /></span>
-                      <span className="efTick">↓</span>
-                      <span className="efSideVar"><KTex math="x^*" /></span>
-                    </div>
-                  </div>
+                </p><div className="eqCausal">
+  <div className="efRow">
+    <span className="efVar">Σ</span>
+    <span className="efArr">→</span>
+    <span className="efVar">Φ(x)</span>
+    <span className="efArr">→</span>
+    <span className="efVar">K<sub style={{fontSize:'0.75em'}}>auto</sub></span>
+  </div>
+  <div className="efStack">
+    <span className="efTick">↑</span>
+    <span className="efSideVar">B(t)</span>
+    <span className="efTick">↓</span>
+    <span className="efSideVar">x*</span>
+  </div>
+</div>
+
                   <div className="eqDefs">
                     {[
                       ['\\Sigma', 'Total integrated stress load'],
