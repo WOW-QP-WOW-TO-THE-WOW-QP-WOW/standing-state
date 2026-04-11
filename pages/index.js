@@ -51,27 +51,32 @@ const CORPUS = [
 const REGISTERS = [
   {
     name: 'Mathematical',
+    slug: 'mathematical',
     expr: null,
     exprKatex: '\\Sigma \\downarrow \\Rightarrow \\Phi(x) \\rightarrow K_{\\text{auto}}',
     sub: 'Convergence to invariant',
   },
   {
     name: 'Biological',
+    slug: 'biological',
     expr: 'Insulin ↓ · Autophagy ↑\nRepair active',
     sub: 'Homeostatic completion',
   },
   {
     name: 'Psychological',
+    slug: 'psychological',
     expr: 'Conflict ↓\nPerception stabilizes',
     sub: 'Resolution',
   },
   {
     name: 'Philosophical',
+    slug: 'philosophical',
     expr: 'Self-consistency.\nBeing remains itself.',
     sub: 'Coherence',
   },
   {
     name: 'Spiritual',
+    slug: 'spiritual',
     expr: '"I am" — Stillness',
     sub: 'Absence of interference',
   },
@@ -299,7 +304,11 @@ export default function Home() {
           </p>
           <div className="regGrid reveal">
             {REGISTERS.map(r => (
-              <div className="regCell" key={r.name}>
+              <a
+                href={`/system/gates/${r.slug}`}
+                className="regCell regCellLink"
+                key={r.name}
+              >
                 <span className="regName">{r.name}</span>
                 <div className="regExpr">
                   {r.exprKatex
@@ -310,7 +319,8 @@ export default function Home() {
                   }
                 </div>
                 <div className="regSub">{r.sub}</div>
-              </div>
+                <div className="regCellCta">Enter →</div>
+              </a>
             ))}
           </div>
 
