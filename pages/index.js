@@ -125,7 +125,16 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="hero" id="top">
-        <div className="wrap">
+        <div
+  className="heroGrid"
+  style={{
+    backgroundImage:
+      "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/hero_image.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
           <div className="heroGrid">
 
             <div className="heroLeft">
