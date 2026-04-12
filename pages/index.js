@@ -145,8 +145,12 @@ export default function Home() {
 
             <div className="heroRight">
               <div className="eqFrame">
-                <div style={{ textAlign: 'center' }}>
-                  <KTex math="\\Phi(x) \\rightarrow K_{\\text{auto}} \\quad \\text{under} \\quad \\Sigma \\downarrow" display />
+                <div style={{ textAlign: 'center', fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: '1.3rem', color: '#dfc27a', lineHeight: '2', padding: '0.5rem 0' }}>
+                  Φ(x) → K<sub style={{ fontSize: '0.7em' }}>auto</sub>
+                  <br />
+                  <span style={{ fontSize: '0.85rem', letterSpacing: '0.08em', fontStyle: 'normal' }}>under</span>
+                  <br />
+                  Σ ↓
                 </div>
                 <p className="eqBridge">
                   The system returns to baseline when total load decreases<br />
