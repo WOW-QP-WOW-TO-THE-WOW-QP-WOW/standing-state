@@ -13,7 +13,7 @@ const ESSAYS = [
   { id:'c009', slug:'external-identity-and-consent', number:'Essay IX', title:'External Identity and Consent', subtitle:'External identities produce signal. They require consent to propagate.', equation:'External signal ⇒ ℐ(I*, ∇c) ⇏ I*' },
   { id:'c010', slug:'the-architecture-of-return', number:'Essay X', title:'The Architecture of Return', subtitle:'Return is not constructed. It is revealed when interference is removed.', equation:'I ⇒ ∇c ⇒ ℐ ⇒ 𝒞u ⇒ x ⇒ Φ(x) → 0' },
 ]
-const CANONICAL_ESSAYS = []
+
 export default function CanonicalEssaysIndex() {
   return (
     <>
