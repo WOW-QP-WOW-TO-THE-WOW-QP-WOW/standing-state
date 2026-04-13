@@ -66,7 +66,9 @@ export default function PlatesGallery() {
             <div className="platesMetaItem">
               <span className="platesMetaLabel">Governing Condition</span>
               <span className="platesMetaVal" style={{ fontStyle: 'italic' }}>
-                <KTex math="\\Phi(x) \\rightarrow K_{\\text{auto}} \\quad \\text{under} \\quad \\Sigma \\downarrow" />
+                <span style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic', color: 'var(--gold)' }}>
+                  Φ(x) → K<sub style={{ fontSize: '0.75em' }}>auto</sub> &nbsp;·&nbsp; under &nbsp;·&nbsp; Σ ↓
+                </span>
               </span>
             </div>
           </div>
