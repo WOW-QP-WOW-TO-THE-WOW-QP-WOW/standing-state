@@ -65,7 +65,19 @@ const ESSAYS = [
   //   flag: 'M',
   //   note: 'Biological proof of completion law',
   //   mirrorUrl: '/essays/scab-and-system',
-  // },
+  // }
+  {
+    id: '001',
+    title: 'The Measure Within — A Structural Thesis on Self-Relation, Compassion, and Generative Multiplication',
+    mediumUrl: 'https://medium.com/@leon/the-measure-within',
+    axis1: 'PLT-INTERP',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Foundational thesis — coherence as condition of generativity; identity as invariant',
+    mirrorUrl: '',
+  },
+
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
