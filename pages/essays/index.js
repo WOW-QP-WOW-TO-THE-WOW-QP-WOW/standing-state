@@ -67,7 +67,7 @@ const ESSAYS = [
   //   mirrorUrl: '/essays/scab-and-system',
   // }
   {
-    id: '001',
+    id: 'The Measure Within',
     title: 'The Measure Within — A Structural Thesis on Self-Relation, Compassion, and Generative Multiplication',
     mediumUrl: 'https://medium.com/@leon/the-measure-within',
     axis1: 'PLT-INTERP',
