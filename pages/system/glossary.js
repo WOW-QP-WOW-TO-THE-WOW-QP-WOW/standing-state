@@ -191,7 +191,9 @@ export default function Glossary() {
         <div className="wrap">
           <div className="glossTerminalInner reveal">
             <div className="glossTerminalEq">
-              <KTex math="\\Phi(x) \\rightarrow K_{\\text{auto}} \\quad \\text{under} \\quad \\Sigma \\downarrow" display />
+              <span style={{ fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: '1.2rem', color: 'var(--gold)' }}>
+                Φ(x) → K<sub style={{ fontSize: '0.75em' }}>auto</sub> &nbsp;·&nbsp; under &nbsp;·&nbsp; Σ ↓
+              </span>
             </div>
             <div className="glossTerminalChain">
               Signal → Completion → Repair
