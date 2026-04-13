@@ -7,8 +7,8 @@
 
 import Head from 'next/head'
 import Link from 'next/link'
-import { CANONICAL_ESSAYS } from '../../../components/canonicalEssaysData'
 
+const CANONICAL_ESSAYS = []
 export default function CanonicalEssaysIndex() {
   return (
     <>
