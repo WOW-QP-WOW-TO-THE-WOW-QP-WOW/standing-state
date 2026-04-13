@@ -118,7 +118,7 @@ export default function Home() {
             <li><a href="/system/plates">Plates</a></li>
             <li><a href="/system/gates">Gates</a></li>
             <li><a href="#registers">Registers</a></li>
-            <li><a href="#about">Author</a></li>
+            <li><a href="/essays">Essays</a></li><li><a href="#about">Author</a></li>
           </ul>
         </div>
       </nav>
