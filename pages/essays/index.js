@@ -54,8 +54,120 @@ const FLAGS = {
 // ── ESSAY DATA ───────────────────────────────────────────────
 // Populated during audit. Structure defined — ready to receive 400 entries.
 const ESSAYS = [
+  // ── CANONICAL SET ─────────────────────────────────────────
   {
     id: '001',
+    title: 'The Standing State',
+    mediumUrl: '',
+    axis1: 'SYS-GEN',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Defines x* and non-constructed return condition. The system returns when interference is removed.',
+    mirrorUrl: '/essays/canonical/the-standing-state',
+  },
+  {
+    id: '002',
+    title: 'Identity as Coordinate',
+    mediumUrl: '',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Identity fixes reference; does not generate motion. GPS formalization. Time Burn as cost of unstable coordinate.',
+    mirrorUrl: '/essays/canonical/identity-as-coordinate',
+  },
+  {
+    id: '003',
+    title: 'Architecture of Interpretation',
+    mediumUrl: '',
+    axis1: 'PLT-INTERP',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Defines full causal pipeline I → ℐ(I,∇c) → π → x. Reality reflects what interpretation produces, not what identity declares.',
+    mirrorUrl: '/essays/canonical/architecture-of-interpretation',
+  },
+  {
+    id: '004',
+    title: 'Pain as Decoherence Signal',
+    mediumUrl: '',
+    axis1: 'PLT-PAIN',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Defines ∇c as deviation gradient signal. Pain respected is navigation. Pain suppressed is a warning light covered with tape.',
+    mirrorUrl: '/essays/canonical/pain-as-decoherence-signal',
+  },
+  {
+    id: '005',
+    title: 'The Consent Engine',
+    mediumUrl: '',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Consent as structure authorization operator π(t) = 𝒞(t)u(t). Habits are archived consent.',
+    mirrorUrl: '/essays/canonical/the-consent-engine',
+  },
+  {
+    id: '006',
+    title: 'Life and Death',
+    mediumUrl: '',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Binary field via V̇ convergence/divergence. No neutral state. Every consent authorizes a trajectory.',
+    mirrorUrl: '/essays/canonical/life-and-death',
+  },
+  {
+    id: '007',
+    title: 'The Scab Condition',
+    mediumUrl: '',
+    axis1: 'PLT-IIB',
+    axis2: 'VOL-BSH2',
+    axis3: 'REG-BIO',
+    flag: 'M',
+    note: 'Physical proof of Σ↓ ∧ B(t) ⇒ Kₐᵤₜₒ↑. The scab holds the condition under which healing occurs.',
+    mirrorUrl: '/essays/canonical/the-scab-condition',
+  },
+  {
+    id: '008',
+    title: 'Surrender',
+    mediumUrl: '',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Enforces x ⇏ I* and fixed identity coordinate. Surrender is the refusal to let output ascend.',
+    mirrorUrl: '/essays/canonical/surrender',
+  },
+  {
+    id: '009',
+    title: 'External Identity and Consent',
+    mediumUrl: '',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-PHIL',
+    flag: 'E',
+    note: 'External signal vs internal authorization. Magnetic field analogy. Stable coordinate processes signal; unstable coordinate adopts it.',
+    mirrorUrl: '/essays/canonical/external-identity-and-consent',
+  },
+  {
+    id: '010',
+    title: 'The Architecture of Return',
+    mediumUrl: '',
+    axis1: 'SYS-GEN',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Full system synthesis pipeline and closure. Return is not constructed — it is revealed when interference is removed.',
+    mirrorUrl: '/essays/canonical/the-architecture-of-return',
+  },
+  // ── MEDIUM ESSAYS ─────────────────────────────────────────
+  {
+    id: 'M001',
     title: 'The Measure Within — A Structural Thesis on Self-Relation, Compassion, and Generative Multiplication',
     mediumUrl: 'https://medium.com/@leonsp3/the-measure-within-e7e42eecf288',
     axis1: 'PLT-INTERP',
@@ -66,58 +178,58 @@ const ESSAYS = [
     mirrorUrl: '',
   },
   {
-    id: '002',
+    id: 'M002',
     title: 'Time, Identity, and the End of Contradiction — From Relativity to the Sabbath of Coherent Being',
     mediumUrl: 'https://medium.com/@leonsp3/time-identity-and-the-end-of-contradiction-3ed0b965b75e',
     axis1: 'PLT-COORD',
     axis2: 'VOL-CROSS',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Derives identity invariance formally from forward invariance; introduces Time Burn as cost of contradiction; Sabbath as coherence threshold C=1',
+    note: 'Derives identity invariance formally from forward invariance; introduces Time Burn; Sabbath as coherence threshold C=1',
     mirrorUrl: '',
   },
   {
-    id: '003',
+    id: 'M003',
     title: 'Identity, Law, and the Messiah — A Rendering within the Romantic Philosophy of the Living Soul',
     mediumUrl: 'https://medium.com/@leonsp3/identity-law-and-the-messiah-69f6cfde235a',
     axis1: 'PLT-COORD',
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Five-stage sequence: source → law → mediation → stillness → recognition. Sabbath as structural threshold. Departs from Plato and Augustine — identity is dynamic achievement not formal given',
+    note: 'Five-stage sequence: source → law → mediation → stillness → recognition. Departs from Plato and Augustine — identity is dynamic achievement not formal given',
     mirrorUrl: '',
   },
   {
-    id: '004',
+    id: 'M004',
     title: 'Asynchronous Thesis — The Standing State Conversation Stack',
     mediumUrl: 'https://medium.com/@leonsp3/asynchronous-thesis-the-standing-state-conversation-stack-7c8dc0bd2ca1',
     axis1: 'PLT-CONSENT',
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'M',
-    note: 'Lyapunov-resource closure; surrender as zero-input control u=0; identity as dissipative attractor; Γ bifurcation parameter separating sink from oscillatory vigilance',
+    note: 'Lyapunov-resource closure; surrender as zero-input control u=0; identity as dissipative attractor',
     mirrorUrl: '',
   },
   {
-    id: '005',
+    id: 'M005',
     title: 'Stop Buying Your Life: The Case for a Non-Sacrificial Architecture',
     mediumUrl: 'https://medium.com/@leonsp3/stop-buying-your-life-the-case-for-a-non-sacrificial-architecture-d864b0d5849f',
     axis1: 'VAR-Σ',
     axis2: 'VOL-BSH1',
     axis3: 'REG-BIO',
     flag: 'A',
-    note: 'Sacrifice Logic as sustained Σ; Qualia as coherence yield; Sabbath State as zero-velocity coherence point; Zero-Sacrifice Invariant as boundary condition',
+    note: 'Sacrifice Logic as sustained Σ; Qualia as coherence yield; Zero-Sacrifice Invariant as boundary condition',
     mirrorUrl: '',
   },
   {
-    id: '006',
+    id: 'M006',
     title: 'The Governing Invariant Stands',
     mediumUrl: 'https://medium.com/@leonsp3/the-governing-invariant-stands-9f2aedde29c1',
     axis1: 'PLT-CONSENT',
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'E',
-    note: 'Spectral-geometric stability for recursive AI; contraction budget vs inference debt; bifurcation radius as admissibility boundary; alignment reframed as stability theorem — seed for Plate IX',
+    note: 'Spectral-geometric stability for recursive AI; alignment reframed as stability theorem — seed for Plate IX',
     mirrorUrl: '',
   },
 ]
@@ -168,12 +280,17 @@ function EssayCard({ essay }) {
         {reg   && <span className="essayTag essayTagReg">{reg.label}</span>}
       </div>
       <div className="essayLinks">
-        <a href={essay.mediumUrl} target="_blank" rel="noopener noreferrer"
-           className="essayLinkMedium">Read on Medium →</a>
-        {essay.mirrorUrl && (
+        {essay.mirrorUrl ? (
           <a href={essay.mirrorUrl} className="essayLinkMirror">
-            View on Site →
+            Read on Site →
           </a>
+        ) : essay.mediumUrl ? (
+          <a href={essay.mediumUrl} target="_blank" rel="noopener noreferrer"
+             className="essayLinkMedium">Read on Medium →</a>
+        ) : null}
+        {essay.mirrorUrl && essay.mediumUrl && (
+          <a href={essay.mediumUrl} target="_blank" rel="noopener noreferrer"
+             className="essayLinkMedium">Medium →</a>
         )}
       </div>
     </div>
