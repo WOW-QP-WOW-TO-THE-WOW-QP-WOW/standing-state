@@ -54,30 +54,17 @@ const FLAGS = {
 // ── ESSAY DATA ───────────────────────────────────────────────
 // Populated during audit. Structure defined — ready to receive 400 entries.
 const ESSAYS = [
-  // Example structure — replace with actual essays during audit
-  // {
-  //   id: '001',
-  //   title: 'The Scab and the System',
-  //   mediumUrl: 'https://medium.com/@leon/...',
-  //   axis1: 'PLT-IIB',
-  //   axis2: 'VOL-BSH2',
-  //   axis3: 'REG-BIO',
-  //   flag: 'M',
-  //   note: 'Biological proof of completion law',
-  //   mirrorUrl: '/essays/scab-and-system',
-  // }
   {
     id: '001',
     title: 'The Measure Within — A Structural Thesis on Self-Relation, Compassion, and Generative Multiplication',
-    mediumUrl: 'The Measure Within',
+    mediumUrl: 'https://medium.com/@leonsp3/the-measure-within-e7e42eecf288',
     axis1: 'PLT-INTERP',
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Foundational thesis — coherence as condition of generativity; identity as invariant',
+    note: 'Foundational thesis — coherence as condition of generativity; identity as invariant across scripture, contemplative practice, and natural process',
     mirrorUrl: '',
   },
-
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
