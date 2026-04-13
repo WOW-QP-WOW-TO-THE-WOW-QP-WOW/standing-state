@@ -1752,3 +1752,88 @@ body::before {
 .coordTermEq { color: var(--gold-dim); text-align: center; }
 .coordTermDef { font-size: 0.85rem; color: var(--gray-lt); font-family: var(--serif); }
 @media (max-width: 860px) { .coordBiblical { grid-template-columns: 1fr; } }
+
+/* ══════════════════════════════════════════════════════════
+   ESSAYS — /essays
+   ══════════════════════════════════════════════════════════ */
+
+.essayStats { display: flex; gap: 0.8rem; align-items: center; margin-top: 1rem; }
+.essayStat { font-family: var(--display); font-size: 9px; letter-spacing: 0.2em; color: var(--gold-dim); text-transform: uppercase; }
+.essayStatDiv { color: var(--border); }
+
+/* Filters */
+.essayFilters { padding: 2.5rem 0; border-bottom: var(--rule); }
+.essaySearch { margin-bottom: 2rem; }
+.essaySearchInput {
+  width: 100%; max-width: 480px;
+  background: var(--panel); border: var(--rule);
+  color: var(--white); font-family: var(--serif); font-size: 0.9rem;
+  padding: 0.7rem 1rem; outline: none;
+  transition: border-color .2s;
+}
+.essaySearchInput:focus { border-color: var(--gold-dim); }
+.essaySearchInput::placeholder { color: var(--gray-mid); }
+
+.essayFilterGroup { margin-bottom: 1.4rem; }
+.essayFilterLabel {
+  font-family: var(--display); font-size: 8px;
+  letter-spacing: 0.28em; color: var(--gold-dim);
+  text-transform: uppercase; margin-bottom: 0.6rem;
+}
+.essayFilterPills { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.essayClear {
+  margin-top: 0.8rem;
+  font-family: var(--display); font-size: 8px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gray-lt); background: none;
+  border: var(--rule); padding: 0.4rem 0.8rem;
+  cursor: pointer; transition: color .2s;
+}
+.essayClear:hover { color: var(--gold); }
+
+/* Grid */
+.essayGrid { padding: 3rem 0; }
+.essayCards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1px; }
+
+/* Card */
+.essayCard {
+  background: var(--black); border: var(--rule);
+  padding: 1.4rem; display: flex; flex-direction: column;
+  gap: 0.8rem; transition: background .2s;
+}
+.essayCard:hover { background: var(--panel); }
+.essayCardTop { display: flex; justify-content: space-between; align-items: center; }
+.essayId { font-family: var(--display); font-size: 8px; letter-spacing: 0.2em; color: var(--gray-mid); }
+.essayFlag { font-family: var(--display); font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase; }
+.essayTitle { font-family: var(--serif); font-size: 1rem; color: var(--white); line-height: 1.4; }
+.essayNote { font-size: 0.82rem; color: var(--gray-lt); font-style: italic; font-family: var(--serif); }
+.essayTags { display: flex; flex-wrap: wrap; gap: 4px; }
+.essayTag {
+  font-family: var(--display); font-size: 7px;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  padding: 0.2rem 0.5rem; border: var(--rule);
+}
+.essayTagPlate { color: var(--gold-dim); border-color: var(--gold-dim); }
+.essayTagVol   { color: var(--gray-lt); }
+.essayTagReg   { color: var(--gray-mid); }
+.essayLinks { display: flex; gap: 1rem; margin-top: auto; padding-top: 0.6rem; border-top: var(--rule); }
+.essayLinkMedium, .essayLinkMirror {
+  font-family: var(--display); font-size: 8px;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold-dim); text-decoration: none;
+  transition: color .2s;
+}
+.essayLinkMedium:hover, .essayLinkMirror:hover { color: var(--gold); }
+.essayLinkMirror { color: var(--gray-lt); }
+
+/* Empty state */
+.essayEmpty {
+  padding: 5rem 0; text-align: center;
+  color: var(--gray-lt); font-family: var(--serif); font-style: italic;
+  border: var(--rule); background: var(--panel);
+}
+
+@media (max-width: 860px) {
+  .essayCards { grid-template-columns: 1fr; }
+}
