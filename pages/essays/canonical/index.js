@@ -7,7 +7,7 @@
 
 import Head from 'next/head'
 import Link from 'next/link'
-import { CANONICAL_ESSAYS } from '../../components/canonicalEssaysData'
+import { CANONICAL_ESSAYS } from '../../../components/canonicalEssaysData'
 
 export default function CanonicalEssaysIndex() {
   return (
