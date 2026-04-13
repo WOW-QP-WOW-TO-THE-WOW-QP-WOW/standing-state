@@ -42,7 +42,7 @@ export default function PlateDetail({ plate, prev, next }) {
             <li><a href="/#corpus">Corpus</a></li>
             <li><a href="/system/glossary">Glossary</a></li>
             <li><a href="/system/plates" style={{ color: 'var(--gold)' }}>Plates</a></li>
-            <li><a href="/#about">Author</a></li>
+            <li><a href="/essays">Essays</a></li><li><a href="/#about">Author</a></li>
           </ul>
         </div>
       </nav>
