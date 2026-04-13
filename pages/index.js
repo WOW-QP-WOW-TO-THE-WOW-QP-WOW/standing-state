@@ -1,299 +1,371 @@
-/**
- * /essays
- * MEDIUM ESSAY INDEX — Standing State Press
- * Cross-indexed by plate, volume, and register
- * standingstate.com
- */
-
 import Head from 'next/head'
-import { useState, useMemo } from 'react'
+import { useEffect } from 'react'
+import KTex from '../components/KTex'
+import GateGrid from '../components/GateGrid'
 
-// ── AXIS DEFINITIONS ─────────────────────────────────────────
-const PLATES = [
-  { code: 'PLT-I',       label: 'Fed–Stress–Output Loop' },
-  { code: 'PLT-IIB',     label: 'The Scab Condition' },
-  { code: 'PLT-INTERP',  label: 'Architecture of Interpretation' },
-  { code: 'PLT-COORD',   label: 'Identity as Coordinate' },
-  { code: 'PLT-PAIN',    label: 'Pain as Decoherence Signal' },
-  { code: 'PLT-CONSENT', label: 'The Consent Engine' },
-  { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
-  { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
-  { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
-  { code: 'VAR-K',       label: 'Autophagic Correction (K)' },
-  { code: 'VAR-∇c',      label: 'Conscience Gradient (∇c)' },
-  { code: 'VAR-C',       label: 'Consent Scalar (𝒞)' },
-  { code: 'SYS-GEN',     label: 'General System' },
+// ── Corpus data ───────────────────────────────────────────
+const CORPUS = [
+  {
+    index: 'I',
+    tag: 'Identity · Coherence · Return',
+    title: 'The Measure Within',
+    subtitle: 'The Architecture of Identity, Coherence, and Return',
+    desc: 'A formal foundation for how systems maintain identity and remain coherent under constraint. The foundational text of the Standing State framework.',
+    href: 'https://a.co/d/02xBGtln',
+  },
+  {
+    index: 'II',
+    tag: 'Scripture · Structure · Identity',
+    title: 'The Standing State: Volume I',
+    subtitle: 'Genesis 1–12 and the Architecture of Identity',
+    desc: 'A structural reading of origin — identity as invariant, not narrative. The same governing law applied to the architecture of Genesis.',
+    href: 'https://a.co/d/05VrS9WN',
+  },
+  {
+    index: 'III',
+    tag: 'Growth · Emergence · Identity',
+    title: 'The Law of Growth',
+    subtitle: 'The Emergence of the Living Self',
+    desc: 'Growth as lawful emergence, not accumulation. The self does not construct itself — it unfolds from a reference state that does not drift.',
+    href: 'https://a.co/d/0iCFD5Th',
+  },
+  {
+    index: 'IV',
+    tag: 'Biology · Signal · Completion',
+    title: 'The Biological Sabbath of Being Healthier',
+    subtitle: 'Entering the Standing State of the Human Body — Volume I',
+    desc: 'The Standing State framework applied to biological function. Identity invariance, signal-based control, and the correction loop — expressed through cellular biology, hormonal allocation, and repair.',
+    href: 'https://a.co/d/015jiwmw',
+  },
+  {
+    index: 'V',
+    tag: 'Completion · Practice · Repair',
+    title: 'The Biological Sabbath of Being Healthier',
+    subtitle: 'Entering the Completion State of the Human Body — Volume II',
+    desc: 'The practice edition. Completion-governed. No wellness narrative. A control-system model in which total load, boundary integrity, and autophagic correction determine whether the system converges or remains incomplete.',
+    href: null, // in production
+  },
 ]
 
-const VOLUMES = [
-  { code: 'VOL-MW',    label: 'The Measure Within' },
-  { code: 'VOL-SS',    label: 'The Standing State: Vol I' },
-  { code: 'VOL-LG',    label: 'The Law of Growth' },
-  { code: 'VOL-BSH1',  label: 'Biological Sabbath Vol I' },
-  { code: 'VOL-BSH2',  label: 'Biological Sabbath Vol II' },
-  { code: 'VOL-CROSS', label: 'Cross-Volume' },
-]
-
+// ── Registers data ────────────────────────────────────────
 const REGISTERS = [
-  { code: 'REG-MATH',   label: 'Mathematical' },
-  { code: 'REG-BIO',    label: 'Biological' },
-  { code: 'REG-PSY',    label: 'Psychological' },
-  { code: 'REG-PHIL',   label: 'Philosophical' },
-  { code: 'REG-SPIRIT', label: 'Spiritual' },
-  { code: 'REG-MIXED',  label: 'Mixed' },
+  {
+    name: 'Mathematical',
+    slug: 'mathematical',
+    expr: null,
+    exprKatex: '\\Sigma \\downarrow \\Rightarrow \\Phi(x) \\rightarrow K_{\\text{auto}}',
+    sub: 'Convergence to invariant',
+  },
+  {
+    name: 'Biological',
+    slug: 'biological',
+    expr: 'Insulin ↓ · Autophagy ↑\nRepair active',
+    sub: 'Homeostatic completion',
+  },
+  {
+    name: 'Psychological',
+    slug: 'psychological',
+    expr: 'Conflict ↓\nPerception stabilizes',
+    sub: 'Resolution',
+  },
+  {
+    name: 'Philosophical',
+    slug: 'philosophical',
+    expr: 'Self-consistency.\nBeing remains itself.',
+    sub: 'Coherence',
+  },
+  {
+    name: 'Spiritual',
+    slug: 'spiritual',
+    expr: '"I am" — Stillness',
+    sub: 'Absence of interference',
+  },
 ]
 
-const FLAGS = {
-  A: { label: 'Aligned',  color: '#7a6428' },
-  M: { label: 'Mirrored', color: '#c4a44a' },
-  U: { label: 'Update',   color: '#6a5a3a' },
-  E: { label: 'Expand',   color: '#5a6a3a' },
-  X: { label: 'Archive',  color: '#3a3a3a' },
-}
+// ── Main page ─────────────────────────────────────────────
+export default function Home() {
 
-// ── ESSAY DATA ───────────────────────────────────────────────
-// Populated during audit. Structure defined — ready to receive 400 entries.
-const ESSAYS = [
-  // Example structure — replace with actual essays during audit
-  // {
-  //   id: '001',
-  //   title: 'The Scab and the System',
-  //   mediumUrl: 'https://medium.com/@leon/...',
-  //   axis1: 'PLT-IIB',
-  //   axis2: 'VOL-BSH2',
-  //   axis3: 'REG-BIO',
-  //   flag: 'M',
-  //   note: 'Biological proof of completion law',
-  //   mirrorUrl: '/essays/scab-and-system',
-  // },
-]
-
-// ── FILTER COMPONENT ─────────────────────────────────────────
-function FilterPill({ label, active, onClick }) {
-  return (
-    <button
-      onClick={onClick}
-      style={{
-        padding: '0.35rem 0.9rem',
-        border: `1px solid ${active ? 'var(--gold-dim)' : 'var(--border)'}`,
-        background: active ? 'var(--panel)' : 'transparent',
-        color: active ? 'var(--gold)' : 'var(--gray-lt)',
-        fontFamily: 'var(--display)',
-        fontSize: '8px',
-        letterSpacing: '0.18em',
-        textTransform: 'uppercase',
-        cursor: 'pointer',
-        transition: 'all .2s',
-      }}
-    >
-      {label}
-    </button>
-  )
-}
-
-// ── ESSAY CARD ────────────────────────────────────────────────
-function EssayCard({ essay }) {
-  const flag = FLAGS[essay.flag] || FLAGS.A
-  const plate = PLATES.find(p => p.code === essay.axis1)
-  const vol   = VOLUMES.find(v => v.code === essay.axis2)
-  const reg   = REGISTERS.find(r => r.code === essay.axis3)
-
-  return (
-    <div className="essayCard">
-      <div className="essayCardTop">
-        <span className="essayId">{essay.id}</span>
-        <span className="essayFlag" style={{ color: flag.color }}>
-          {flag.label}
-        </span>
-      </div>
-      <h3 className="essayTitle">{essay.title}</h3>
-      {essay.note && <p className="essayNote">{essay.note}</p>}
-      <div className="essayTags">
-        {plate && <span className="essayTag essayTagPlate">{plate.label}</span>}
-        {vol   && <span className="essayTag essayTagVol">{vol.label}</span>}
-        {reg   && <span className="essayTag essayTagReg">{reg.label}</span>}
-      </div>
-      <div className="essayLinks">
-        <a href={essay.mediumUrl} target="_blank" rel="noopener noreferrer"
-           className="essayLinkMedium">Read on Medium →</a>
-        {essay.mirrorUrl && (
-          <a href={essay.mirrorUrl} className="essayLinkMirror">
-            View on Site →
-          </a>
-        )}
-      </div>
-    </div>
-  )
-}
-
-// ── PAGE ──────────────────────────────────────────────────────
-export default function EssaysPage() {
-  const [filterPlate, setFilterPlate] = useState(null)
-  const [filterVol,   setFilterVol]   = useState(null)
-  const [filterReg,   setFilterReg]   = useState(null)
-  const [filterFlag,  setFilterFlag]  = useState(null)
-  const [search, setSearch] = useState('')
-
-  const filtered = useMemo(() => {
-    return ESSAYS.filter(e => {
-      if (filterPlate && e.axis1 !== filterPlate) return false
-      if (filterVol   && e.axis2 !== filterVol)   return false
-      if (filterReg   && e.axis3 !== filterReg)   return false
-      if (filterFlag  && e.flag  !== filterFlag)   return false
-      if (search && !e.title.toLowerCase().includes(search.toLowerCase())) return false
-      return true
-    })
-  }, [filterPlate, filterVol, filterReg, filterFlag, search])
-
-  const toggle = (current, value, setter) =>
-    setter(current === value ? null : value)
+  // scroll reveal
+  const revealRef = undefined // unused — kept for future ref
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('vis')
+          obs.unobserve(e.target)
+        }
+      }),
+      { threshold: 0.08 }
+    )
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el))
+    return () => obs.disconnect()
+  }, [])
 
   return (
     <>
       <Head>
-        <title>Essays — Standing State Press</title>
-        <meta name="description" content="400 essays indexed to the Standing State system. Cross-referenced by plate, volume, and register." />
+        <title>Standing State Press — Leon Powdar</title>
       </Head>
 
+      {/* ── NAV ── */}
       <nav className="nav">
         <div className="wrap navInner">
           <a className="navMark" href="/">Standing State Press</a>
           <ul className="navLinks">
-            <li><a href="/#system">System</a></li>
-            <li><a href="/#corpus">Corpus</a></li>
+            <li><a href="#system">System</a></li>
+            <li><a href="#corpus">Corpus</a></li>
             <li><a href="/system/glossary">Glossary</a></li>
-            <li><a href="/essays" style={{ color: 'var(--gold)' }}>Essays</a></li>
-            <li><a href="/#about">Author</a></li>
+            <li><a href="/system/plates">Plates</a></li>
+            <li><a href="/system/gates">Gates</a></li>
+            <li><a href="#registers">Registers</a></li>
+            <li><a href="#about">Author</a></li>
           </ul>
         </div>
       </nav>
 
-      <header className="glossHeader">
+      {/* ── HERO ── */}
+      <section className="hero" id="top">
         <div className="wrap">
-          <div className="glossBreadcrumb">
-            <a href="/">Standing State Press</a>
-            <span className="glossBreadSep">→</span>
-            <span style={{ color: 'var(--gold-dim)' }}>Essays</span>
-          </div>
-          <div className="glossEyebrow">Commentary Layer — Medium × Standing State</div>
-          <h1 className="glossH1">Essays</h1>
-          <p className="glossIntro">
-            400 essays written on Medium — audited, tagged, and indexed
-            to the formal system. Each essay is downstream of at least
-            one plate. Filter by concept, volume, or register.
-          </p>
-          <div className="essayStats">
-            <span className="essayStat">{ESSAYS.length} indexed</span>
-            <span className="essayStatDiv">·</span>
-            <span className="essayStat">{ESSAYS.filter(e=>e.flag==='M').length} mirrored</span>
-            <span className="essayStatDiv">·</span>
-            <span className="essayStat">{filtered.length} shown</span>
-          </div>
-        </div>
-      </header>
+          <div className="heroGrid">
 
-      <hr className="divider" />
-
-      {/* ── FILTERS ── */}
-      <section className="essayFilters">
-        <div className="wrap">
-
-          {/* Search */}
-          <div className="essaySearch">
-            <input
-              type="text"
-              placeholder="Search essays..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              className="essaySearchInput"
-            />
-          </div>
-
-          {/* Plate filter */}
-          <div className="essayFilterGroup">
-            <div className="essayFilterLabel">Plate / Concept</div>
-            <div className="essayFilterPills">
-              {PLATES.map(p => (
-                <FilterPill key={p.code} label={p.label}
-                  active={filterPlate === p.code}
-                  onClick={() => toggle(filterPlate, p.code, setFilterPlate)} />
-              ))}
-            </div>
-          </div>
-
-          {/* Volume filter */}
-          <div className="essayFilterGroup">
-            <div className="essayFilterLabel">Volume</div>
-            <div className="essayFilterPills">
-              {VOLUMES.map(v => (
-                <FilterPill key={v.code} label={v.label}
-                  active={filterVol === v.code}
-                  onClick={() => toggle(filterVol, v.code, setFilterVol)} />
-              ))}
-            </div>
-          </div>
-
-          {/* Register filter */}
-          <div className="essayFilterGroup">
-            <div className="essayFilterLabel">Register</div>
-            <div className="essayFilterPills">
-              {REGISTERS.map(r => (
-                <FilterPill key={r.code} label={r.label}
-                  active={filterReg === r.code}
-                  onClick={() => toggle(filterReg, r.code, setFilterReg)} />
-              ))}
-            </div>
-          </div>
-
-          {/* Flag filter */}
-          <div className="essayFilterGroup">
-            <div className="essayFilterLabel">Status</div>
-            <div className="essayFilterPills">
-              {Object.entries(FLAGS).map(([code, f]) => (
-                <FilterPill key={code} label={f.label}
-                  active={filterFlag === code}
-                  onClick={() => toggle(filterFlag, code, setFilterFlag)} />
-              ))}
-            </div>
-          </div>
-
-          {/* Clear */}
-          {(filterPlate || filterVol || filterReg || filterFlag || search) && (
-            <button className="essayClear"
-              onClick={() => {
-                setFilterPlate(null); setFilterVol(null)
-                setFilterReg(null); setFilterFlag(null); setSearch('')
-              }}>
-              Clear all filters
-            </button>
-          )}
-        </div>
-      </section>
-
-      <hr className="divider" />
-
-      {/* ── ESSAY GRID ── */}
-      <section className="essayGrid">
-        <div className="wrap">
-          {ESSAYS.length === 0 ? (
-            <div className="essayEmpty">
-              <p>Audit in progress. Essays will appear here as they are indexed.</p>
-              <p style={{ marginTop: '1rem', fontSize: '0.85rem', color: 'var(--gray-lt)' }}>
-                400 essays · audit begins with batch submission
+            <div className="heroLeft">
+              <div className="eyebrow">Standing State Press</div>
+              <h1 className="h1">A Body<br />of <em>Work.</em></h1>
+              <p className="heroSub">Not separate books — a unified framework expressed across multiple domains.</p>
+              <p className="heroStatement">
+                Identity is invariant.<br />
+                Expression drifts under load.<br />
+                <strong>The system returns when interference is removed.</strong>
               </p>
+              <div className="ctaRow">
+                <a className="btnA" href="#corpus">The Corpus</a>
+                <a className="btnB" href="#system">The System</a>
+              </div>
             </div>
-          ) : filtered.length === 0 ? (
-            <div className="essayEmpty">
-              <p>No essays match the current filters.</p>
+
+            <div className="heroRight">
+              <div className="eqFrame">
+                <div style={{ textAlign: 'center', fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: '1.3rem', color: '#dfc27a', lineHeight: '2', padding: '0.5rem 0' }}>
+                  Φ(x) → K<sub style={{ fontSize: '0.7em' }}>auto</sub>
+                  <br />
+                  <span style={{ fontSize: '0.85rem', letterSpacing: '0.08em', fontStyle: 'normal' }}>under</span>
+                  <br />
+                  Σ ↓
+                </div>
+                <p className="eqBridge">
+                  The system returns to baseline when total load decreases<br />
+                  and completion is allowed.
+                </p>
+                <div className="eqField">
+                  <div className="eqCausal">
+                    <div className="efRow">
+                      <span className="efVar"><KTex math="\\Sigma" /></span>
+                      <span className="efArr">→</span>
+                      <span className="efVar"><KTex math="\\Phi(x)" /></span>
+                      <span className="efArr">→</span>
+                      <span className="efVar"><KTex math="K_{\\text{auto}}" /></span>
+                    </div>
+                    <div className="efStack">
+                      <span className="efTick">↑</span>
+                      <span className="efSideVar"><KTex math="B(t)" /></span>
+                      <span className="efTick">↓</span>
+                      <span className="efSideVar"><KTex math="x^*" /></span>
+                    </div>
+                  </div>
+                  <div className="eqDefs">
+                    {[
+                      ['\\Sigma', 'Total integrated stress load'],
+                      ['\\Phi(x)', 'Completion functional — deviation from coherence'],
+                      ['K_{\\text{auto}}', 'Autophagic correction baseline'],
+                      ['B(t)', 'Boundary integrity — amplifies or reduces load'],
+                      ['x^*', 'Reference state — invariant'],
+                    ].map(([v, d]) => (
+                      <div className="eqDefRow" key={v}>
+                        <span className="ev"><KTex math={v} /></span>
+                        <span className="ed">{d}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="signalFoot">Signal → Completion → Repair</div>
+                <a className="btnEnter" href="#registers">Enter the System →</a>
+              </div>
             </div>
-          ) : (
-            <div className="essayCards">
-              {filtered.map(e => <EssayCard key={e.id} essay={e} />)}
-            </div>
-          )}
+
+          </div>
         </div>
       </section>
 
+      <hr className="divider" />
+
+      {/* ── SYSTEM CHAIN ── */}
+      <section className="chainSec" id="system">
+        <div className="wrap">
+          <div className="secHead reveal">
+            <span className="secLabel">The Governing Logic</span>
+            <div className="secRule" />
+          </div>
+          <div className="chainGrid">
+            {[
+              {
+                n: '01', t: 'Signal',
+                b: 'The nervous system generates signal continuously. Signal determines allocation. Allocation determines whether the body builds, repairs, or remains in triage.',
+                arr: true,
+              },
+              {
+                n: '02', t: 'Completion',
+                b: null,
+                bNode: (
+                  <>
+                    Health is not the result of input accumulation. It is the result of cycles that complete.
+                    When <KTex math="\\Sigma \\downarrow" /> and <KTex math="B(t)" /> holds,{' '}
+                    <KTex math="\\Phi(x)" /> converges toward <KTex math="K_{\\text{auto}}" />.
+                  </>
+                ),
+                arr: true,
+              },
+              {
+                n: '03', t: 'Repair',
+                b: null,
+                bNode: (
+                  <>
+                    Repair is the natural outcome of resolved cycles. The body does not require instruction to return to{' '}
+                    <KTex math="x^*" />. It requires conditions under which return becomes possible.
+                  </>
+                ),
+                arr: false,
+              },
+            ].map((cell, i) => (
+              <div className={`chainCell reveal d${i}`} key={cell.n}>
+                <span className="chainN">{cell.n}</span>
+                <div className="chainT">{cell.t}</div>
+                <p className="chainB">{cell.b || cell.bNode}</p>
+                {cell.arr && <div className="chainArr">→</div>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CORPUS ── */}
+      <section className="corpusSec" id="corpus">
+        <div className="wrap">
+          <div className="secHead reveal">
+            <span className="secLabel">The Publication System</span>
+            <div className="secRule" />
+          </div>
+          <div className="corpusFrame reveal">
+            Not separate books —<br />
+            a <em>unified framework</em> expressed across multiple domains.<br />
+            Across all of them, one law remains.
+          </div>
+          <div className="corpusList">
+            {CORPUS.map((book, i) => {
+              const inprod = !book.href
+              const Tag = inprod ? 'div' : 'a'
+              const props = inprod
+                ? {}
+                : { href: book.href, target: '_blank', rel: 'noopener noreferrer' }
+              return (
+                <Tag
+                  key={book.index}
+                  className={`bookRow reveal d${i} ${inprod ? 'bookRowInprod' : ''}`}
+                  {...props}
+                >
+                  <div className={`bookIndex ${inprod ? 'bookIndexDim' : ''}`}>{book.index}</div>
+                  <div className="bookBody">
+                    <span className={`bookTag ${inprod ? 'bookTagDim' : ''}`}>{book.tag}</span>
+                    <div className={`bookTitle ${inprod ? 'bookTitleDim' : ''}`}>{book.title}</div>
+                    <div className="bookSubtitle">{book.subtitle}</div>
+                    <p className="bookDesc">{book.desc}</p>
+                  </div>
+                  <div className="bookAction">
+                    {inprod
+                      ? <span className="bookStatus">In Production</span>
+                      : <span className="bookLink">On Amazon →</span>
+                    }
+                  </div>
+                </Tag>
+              )
+            })}
+          </div>
+          <div className="corpusAxiom reveal d5">
+            A becomes A, because A knows it is A.
+          </div>
+        </div>
+      </section>
+
+      {/* ── REGISTERS / GATES ── */}
+      <section className="regSec" id="registers">
+        <div className="wrap">
+          <div className="secHead reveal">
+            <span className="secLabel">The Standing State Across Registers</span>
+            <div className="secRule" />
+          </div>
+          <p className="regIntro reveal">
+            The same invariant appears across domains. Different language. Same function.
+            The domains do not define identity — they reveal it.
+          </p>
+          <div className="regGrid reveal">
+            {REGISTERS.map(r => (
+              <a
+                href={`/system/gates/${r.slug}`}
+                className="regCell regCellLink"
+                key={r.name}
+              >
+                <span className="regName">{r.name}</span>
+                <div className="regExpr">
+                  {r.exprKatex
+                    ? <KTex math={r.exprKatex} />
+                    : r.expr.split('\n').map((line, i) => (
+                        <span key={i}>{line}{i < r.expr.split('\n').length - 1 && <br />}</span>
+                      ))
+                  }
+                </div>
+                <div className="regSub">{r.sub}</div>
+                <div className="regCellCta">Enter →</div>
+              </a>
+            ))}
+          </div>
+
+          {/* Gate Grid — enter each register */}
+          <div style={{ marginTop: '3rem' }} className="reveal">
+            <div className="secHead" style={{ marginBottom: '1.5rem' }}>
+              <span className="secLabel">Enter a Register</span>
+              <div className="secRule" />
+              <a href="/system/gates" className="gatesFootLink" style={{ whiteSpace: 'nowrap', marginLeft: '1rem' }}>All Gates →</a>
+            </div>
+            <GateGrid />
+          </div>
+
+          <div className="regAxiom reveal">
+            The invariant was never divided. Only the lenses were.<br />
+            When the lenses align, the system is seen as one.
+          </div>
+        </div>
+      </section>
+
+      {/* ── ABOUT ── */}
+      <section className="aboutSec" id="about">
+        <div className="wrap">
+          <div className="aboutGrid reveal">
+            <div className="aboutSticky">
+              <div className="aboutName">Leon Powdar</div>
+              <div className="aboutRole">Phase Reference</div>
+              <div className="aboutSep" />
+            </div>
+            <div className="aboutBody">
+              <p>Everything expressed in this work is not theoretical. It is lived — observed within my own body through direct application of the principles defined throughout this system.</p>
+              <p>The Standing State is not a framework I constructed from the outside. It is a condition I learned to enter, sustain, and observe over time. The shift began with one principle: the body responds to conditions. Remove what prevents completion, and the system returns.</p>
+              <p>I did not rebuild the system. I allowed the system to rebuild itself.</p>
+              <p>Standing State Press publishes the formal architecture of this work across multiple domains: identity theory, scriptural architecture, developmental law, and biological coherence. These are not separate subjects. They are one invariant expressed through different substrates.</p>
+              <div className="aboutAxiom">A becomes A, because A knows it is A.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FOOTER ── */}
       <footer className="footer">
         <div className="wrap footerInner">
           <div className="fMark">Standing State Press</div>
