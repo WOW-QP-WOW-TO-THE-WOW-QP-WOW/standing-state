@@ -126,72 +126,19 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero" id="top">
         <div className="wrap">
-          <div className="heroGrid">
-
-            <div className="heroLeft">
-              <div className="eyebrow">Standing State Press</div>
-              <h1 className="h1">A Body<br />of <em>Work.</em></h1>
-              <p className="heroSub">Not separate books — a unified framework expressed across multiple domains.</p>
-              <p className="heroStatement">
-                Identity is invariant.<br />
-                Expression drifts under load.<br />
-                <strong>The system returns when interference is removed.</strong>
-              </p>
-              <div className="ctaRow">
-                <a className="btnA" href="#corpus">The Corpus</a>
-                <a className="btnB" href="#system">The System</a>
-              </div>
+          <div className="heroLeft">
+            <div className="eyebrow">Standing State Press</div>
+            <h1 className="h1">A Body<br />of <em>Work.</em></h1>
+            <p className="heroSub">Not separate books — a unified framework expressed across multiple domains.</p>
+            <p className="heroStatement">
+              Identity is invariant.<br />
+              Expression drifts under load.<br />
+              <strong>The system returns when interference is removed.</strong>
+            </p>
+            <div className="ctaRow">
+              <a className="btnA" href="#corpus">The Corpus</a>
+              <a className="btnB" href="#system">The System</a>
             </div>
-
-            <div className="heroRight">
-              <div className="eqFrame">
-                <div style={{ textAlign: 'center', fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: '1.3rem', color: '#dfc27a', lineHeight: '2', padding: '0.5rem 0' }}>
-                  Φ(x) → K<sub style={{ fontSize: '0.7em' }}>auto</sub>
-                  <br />
-                  <span style={{ fontSize: '0.85rem', letterSpacing: '0.08em', fontStyle: 'normal' }}>under</span>
-                  <br />
-                  Σ ↓
-                </div>
-                <p className="eqBridge">
-                  The system returns to baseline when total load decreases<br />
-                  and completion is allowed.
-                </p>
-                <div className="eqField">
-                  <div className="eqCausal">
-                    <div className="efRow">
-                      <span className="efVar"><KTex math="\\Sigma" /></span>
-                      <span className="efArr">→</span>
-                      <span className="efVar"><KTex math="\\Phi(x)" /></span>
-                      <span className="efArr">→</span>
-                      <span className="efVar"><KTex math="K_{\\text{auto}}" /></span>
-                    </div>
-                    <div className="efStack">
-                      <span className="efTick">↑</span>
-                      <span className="efSideVar"><KTex math="B(t)" /></span>
-                      <span className="efTick">↓</span>
-                      <span className="efSideVar"><KTex math="x^*" /></span>
-                    </div>
-                  </div>
-                  <div className="eqDefs">
-                    {[
-                      ['\\Sigma', 'Total integrated stress load'],
-                      ['\\Phi(x)', 'Completion functional — deviation from coherence'],
-                      ['K_{\\text{auto}}', 'Autophagic correction baseline'],
-                      ['B(t)', 'Boundary integrity — amplifies or reduces load'],
-                      ['x^*', 'Reference state — invariant'],
-                    ].map(([v, d]) => (
-                      <div className="eqDefRow" key={v}>
-                        <span className="ev"><KTex math={v} /></span>
-                        <span className="ed">{d}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="signalFoot">Signal → Completion → Repair</div>
-                <a className="btnEnter" href="#registers">Enter the System →</a>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -243,6 +190,62 @@ export default function Home() {
                 {cell.arr && <div className="chainArr">→</div>}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── GOVERNING CONDITION ── */}
+      <section className="govCondSec">
+        <div className="wrap">
+          <div className="secHead reveal">
+            <span className="secLabel">Governing Condition</span>
+            <div className="secRule" />
+          </div>
+          <div className="eqFrame reveal">
+            <div style={{ textAlign: 'center', fontFamily: 'Georgia, serif', fontStyle: 'italic', fontSize: '1.3rem', color: '#dfc27a', lineHeight: '2', padding: '0.5rem 0' }}>
+              Φ(x) → K<sub style={{ fontSize: '0.7em' }}>auto</sub>
+              <br />
+              <span style={{ fontSize: '0.85rem', letterSpacing: '0.08em', fontStyle: 'normal' }}>under</span>
+              <br />
+              Σ ↓
+            </div>
+            <p className="eqBridge">
+              The system returns to baseline when total load decreases<br />
+              and completion is allowed.
+            </p>
+            <div className="eqField">
+              <div className="eqCausal">
+                <div className="efRow">
+                  <span className="efVar"><KTex math="\\Sigma" /></span>
+                  <span className="efArr">→</span>
+                  <span className="efVar"><KTex math="\\Phi(x)" /></span>
+                  <span className="efArr">→</span>
+                  <span className="efVar"><KTex math="K_{\\text{auto}}" /></span>
+                </div>
+                <div className="efStack">
+                  <span className="efTick">↑</span>
+                  <span className="efSideVar"><KTex math="B(t)" /></span>
+                  <span className="efTick">↓</span>
+                  <span className="efSideVar"><KTex math="x^*" /></span>
+                </div>
+              </div>
+              <div className="eqDefs">
+                {[
+                  ['\\Sigma', 'Total integrated stress load'],
+                  ['\\Phi(x)', 'Completion functional — deviation from coherence'],
+                  ['K_{\\text{auto}}', 'Autophagic correction baseline'],
+                  ['B(t)', 'Boundary integrity — amplifies or reduces load'],
+                  ['x^*', 'Reference state — invariant'],
+                ].map(([v, d]) => (
+                  <div className="eqDefRow" key={v}>
+                    <span className="ev"><KTex math={v} /></span>
+                    <span className="ed">{d}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="signalFoot">Signal → Completion → Repair</div>
+            <a className="btnEnter" href="#registers">Enter the System →</a>
           </div>
         </div>
       </section>
