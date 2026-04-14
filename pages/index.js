@@ -247,6 +247,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── SYSTEM LINKS ── */}
+      <section className="systemLinksSection">
+        <div className="wrap">
+          <div className="secHead reveal">
+            <span className="secLabel">System</span>
+            <div className="secRule" />
+          </div>
+          <div className="systemLinksGrid reveal">
+            <a href="/system/glossary" className="systemLinkCard">
+              <span className="systemLinkLabel">Definition Layer</span>
+              <span className="systemLinkTitle">Glossary →</span>
+              <span className="systemLinkSub">Every governing variable defined once.</span>
+            </a>
+            <a href="/system/plates" className="systemLinkCard">
+              <span className="systemLinkLabel">Visual Authority</span>
+              <span className="systemLinkTitle">Plates →</span>
+              <span className="systemLinkSub">Canonical structural artifacts and governing conditions.</span>
+            </a>
+            <a href="/system/gates" className="systemLinkCard">
+              <span className="systemLinkLabel">Navigation Layer</span>
+              <span className="systemLinkTitle">Gates →</span>
+              <span className="systemLinkSub">Registered pathways into each part of the system.</span>
+            </a>
+            <a href="/essays" className="systemLinkCard">
+              <span className="systemLinkLabel">Commentary Layer</span>
+              <span className="systemLinkTitle">Essays →</span>
+              <span className="systemLinkSub">Canonical essays and indexed interpretation archive.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── CORPUS ── */}
       <section className="corpusSec" id="corpus">
         <div className="wrap">
