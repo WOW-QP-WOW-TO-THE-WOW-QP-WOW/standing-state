@@ -134,9 +134,10 @@ export default function Home() {
             Expression drifts under load.<br />
             <strong>The system returns when interference is removed.</strong>
           </p>
+          <p className="heroDelta">Δ = ‖A − I‖</p>
           <div className="ctaRow">
-            <a className="btnA" href="#corpus">The Corpus</a>
-            <a className="btnB" href="#system">The System</a>
+            <a className="btnA" href="#system">The System</a>
+            <a className="btnB" href="#corpus">The Corpus</a>
           </div>
         </div>
       </section>
