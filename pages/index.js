@@ -127,7 +127,6 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="heroAField" />
         <div className="wrap heroContent">
-          <div className="eyebrow">Standing State Press</div>
           <h1 className="h1">A Body<br />of <em>Work.</em></h1>
           <p className="heroSub">Not separate books — a unified framework expressed across multiple domains.</p>
           <p className="heroStatement">
