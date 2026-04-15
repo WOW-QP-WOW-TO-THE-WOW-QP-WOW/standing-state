@@ -136,7 +136,7 @@ export default function Home() {
           </p>
           <p className="heroDelta">Δ = ‖A − I‖</p>
           <div className="ctaRow">
-            <a className="btnA" href="#system">The System</a>
+            <a className="btnA" href="/standing-state">The System</a>
             <a className="btnB" href="#corpus">The Corpus</a>
           </div>
         </div>
