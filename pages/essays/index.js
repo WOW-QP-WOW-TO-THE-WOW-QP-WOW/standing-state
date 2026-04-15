@@ -309,6 +309,28 @@ const ESSAYS = [
     note: 'Integrity as structural condition not virtue; seed/soil/fruit model — identity invariant, expression condition-dependent; structural vs social morality distinction; re-expression not resurrection',
     mirrorUrl: '',
   },
+  {
+    id: 'M014',
+    title: 'The Standing State — A Unified Thesis on Identity, Reality, and Coherent Living',
+    mediumUrl: '',
+    axis1: 'SYS-GEN',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Complete unified system thesis — identity as coordinate, Δ=‖A−I‖ as contradiction energy, correction law, phase-lock as integrity, Standing State Δ→0, generative flow ẋ=ξ. Primary entry-point essay.',
+    mirrorUrl: '/standing-state',
+  },
+  {
+    id: 'M015',
+    title: 'Executive Summary — The Ethics of Invariance & The Technical Doctrine of Invariance',
+    mediumUrl: 'https://medium.com/@leonsp3/executive-summary-35d9a5ebe9b4',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MATH',
+    flag: 'E',
+    note: 'Four principles: disturbance declaration, invariant safety params, forward invariance enforcement, deterministic halt; Structural Honesty as standard; Sentinel-Zero implementation — seed for IEEE/NIST/ISO submission',
+    mirrorUrl: '',
+  },
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
