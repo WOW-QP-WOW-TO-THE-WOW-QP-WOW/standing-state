@@ -287,6 +287,28 @@ const ESSAYS = [
     note: 'Five registers mapped to Gates system; Three-channel architecture (logic/intuition/consent) = ℐ(I,∇c); volitional consciousness as terminal consent operator 𝒞',
     mirrorUrl: '/essays/medium/multidimensional-human',
   },
+  {
+    id: 'M012',
+    title: 'The Admissibility Manifesto — A Systems Law for the Age of Autonomous Scaling',
+    mediumUrl: 'https://medium.com/@leonsp3/the-admissibility-manifesto-56b8b5d66840',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MATH',
+    flag: 'E',
+    note: 'Governance capacity > expansion pressure; Δ = γ_obs − α_eff; same law governs AI, banks, nations, individuals; OAGI v1.2 as executable safety primitive — seed for Plate XI and standards submission',
+    mirrorUrl: '',
+  },
+  {
+    id: 'M013',
+    title: 'The True Essence of Integrity — Integrity as the Architecture of Coherent Being',
+    mediumUrl: 'https://medium.com/@leonsp3/the-true-essence-of-integrity-aa2cf128648c',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-PHIL',
+    flag: 'M',
+    note: 'Integrity as structural condition not virtue; seed/soil/fruit model — identity invariant, expression condition-dependent; structural vs social morality distinction; re-expression not resurrection',
+    mirrorUrl: '',
+  },
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
