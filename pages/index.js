@@ -125,20 +125,19 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="hero" id="top">
-        <div className="wrap">
-          <div className="heroLeft">
-            <div className="eyebrow">Standing State Press</div>
-            <h1 className="h1">A Body<br />of <em>Work.</em></h1>
-            <p className="heroSub">Not separate books — a unified framework expressed across multiple domains.</p>
-            <p className="heroStatement">
-              Identity is invariant.<br />
-              Expression drifts under load.<br />
-              <strong>The system returns when interference is removed.</strong>
-            </p>
-            <div className="ctaRow">
-              <a className="btnA" href="#corpus">The Corpus</a>
-              <a className="btnB" href="#system">The System</a>
-            </div>
+        <div className="heroAField" />
+        <div className="wrap heroContent">
+          <div className="eyebrow">Standing State Press</div>
+          <h1 className="h1">A Body<br />of <em>Work.</em></h1>
+          <p className="heroSub">Not separate books — a unified framework expressed across multiple domains.</p>
+          <p className="heroStatement">
+            Identity is invariant.<br />
+            Expression drifts under load.<br />
+            <strong>The system returns when interference is removed.</strong>
+          </p>
+          <div className="ctaRow">
+            <a className="btnA" href="#corpus">The Corpus</a>
+            <a className="btnB" href="#system">The System</a>
           </div>
         </div>
       </section>
