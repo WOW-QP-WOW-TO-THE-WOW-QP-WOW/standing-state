@@ -2066,3 +2066,13 @@ body::before {
 .hero .heroLeft {
   max-width: 680px;
 }
+
+/* ── HERO DELTA LINE ── */
+.heroDelta {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--gold-dim);
+  margin: 1rem 0 1.6rem;
+  letter-spacing: 0.04em;
+}
