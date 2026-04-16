@@ -9,7 +9,7 @@
 
 import Head from 'next/head'
 import KTex from '../../components/KTex'
-import { VARIABLES, GOVERNING_EQUATION, AXIOM } from '../../components/glossaryData'
+import { VARIABLES, GOVERNING_EQUATION, AXIOM, EXTENDED_TERMS } from '../../components/glossaryData'
 
 export default function Glossary() {
   return (
@@ -205,6 +205,45 @@ export default function Glossary() {
           </div>
         </div>
       </section>
+
+      {/* ── EXTENDED GLOSSARY ── */}
+      {EXTENDED_TERMS && EXTENDED_TERMS.length > 0 && (
+        <section style={{ paddingBottom: '6rem' }}>
+          <div className="wrap">
+            <div className="glossSectionHead" style={{ marginTop: '4rem', marginBottom: '2.5rem' }}>
+              <span className="glossEyebrow">Extended Definitions — M019 through M027</span>
+              <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 400, color: 'var(--white)', marginTop: '0.5rem' }}>
+                Corpus Glossary
+              </h2>
+              <p style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', color: 'var(--gray-lt)', fontStyle: 'italic', marginTop: '0.75rem' }}>
+                Formal terms introduced across the essay corpus. Each entry is keyed to its source essay.
+              </p>
+            </div>
+            <div style={{ display: 'grid', gap: '1px', background: 'var(--border)' }}>
+              {EXTENDED_TERMS.map(term => (
+                <div key={term.id} style={{ background: 'var(--black)', padding: '1.75rem 2rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem' }}>
+                      <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)' }}>
+                        {term.symbol}
+                      </span>
+                      <span style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', color: 'var(--white)' }}>
+                        {term.name}
+                      </span>
+                    </div>
+                    <span style={{ fontFamily: 'var(--display)', fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.15rem 0.5rem' }}>
+                      {term.source}
+                    </span>
+                  </div>
+                  <p style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', color: 'var(--gray-lt)', lineHeight: 1.8 }}>
+                    {term.definition}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── FOOTER ── */}
       <footer className="footer">
