@@ -118,7 +118,8 @@ export default function Home() {
             <li><a href="/system/plates">Plates</a></li>
             <li><a href="/system/gates">Gates</a></li>
             <li><a href="#registers">Registers</a></li>
-            <li><a href="/essays">Essays</a></li><li><a href="#about">Author</a></li>
+            <li><a href="/essays">Essays</a></li>
+            <li><a href="/sources">Sources</a></li><li><a href="#about">Author</a></li>
           </ul>
         </div>
       </nav>
@@ -276,6 +277,11 @@ export default function Home() {
               <span className="systemLinkLabel">Commentary Layer</span>
               <span className="systemLinkTitle">Essays →</span>
               <span className="systemLinkSub">Canonical essays and indexed interpretation archive.</span>
+            </a>
+            <a href="/sources" className="systemLinkCard">
+              <span className="systemLinkLabel">Source Layer</span>
+              <span className="systemLinkTitle">Sources →</span>
+              <span className="systemLinkSub">Precursor and reference material absorbed into the system.</span>
             </a>
           </div>
         </div>
