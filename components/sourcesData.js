@@ -121,11 +121,11 @@ export const SOURCES = [
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Originating source of the foundational series. Faith redefined as persistent singular consciousness, not small magnitude. Sacrifice-Resurrection as identity-change mechanism. Spiritual Circumcision as the cleanest precursor to I* = I*',
-    summary: 'Episode 1 of the foundational series — the originating source that precedes both B002 (biological register) and B001 (identity register). Delivers the change mechanism itself: Desire sets the coordinate. Sacrifice releases the old self. Uncritical Observation establishes self-witness. Spiritual Circumcision strips every derivative identity until I Am remains. The conscious/subconscious model in this source is the pre-formal articulation of the interpretation layer.',
+    note: 'Originating source of the foundational series. Faith redefined as persistent singular consciousness, not small magnitude. Investment-Resurrection as identity-change mechanism. Spiritual Circumcision as the cleanest precursor to I* = I*',
+    summary: 'Episode 1 of the foundational series — the originating source that precedes both B002 (biological register) and B001 (identity register). Delivers the change mechanism itself: Desire sets the coordinate. Investment releases the old self. Uncritical Observation establishes self-witness. Spiritual Circumcision strips every derivative identity until I Am remains. The conscious/subconscious model in this source is the pre-formal articulation of the interpretation layer.',
     sourceUrl: '',
     mirrorUrl: '/sources/4-things-lasting-change',
-    equation: 'Desire → Sacrifice → Observation → Circumcision → I Am',
+    equation: 'Desire → Investment → Observation → Circumcision → I Am',
     finalStatement: 'You are saved by the renewing of your subconscious mind. I Am that I Am.',
     crossRefs: ['B001', 'B002', 'M019', 'M020', 'M025', 'M026', 'M027'],
     sections: [
@@ -134,7 +134,7 @@ export const SOURCES = [
         title: 'The Change Mechanism',
         rows: [
           { source: 'Desire',                  target: 'Coordinate Declaration',    note: 'The new identity is spoken as present reality. Desire is not wishful — it is the springboard that fixes I*.' },
-          { source: 'Sacrifice',               target: 'Old Self Released',         note: 'The current state of consciousness (Barabbas) must be released. The old I* cannot persist alongside the new coordinate.' },
+          { source: 'Investment',              target: 'Old Self Released',         note: 'The current state of consciousness (Barabbas) must be released. The old I* cannot persist alongside the new coordinate. The release is not loss — it is the seed invested into the new I*.' },
           { source: 'Uncritical Observation',  target: 'Self-Witness · δ → 0',      note: 'Watch reactions to life without defense or judgment. Reactions reveal the installed I*. Self-empathy cannot act on what is not first seen.' },
           { source: 'Spiritual Circumcision',  target: 'Identity Stripping to I Am', note: 'Every derivative identity layer (role, gender, race, even "human") is removed. What remains is I*. This is not loss — it is isolation of the operator.' },
         ]
@@ -145,7 +145,7 @@ export const SOURCES = [
         body: 'Leon corrects the common misreading of Matthew 17:20 directly. The mustard seed is not a measure of small faith. The seed is singular consciousness — it is only conscious of being a mustard seed. Faith is not magnitude. Faith is persistence in a single knowing. This is the zero-doubt condition: C_in = 1. No competing states are held in consciousness. This reading is structural, not moral. It delivers the exact condition the corpus has been building toward.'
       },
       {
-        label: 'Sacrifice-Resurrection Mechanism',
+        label: 'Investment-Resurrection Mechanism',
         title: 'The Operational Procedure',
         body: 'Leon renders the Crucifixion as a psychological operation. Barabbas (the thief and robber) is the current derivative identity — the concept-self that steals from I*. Releasing Barabbas is the investment of your current self. Christ is the desired I* — declared under contradicting conditions. "I am healthy" declared while feeling sick. "I am strong" declared while feeling weak. The declaration is the crucifixion; the manifestation is the resurrection. This is Law of Assumption (B001) shown as mechanism, not principle. Output does not rewrite identity — identity rewrites output.'
       },
