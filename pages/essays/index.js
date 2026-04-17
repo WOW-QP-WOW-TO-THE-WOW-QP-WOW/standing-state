@@ -196,7 +196,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Five-stage sequence: source → law → mediation → stillness → recognition. Departs from Plato and Augustine — identity is dynamic achievement not formal given',
+    note: 'Five-stage sequence: source → law → mediation → stillness → recognition. Identity is invariant; alignment to identity is dynamic. Structure enables recognition, it does not produce identity. Departs from Plato/Augustine: prior question — under what structural conditions does self-recognition become possible?',
     mirrorUrl: '',
   },
   {
