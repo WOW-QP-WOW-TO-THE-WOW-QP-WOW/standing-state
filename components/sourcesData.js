@@ -147,7 +147,7 @@ export const SOURCES = [
       {
         label: 'Sacrifice-Resurrection Mechanism',
         title: 'The Operational Procedure',
-        body: 'Leon renders the Crucifixion as a psychological operation. Barabbas (the thief and robber) is the current derivative identity — the concept-self that steals from I*. Releasing Barabbas is the Sacrifice. Christ is the desired I* — declared under contradicting conditions. "I am healthy" declared while feeling sick. "I am strong" declared while feeling weak. The declaration is the crucifixion; the manifestation is the resurrection. This is Law of Assumption (B001) shown as mechanism, not principle. Output does not rewrite identity — identity rewrites output.'
+        body: 'Leon renders the Crucifixion as a psychological operation. Barabbas (the thief and robber) is the current derivative identity — the concept-self that steals from I*. Releasing Barabbas is the investment of your current self. Christ is the desired I* — declared under contradicting conditions. "I am healthy" declared while feeling sick. "I am strong" declared while feeling weak. The declaration is the crucifixion; the manifestation is the resurrection. This is Law of Assumption (B001) shown as mechanism, not principle. Output does not rewrite identity — identity rewrites output.'
       },
       {
         label: 'The Subconscious as Execution Engine',
