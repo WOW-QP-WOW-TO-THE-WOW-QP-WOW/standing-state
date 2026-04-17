@@ -463,6 +463,28 @@ const ESSAYS = [
     note: 'Self-Empathy Stability Theorem (C1+C2+C3); closed-loop architecture (Reality→Interpretation→Identity→Self-Witness→Self-Empathy→Update); four failure modes; Self-Witness=∇c; Self-Empathy=Kₐᵤₜₒ',
     mirrorUrl: '/essays/medium/identity-governing-reference-adaptive-systems',
   },
+  {
+    id: 'M028',
+    title: 'Rank-0 Audit: The 6 Paradoxes of the Exit Simulation',
+    mediumUrl: '',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Structural interpretation of reported exit phenomena through Standing State. Identity invariant (İ*=0); life and death as different coupling states of expression relative to the same invariant identity; χ-Gate as modeled interface boundary; pain as friction under constrained coupling; return as coherence recovery when interference is removed',
+    mirrorUrl: '/essays/medium/exit-simulation-6-paradoxes',
+  },
+  {
+    id: 'M029',
+    title: 'Embracing Genuine Self-Worth in a Materialistic World',
+    mediumUrl: 'https://medium.com/@leonsp3/embracing-genuine-self-worth-in-a-materialistic-world-4dcbad0acfce',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-PSY',
+    flag: 'M',
+    note: 'Social-register keystone: x ⇏ I*. Validation-Value Collapse; Rented Approval; Applause-Silence Test; Control Mechanism (diminish → install ideal → guilt → obedience). External validation can obscure or displace stable access to I* but does not annihilate invariant identity',
+    mirrorUrl: '/essays/medium/genuine-self-worth',
+  },
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
