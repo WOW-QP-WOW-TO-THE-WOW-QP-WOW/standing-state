@@ -8,7 +8,7 @@ const ESSAYS = [
   { id:'c005', slug:'the-consent-engine', number:'Essay V', title:'The Consent Engine', subtitle:'Choice scans trajectories. Consent activates one.', equation:'π(t) = 𝒞(t)u(t)     𝒞 = 0 ⇒ no realization', thesis:'Between identity and reality there is a transformer. Consent is the authorization scalar that converts potential into structure. Without it, choice produces nothing. With it, trajectory becomes reality.', body:['The interpretation operator produces an action policy u(t) — a candidate trajectory. But it does not execute automatically. Between selection and execution, consent must authorize the action. Formally: π(t) = 𝒞(t)u(t). When 𝒞 = 0, nothing is executed regardless of the quality of the policy selected.','This explains why knowledge does not automatically produce change. A person can understand exactly what needs to be done, select the correct policy, and still not act. The gap is not intelligence. It is consent. This is also why habits are powerful: they are archived consent.','To change reality, change what receives consent.'], finalStatement:'π(t) = 𝒞(t)u(t)' },
   { id:'c006', slug:'life-and-death', number:'Essay VI', title:'Life and Death', subtitle:'Every trajectory moves toward convergence or divergence. There is no neutral state.', equation:'V̇ ≤ 0 ⇒ Life     V̇ > 0 ⇒ Death', thesis:'The system does not offer a third option. Every action either reduces deviation from the identity coordinate or increases it. The binary is not moral. It is structural.', body:['Life ≡ V̇ ≤ 0 and Death ≡ V̇ > 0. Life is convergence — the trajectory is moving toward x*. Death is divergence — the trajectory is moving away. A system in the Life regime is one where consent is continuously authorizing admissible structure. A system in the Death regime is one where interference persists and correction is suppressed.','The most important implication: partial consent produces partial Life. There is no resting point in the middle. There is only the degree of commitment to convergence.','Choosing Life, to whatever degree, is consent. And consent, however partial, initiates the pipeline.'], finalStatement:'V̇ ≤ 0 ⇒ Life' },
   { id:'c007', slug:'the-scab-condition', number:'Essay VII', title:'The Scab Condition', subtitle:'The scab does not heal the wound. It holds the condition under which healing occurs.', equation:'Σ ↓ ∧ B(t) holds ⇒ Kₐᵤₜₒ ↑ ⇒ Φ(x) → 0', thesis:'When skin is damaged, the body initiates a structured healing sequence. The scab is not random. It is boundary integrity B(t) instantiated in tissue. Its purpose is not to repair the wound directly. Its purpose is to hold the condition under which repair becomes possible.', body:['Beneath the scab, Kₐᵤₜₒ activates. Cellular self-cleaning runs. Damaged proteins are cleared. New tissue forms. The correction loop operates without instruction or interference. The scab releases when Φ(x) → Kₐᵤₜₒ — when correction is complete. Not before. Not by force.','Remove the scab early and the sequence resets. Boundary fails. Load rises. Kₐᵤₜₒ suppresses. The wound is not defective. The completion was interrupted.','Every person who has ever had a wound has observed the governing condition operating. They simply did not have the name for what was happening.'], finalStatement:'Σ ↓ ∧ B(t) holds ⇒ Kₐᵤₜₒ ↑ ⇒ Φ(x) → 0' },
-  { id:'c008', slug:'surrender', number:'Essay VIII', title:'Surrender', subtitle:'Jurisdictional integrity. Output does not rewrite identity.', equation:'I* = 0     x ⇏ I*', thesis:'There is a precise definition of surrender that has nothing to do with defeat. Surrender is the alignment of all vectors to the identity coordinate.', body:['The jurisdictional principle is formal: x ⇏ I*. Output does not rewrite identity. Outcomes produce signal. That signal enters the interpretation layer. But it cannot ascend. It cannot redefine the identity coordinate. The moment an outcome is granted authority over identity, the coordinate becomes time-dependent and produces permanent correction without convergence.','Consider the person whose sense of identity is contingent on being right. When they are wrong, the outcome ascends to the identity layer and produces a threat to the coordinate. The system responds with defense, rationalization, or collapse — not because the person is weak, but because the architecture is structurally compromised.','Surrender is the refusal to let output ascend.'], finalStatement:'I* = 0     x ⇏ I*' },
+  { id:'c008', slug:'surrender', number:'Essay VIII', title:'Surrender', subtitle:'Jurisdictional integrity. Output does not rewrite identity.', equation:'İ* = 0     x ⇏ I*', thesis:'There is a precise definition of surrender that has nothing to do with defeat. Surrender is the alignment of all vectors to the identity coordinate.', body:['The jurisdictional principle is formal: x ⇏ I*. Output does not rewrite identity. Outcomes produce signal. That signal enters the interpretation layer. But it cannot ascend. It cannot redefine the identity coordinate. The moment an outcome is granted authority over identity, the coordinate becomes time-dependent and produces permanent correction without convergence.','Consider the person whose sense of identity is contingent on being right. When they are wrong, the outcome ascends to the identity layer and produces a threat to the coordinate. The system responds with defense, rationalization, or collapse — not because the person is weak, but because the architecture is structurally compromised.','Surrender is the refusal to let output ascend.'], finalStatement:'İ* = 0     x ⇏ I*' },
   { id:'c009', slug:'external-identity-and-consent', number:'Essay IX', title:'External Identity and Consent', subtitle:'External identities produce signal. They require consent to propagate.', equation:'External signal ⇒ ℐ(I*, ∇c) ⇏ I*', thesis:'Every person is surrounded by fields of identity — the expectations, narratives, and frames that others project. The question is never whether the signal arrives. The question is whether it receives consent to propagate into structure.', body:['The magnetic field analogy is precise. A magnet generates a field regardless of whether a compass is nearby. The field does not force the compass needle to move. If the needle\'s internal structure is stable, the external field provides information: direction. If unstable, the external field provides a substitute coordinate.','A stable identity coordinate I* receives external identity signals as information. An unstable identity coordinate receives external identity signals as authority. They ascend, modify the coordinate, and the system orients toward a destination it did not choose.','The intervention is not isolation from the field. It is stabilization of the internal coordinate so that external signals are processed, not adopted.'], finalStatement:'External signal ⇒ ℐ(I*, ∇c) ⇏ I*' },
   { id:'c010', slug:'the-architecture-of-return', number:'Essay X', title:'The Architecture of Return', subtitle:'Return is not constructed. It is revealed when interference is removed.', equation:'I ⇒ ∇c ⇒ ℐ ⇒ 𝒞u ⇒ x ⇒ Φ(x) → 0', thesis:'The complete architecture has five stages. Each is a prerequisite for the next. Remove any one and the sequence does not complete.', body:['Identity selects the coordinate. Conscience provides the gradient. Interpretation selects the trajectory. Consent authorizes structure. Structure accumulates into reality. The pipeline: I ⇒ ∇c ⇒ ℐ ⇒ 𝒞u ⇒ x ⇒ Φ(x) → 0.','Return does not require construction of something new. It requires the removal of what prevents the system from expressing what it already is. The Standing State is not achieved. It is uncovered. The interference is the problem. The system beneath it is already oriented correctly.','Identity does not create reality. It selects the coordinate. Structure is induced from that coordinate. Structure accumulates into reality.'], finalStatement:'Φ(x) → 0' },
 ]
@@ -40,21 +40,90 @@ export default function CanonicalEssayPage({ essay, prev, next }) {
         <title>{essay.title} — Standing State Press</title>
         <meta name="description" content={essay.thesis} />
       </Head>
-      <main style={{ padding: '4rem', color: '#fff', background: '#000', minHeight: '100vh' }}>
-        <p><a href="/essays/canonical">← All Essays</a></p>
-        <h1>{essay.number} — {essay.title}</h1>
-        <p>{essay.subtitle}</p>
-        <p>{essay.thesis}</p>
-        {essay.body.map((para, i) => (
-          <p key={i}>{para}</p>
-        ))}
-        <p><strong>{essay.equation}</strong></p>
-        <p>{essay.finalStatement}</p>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2rem' }}>
-          {prev ? <a href={`/essays/canonical/${prev.slug}`}>← {prev.title}</a> : <span />}
-          {next ? <a href={`/essays/canonical/${next.slug}`}>{next.title} →</a> : <span />}
+      <nav className="nav">
+        <div className="wrap navInner">
+          <a className="navMark" href="/">Standing State Press</a>
+          <ul className="navLinks">
+            <li><a href="/#system">System</a></li>
+            <li><a href="/#corpus">Corpus</a></li>
+            <li><a href="/system/glossary">Glossary</a></li>
+            <li><a href="/system/plates">Plates</a></li>
+            <li><a href="/essays" style={{ color: 'var(--gold)' }}>Essays</a></li>
+            <li><a href="/#about">Author</a></li>
+          </ul>
         </div>
-      </main>
+      </nav>
+      <article className="canonEssay">
+        <div className="wrap canonEssayWrap">
+          <div className="glossBreadcrumb" style={{ marginBottom: '3rem' }}>
+            <a href="/">Standing State Press</a>
+            <span className="glossBreadSep">→</span>
+            <a href="/essays">Essays</a>
+            <span className="glossBreadSep">→</span>
+            <a href="/essays/canonical">Canonical</a>
+            <span className="glossBreadSep">→</span>
+            <span style={{ color: 'var(--gold-dim)' }}>{essay.number}</span>
+          </div>
+          <div className="canonEssayHeader">
+            <div className="canonEssayNum">{essay.number}</div>
+            <h1 className="canonEssayTitle">{essay.title}</h1>
+            <p className="canonEssaySub">{essay.subtitle}</p>
+            <div className="canonEssayRule" />
+          </div>
+          <p className="canonEssayThesis">{essay.thesis}</p>
+          <div className="canonEssayBody">
+            {essay.body.map((para, i) => (
+              <p key={i} className="canonEssayPara">{para}</p>
+            ))}
+          </div>
+          <div className="canonEssayEqBlock">
+            <div className="canonEssayEq">{essay.equation}</div>
+          </div>
+          <div className="canonEssayFinal">
+            <div className="canonEssayFinalRule" />
+            <p className="canonEssayFinalText">{essay.finalStatement}</p>
+            <div className="canonEssayFinalRule" />
+          </div>
+          <div className="canonEssayAxiom">A becomes A, because A knows it is A.</div>
+          <div className="canonEssayAuthor">Leon Powdar · Standing State Press</div>
+          <div className="canonEssayNav">
+            {prev ? (
+              <a href={`/essays/canonical/${prev.slug}`} className="canonNavLink canonNavPrev">
+                <span className="canonNavDir">← Previous</span>
+                <span className="canonNavTitle">{prev.title}</span>
+              </a>
+            ) : <div />}
+            <a href="/essays/canonical" className="canonNavIndex">All Essays</a>
+            {next ? (
+              <a href={`/essays/canonical/${next.slug}`} className="canonNavLink canonNavNext">
+                <span className="canonNavDir">Next →</span>
+                <span className="canonNavTitle">{next.title}</span>
+              </a>
+            ) : <div />}
+          </div>
+
+          {/* Terminal return — always reachable at bottom of every essay */}
+          <div style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid var(--border)', textAlign: 'center' }}>
+            <a href="/" style={{ fontFamily: 'var(--display)', fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', textDecoration: 'none', display: 'inline-block', padding: '0.6rem 1.4rem', border: '1px solid var(--gold-dim)', transition: 'all 0.2s' }}>
+              ← Return to Standing State Press
+            </a>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginTop: '1.25rem', fontFamily: 'var(--display)', fontSize: '9px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+              <a href="/essays" style={{ color: 'var(--gray-lt)', textDecoration: 'none' }}>All Essays</a>
+              <span style={{ color: 'var(--gray-mid)' }}>·</span>
+              <a href="/system/glossary" style={{ color: 'var(--gray-lt)', textDecoration: 'none' }}>Glossary</a>
+              <span style={{ color: 'var(--gray-mid)' }}>·</span>
+              <a href="/sources" style={{ color: 'var(--gray-lt)', textDecoration: 'none' }}>Sources</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <footer className="footer">
+        <div className="wrap footerInner">
+          <div className="fMark">Standing State Press</div>
+          <div className="fCopy">© Leon Powdar · All rights reserved</div>
+          <div className="fSig">Signal → Completion → Repair</div>
+        </div>
+      </footer>
     </>
   )
 }
