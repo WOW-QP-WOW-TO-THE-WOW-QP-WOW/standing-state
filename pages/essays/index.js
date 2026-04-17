@@ -485,6 +485,28 @@ const ESSAYS = [
     note: 'Social-register keystone: x ⇏ I*. Validation-Value Collapse; Rented Approval; Applause-Silence Test; Control Mechanism (diminish → install ideal → guilt → obedience). External validation can obscure or displace stable access to I* but does not annihilate invariant identity',
     mirrorUrl: '/essays/medium/genuine-self-worth',
   },
+  {
+    id: 'M030',
+    title: 'Neville Goddard and the Romantic Law of Yahweh: The Fourfold Science of I Am',
+    mediumUrl: 'https://medium.com/@leonsp3/neville-goddard-and-the-romantic-law-of-yahweh-the-fourfold-science-of-i-am-6b4530d940b6',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-SPIRIT',
+    flag: 'M',
+    note: 'Structural correspondence between the Tetragrammaton fourfold (Yod-Hey-Vav-Hey) and the Standing State four-plane architecture. Mapping is correspondent, not formally identical. Lineage doctrine (Goddard) quoted as reference; interpretation layer (I→Q→ℐ→π→x) preserved throughout. Theological claims held as interpretive, not formal',
+    mirrorUrl: '/essays/medium/neville-goddard-fourfold-science',
+  },
+  {
+    id: 'M031',
+    title: 'A Structural Model for AI Integrity Under Stress',
+    mediumUrl: 'https://medium.com/@leonsp3/a-structural-model-for-ai-integrity-under-stress-ba4035cdae8a',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Governance-register keystone. Stability inequality D₀+‖Δω‖ < Constraint Strength; Valley/Ridge/Void admissibility landscape; Geometric Decay as true Black Swan; Intrinsic Risk Sensing ρ(x)=‖∇B(x)‖_g; Cohesion≠Integrity; Telemetry silence=boundary breach. Distinguishes designed-system identity I_d from invariant identity I* — I_d integrity fails under repeated violation; I* remains invariant',
+    mirrorUrl: '/essays/medium/ai-integrity-under-stress',
+  },
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
