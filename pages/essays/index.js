@@ -507,6 +507,17 @@ const ESSAYS = [
     note: 'Governance-register keystone. Stability inequality D₀+‖Δω‖ < Constraint Strength; Valley/Ridge/Void admissibility landscape; Geometric Decay as true Black Swan; Intrinsic Risk Sensing ρ(x)=‖∇B(x)‖_g; Cohesion≠Integrity; Telemetry silence=boundary breach. Distinguishes designed-system identity I_d from invariant identity I* — I_d integrity fails under repeated violation; I* remains invariant',
     mirrorUrl: '/essays/medium/ai-integrity-under-stress',
   },
+  {
+    id: 'M032',
+    title: 'The Principle of Mana: Restoring Health Through Conscious Alignment',
+    mediumUrl: 'https://medium.com/@leonsp3/the-principle-of-mana-restoring-health-through-conscious-alignment-305699eb6c3c',
+    axis1: 'PLT-I',
+    axis2: 'VOL-BSH1',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Practice-layer companion (early corpus). The four daily-practice domains: Thoughts · Food · Breath · Behavior mapped to the four planes. Volitional Consciousness as the Protection→Healing mode switch. Drop Principle: minimal admissible state triggers cascade toward x*. Faith as recognition, not generation. Early-corpus vocabulary (Mana, vibration) held under register lock as phenomenological, not causal',
+    mirrorUrl: '/essays/medium/principle-of-mana',
+  },
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
