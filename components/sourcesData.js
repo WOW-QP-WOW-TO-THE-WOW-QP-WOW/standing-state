@@ -161,6 +161,68 @@ export const SOURCES = [
       }
     ]
   },
+  {
+    id: 'B004',
+    slug: 'biological-sabbath-vol-2',
+    title: 'The Biological Sabbath of Being Healthier — Volume II: Entering the Completion State of the Human Body',
+    shortTitle: 'The Biological Sabbath — Volume II',
+    sourceType: 'Book',
+    author: 'Leon Powdar',
+    series: 'The Biological Sabbath, Volume II (Practice Edition)',
+    axis1: 'PLT-IIB',
+    axis2: 'VOL-BSH2',
+    axis3: 'REG-BIO',
+    flag: 'M',
+    note: 'Primary source. Completion-governed biological control-system. Unified canonical register — no wellness narrative. Governing equation Φ(x) = σ(x)(1 − B(t)) − K_auto. Three variables determine convergence: total load, boundary integrity, repair capacity. Scab and Bucket conditions integrated as interpretive-layer operational translations, not metaphors',
+    summary: 'The execution-layer book of the corpus. Volume II delivers the biological control-system formally — no wellness narrative, no motivational framing. The system is governed by three variables: total load σ(x), boundary integrity B(t), and repair capacity K_auto. Health is not built or accumulated; it is revealed when cycles complete. The Scab Condition and Bucket Condition are integrated as operational translations of the same governing equation — interruption prevents Φ(x) convergence, weak boundaries prevent retention. Pairs with Volume I (law/identity register) to constitute the full corpus foundation.',
+    sourceUrl: '',
+    mirrorUrl: '/sources/biological-sabbath-vol-2',
+    equation: 'Φ(x) = σ(x)(1 − B(t)) − K_auto',
+    finalStatement: 'The body is not regulated by supply. It is regulated by resolution. Health appears when cycles complete.',
+    crossRefs: ['B001', 'B002', 'B003', 'M027', 'M031', 'M032', 'C001', 'C007'],
+    sections: [
+      {
+        label: 'Register Declaration',
+        title: 'No Wellness Narrative',
+        body: 'B004 opens with an explicit register declaration: this is a biological model, not a diet plan, not a motivational system. The framing is completion-governed and control-system based from the first page. This is the Rank-0 register discipline applied at the source level — the same discipline that later essays (M028–M033) apply retrospectively through audit. B004 establishes it structurally from the beginning.'
+      },
+      {
+        label: 'Governing Equation',
+        title: 'Three Variables, Binary Outcome',
+        rows: [
+          { source: 'σ(x) — Total Load',          target: 'Σ (master load variable)',  note: 'Sum of mental, physical, and chemical stress running continuously. The input-side pressure on the system.' },
+          { source: 'B(t) — Boundary Integrity',  target: 'B(t) (selective permeability)', note: 'Range [0,1]. Multiplicative amplifier: weak boundaries do not add load — they scale it.' },
+          { source: 'K_auto — Repair Capacity',   target: 'Kₐᵤₜₒ (autophagic correction)', note: 'The only subtractive term. Active when Σ ↓ and B(t) holds. Suppressed by continuous intake.' },
+          { source: 'Φ(x) — Completion State',    target: 'Φ(x) (deviation from coherence)', note: 'Convergence condition: Φ(x) → K_auto under σ(x) ↓. Failure: σ(x) ↑ and Φ(x) persists unresolved.' },
+        ]
+      },
+      {
+        label: 'Chapter Architecture',
+        title: 'The Unified Canonical Structure',
+        body: 'Preface — The Correction · Chapter 1: The False Structure · Chapter 2: The Two States · Chapter 3: The Interruption Error (with Scab and Bucket integrated) · Chapter 4: The Intimate Fast · Chapter 5: The Moment of Entry · Chapter 6: The Moment of Exit · Chapter 7: The Temporal Principle · Chapter 8: The Completion Condition · Chapter 9: The Return · Final Chapter: The Standing State. Plate Appendix with eight canonical diagrams. All chapters operate in one register. No drift.'
+      },
+      {
+        label: 'Chapter 3 Integration',
+        title: 'Scab + Bucket as Operational Translations',
+        body: 'The Scab Condition and Bucket Condition are integrated into Chapter 3 (The Interruption Error) as interpretive-layer operational translations of the governing equation. They are not metaphors and not replacements for the formal system. Scab = interruption of Φ(x) convergence (initiation → partial repair → interruption → restart). Bucket = failure of B(t) containment (input present, retention absent). Together they describe the same failure: incomplete cycles and persistent load. The correction is not more input — it is removing interruption, preserving boundaries, and allowing completion.'
+      },
+      {
+        label: 'The Central Claim',
+        title: 'Completion, Not Accumulation',
+        body: 'Health is not created through accumulation. Health appears when the system is allowed to complete its cycles. The body is not regulated by supply — it is regulated by resolution. This inverts the dominant nutritional and medical framing, which treats constant input as the source of stability. B004 establishes that the opposite is true: continuous intake prevents completion; completion is the condition under which repair becomes possible.'
+      },
+      {
+        label: 'The Return',
+        title: 'Chapter 9 — The Body Already Knows',
+        body: 'Health is not built. It is revealed. The body already knows how to regulate, how to repair, how to return. It requires reduced load, preserved boundaries, and completed cycles. This is the biological-register expression of Canonical Essay I (The Standing State): the system returns when interference is removed. B004 operationalizes this claim with the governing equation as the mechanism of return.'
+      },
+      {
+        label: 'Structural Pairing',
+        title: 'Volume I ↔ Volume II',
+        body: 'Volume II (B004) is the execution companion to Volume I (the law/identity book, to be registered as B005 when available). The pairing: Volume I delivers identity, law, and invariance (mathematical/philosophical register); Volume II delivers execution, body, and completion (biological/operational register). Together they constitute the complete corpus foundation. B002 served as the vitality-register introduction; B004 is the formal execution book that B002 pointed toward.'
+      }
+    ]
+  },
 ]
 
 export const SOURCE_TYPES = [
