@@ -43,7 +43,7 @@ const CORPUS = [
     title: 'The Biological Sabbath of Being Healthier',
     subtitle: 'Entering the Completion State of the Human Body — Volume II',
     desc: 'The practice edition. Completion-governed. No wellness narrative. A control-system model in which total load, boundary integrity, and autophagic correction determine whether the system converges or remains incomplete.',
-    href: null, // in production
+    href: 'https://a.co/d/027yPDUS',
   },
 ]
 
