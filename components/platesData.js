@@ -149,12 +149,32 @@ export const PLATES = [
       { label: 'x*', anchor: 'xstar' },
     ],
   },
+
+  {
+    id: 'plate-ix',
+    number: 'Plate IX',
+    title: 'The Standing State — Unified System',
+    slug: 'plate-ix',
+    image: '/plates/plate-ix.jpg',
+    summary: 'Identity remains invariant. Expression drifts under load. The system returns as interference is removed.',
+    governingCondition: 'Φ(x; I*) ≤ 0 ⇒ x → I*',
+    description: 'The unified coherence architecture across domains. Identity remains fixed as the invariant reference. Expression drifts under load. Deviation is measurable, admissibility is governed by Φ(x; I*), and return occurs through subtractive correction rather than identity modification. A becomes A, because A knows it is A.',
+    volume: 'Cross-Volume',
+    chapter: 'Canonical Plate — Unified System',
+    linkedVars: ['phi', 'sigma', 'kauto', 'xstar'],
+    linkedGlossary: [
+      { label: 'Φ(x)', anchor: 'phi' },
+      { label: 'Σ', anchor: 'sigma' },
+      { label: 'K_auto', anchor: 'kauto' },
+      { label: 'x*', anchor: 'xstar' },
+    ],
+  },
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Eight plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 8,
+  description: 'Nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 9,
   volume: 'Volume II — The Biological Sabbath of Being Healthier',
 }
