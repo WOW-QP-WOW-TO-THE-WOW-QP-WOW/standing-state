@@ -1,0 +1,28 @@
+.bookCover {
+  width: 260px;
+  margin: 0 auto 32px;
+  display: block;
+}
+
+.ctaRow {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.ctaPrimary {
+  background: #c4a44a;
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.ctaSecondary {
+  border: 1px solid #c4a44a;
+  padding: 12px 22px;
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+}
