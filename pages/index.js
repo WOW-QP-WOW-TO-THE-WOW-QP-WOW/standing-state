@@ -216,11 +216,13 @@ export default function Home() {
             <div className="eqField">
               <div className="eqCausal">
                 <div className="efRow">
-                  <span className="efVar"><KTex math="\\Sigma" /></span>
+                  <span className="efVar">Σ</span>
                   <span className="efArr">→</span>
-                  <span className="efVar"><KTex math="\\Phi(x)" /></span>
+                  <span className="efVar">Φ(x)</span>
                   <span className="efArr">→</span>
-                  <span className="efVar"><KTex math="K_{\\text{auto}}" /></span>
+                  <span className="efVar">
+                    K<sub style={{ fontSize: '0.75em' }}>auto</sub>
+                  </span>
                 </div>
                 <div className="efStack">
                   <span className="efTick">↑</span>
