@@ -169,12 +169,30 @@ export const PLATES = [
       { label: 'x*', anchor: 'xstar' },
     ],
   },
+
+  {
+    id: 'plate-x',
+    number: 'Plate X',
+    title: 'The Admissibility Gate',
+    slug: 'plate-x',
+    image: '/plates/plate-x.png',
+    summary: 'Definition without evaluation is inert. Admissibility must be checked at the execution boundary or the boundary remains symbolic.',
+    governingCondition: 'x ∈ S ⇒ execute · x ∉ S ⇒ block',
+    description: 'The boundary-law plate. Identity defines the admissible set, but definition alone does not enforce anything. A system must evaluate present state membership before action. No evaluation means no enforcement. The gate is where structure becomes real: identity defines, admissibility filters, execution manifests.',
+    volume: 'Cross-Volume',
+    chapter: 'Canonical Plate — The Execution Boundary',
+    linkedVars: ['phi', 'xstar'],
+    linkedGlossary: [
+      { label: 'Φ(x)', anchor: 'phi' },
+      { label: 'x*', anchor: 'xstar' },
+    ],
+  },
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 9,
+  description: 'Ten plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 10,
   volume: 'Volume II — The Biological Sabbath of Being Healthier',
 }

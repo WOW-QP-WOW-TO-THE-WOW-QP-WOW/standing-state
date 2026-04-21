@@ -246,4 +246,29 @@ export const CANONICAL_ESSAYS = [
     ],
     finalStatement: 'Φ(x) → 0',
   },
+
+  {
+    id: 'c011',
+    slug: 'the-admissibility-gate',
+    number: 'Essay XI',
+    title: 'The Admissibility Gate',
+    subtitle: 'A boundary law of execution.',
+    axis1: 'PLT-ADMIT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-STRUCT',
+    equation: 'Defined(S) ∧ ¬Evaluated(x ∈ S) ⇒ No Enforcement',
+    thesis: 'Identity defines. Admissibility filters. Execution manifests. A boundary that is not evaluated at the moment of action has no operative force.',
+    body: [
+      {
+        paragraph: 'A system may define admissible space perfectly and still fail operationally if it does not determine whether the current state lies inside that space before acting. Constraint definition and state membership are not the same operation. The first belongs to design. The second belongs to the boundary.'
+      },
+      {
+        paragraph: 'This law holds across domains. In AI governance, a policy that is not enforced before execution is symbolic. In cognition, a value that is not checked before action is aspiration. In institutions, a rule that is not verified at the point of use is theater. No evaluation means no enforcement.'
+      },
+      {
+        paragraph: 'The admissibility gate does not replace engineering. It is where engineering becomes real. Identity defines the set S. Evaluation determines whether xₜ ∈ S. Execution is granted or refused from that determination. A boundary not checked does not exist operationally.'
+      }
+    ],
+    finalStatement: 'x ∈ S ⇒ execute · x ∉ S ⇒ block',
+  },
 ]
