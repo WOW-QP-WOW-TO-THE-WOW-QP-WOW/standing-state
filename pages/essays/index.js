@@ -16,6 +16,7 @@ const PLATES = [
   { code: 'PLT-COORD',   label: 'Identity as Coordinate' },
   { code: 'PLT-PAIN',    label: 'Pain as Decoherence Signal' },
   { code: 'PLT-CONSENT', label: 'The Consent Engine' },
+  { code: 'PLT-ADMIT',   label: 'The Admissibility Gate' },
   { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
   { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
   { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
@@ -42,6 +43,7 @@ const REGISTERS = [
   { code: 'REG-PHIL',   label: 'Philosophical' },
   { code: 'REG-SPIRIT', label: 'Spiritual' },
   { code: 'REG-MIXED',  label: 'Mixed' },
+  { code: 'REG-STRUCT', label: 'Structural' },
 ]
 
 const FLAGS = {
@@ -306,6 +308,18 @@ const ESSAYS = [
     flag: 'M',
     note: 'Practice-layer · cognitive register · early-corpus mapping of twelve mind-faculties as disciplined qualities under identity. Prefigures I* doctrine through the "hearing quality" (I AM consciousness as governing reference) and the "doubter/denier" (filtration against signals not aligned with identity). Twelve-enumeration structure resonates with M021 NSRL-12. Lineage framings (Neville Goddard · twelve-disciples · New Thought mind-training) preserved in original voice under register lock — interpretive and lineage-doctrine content NOT retrofitted into Rank-0 vocabulary. Original Coach Leon Powdar signature block preserved as authorial artifact',
     mirrorUrl: '/essays/medium/twelve-mind-qualities',
+  },
+
+  {
+    id: '011',
+    title: 'The Admissibility Gate',
+    mediumUrl: '',
+    axis1: 'PLT-ADMIT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-STRUCT',
+    flag: 'M',
+    note: 'Identity defines. Admissibility filters. Execution manifests. Defined constraints without evaluated membership have no operative force.',
+    mirrorUrl: '/essays/canonical/the-admissibility-gate',
   },
 ]
 
