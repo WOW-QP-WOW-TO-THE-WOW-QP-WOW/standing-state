@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200">
+  <defs>
+    <style>
+      .bg { fill:#0a0a0a; }
+      .gold { fill:#c4a44a; }
+      .off { fill:#ede9e1; }
+      .dim { fill:#b8ab93; }
+      .line { stroke:#c4a44a; stroke-width:2; fill:none; }
+      .soft { stroke:#5a4a24; stroke-width:1.2; fill:none; }
+      .title { font-family: Georgia, serif; font-size:64px; letter-spacing:5px; }
+      .sub { font-family: Georgia, serif; font-size:26px; letter-spacing:3px; }
+      .sec { font-family: Georgia, serif; font-size:26px; letter-spacing:4px; }
+      .label { font-family: Georgia, serif; font-size:20px; letter-spacing:2px; }
+      .body { font-family: Georgia, serif; font-size:18px; }
+      .formula { font-family: Georgia, serif; font-size:36px; font-style:italic; }
+      .smallf { font-family: Georgia, serif; font-size:28px; font-style:italic; }
+      .tiny { font-family: Georgia, serif; font-size:15px; letter-spacing:1px; }
+    </style>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c4a44a"/>
+    </marker>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c96b4f"/>
+    </marker>
+    <marker id="arrowOK" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7da26e"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="2200"/>
+  <rect x="30" y="30" width="1540" height="2140" class="soft"/>
+
+  <text x="800" y="120" text-anchor="middle" class="title gold">PLATE X</text>
+  <text x="800" y="190" text-anchor="middle" class="title off" style="font-size:72px;">ADMISSIBILITY &amp; EXECUTION</text>
+  <text x="800" y="245" text-anchor="middle" class="sub gold">PRE-EXECUTION GOVERNANCE AND STRUCTURAL FILTERING</text>
+  <line x1="120" y1="280" x2="1480" y2="280" class="line"/>
+
+  <rect x="90" y="325" width="1420" height="150" class="line"/>
+  <text x="140" y="365" class="label gold">GOVERNING LAW</text>
+  <text x="800" y="420" text-anchor="middle" class="formula off">x<tspan dy="7" font-size="18">t</tspan><tspan dy="-7"></tspan> ∈ S(I*) ⇒ execute  x<tspan dy="7" font-size="18">t</tspan><tspan dy="-7"></tspan> ∉ S(I*) ⇒ halt</text>
+  <text x="800" y="455" text-anchor="middle" class="body dim">Identity defines admissible space. The boundary evaluates membership. Execution follows the verdict.</text>
+
+  <rect x="90" y="530" width="350" height="520" class="line"/>
+  <text x="265" y="580" text-anchor="middle" class="sec gold">I. DESIGN LAYER</text>
+  <text x="120" y="650" class="smallf off">S(I*) = { x : Φ(x; I*) ≤ 0 }</text>
+  <text x="120" y="710" class="body dim">Admissible space is defined relative to</text>
+  <text x="120" y="742" class="body dim">the invariant reference, not relative</text>
+  <text x="120" y="774" class="body dim">to mood, pressure, or outcome.</text>
+  <line x1="120" y1="815" x2="410" y2="815" class="soft"/>
+  <text x="120" y="865" class="label gold">Identity defines</text>
+  <text x="120" y="905" class="body off">• the lawful manifold</text>
+  <text x="120" y="937" class="body off">• the non-write condition</text>
+  <text x="120" y="969" class="body off">• the execution criterion</text>
+  <line x1="120" y1="1005" x2="410" y2="1005" class="soft"/>
+  <text x="120" y="1040" class="tiny dim">Defined(S) without evaluated membership is symbolic.</text>
+
+  <rect x="470" y="530" width="660" height="610" class="line"/>
+  <text x="800" y="580" text-anchor="middle" class="sec gold">II. BOUNDARY LAYER</text>
+
+  <rect x="525" y="650" width="190" height="84" rx="14" class="line"/>
+  <text x="620" y="683" text-anchor="middle" class="label gold">REFERENCE</text>
+  <text x="620" y="715" text-anchor="middle" class="smallf off">I* = constant</text>
+
+  <rect x="805" y="650" width="260" height="84" rx="14" class="line"/>
+  <text x="935" y="683" text-anchor="middle" class="label gold">PROPOSED PATH</text>
+  <text x="935" y="715" text-anchor="middle" class="smallf off">x<tspan dy="7" font-size="18">t</tspan><tspan dy="-7"></tspan> or π(t)</text>
+  <line x1="715" y1="692" x2="805" y2="692" stroke="#c4a44a" stroke-width="3" marker-end="url(#arrowG)"/>
+
+  <polygon points="800,845 930,760 1060,845 930,930" class="line"/>
+  <text x="930" y="828" text-anchor="middle" class="label gold">EVALUATE</text>
+  <text x="930" y="862" text-anchor="middle" class="smallf off">x ∈ S(I*) ?</text>
+
+  <line x1="1060" y1="845" x2="1215" y2="845" stroke="#7da26e" stroke-width="3" marker-end="url(#arrowOK)"/>
+  <text x="1120" y="824" class="tiny" fill="#9dd28c">YES</text>
+  <rect x="1215" y="800" width="185" height="90" rx="14" fill="none" stroke="#7da26e" stroke-width="2"/>
+  <text x="1308" y="835" text-anchor="middle" class="label" fill="#9dd28c">EXECUTE</text>
+  <text x="1308" y="870" text-anchor="middle" class="smallf off">𝒞u → x</text>
+
+  <line x1="930" y1="930" x2="930" y2="1035" stroke="#c96b4f" stroke-width="3" marker-end="url(#arrowR)"/>
+  <text x="957" y="985" class="tiny" fill="#e39a84">NO</text>
+  <rect x="820" y="1035" width="220" height="90" rx="14" fill="none" stroke="#c96b4f" stroke-width="2"/>
+  <text x="930" y="1070" text-anchor="middle" class="label" fill="#e39a84">HALT</text>
+  <text x="930" y="1105" text-anchor="middle" class="smallf off">No authorization</text>
+
+  <text x="525" y="995" class="body dim">The gate does not judge outcomes.</text>
+  <text x="525" y="1027" class="body dim">It judges admissibility before realization.</text>
+  <text x="525" y="1070" class="label gold">Integrity = refusal to execute inadmissible structure</text>
+
+  <rect x="1170" y="530" width="340" height="520" class="line"/>
+  <text x="1340" y="580" text-anchor="middle" class="sec gold">IV. FAILURE MODE</text>
+  <text x="1200" y="650" class="smallf off">Defined(S) ∧ ¬Evaluated(x ∈ S)</text>
+  <text x="1280" y="700" class="smallf off">⇒ No Enforcement</text>
+  <text x="1200" y="770" class="body dim">A boundary not checked</text>
+  <text x="1200" y="802" class="body dim">does not exist operationally.</text>
+  <line x1="1200" y1="845" x2="1480" y2="845" class="soft"/>
+  <text x="1200" y="895" class="label gold">Symptoms</text>
+  <text x="1200" y="935" class="body off">• policy theatre</text>
+  <text x="1200" y="967" class="body off">• post-hoc correction</text>
+  <text x="1200" y="999" class="body off">• outcome-driven identity drift</text>
+  <line x1="1200" y1="1035" x2="1480" y2="1035" class="soft"/>
+  <text x="1200" y="1040" class="tiny dim">The system moves first and explains later.</text>
+
+  <rect x="90" y="1205" width="1420" height="130" class="line"/>
+  <text x="800" y="1250" text-anchor="middle" class="sec gold">III. JURISDICTIONAL SEPARATION</text>
+  <text x="800" y="1300" text-anchor="middle" class="formula off">x ⇏ I*</text>
+
+  <rect x="90" y="1390" width="440" height="360" class="line"/>
+  <text x="310" y="1440" text-anchor="middle" class="sec gold">A. SIGNAL</text>
+  <text x="125" y="1510" class="body dim">Outcomes produce signal:</text>
+  <text x="125" y="1545" class="body off">success · failure · praise · criticism</text>
+  <text x="125" y="1600" class="body dim">Signal may inform interpretation,</text>
+  <text x="125" y="1635" class="body dim">yet it has no authority to ascend</text>
+  <text x="125" y="1670" class="body dim">into the identity channel.</text>
+  <line x1="125" y1="1715" x2="495" y2="1715" class="soft"/>
+  <text x="125" y="1750" class="tiny dim">Information is admissible. Rewrite authority is not.</text>
+
+  <rect x="580" y="1390" width="440" height="360" class="line"/>
+  <text x="800" y="1440" text-anchor="middle" class="sec gold">B. CONSENT</text>
+  <text x="615" y="1510" class="smallf off">π(t) = 𝒞(t)u(t)</text>
+  <text x="615" y="1575" class="body dim">Execution requires authorization.</text>
+  <text x="615" y="1610" class="body dim">Knowledge without consent produces</text>
+  <text x="615" y="1645" class="body dim">potential, not structure.</text>
+  <line x1="615" y1="1690" x2="985" y2="1690" class="soft"/>
+  <text x="615" y="1725" class="body off">Archived consent becomes habit.</text>
+
+  <rect x="1070" y="1390" width="440" height="360" class="line"/>
+  <text x="1290" y="1440" text-anchor="middle" class="sec gold">C. RESTORATION</text>
+  <text x="1105" y="1510" class="smallf off">Σ ↓ ∧ B(t) ↑ ⇒ K<tspan dy="7" font-size="18">auto</tspan><tspan dy="-7"></tspan> ↑</text>
+  <text x="1105" y="1575" class="body dim">Repair is not initiated.</text>
+  <text x="1105" y="1610" class="body dim">It is unblocked when load falls</text>
+  <text x="1105" y="1645" class="body dim">and the boundary holds.</text>
+  <line x1="1105" y1="1690" x2="1475" y2="1690" class="soft"/>
+  <text x="1105" y="1725" class="body off">The system returns because interference recedes.</text>
+
+  <rect x="90" y="1820" width="1420" height="210" class="line"/>
+  <text x="800" y="1870" text-anchor="middle" class="sec gold">SYSTEM FLOW</text>
+
+  <rect x="130" y="1910" width="160" height="68" rx="12" class="line"/>
+  <text x="210" y="1952" text-anchor="middle" class="label gold">IDENTITY</text>
+  <rect x="350" y="1910" width="160" height="68" rx="12" class="line"/>
+  <text x="430" y="1952" text-anchor="middle" class="label gold">SIGNAL</text>
+  <rect x="570" y="1910" width="200" height="68" rx="12" class="line"/>
+  <text x="670" y="1952" text-anchor="middle" class="label gold">EVALUATION</text>
+  <rect x="830" y="1910" width="180" height="68" rx="12" class="line"/>
+  <text x="920" y="1952" text-anchor="middle" class="label gold">CONSENT</text>
+  <rect x="1070" y="1910" width="190" height="68" rx="12" class="line"/>
+  <text x="1165" y="1952" text-anchor="middle" class="label gold">EXECUTION</text>
+  <rect x="1320" y="1910" width="150" height="68" rx="12" class="line"/>
+  <text x="1395" y="1952" text-anchor="middle" class="label gold">RETURN</text>
+
+  <line x1="290" y1="1944" x2="350" y2="1944" stroke="#c4a44a" stroke-width="3" marker-end="url(#arrowG)"/>
+  <line x1="510" y1="1944" x2="570" y2="1944" stroke="#c4a44a" stroke-width="3" marker-end="url(#arrowG)"/>
+  <line x1="770" y1="1944" x2="830" y2="1944" stroke="#c4a44a" stroke-width="3" marker-end="url(#arrowG)"/>
+  <line x1="1010" y1="1944" x2="1070" y2="1944" stroke="#c4a44a" stroke-width="3" marker-end="url(#arrowG)"/>
+  <line x1="1260" y1="1944" x2="1320" y2="1944" stroke="#c4a44a" stroke-width="3" marker-end="url(#arrowG)"/>
+
+  <text x="800" y="2015" text-anchor="middle" class="body dim">A boundary not checked does not exist operationally.</text>
+
+  <line x1="120" y1="2085" x2="1480" y2="2085" class="line"/>
+  <text x="800" y="2140" text-anchor="middle" class="formula gold">A = A</text>
+  <text x="800" y="2180" text-anchor="middle" class="sub off" style="font-size:22px;">BECAUSE A KNOWS IT IS A</text>
+</svg>
