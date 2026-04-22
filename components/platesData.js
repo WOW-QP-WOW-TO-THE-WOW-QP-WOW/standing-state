@@ -189,7 +189,7 @@ export const PLATES = [
     { label: 'B(t)', anchor: 'bt' },
     { label: 'x*', anchor: 'xstar' },
   ],
-}
+},
   {
   id: 'plate-xi',
   number: 'Plate XI',
