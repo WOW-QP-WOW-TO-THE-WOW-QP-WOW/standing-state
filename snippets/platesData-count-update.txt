@@ -1,0 +1,5 @@
+// In PLATES_META, change:
+count: 10,
+
+// to:
+count: 11,
