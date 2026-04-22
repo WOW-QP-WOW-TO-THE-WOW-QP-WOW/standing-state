@@ -192,7 +192,7 @@ export const PLATES = [
   number: 'Plate XI',
   title: 'The Rank-0 Architecture',
   slug: 'plate-xi',
-  image: '/plates/rank-0-architecture.jpg',
+  image: '/plates/rank-0-architecture.PNG',
   summary: 'The master system: identity invariant, admissibility before execution, and autonomous restoration under one fixed reference.',
   governingCondition: 'I* = constant  ∧  ∂I/∂S = 0  ∧  x ∉ S(I*) ⇒ halt',
   description: 'The terminal structural artifact of the Standing State. Identity is fixed as the invariant reference (I* = constant). State loses write-access to identity (∂I/∂S = 0). All trajectories are evaluated before execution through the admissibility gate: admissible paths execute, inadmissible paths halt. Jurisdiction is sealed (x ⇏ I*), preventing upward leakage from outcome into identity. Restoration is autonomous: Σ ↓ and B(t) ↑ release K_auto without force. Biology, finance, and cognition are not new coordinates; they are expressions under the same invariant reference. A becomes A, because A knows it is A.',
