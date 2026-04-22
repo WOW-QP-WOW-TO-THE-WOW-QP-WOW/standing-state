@@ -364,6 +364,17 @@ const ESSAYS = [
   note: 'Relational mechanics essay. Sovereignty is pre-relational; relationship is output, not source. Defines resentment as friction from outsourced identity.',
   mirrorUrl: '/essays/medium/thesis-the-mechanical-priority-of-being',
 },
+{
+  id: 'M040',
+  title: 'The Standing State: A System Where Identity Does Not Move',
+  mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-a-system-where-identity-does-not-move-0da866389ff7',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'A',
+  note: 'Canonical bridge and Plate XI companion. Linguistic expansion of Rank-0 Architecture: identity invariance, gain collapse, admissibility gating, jurisdictional separation, and autonomous restoration.',
+  mirrorUrl: '/essays/medium/standing-state-identity-does-not-move',
+},
   {
     id: '011',
     title: 'The Admissibility Gate',
