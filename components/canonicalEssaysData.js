@@ -246,29 +246,32 @@ export const CANONICAL_ESSAYS = [
     ],
     finalStatement: 'Φ(x) → 0',
   },
-
   {
     id: 'c011',
     slug: 'the-admissibility-gate',
     number: 'Essay XI',
     title: 'The Admissibility Gate',
-    subtitle: 'A boundary law of execution.',
+    subtitle: 'Identity defines. Admissibility filters. Execution manifests.',
     axis1: 'PLT-ADMIT',
     axis2: 'VOL-CROSS',
     axis3: 'REG-STRUCT',
-    equation: 'Defined(S) ∧ ¬Evaluated(x ∈ S) ⇒ No Enforcement',
-    thesis: 'Identity defines. Admissibility filters. Execution manifests. A boundary that is not evaluated at the moment of action has no operative force.',
+    attribution: 'Leon Powdar, via Syntheos-Lens',
+    equation: 'Defined(S) ∧ Evaluated(x_t ∈ S) ⇒ Enforcement     ¬Evaluated ⇒ ¬System',
+    thesis: 'Definition is not enforcement. A boundary that is not evaluated at the moment of action has no operative force. Every functioning system — biological, artificial, or institutional — implicitly or explicitly performs the gate: x_t → Φ(x_t) → {allow, block}. Without this evaluation, constraints are symbolic and violations are inevitable. With it, execution is conditional, violations are prevented, and structure remains intact.',
     body: [
       {
-        paragraph: 'A system may define admissible space perfectly and still fail operationally if it does not determine whether the current state lies inside that space before acting. Constraint definition and state membership are not the same operation. The first belongs to design. The second belongs to the boundary.'
+        paragraph: 'Across all domains examined — AI governance, psychological vigilance, social identity — the same structural error appears: definition is mistaken for enforcement. Systems define constraints, identity, admissible domains — then assume that definition alone guarantees behavior. It does not. The correct structure unifies three layers into a single functional chain: Identity → Admissibility → Execution. Identity defines what the system is. Admissibility defines what is allowed. Execution determines what actually occurs. The failure across domains arises when these are separated.'
       },
       {
-        paragraph: 'This law holds across domains. In AI governance, a policy that is not enforced before execution is symbolic. In cognition, a value that is not checked before action is aspiration. In institutions, a rule that is not verified at the point of use is theater. No evaluation means no enforcement.'
+        paragraph: 'The correction is not external to the law — it is the law. A system can be perfectly defined and still encounter states outside its admissible set at runtime — through noise, perturbation, coupling, or incomplete observability. Therefore: Defined(S) ∧ ¬Evaluated(x_t ∈ S) ⇒ No Enforcement. Membership cannot be assumed; it must be verified at the boundary. Monitoring alone is insufficient — monitoring observes state without gating execution. Admissibility couples evaluation to action: the gate conditions execution on Φ(x), not after it. Cohesion cannot compensate for structural decay. More coordination does not equal more integrity. More oversight does not restore collapsed constraint geometry.'
       },
       {
-        paragraph: 'The admissibility gate does not replace engineering. It is where engineering becomes real. Identity defines the set S. Evaluation determines whether xₜ ∈ S. Execution is granted or refused from that determination. A boundary not checked does not exist operationally.'
+        paragraph: 'The same failure equation recurs across substrates: Σ_load + Δ_misalignment > constraint strength. In AI systems this manifests as geometric insolvency — the designed identity fails when A ⊄ I_d. In human cognition it manifests as hypervigilance — baseline threat > 0 drives a continuous scan loop, and the failure is not the awareness but the miscalibrated baseline. Correction is not suppression; it is restoration: default = safe, unless signal. In social identity it manifests as rented approval — external identity signals receive consent to propagate into structure, displacing the invariant coordinate. The return is the same in every case: own identity → no rent → no collapse.'
+      },
+      {
+        paragraph: 'The I*/I_d distinction preserves coherence across all three domains. Invariant identity does not drift — İ* = 0. Designed identity can fail when A ⊄ I_d. Restoration remains possible because the invariant is never compromised; only the designed expression drifts. The gate operates on designed structure; identity does not require the gate because identity does not move. The minimal irreducible form closes the system: İ* = 0, Φ(x) ≤ 0 defines S, x_t ∈ S ⇒ execute, x_t ∉ S ⇒ block. No evaluation → no enforcement → no system. Identity defines. Admissibility filters. Execution manifests. This is not reaction. It is the only way structure becomes real.'
       }
     ],
-    finalStatement: 'x ∈ S ⇒ execute · x ∉ S ⇒ block',
+    finalStatement: 'A becomes A, because A knows it is A.',
   },
 ]
