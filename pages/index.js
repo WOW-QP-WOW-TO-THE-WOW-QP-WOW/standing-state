@@ -113,15 +113,15 @@ export default function Home() {
           <a className="navMark" href="/">Standing State Press</a>
           <ul className="navLinks">
             <li><a href="#system">System</a></li>
-            <li><a href="#corpus">Corpus</a></li>
             <li><a href="/system/glossary">Glossary</a></li>
             <li><a href="/system/plates">Plates</a></li>
             <li><a href="/system/gates">Gates</a></li>
+            <li><a href="/system/doctrine">Doctrine</a></li>
             <li><a href="#registers">Registers</a></li>
             <li><a href="/essays">Essays</a></li>
-            <li><a href="/system/doctrine">Doctrine</a></li>
-            <li><a href="/sources">Sources</a></li><li><a href="#about">Author</a></li>
-          
+            <li><a href="/sources">Sources</a></li>
+            <li><a href="#corpus">Corpus</a></li>
+            <li><a href="#about">Author</a></li>
           </ul>
         </div>
       </nav>
