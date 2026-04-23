@@ -1,127 +1,139 @@
 import Head from 'next/head'
 
-const doctrineItems = [
+const DOCTRINE_ITEMS = [
   {
+    id: 'D001',
     slug: 'ethics-of-invariance',
+    type: 'Execution Doctrine',
     title: 'Ethics of Invariance',
     subtitle: 'Executive Summary · Standing State Architecture Packet',
     note: 'A structural standard for safe autonomous systems: explicit disturbance, invariant safety parameters, forward invariance enforcement, and deterministic halt.',
-    href: '/system/doctrine/ethics-of-invariance'
-  }
+    axis1: 'SYS-GOV',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-EXEC',
+    href: '/system/doctrine/ethics-of-invariance',
+  },
 ]
 
-export default function DoctrineIndex() {
+function DoctrineCard({ item }) {
+  return (
+    <a
+      href={item.href}
+      className="essayCard"
+      style={{ textDecoration: 'none' }}
+      onMouseEnter={e => {
+        e.currentTarget.style.borderColor = 'var(--gold-dim)'
+        e.currentTarget.style.background = 'rgba(196,164,74,0.03)'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.borderColor = 'var(--border)'
+        e.currentTarget.style.background = 'transparent'
+      }}
+    >
+      <div className="essayCardTop">
+        <span className="essayId">{item.id}</span>
+        <span className="essayFlag" style={{ color: '#c4a44a' }}>
+          DOCTRINE
+        </span>
+      </div>
+
+      <div className="essayNote" style={{ fontStyle: 'normal', color: 'var(--gray-mid)' }}>
+        {item.type}
+      </div>
+
+      <div className="essayTitle">{item.title}</div>
+      <div className="essayNote">{item.subtitle}</div>
+      <div className="essayNote" style={{ lineHeight: 1.7 }}>{item.note}</div>
+
+      <div className="essayTags">
+        {[item.axis1, item.axis2, item.axis3].filter(Boolean).map(ax => (
+          <span key={ax} className="essayTag essayTagPlate">{ax}</span>
+        ))}
+      </div>
+
+      <div className="essayLinks">
+        <span className="essayLinkMedium">Open doctrine →</span>
+      </div>
+    </a>
+  )
+}
+
+export default function DoctrineIndexPage() {
   return (
     <>
       <Head>
         <title>System Doctrine — Standing State Press</title>
         <meta
           name="description"
-          content="Engineering standards that enforce the Standing State at execution."
+          content="Execution standards and doctrine pages for the Standing State architecture."
         />
       </Head>
 
-      <main className="doctrinePage">
-        <section className="hero">
+      <nav className="nav">
+        <div className="wrap navInner">
+          <a className="navMark" href="/">Standing State Press</a>
+          <ul className="navLinks">
+            <li><a href="/#system">System</a></li>
+            <li><a href="/system/glossary">Glossary</a></li>
+            <li><a href="/system/plates">Plates</a></li>
+            <li><a href="/system/gates">Gates</a></li>
+            <li><a href="/essays">Essays</a></li>
+            <li><a href="/sources">Sources</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main style={{ paddingTop: '58px' }}>
+        <section className="glossHeader">
           <div className="wrap">
-            <p className="eyebrow">SYSTEM DOCTRINE</p>
-            <h1>Engineering standards that enforce the Standing State at execution.</h1>
-            <p className="lead">
-              Doctrine is the enforcement layer: the place where admissibility, forward invariance,
-              and halt become executable design requirements rather than abstract claims.
+            <div className="glossBreadcrumb">
+              <a href="/">Standing State Press</a>
+              <span className="glossBreadSep">→</span>
+              <span>Doctrine</span>
+            </div>
+
+            <div className="glossEyebrow">Execution Layer · Enforcement Standards</div>
+            <h1 className="glossH1">System Doctrine</h1>
+            <p className="glossIntro">
+              Engineering standards that enforce the Standing State at execution.
+              Doctrine is the enforcement layer: the place where admissibility,
+              forward invariance, and halt become executable design requirements.
             </p>
+
+            <div className="essayStats">
+              <span className="essayStat">{DOCTRINE_ITEMS.length} doctrine page</span>
+              <span className="essayStatDiv">·</span>
+              <span className="essayStat">Execution governance</span>
+              <span className="essayStatDiv">·</span>
+              <span className="essayStat">Standing State enforcement</span>
+            </div>
           </div>
         </section>
 
-        <section className="listSection">
+        <section className="essayGrid">
           <div className="wrap">
-            <div className="grid">
-              {doctrineItems.map((item) => (
-                <a key={item.slug} href={item.href} className="card">
-                  <p className="cardEyebrow">DOCTRINE · EXECUTION</p>
-                  <h2>{item.title}</h2>
-                  <p className="subtitle">{item.subtitle}</p>
-                  <p className="note">{item.note}</p>
-                  <span className="cta">Open doctrine →</span>
-                </a>
+            <div className="canonEssayEqBlock" style={{ marginBottom: '2.4rem' }}>
+              <div className="canonEssayEq">
+                A system is safe not when it behaves correctly,<br />
+                but when incorrect behavior cannot execute.
+              </div>
+            </div>
+
+            <div className="essayCards">
+              {DOCTRINE_ITEMS.map(item => (
+                <DoctrineCard key={item.id} item={item} />
               ))}
             </div>
           </div>
         </section>
 
-        <style jsx>{`
-          .doctrinePage {
-            background: #000;
-            color: #f5f1e8;
-            min-height: 100vh;
-          }
-          .wrap {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-          }
-          .hero {
-            padding: 88px 0 40px;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.22);
-          }
-          .eyebrow,
-          .cardEyebrow {
-            color: #d4af37;
-            letter-spacing: 0.14em;
-            font-size: 0.8rem;
-            margin: 0 0 14px;
-          }
-          h1 {
-            font-size: clamp(2.2rem, 5vw, 4rem);
-            line-height: 1.08;
-            margin: 0 0 18px;
-          }
-          .lead {
-            max-width: 860px;
-            font-size: 1.08rem;
-            line-height: 1.75;
-            color: rgba(245, 241, 232, 0.84);
-          }
-          .listSection {
-            padding: 42px 0 88px;
-          }
-          .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 22px;
-          }
-          .card {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-            border: 1px solid rgba(212, 175, 55, 0.24);
-            background: linear-gradient(180deg, rgba(212,175,55,0.05), rgba(255,255,255,0.01));
-            border-radius: 18px;
-            padding: 26px 22px;
-            transition: transform 0.18s ease, border-color 0.18s ease;
-          }
-          .card:hover {
-            transform: translateY(-2px);
-            border-color: rgba(212, 175, 55, 0.48);
-          }
-          h2 {
-            font-size: 1.45rem;
-            margin: 0 0 8px;
-          }
-          .subtitle {
-            margin: 0 0 12px;
-            color: rgba(245, 241, 232, 0.82);
-            line-height: 1.6;
-          }
-          .note {
-            margin: 0 0 16px;
-            color: rgba(245, 241, 232, 0.72);
-            line-height: 1.7;
-          }
-          .cta {
-            color: #d4af37;
-          }
-        `}</style>
+        <footer className="footer">
+          <div className="wrap footerInner">
+            <div className="fMark">Standing State Press</div>
+            <div className="fCopy">© Leon Powdar · All rights reserved</div>
+            <div className="fSig">Signal → Completion → Repair</div>
+          </div>
+        </footer>
       </main>
     </>
   )
