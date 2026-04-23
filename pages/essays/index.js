@@ -268,17 +268,17 @@ const ESSAYS = [
     note: 'Sovereignty inequality I_self(τ) > I_world(τ); coherence horizon τ₀; basin-of-sovereignty theorem; volatility collapse threshold; A → A iff internal recursion governs future formation — seed for Plate X',
     mirrorUrl: '',
   },
-  {
-    id: 'M010',
-    title: 'The Lord\'s Prayer as a Blueprint for Self-Sovereignty',
-    mediumUrl: 'https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c',
-    axis1: 'PLT-INTERP',
-    axis2: 'VOL-MW',
-    axis3: 'REG-SPIRIT',
-    flag: 'M',
-    note: 'Lord\'s Prayer decoded as identity pipeline: source → recognition → descent → alignment → correction → defense → closure. Updated to current voice.',
-    mirrorUrl: '/essays/medium/lords-prayer-self-sovereignty',
-  },
+ {
+  id: "M010",
+  title: "The Lord’s Prayer as a Blueprint for Self-Sovereignty",
+  mediumUrl: "https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c",
+  mirrorUrl: "/essays/medium/lords-prayer-self-sovereignty",
+  axis1: "PLT-COORD",
+  axis2: "VOL-MW",
+  axis3: "REG-MIXED",
+  flag: "A",
+  note: "Identity pipeline rendering of The Lord’s Prayer"
+},
   {
     id: 'M011',
     title: 'The Multidimensional Human: A Structural Account of Registers, Interpretation, and Volitional Consciousness',
