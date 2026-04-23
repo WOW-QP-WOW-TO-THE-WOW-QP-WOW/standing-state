@@ -206,11 +206,38 @@ export default function DoctrineSlugPage() {
                 <span className="canonNavDir">Back</span>
                 <span className="canonNavTitle">System Doctrine</span>
               </a>
-              <a className="canonNavIndex" href="/system/doctrine">Doctrine Index</a>
-              <a className="canonNavLink canonNavNext" href={item.pdfHref} target="_blank" rel="noreferrer">
+
+              <a className="canonNavIndex" href="/standing-state">
+                Return to Standing State
+              </a>
+
+              <a
+                className="canonNavLink canonNavNext"
+                href={item.pdfHref}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="canonNavDir">Document</span>
                 <span className="canonNavTitle">Open PDF</span>
               </a>
+            </div>
+
+            <div className="platesSystemNav" style={{ paddingTop: '2rem' }}>
+              <div className="platesSystemNavInner">
+                <a className="platesSystemLink" href="/system/doctrine">
+                  <span className="platesSystemLinkLabel">Doctrine Layer</span>
+                  <span className="platesSystemLinkTitle">Back to Doctrine</span>
+                  <span className="platesSystemLinkSub">Return to execution standards.</span>
+                </a>
+
+                <div className="platesSystemDivider" />
+
+                <a className="platesSystemLink" href="/standing-state">
+                  <span className="platesSystemLinkLabel">System Root</span>
+                  <span className="platesSystemLinkTitle">Return to Standing State</span>
+                  <span className="platesSystemLinkSub">Re-enter the central architecture.</span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
