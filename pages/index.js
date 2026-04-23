@@ -113,15 +113,13 @@ export default function Home() {
           <a className="navMark" href="/">Standing State Press</a>
           <ul className="navLinks">
             <li><a href="#system">System</a></li>
+            <li><a href="#corpus">Corpus</a></li>
             <li><a href="/system/glossary">Glossary</a></li>
             <li><a href="/system/plates">Plates</a></li>
             <li><a href="/system/gates">Gates</a></li>
-            <li><a href="/system/doctrine">Doctrine</a></li>
             <li><a href="#registers">Registers</a></li>
             <li><a href="/essays">Essays</a></li>
-            <li><a href="/sources">Sources</a></li>
-            <li><a href="#corpus">Corpus</a></li>
-            <li><a href="#about">Author</a></li>
+            <li><a href="/sources">Sources</a></li><li><a href="#about">Author</a></li>
           </ul>
         </div>
       </nav>
@@ -276,6 +274,11 @@ export default function Home() {
               <span className="systemLinkLabel">Navigation Layer</span>
               <span className="systemLinkTitle">Gates →</span>
               <span className="systemLinkSub">Registered pathways into each part of the system.</span>
+            </a>
+            <a href="/system/doctrine" className="systemLinkCard">
+              <span className="systemLinkLabel">Execution Layer</span>
+              <span className="systemLinkTitle">Doctrine →</span>
+              <span className="systemLinkSub">Engineering standards that enforce the Standing State at execution.</span>
             </a>
             <a href="/essays" className="systemLinkCard">
               <span className="systemLinkLabel">Commentary Layer</span>
