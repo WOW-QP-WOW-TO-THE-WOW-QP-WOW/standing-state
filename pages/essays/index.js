@@ -9,53 +9,55 @@ import Head from 'next/head'
 import { useState, useMemo } from 'react'
 
 // ── AXIS DEFINITIONS ─────────────────────────────────────────
+
 const PLATES = [
-  { code: 'PLT-I',       label: 'Fed–Stress–Output Loop' },
-  { code: 'PLT-IIB',     label: 'The Scab Condition' },
-  { code: 'PLT-INTERP',  label: 'Architecture of Interpretation' },
-  { code: 'PLT-COORD',   label: 'Identity as Coordinate' },
-  { code: 'PLT-PAIN',    label: 'Pain as Decoherence Signal' },
+  { code: 'PLT-I', label: 'Fed–Stress–Output Loop' },
+  { code: 'PLT-IIB', label: 'The Scab Condition' },
+  { code: 'PLT-INTERP', label: 'Architecture of Interpretation' },
+  { code: 'PLT-COORD', label: 'Identity as Coordinate' },
+  { code: 'PLT-PAIN', label: 'Pain as Decoherence Signal' },
   { code: 'PLT-CONSENT', label: 'The Consent Engine' },
-  { code: 'PLT-ADMIT',   label: 'The Admissibility Gate' },
-  { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
-  { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
-  { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
-  { code: 'VAR-K',       label: 'Autophagic Correction (K)' },
-  { code: 'VAR-∇c',      label: 'Conscience Gradient (∇c)' },
-  { code: 'VAR-C',       label: 'Consent Scalar (𝒞)' },
-  { code: 'SYS-GEN',     label: 'General System' },
+  { code: 'PLT-ADMIT', label: 'The Admissibility Gate' },
+  { code: 'VAR-Σ', label: 'Total Load (Σ)' },
+  { code: 'VAR-Φ', label: 'Completion Functional (Φ)' },
+  { code: 'VAR-B', label: 'Boundary Integrity (B)' },
+  { code: 'VAR-K', label: 'Autophagic Correction (K)' },
+  { code: 'VAR-∇c', label: 'Conscience Gradient (∇c)' },
+  { code: 'VAR-C', label: 'Consent Scalar (𝒞)' },
+  { code: 'SYS-GEN', label: 'General System' },
 ]
 
 const VOLUMES = [
-  { code: 'VOL-MW',    label: 'The Measure Within' },
-  { code: 'VOL-SS',    label: 'The Standing State: Vol I' },
-  { code: 'VOL-LG',    label: 'The Law of Growth' },
-  { code: 'VOL-BSH1',  label: 'Biological Sabbath Vol I' },
-  { code: 'VOL-BSH2',  label: 'Biological Sabbath Vol II' },
+  { code: 'VOL-MW', label: 'The Measure Within' },
+  { code: 'VOL-SS', label: 'The Standing State: Vol I' },
+  { code: 'VOL-LG', label: 'The Law of Growth' },
+  { code: 'VOL-BSH1', label: 'Biological Sabbath Vol I' },
+  { code: 'VOL-BSH2', label: 'Biological Sabbath Vol II' },
   { code: 'VOL-CROSS', label: 'Cross-Volume' },
 ]
 
 const REGISTERS = [
-  { code: 'REG-MATH',   label: 'Mathematical' },
-  { code: 'REG-BIO',    label: 'Biological' },
-  { code: 'REG-MIND',   label: 'Cognitive' },
-  { code: 'REG-PSY',    label: 'Psychological' },
-  { code: 'REG-PHIL',   label: 'Philosophical' },
+  { code: 'REG-MATH', label: 'Mathematical' },
+  { code: 'REG-BIO', label: 'Biological' },
+  { code: 'REG-MIND', label: 'Cognitive' },
+  { code: 'REG-PSY', label: 'Psychological' },
+  { code: 'REG-PHIL', label: 'Philosophical' },
   { code: 'REG-SPIRIT', label: 'Spiritual' },
-  { code: 'REG-MIXED',  label: 'Mixed' },
+  { code: 'REG-MIXED', label: 'Mixed' },
   { code: 'REG-STRUCT', label: 'Structural' },
 ]
 
 const FLAGS = {
-  A: { label: 'Aligned',  color: '#7a6428' },
+  A: { label: 'Aligned', color: '#7a6428' },
   M: { label: 'Mirrored', color: '#c4a44a' },
-  U: { label: 'Update',   color: '#6a5a3a' },
-  E: { label: 'Expand',   color: '#5a6a3a' },
-  X: { label: 'Archive',  color: '#3a3a3a' },
+  U: { label: 'Update', color: '#6a5a3a' },
+  E: { label: 'Expand', color: '#5a6a3a' },
+  X: { label: 'Archive', color: '#3a3a3a' },
 }
 
 // ── ESSAY DATA ───────────────────────────────────────────────
 // Populated during audit. Structure defined — ready to receive 400 entries.
+
 const ESSAYS = [
   // ── CANONICAL SET ─────────────────────────────────────────
   {
@@ -243,7 +245,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'E',
-    note: 'Kuramoto oscillator network; toroidal closure as boundary identification; λ₂(L\') > Δω as synchronization criterion; A ≡ A as Laplacian flow invariance — seed for arXiv submission',
+    note: "Kuramoto oscillator network; toroidal closure as boundary identification; λ₂(L') > Δω as synchronization criterion; A ≡ A as Laplacian flow invariance — seed for arXiv submission",
     mirrorUrl: '',
   },
   {
@@ -268,17 +270,17 @@ const ESSAYS = [
     note: 'Sovereignty inequality I_self(τ) > I_world(τ); coherence horizon τ₀; basin-of-sovereignty theorem; volatility collapse threshold; A → A iff internal recursion governs future formation — seed for Plate X',
     mirrorUrl: '',
   },
- {
-  id: "M010",
-  title: "The Lord’s Prayer as a Blueprint for Self-Sovereignty",
-  mediumUrl: "https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c",
-  mirrorUrl: "/essays/medium/lords-prayer-self-sovereignty",
-  axis1: "PLT-COORD",
-  axis2: "VOL-MW",
-  axis3: "REG-MIXED",
-  flag: "A",
-  note: "Identity pipeline rendering of The Lord’s Prayer"
-},
+  {
+    id: 'M010',
+    title: "The Lord's Prayer as a Blueprint for Self-Sovereignty",
+    mediumUrl: 'https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c',
+    mirrorUrl: '/essays/medium/lords-prayer-self-sovereignty',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'A',
+    note: "Identity pipeline rendering of The Lord's Prayer",
+  },
   {
     id: 'M011',
     title: 'The Multidimensional Human: A Structural Account of Registers, Interpretation, and Volitional Consciousness',
@@ -309,72 +311,83 @@ const ESSAYS = [
     note: 'Practice-layer · cognitive register · early-corpus mapping of twelve mind-faculties as disciplined qualities under identity. Prefigures I* doctrine through the "hearing quality" (I AM consciousness as governing reference) and the "doubter/denier" (filtration against signals not aligned with identity). Twelve-enumeration structure resonates with M021 NSRL-12. Lineage framings (Neville Goddard · twelve-disciples · New Thought mind-training) preserved in original voice under register lock — interpretive and lineage-doctrine content NOT retrofitted into Rank-0 vocabulary. Original Coach Leon Powdar signature block preserved as authorial artifact',
     mirrorUrl: '/essays/medium/twelve-mind-qualities',
   },
-{
-  id: 'M035',
-  title: 'The Bull Was Never the Animal',
-  mediumUrl: 'https://medium.com/@leonsp3/the-bull-was-never-the-animal-eadb37ea5225',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-STRUCT',
-  flag: 'A',
-  note: 'Control-theoretic reframing of awakening as identity invariance under excitation. Distinguishes bounded stability from zero-coupling invariance (Rank-0).',
-  mirrorUrl: '/essays/medium/the-bull-was-never-the-animal',
-},
-{
-  id: 'M036',
-  title: 'The Pentacle of Sovereign Creation — The I Am as the Living Flame',
-  mediumUrl: 'https://medium.com/@leonsp3/the-pentacle-of-sovereign-creation-the-i-am-as-the-living-flame-153bd80b31a2',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-MIXED',
-  flag: 'M',
-  note: 'Symbolic architecture layer. Five-domain map centered on volitional consciousness; register-locked as interpretive, not causal ontology.',
-  mirrorUrl: '/essays/medium/the-pentacle-of-sovereign-creation',
-},
-{
-  id: 'M037',
-  title: 'The Lens of Contradiction',
-  mediumUrl: 'https://medium.com/@leonsp3/the-lens-of-contradiction-375e65dfe63c',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-PHIL',
-  flag: 'A',
-  note: 'Epistemic purification essay. Contradiction removes false centers; science advances by subtraction, not accumulation.',
-  mirrorUrl: '/essays/medium/lens-of-contradiction',
-},
-{
-  id: 'M038',
-  title: 'Beyond the Prism: A Romantic Philosophy of Dimensional Awareness',
-  mediumUrl: 'https://medium.com/@leonsp3/beyond-the-prism-a-romantic-philosophy-of-dimensional-awareness-405b6a279633',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-MIXED',
-  flag: 'M',
-  note: 'Perception-expansion essay using prism symbolism. Integration of logic, intuition, breath, action, and creativity under register lock.',
-  mirrorUrl: '/essays/medium/beyond-the-prism',
-},
-{
-  id: 'M039',
-  title: 'Thesis: The Mechanical Priority of Being',
-  mediumUrl: 'https://medium.com/@leonsp3/thesis-the-mechanical-priority-of-being-b80bf91d86db',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-STRUCT',
-  flag: 'A',
-  note: 'Relational mechanics essay. Sovereignty is pre-relational; relationship is output, not source. Defines resentment as friction from outsourced identity.',
-  mirrorUrl: '/essays/medium/thesis-the-mechanical-priority-of-being',
-},
-{
-  id: 'M040',
-  title: 'The Standing State: A System Where Identity Does Not Move',
-  mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-a-system-where-identity-does-not-move-0da866389ff7',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-SS',
-  axis3: 'REG-STRUCT',
-  flag: 'A',
-  note: 'Canonical bridge and Plate XI companion. Linguistic expansion of Rank-0 Architecture: identity invariance, gain collapse, admissibility gating, jurisdictional separation, and autonomous restoration.',
-  mirrorUrl: '/essays/medium/standing-state-identity-does-not-move',
-},
+  {
+    id: 'M035',
+    title: 'The Bull Was Never the Animal',
+    mediumUrl: 'https://medium.com/@leonsp3/the-bull-was-never-the-animal-eadb37ea5225',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-STRUCT',
+    flag: 'A',
+    note: 'Control-theoretic reframing of awakening as identity invariance under excitation. Distinguishes bounded stability from zero-coupling invariance (Rank-0).',
+    mirrorUrl: '/essays/medium/the-bull-was-never-the-animal',
+  },
+  {
+    id: 'M036',
+    title: 'The Pentacle of Sovereign Creation — The I Am as the Living Flame',
+    mediumUrl: 'https://medium.com/@leonsp3/the-pentacle-of-sovereign-creation-the-i-am-as-the-living-flame-153bd80b31a2',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Symbolic architecture layer. Five-domain map centered on volitional consciousness; register-locked as interpretive, not causal ontology.',
+    mirrorUrl: '/essays/medium/the-pentacle-of-sovereign-creation',
+  },
+  {
+    id: 'M037',
+    title: 'The Lens of Contradiction',
+    mediumUrl: 'https://medium.com/@leonsp3/the-lens-of-contradiction-375e65dfe63c',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-PHIL',
+    flag: 'A',
+    note: 'Epistemic purification essay. Contradiction removes false centers; science advances by subtraction, not accumulation.',
+    mirrorUrl: '/essays/medium/lens-of-contradiction',
+  },
+  {
+    id: 'M038',
+    title: 'Beyond the Prism: A Romantic Philosophy of Dimensional Awareness',
+    mediumUrl: 'https://medium.com/@leonsp3/beyond-the-prism-a-romantic-philosophy-of-dimensional-awareness-405b6a279633',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Perception-expansion essay using prism symbolism. Integration of logic, intuition, breath, action, and creativity under register lock.',
+    mirrorUrl: '/essays/medium/beyond-the-prism',
+  },
+  {
+    id: 'M039',
+    title: 'Thesis: The Mechanical Priority of Being',
+    mediumUrl: 'https://medium.com/@leonsp3/thesis-the-mechanical-priority-of-being-b80bf91d86db',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-STRUCT',
+    flag: 'A',
+    note: 'Relational mechanics essay. Sovereignty is pre-relational; relationship is output, not source. Defines resentment as friction from outsourced identity.',
+    mirrorUrl: '/essays/medium/thesis-the-mechanical-priority-of-being',
+  },
+  {
+    id: 'M040',
+    title: 'The Standing State: A System Where Identity Does Not Move',
+    mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-a-system-where-identity-does-not-move-0da866389ff7',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-SS',
+    axis3: 'REG-STRUCT',
+    flag: 'A',
+    note: 'Canonical bridge and Plate XI companion. Linguistic expansion of Rank-0 Architecture: identity invariance, gain collapse, admissibility gating, jurisdictional separation, and autonomous restoration.',
+    mirrorUrl: '/essays/medium/standing-state-identity-does-not-move',
+  },
+  {
+    id: 'M041',
+    title: 'Asynchronous Synthesis',
+    mediumUrl: 'https://medium.com/@leonsp3/asynchronous-synthesis-76422af7ce49',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MATH',
+    flag: 'A',
+    note: 'Mathematical synthesis of invariant stability: Lyapunov contraction, stochastic breakdown thresholds, and phase-lock synchronization under load.',
+    mirrorUrl: null,
+  },
   {
     id: '011',
     title: 'The Admissibility Gate',
@@ -389,6 +402,7 @@ const ESSAYS = [
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
+
 function FilterPill({ label, active, onClick }) {
   return (
     <button
@@ -412,11 +426,12 @@ function FilterPill({ label, active, onClick }) {
 }
 
 // ── ESSAY CARD ────────────────────────────────────────────────
+
 function EssayCard({ essay }) {
   const flag = FLAGS[essay.flag] || FLAGS.A
   const plate = PLATES.find(p => p.code === essay.axis1)
-  const vol   = VOLUMES.find(v => v.code === essay.axis2)
-  const reg   = REGISTERS.find(r => r.code === essay.axis3)
+  const vol = VOLUMES.find(v => v.code === essay.axis2)
+  const reg = REGISTERS.find(r => r.code === essay.axis3)
 
   return (
     <div className="essayCard">
@@ -430,8 +445,8 @@ function EssayCard({ essay }) {
       {essay.note && <p className="essayNote">{essay.note}</p>}
       <div className="essayTags">
         {plate && <span className="essayTag essayTagPlate">{plate.label}</span>}
-        {vol   && <span className="essayTag essayTagVol">{vol.label}</span>}
-        {reg   && <span className="essayTag essayTagReg">{reg.label}</span>}
+        {vol && <span className="essayTag essayTagVol">{vol.label}</span>}
+        {reg && <span className="essayTag essayTagReg">{reg.label}</span>}
       </div>
       <div className="essayLinks">
         {essay.mirrorUrl ? (
@@ -452,19 +467,20 @@ function EssayCard({ essay }) {
 }
 
 // ── PAGE ──────────────────────────────────────────────────────
+
 export default function EssaysPage() {
   const [filterPlate, setFilterPlate] = useState(null)
-  const [filterVol,   setFilterVol]   = useState(null)
-  const [filterReg,   setFilterReg]   = useState(null)
-  const [filterFlag,  setFilterFlag]  = useState(null)
+  const [filterVol, setFilterVol] = useState(null)
+  const [filterReg, setFilterReg] = useState(null)
+  const [filterFlag, setFilterFlag] = useState(null)
   const [search, setSearch] = useState('')
 
   const filtered = useMemo(() => {
     return ESSAYS.filter(e => {
       if (filterPlate && e.axis1 !== filterPlate) return false
-      if (filterVol   && e.axis2 !== filterVol)   return false
-      if (filterReg   && e.axis3 !== filterReg)   return false
-      if (filterFlag  && e.flag  !== filterFlag)   return false
+      if (filterVol && e.axis2 !== filterVol) return false
+      if (filterReg && e.axis3 !== filterReg) return false
+      if (filterFlag && e.flag !== filterFlag) return false
       if (search && !e.title.toLowerCase().includes(search.toLowerCase())) return false
       return true
     })
@@ -522,7 +538,6 @@ export default function EssaysPage() {
       {/* ── FILTERS ── */}
       <section className="essayFilters">
         <div className="wrap">
-
           {/* Search */}
           <div className="essaySearch">
             <input
