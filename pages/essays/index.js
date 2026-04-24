@@ -56,7 +56,6 @@ const FLAGS = {
 }
 
 // ── ESSAY DATA ───────────────────────────────────────────────
-// Populated during audit. Structure defined — ready to receive 400 entries.
 
 const ESSAYS = [
   // ── CANONICAL SET ─────────────────────────────────────────
@@ -271,17 +270,16 @@ const ESSAYS = [
     mirrorUrl: '',
   },
   {
-  id: 'M010',
-  title: "The Lord's Prayer as a Blueprint for Self-Sovereignty",
-  mediumUrl: 'https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c',
-  mirrorUrl: '/essays/canonical/lords-prayer-self-sovereignty',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-MIXED',
-  flag: 'M',
-  note: "Identity pipeline rendering of The Lord's Prayer",
-},
-
+    id: 'M010',
+    title: "The Lord's Prayer as a Blueprint for Self-Sovereignty",
+    mediumUrl: 'https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c',
+    mirrorUrl: '/essays/canonical/lords-prayer-self-sovereignty',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: "Identity pipeline rendering of The Lord's Prayer",
+  },
   {
     id: 'M011',
     title: 'The Multidimensional Human: A Structural Account of Registers, Interpretation, and Volitional Consciousness',
@@ -388,6 +386,17 @@ const ESSAYS = [
     flag: 'M',
     note: 'Mathematical synthesis of invariant stability: Lyapunov contraction, stochastic breakdown thresholds, and phase-lock synchronization under load. Three margins — additive, multiplicative, synchronization — resolve to one structural criterion: λ_min(K_s) > variance injection.',
     mirrorUrl: '/essays/medium/asynchronous-synthesis',
+  },
+  {
+    id: 'M042',
+    title: 'The Coherence Layer: Why AI Does Not Need Emotions — It Needs Structure',
+    mediumUrl: 'https://medium.com/@leonsp3/the-coherence-layer-why-ai-does-not-need-emotions-it-needs-structure-6fe275f68e27',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-SS',
+    axis3: 'REG-STRUCT',
+    flag: 'M',
+    note: 'AI architecture essay. Reframes the emotion-in-AI question as a structural one: systems require admissibility, not affect. Introduces dot-I = 0 (identity anchor), the admissibility set S = {x : Φ(x; I*) ≤ 0}, and the four control structures that translate emotional regulation into architectural primitives.',
+    mirrorUrl: '/essays/medium/the-coherence-layer',
   },
   {
     id: '011',
@@ -539,7 +548,6 @@ export default function EssaysPage() {
       {/* ── FILTERS ── */}
       <section className="essayFilters">
         <div className="wrap">
-          {/* Search */}
           <div className="essaySearch">
             <input
               type="text"
@@ -550,7 +558,6 @@ export default function EssaysPage() {
             />
           </div>
 
-          {/* Plate filter */}
           <div className="essayFilterGroup">
             <div className="essayFilterLabel">Plate / Concept</div>
             <div className="essayFilterPills">
@@ -562,7 +569,6 @@ export default function EssaysPage() {
             </div>
           </div>
 
-          {/* Volume filter */}
           <div className="essayFilterGroup">
             <div className="essayFilterLabel">Volume</div>
             <div className="essayFilterPills">
@@ -574,7 +580,6 @@ export default function EssaysPage() {
             </div>
           </div>
 
-          {/* Register filter */}
           <div className="essayFilterGroup">
             <div className="essayFilterLabel">Register</div>
             <div className="essayFilterPills">
@@ -586,7 +591,6 @@ export default function EssaysPage() {
             </div>
           </div>
 
-          {/* Flag filter */}
           <div className="essayFilterGroup">
             <div className="essayFilterLabel">Status</div>
             <div className="essayFilterPills">
@@ -598,7 +602,6 @@ export default function EssaysPage() {
             </div>
           </div>
 
-          {/* Clear */}
           {(filterPlate || filterVol || filterReg || filterFlag || search) && (
             <button className="essayClear"
               onClick={() => {
