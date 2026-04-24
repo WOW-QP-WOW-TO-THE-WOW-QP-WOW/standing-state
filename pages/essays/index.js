@@ -384,9 +384,9 @@ const ESSAYS = [
     axis1: 'PLT-COORD',
     axis2: 'VOL-MW',
     axis3: 'REG-MATH',
-    flag: 'A',
-    note: 'Mathematical synthesis of invariant stability: Lyapunov contraction, stochastic breakdown thresholds, and phase-lock synchronization under load.',
-    mirrorUrl: null,
+    flag: 'M',
+    note: 'Mathematical synthesis of invariant stability: Lyapunov contraction, stochastic breakdown thresholds, and phase-lock synchronization under load. Three margins — additive, multiplicative, synchronization — resolve to one structural criterion: λ_min(K_s) > variance injection.',
+    mirrorUrl: '/essays/medium/asynchronous-synthesis',
   },
   {
     id: '011',
