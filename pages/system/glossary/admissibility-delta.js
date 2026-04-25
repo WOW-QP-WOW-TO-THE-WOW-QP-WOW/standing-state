@@ -256,6 +256,12 @@ export default function AdmissibilityDeltaGlossary() {
             <h2 className="essayH2">Companions</h2>
             <ul className="essayBullets">
               <li>
+                <a href="/system/plates/control-monument" style={{ color: 'var(--gold)' }}>
+                  Plate XI — The Control Monument
+                </a>{' '}
+                — visual law of Δ; full element legend
+              </li>
+              <li>
                 <a href="/system/doctrine/admissibility-delta" style={{ color: 'var(--gold)' }}>
                   Doctrine — Δ Control Law (OAGI v1.2)
                 </a>{' '}
