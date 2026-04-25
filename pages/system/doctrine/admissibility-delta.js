@@ -328,6 +328,12 @@ export default function AdmissibilityDeltaDoctrine() {
             <h2 className="essayH2">Companions</h2>
             <ul className="essayBullets">
               <li>
+                <a href="/system/plates/control-monument" style={{ color: 'var(--gold)' }}>
+                  Plate XI — The Control Monument
+                </a>{' '}
+                — visual law of Δ
+              </li>
+              <li>
                 <a href="/system/glossary/admissibility-delta" style={{ color: 'var(--gold)' }}>
                   Glossary — Δ (admissibility delta)
                 </a>{' '}
