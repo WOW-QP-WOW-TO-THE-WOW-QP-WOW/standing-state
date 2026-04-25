@@ -46,6 +46,50 @@ const DOCTRINE_PAGES = {
     ],
     pdfHref: '/docs/ethics-of-invariance-executive-summary.pdf',
   },
+  'admissibility-delta': {
+    id: 'D002',
+    title: 'Δ Control Law',
+    subtitle: 'OAGI v1.2 · Operational Admissibility Governance Infrastructure',
+    eyebrow: 'Execution Doctrine',
+    axis1: 'SYS-GOV',
+    axis2: 'VOL-SS',
+    axis3: 'REG-EXEC',
+    equation: 'Δ = γ_obs − α_eff > 0',
+    intro:
+      'Execution-layer specification for the admissibility delta. Defines the enforcement boundary under which scaling systems remain governable. Where capability scales against pressure, governance velocity must outpace effective exploit-pressure or the system fractures.',
+    thesis:
+      'No discretion at the boundary. Governance must be measured, computed, logged, and enforced — or it is not governance.',
+    executionConditions: [
+      'Δ continuously recomputed within the staleness window.',
+      'No telemetry → automatic contraction (fail-safe on silence).',
+      'Hysteresis-band transitions prevent oscillation at thresholds.',
+      'Discretionary override of the gate is forbidden; enforcement is mechanical.',
+    ],
+    body: [
+      'Modern systems scale in three dimensions: capability surface (R), throughput (T), and interconnectedness (L). Governance velocity (γ) remains human-limited, organizationally constrained, politically throttled. Expansion is quadratic; response is linear. This mismatch is the fracture engine of the modern world.',
+      'Failure is not randomness. It is a control failure: Δ = γ_obs − α_eff. When Δ < 0, forcing outruns correction. Different fuels, same inequality. Lehman, AIG, any over-scaled AI system. Burnout is Δ < 0. Bankruptcy is Δ < 0. AI runaway is Δ < 0.',
+      'Ethics cannot scale. Prompt alignment cannot scale. Human review alone cannot scale. The control law is mechanical or it is not a law. Stability is not low volatility, high confidence, or positive messaging. Stability is containment inside a bounded invariant set.',
+    ],
+    principles: [
+      {
+        label: 'I. The Formula',
+        text: 'Δ = γ_obs − α_eff. All variables expressed in the same time-rate units (events/second, mitigations/hour). No dimensional mismatch is permitted at the boundary. OAGI v1.1 closure ensures recalibration when γ and α units diverge.',
+      },
+      {
+        label: 'II. The Instrument',
+        text: 'A machine-ingestible telemetry schema. Self-describing — schema versioned, fields typed. Auditable — every Δ computation traceable to source telemetry. Immutable — append-only ledger; no retroactive correction. Without instrumentation, Δ is unmeasurable.',
+      },
+      {
+        label: 'III. The Gate',
+        text: 'A SIEM-enforced control loop with five mandatory states: WARN (Δ approaching boundary), THROTTLE (Δ inside hysteresis band), TRIP (Δ < 0; immediate contraction), FAIL-SAFE ON SILENCE (no telemetry within staleness window → safe mode), HYSTERESIS (asymmetric thresholds for entry/exit). No discretion at the boundary.',
+      },
+      {
+        label: 'IV. The Staleness Guard',
+        text: 'Governance is time-bound. A Δ value computed five minutes ago is not a current admissibility statement. The 60-second timer encodes this: t_telemetry > T_stale ⇒ contract. The default state under information loss is not trust. It is safe mode. That is maturity.',
+      },
+    ],
+    pdfHref: null,
+  },
 }
 
 export default function DoctrineSlugPage() {
@@ -193,11 +237,13 @@ export default function DoctrineSlugPage() {
               </div>
             </div>
 
-            <div style={{ marginTop: '1.6rem' }}>
-              <a className="btnEnter" href={item.pdfHref} target="_blank" rel="noreferrer">
-                Open PDF →
-              </a>
-            </div>
+            {item.pdfHref && (
+              <div style={{ marginTop: '1.6rem' }}>
+                <a className="btnEnter" href={item.pdfHref} target="_blank" rel="noreferrer">
+                  Open PDF →
+                </a>
+              </div>
+            )}
 
             <div className="canonEssayAuthor">Standing State Press · Execution Layer</div>
 
@@ -211,15 +257,25 @@ export default function DoctrineSlugPage() {
                 Return to Standing State
               </a>
 
-              <a
-                className="canonNavLink canonNavNext"
-                href={item.pdfHref}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="canonNavDir">Document</span>
-                <span className="canonNavTitle">Open PDF</span>
-              </a>
+              {item.pdfHref ? (
+                <a
+                  className="canonNavLink canonNavNext"
+                  href={item.pdfHref}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="canonNavDir">Document</span>
+                  <span className="canonNavTitle">Open PDF</span>
+                </a>
+              ) : (
+                <a
+                  className="canonNavLink canonNavNext"
+                  href="/system/glossary/admissibility-delta"
+                >
+                  <span className="canonNavDir">Companion</span>
+                  <span className="canonNavTitle">Glossary Δ</span>
+                </a>
+              )}
             </div>
 
             <div className="platesSystemNav" style={{ paddingTop: '2rem' }}>

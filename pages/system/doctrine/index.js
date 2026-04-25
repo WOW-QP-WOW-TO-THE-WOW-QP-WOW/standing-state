@@ -13,6 +13,18 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-EXEC',
     href: '/system/doctrine/ethics-of-invariance',
   },
+  {
+    id: 'D002',
+    slug: 'admissibility-delta',
+    type: 'Execution Doctrine',
+    title: 'Δ Control Law',
+    subtitle: 'OAGI v1.2 · Admissibility Governance Infrastructure',
+    note: 'Governance capacity must outpace effective exploit-pressure. Δ = γ − αₑff > 0 is the expansion constraint law for scaling systems under exploit pressure. Defines the SIEM-enforced control loop with hysteresis, gating, fail-safe contraction, and the staleness guard.',
+    axis1: 'SYS-GOV',
+    axis2: 'VOL-SS',
+    axis3: 'REG-EXEC',
+    href: '/system/doctrine/admissibility-delta',
+  },
 ]
 
 function DoctrineCard({ item }) {
@@ -101,7 +113,7 @@ export default function DoctrineIndexPage() {
             </p>
 
             <div className="essayStats">
-              <span className="essayStat">{DOCTRINE_ITEMS.length} doctrine page</span>
+              <span className="essayStat">{DOCTRINE_ITEMS.length} doctrine pages</span>
               <span className="essayStatDiv">·</span>
               <span className="essayStat">Execution governance</span>
               <span className="essayStatDiv">·</span>
