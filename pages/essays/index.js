@@ -410,6 +410,17 @@ const ESSAYS = [
     mirrorUrl: '/essays/medium/sacred-flame-sovereign-identity',
   },
   {
+    id: 'M044',
+    title: 'The Admissibility Manifesto',
+    mediumUrl: 'https://medium.com/@leonsp3/the-admissibility-manifesto-56b8b5d66840',
+    axis1: 'PLT-ADMIT',
+    axis2: 'VOL-SS',
+    axis3: 'REG-STRUCT',
+    flag: 'A',
+    note: 'Canonical structural essay introducing Δ = γ − αₑff as the governing inequality for exploit-pressure containment. Defines OAGI v1.2 safety primitive and extends Standing State into controlled expansion regimes. Glossary-impact event. Companion glossary entry: /system/glossary/admissibility-delta. Companion doctrine: /system/doctrine/admissibility-delta.',
+    mirrorUrl: '/essays/medium/admissibility-manifesto',
+  },
+  {
     id: '011',
     title: 'The Admissibility Gate',
     mediumUrl: '',
