@@ -1,6 +1,6 @@
 /**
  * /system/plates/control-monument
- * PLATE XI — THE CONTROL MONUMENT
+ * PLATE XII — THE CONTROL MONUMENT
  * Visual law of Δ = γ − αₑff
  *
  * Canonical companion to:
@@ -20,10 +20,10 @@ export default function PlateControlMonument() {
   return (
     <>
       <Head>
-        <title>Plate XI — The Control Monument — Standing State Press</title>
+        <title>Plate XII — The Control Monument — Standing State Press</title>
         <meta
           name="description"
-          content="Plate XI — visual law of Δ = γ − αₑff. Governance capacity versus expansion pressure. Control architecture for bounded scaling."
+          content="Plate XII — visual law of Δ = γ − αₑff. Governance capacity versus expansion pressure. Control architecture for bounded scaling."
         />
       </Head>
 
@@ -50,10 +50,10 @@ export default function PlateControlMonument() {
             <span className="glossBreadSep">→</span>
             <a href="/system/plates">Plates</a>
             <span className="glossBreadSep">→</span>
-            <span style={{ color: 'var(--gold-dim)' }}>XI</span>
+            <span style={{ color: 'var(--gold-dim)' }}>XII</span>
           </div>
           <div className="glossEyebrow">
-            Plate XI · Visual Authority · System-Law Extension
+            Plate XII · Visual Authority · System-Law Extension
           </div>
           <h1 className="glossH1">The Control Monument</h1>
           <p className="glossIntro" style={{ fontStyle: 'italic' }}>
@@ -79,7 +79,7 @@ export default function PlateControlMonument() {
           >
             <img
               src="/plates/m044-control-monument.png"
-              alt="Plate XI — The Control Monument. Central obelisk inscribed with Δ = γ − αₑff, flanked by columns labeled DEPTH and REACH. A 60-second timer at lower left, an hourglass at lower right, gears beneath the cracked stone platform, chains across the foundation, an eclipsed moon above, and a constellation network stretching across the night sky."
+              alt="Plate XII — The Control Monument. Central obelisk inscribed with Δ = γ − αₑff, flanked by columns labeled DEPTH and REACH. A 60-second timer at lower left, an hourglass at lower right, gears beneath the cracked stone platform, chains across the foundation, an eclipsed moon above, and a constellation network stretching across the night sky."
               style={{
                 width: '100%',
                 height: 'auto',
@@ -97,7 +97,7 @@ export default function PlateControlMonument() {
                 fontFamily: 'var(--display)',
               }}
             >
-              Plate XI &nbsp;·&nbsp; The Control Monument
+              Plate XII &nbsp;·&nbsp; The Control Monument
             </figcaption>
           </figure>
 
@@ -136,7 +136,7 @@ export default function PlateControlMonument() {
           <section className="essaySection">
             <h2 className="essayH2">What This Plate Is</h2>
             <p className="essayP">
-              Plate XI is not illustration. It is the visual statement of a
+              Plate XII is not illustration. It is the visual statement of a
               system law. Each element carries function, not metaphor. The
               monument as a whole encodes the conditions under which a
               scaling system remains admissible.
@@ -284,7 +284,7 @@ export default function PlateControlMonument() {
           <section className="essaySection">
             <h2 className="essayH2">System Loop</h2>
             <p className="essayP">
-              Plate XI sits inside a closed structural loop. Each node points
+              Plate XII sits inside a closed structural loop. Each node points
               to all the others. Removal of any one breaks the loop.
             </p>
             <div
@@ -303,7 +303,7 @@ export default function PlateControlMonument() {
             >
               M044 (law) <br />
               ↓ <br />
-              PLATE XI (visual law) <br />
+              PLATE XII (visual law) <br />
               ↓ <br />
               GLOSSARY Δ (definition) <br />
               ↓ <br />
