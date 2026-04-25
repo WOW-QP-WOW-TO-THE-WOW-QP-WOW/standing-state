@@ -329,7 +329,7 @@ export default function AdmissibilityDeltaDoctrine() {
             <ul className="essayBullets">
               <li>
                 <a href="/system/plates/control-monument" style={{ color: 'var(--gold)' }}>
-                  Plate XI — The Control Monument
+                  Plate XII — The Control Monument
                 </a>{' '}
                 — visual law of Δ
               </li>
