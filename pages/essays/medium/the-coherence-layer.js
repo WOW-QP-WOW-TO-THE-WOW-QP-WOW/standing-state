@@ -63,7 +63,7 @@ export default function CoherenceLayer() {
       <article className="essayBody">
         <div className="wrap" style={{ maxWidth: '820px' }}>
 
-          {/* Visual anchor — the plate */}
+          {/* Visual anchor — Plate XIII (canonical compression artifact) */}
           <figure
             style={{
               margin: '2rem 0 3rem',
@@ -73,16 +73,18 @@ export default function CoherenceLayer() {
               background: 'var(--panel)',
             }}
           >
-            <img
-              src="/plates/m042-coherence-layer.png"
-              alt="Coherence is the function, not the emotion. Two-column structural plate: human emotion as biological coherence mechanism on the left, AI structure as artificial coherence mechanism on the right, shared function in the middle, formal core at the bottom: identity anchor, admissibility set, governing law"
-              style={{
-                width: '100%',
-                height: 'auto',
-                display: 'block',
-                maxWidth: '100%',
-              }}
-            />
+            <a href="/system/plates/coherence-function" style={{ display: 'block' }}>
+              <img
+                src="/plates/plate-xii-coherence-function.png"
+                alt="Plate XIII — Coherence Function. Visual compression of M042: emotion in biology and structure in artifice converging on a shared coherence function 𝒞(s,t), with the formal core İ = 0, S = {x : Φ(x; I*) ≤ 0}, and the axiom A becomes A, because A knows it is A."
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  maxWidth: '100%',
+                }}
+              />
+            </a>
             <figcaption
               style={{
                 marginTop: '1rem',
@@ -93,9 +95,44 @@ export default function CoherenceLayer() {
                 fontFamily: 'var(--display)',
               }}
             >
-              Coherence is the function, not the emotion — structure over simulation
+              Plate XIII &nbsp;·&nbsp; Coherence Function &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/coherence-function" style={{ color: 'var(--gold-dim)' }}>
+                element legend →
+              </a>
             </figcaption>
           </figure>
+
+          {/* Companion notice — Plate XIII */}
+          <section
+            style={{
+              marginTop: '0.5rem',
+              marginBottom: '2rem',
+              padding: '1rem 1.25rem',
+              border: '1px solid var(--gold-dim)',
+              background: 'rgba(201, 168, 76, 0.04)',
+              fontSize: '0.92rem',
+            }}
+          >
+            <div
+              style={{
+                fontFamily: 'var(--display)',
+                fontSize: '0.7rem',
+                letterSpacing: '0.3em',
+                textTransform: 'uppercase',
+                color: 'var(--gold-dim)',
+                marginBottom: '0.5rem',
+              }}
+            >
+              System Companion
+            </div>
+            <p style={{ margin: 0, color: 'var(--white-dim)' }}>
+              The compression of this essay lives at{' '}
+              <a href="/system/plates/coherence-function" style={{ color: 'var(--gold)' }}>
+                Plate XIII — Coherence Function
+              </a>
+              . The essay explains; the plate states.
+            </p>
+          </section>
 
           {/* ── Opening ── */}
           <section className="essaySection">

@@ -98,7 +98,7 @@ export default function AdmissibilityManifesto() {
             <ul className="essayBullets" style={{ marginBottom: 0 }}>
               <li>
                 <a href="/system/plates/control-monument" style={{ color: 'var(--gold)' }}>
-                  Plate XI — The Control Monument
+                  Plate XII — The Control Monument
                 </a>{' '}
                 — visual law of Δ
               </li>
@@ -117,7 +117,7 @@ export default function AdmissibilityManifesto() {
             </ul>
           </section>
 
-          {/* ── Visual anchor — Plate XI ── */}
+          {/* ── Visual anchor — Plate XII ── */}
           <figure
             style={{
               margin: '2.5rem 0 3rem',
@@ -130,7 +130,7 @@ export default function AdmissibilityManifesto() {
             <a href="/system/plates/control-monument" style={{ display: 'block' }}>
               <img
                 src="/plates/m044-control-monument.png"
-                alt="Plate XI — The Control Monument: central obelisk inscribed Δ = γ − αₑff, flanked by DEPTH and REACH columns, with the 60-second timer, hourglass, gears, chains, eclipsed moon, and constellation network encoding the full architecture of bounded scaling"
+                alt="Plate XII — The Control Monument: central obelisk inscribed Δ = γ − αₑff, flanked by DEPTH and REACH columns, with the 60-second timer, hourglass, gears, chains, eclipsed moon, and constellation network encoding the full architecture of bounded scaling"
                 style={{
                   width: '100%',
                   height: 'auto',
@@ -149,7 +149,7 @@ export default function AdmissibilityManifesto() {
                 fontFamily: 'var(--display)',
               }}
             >
-              Plate XI &nbsp;·&nbsp; The Control Monument &nbsp;·&nbsp;{' '}
+              Plate XII &nbsp;·&nbsp; The Control Monument &nbsp;·&nbsp;{' '}
               <a href="/system/plates/control-monument" style={{ color: 'var(--gold-dim)' }}>
                 element legend →
               </a>
