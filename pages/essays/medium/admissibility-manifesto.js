@@ -93,21 +93,68 @@ export default function AdmissibilityManifesto() {
               System-Law Companions
             </div>
             <p className="essayP" style={{ marginBottom: '0.5rem', fontSize: '0.95rem' }}>
-              This essay introduces a new invariant. Formal definitions live alongside it:
+              This essay introduces a new invariant. Formal artifacts live alongside it:
             </p>
             <ul className="essayBullets" style={{ marginBottom: 0 }}>
               <li>
+                <a href="/system/plates/control-monument" style={{ color: 'var(--gold)' }}>
+                  Plate XI — The Control Monument
+                </a>{' '}
+                — visual law of Δ
+              </li>
+              <li>
                 <a href="/system/glossary/admissibility-delta" style={{ color: 'var(--gold)' }}>
                   Glossary — Δ (admissibility delta)
-                </a>
+                </a>{' '}
+                — definition layer
               </li>
               <li>
                 <a href="/system/doctrine/admissibility-delta" style={{ color: 'var(--gold)' }}>
                   Doctrine — Δ control law (OAGI v1.2)
-                </a>
+                </a>{' '}
+                — execution layer
               </li>
             </ul>
           </section>
+
+          {/* ── Visual anchor — Plate XI ── */}
+          <figure
+            style={{
+              margin: '2.5rem 0 3rem',
+              textAlign: 'center',
+              border: '1px solid var(--border)',
+              padding: '1.25rem',
+              background: 'var(--panel)',
+            }}
+          >
+            <a href="/system/plates/control-monument" style={{ display: 'block' }}>
+              <img
+                src="/plates/m044-control-monument.png"
+                alt="Plate XI — The Control Monument: central obelisk inscribed Δ = γ − αₑff, flanked by DEPTH and REACH columns, with the 60-second timer, hourglass, gears, chains, eclipsed moon, and constellation network encoding the full architecture of bounded scaling"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  maxWidth: '100%',
+                }}
+              />
+            </a>
+            <figcaption
+              style={{
+                marginTop: '1rem',
+                fontSize: '0.78rem',
+                color: 'var(--gray-lt)',
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                fontFamily: 'var(--display)',
+              }}
+            >
+              Plate XI &nbsp;·&nbsp; The Control Monument &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/control-monument" style={{ color: 'var(--gold-dim)' }}>
+                element legend →
+              </a>
+            </figcaption>
+          </figure>
 
           {/* ── The Control Monument intro ── */}
           <section className="essaySection">
