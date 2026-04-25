@@ -399,6 +399,17 @@ const ESSAYS = [
     mirrorUrl: '/essays/medium/the-coherence-layer',
   },
   {
+    id: 'M043',
+    title: 'The Sacred Flame: Sovereign Identity and the Moral Law of Life',
+    mediumUrl: 'https://medium.com/@leonsp3/the-sacred-flame-sovereign-identity-and-the-moral-law-of-life-dbcbd77fea78',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'A',
+    note: 'Early-corpus Epic Coach Leon essay. Sovereign identity vs external imprinting; Age of Imprint; belief as biological encoding; dopamine as alignment signal. Lineage voice preserved under register lock. Not retrofitted into Rank-0 vocabulary.',
+    mirrorUrl: '/essays/medium/sacred-flame-sovereign-identity',
+  },
+  {
     id: '011',
     title: 'The Admissibility Gate',
     mediumUrl: '',
