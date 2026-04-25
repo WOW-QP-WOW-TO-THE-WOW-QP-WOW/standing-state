@@ -257,7 +257,7 @@ export default function AdmissibilityDeltaGlossary() {
             <ul className="essayBullets">
               <li>
                 <a href="/system/plates/control-monument" style={{ color: 'var(--gold)' }}>
-                  Plate XI — The Control Monument
+                  Plate XII — The Control Monument
                 </a>{' '}
                 — visual law of Δ; full element legend
               </li>
