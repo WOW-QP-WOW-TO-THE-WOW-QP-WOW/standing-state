@@ -84,7 +84,7 @@ export const GOVERNING_EQUATION = {
 
 export const AXIOM = 'A becomes A, because A knows it is A.'
 
-// ── EXTENDED GLOSSARY — ENTRIES FROM M019–M027 ───────────────
+// ── EXTENDED GLOSSARY — ENTRIES FROM M019 THROUGH M044 ───────
 
 export const EXTENDED_TERMS = [
   {
@@ -513,5 +513,12 @@ export const EXTENDED_TERMS = [
     name: 'Oil of Gladness (Phenomenological Signal)',
     definition: 'The felt signal that coherence is being restored. Not causal. Indicative. Psalm 45:7 read structurally: the gladness is evidence that righteousness (coordinate alignment) has been chosen, not the reward for it. Admissible as phenomenological marker only — held under register lock.',
     source: 'M032',
+  },
+  {
+    id: 'admissibility-delta',
+    symbol: 'Δ = γ − αₑff',
+    name: 'Admissibility Delta (Expansion Constraint Law)',
+    definition: 'The governing inequality for scaling systems under exploit pressure. Governance velocity (γ) must exceed effective exploit-pressure (αₑff). Δ > 0: system remains governable. Δ = 0: hysteresis-band entry, trip threshold approached. Δ < 0: forcing outruns correction, failure onset. Extends Standing State from identity invariance (İ = 0) and Lyapunov contraction (λ_min(K_s) > σ) into controlled expansion regimes. Cross-domain instantiation: AI tool autonomy, financial leverage, civic debt, individual stress. Different fuels, same law. Burnout is Δ < 0. Bankruptcy is Δ < 0. AI runaway is Δ < 0. Full standalone definition: /system/glossary/admissibility-delta. Companion: Plate XII (Control Monument). Doctrine: D002 (Δ Control Law, OAGI v1.2).',
+    source: 'M044',
   },
 ]
