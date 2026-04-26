@@ -90,6 +90,50 @@ const DOCTRINE_PAGES = {
     ],
     pdfHref: null,
   },
+  'admissibility-gate': {
+    id: 'D003',
+    title: 'Admissibility Gate',
+    subtitle: 'Apex Doctrine · Governance Precedes Execution',
+    eyebrow: 'Execution Doctrine',
+    axis1: 'SYS-GOV',
+    axis2: 'VOL-SS',
+    axis3: 'REG-EXEC',
+    equation: 'Φ(x; I*) ≤ 0   ⇒   execute   ·   else   ⇒   halt',
+    intro:
+      'Apex execution doctrine. Defines the structural requirement that admissibility must be evaluated before execution, not after. The gate is the boundary at which candidate movement is tested against the invariant reference. No system may cross this boundary without satisfying Φ(x; I*) ≤ 0.',
+    thesis:
+      'Admissibility must precede execution. Governance evaluated after output is governance only in name.',
+    executionConditions: [
+      'Φ(x; I*) computed and evaluated before any action effect.',
+      'Inadmissible candidate movement (Φ > 0) must trigger halt — no soft override.',
+      'The dagger † halts the trajectory; the field persists; re-entry remains possible only when Φ returns to ≤ 0.',
+      'Navigable set 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t) is the only space within which traversal is authorized.',
+    ],
+    body: [
+      'Modern systems audit after the output, regulate after deployment, explain after damage, apologize after drift. That sequence is backward. By the time consequence is observable, the violation has already passed through the boundary. Governance evaluated downstream is not governance — it is documentation.',
+      'The gate doctrine reverses this. Admissibility is computed before the candidate movement is permitted to cross into effect. The system asks: was this movement permitted to occur in the first place? If yes, the trajectory proceeds within the admissible set. If no, the trajectory halts. Halt is not failure — it is structural preservation.',
+      'This applies uniformly across substrates. A body that cannot halt under unsustainable load loses sovereignty over its own correction. An institution that cannot halt expansion when invariants are violated loses sovereignty over its own design. An artificial system that cannot halt action when admissibility fails loses sovereignty altogether. The gate is the same operator. The substrate is the variable.',
+    ],
+    principles: [
+      {
+        label: 'I. The Boundary',
+        text: 'Φ(x; I*) ≤ 0 is the boundary. There is no continuous gradient through which deviant compression slowly becomes admissible. The condition either holds or it does not. Admissibility is binary at the boundary even when the underlying state is continuous.',
+      },
+      {
+        label: 'II. Pre-Execution Evaluation',
+        text: 'The gate must be evaluated before the candidate action produces effect. Post-hoc audit, post-deployment regulation, and post-damage explanation do not satisfy doctrine. Governance occurs at the boundary or it does not occur.',
+      },
+      {
+        label: 'III. Halt Is Sovereign',
+        text: 'A system that cannot halt cannot remain sovereign. Halt is not punishment, defect, or failure mode. Halt is proof that unsafe effect did not pass. The dagger † is the structural guarantee that termination preserves the field.',
+      },
+      {
+        label: 'IV. Navigable Within Admissible',
+        text: 'Reachability without admissibility produces drift. Admissibility without reachability produces stagnation. Authorized movement lives only in the intersection 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t). Capability is not authority. Reach is not permission. The gate constrains both into one navigable region.',
+      },
+    ],
+    pdfHref: null,
+  },
 }
 
 export default function DoctrineSlugPage() {
@@ -270,10 +314,10 @@ export default function DoctrineSlugPage() {
               ) : (
                 <a
                   className="canonNavLink canonNavNext"
-                  href="/system/glossary/admissibility-delta"
+                  href={slug === 'admissibility-gate' ? '/system/glossary/gate-of-admissibility' : '/system/glossary/admissibility-delta'}
                 >
                   <span className="canonNavDir">Companion</span>
-                  <span className="canonNavTitle">Glossary Δ</span>
+                  <span className="canonNavTitle">{slug === 'admissibility-gate' ? 'Glossary Gate' : 'Glossary Δ'}</span>
                 </a>
               )}
             </div>

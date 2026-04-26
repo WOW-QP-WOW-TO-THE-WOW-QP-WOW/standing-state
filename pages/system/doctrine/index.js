@@ -25,6 +25,18 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-EXEC',
     href: '/system/doctrine/admissibility-delta',
   },
+  {
+    id: 'D003',
+    slug: 'admissibility-gate',
+    type: 'Execution Doctrine',
+    title: 'Admissibility Gate',
+    subtitle: 'Apex Doctrine · Governance Precedes Execution',
+    note: 'Φ(x; I*) ≤ 0 is the boundary. Admissibility must be computed before execution, not after. Halt is sovereign — proof that unsafe effect did not pass. Navigable movement lives only at 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t). Apex of the Standing State doctrine layer.',
+    axis1: 'SYS-GOV',
+    axis2: 'VOL-SS',
+    axis3: 'REG-EXEC',
+    href: '/system/doctrine/admissibility-gate',
+  },
 ]
 
 function DoctrineCard({ item }) {
