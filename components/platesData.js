@@ -250,6 +250,7 @@ export const PLATES = [
   },
   {
   id: 'XIV',
+  number: 'Plate XIV',
   slug: 'gate-of-admissibility',
   title: 'The Gate of Admissibility — Unified System',
   summary: 'Unified admissibility operator binding invariant budget, drift, topology, biological load, and path termination.',
@@ -269,5 +270,5 @@ export const PLATES_META = {
   subtitle: 'Canonical Structural Artifacts',
   description: 'Thirteen plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
   count: 14,
-  volume: 'Volume II — The Biological Sabbath of Being Healthier',
+  volume: 'Volume I + Volume II” (mixed) — The Biological Sabbath of Being Healthier',
 }
