@@ -14,6 +14,7 @@ const ESSAYS = [
   { id:'c010', slug:'the-architecture-of-return', number:'Essay X', title:'The Architecture of Return', subtitle:'Return is not constructed. It is revealed when interference is removed.', equation:'I ⇒ ∇c ⇒ ℐ ⇒ 𝒞u ⇒ x ⇒ Φ(x) → 0' },
   { id:'c011', slug:'the-admissibility-gate', number:'Essay XI', title:'The Admissibility Gate', subtitle:'Identity defines. Admissibility filters. Execution manifests.', equation:'Defined(S) ∧ Evaluated(x_t ∈ S) ⇒ Enforcement' },
   { id:'c012', slug:'gate-of-admissibility', number:'Essay XII', title:'The Gate of Admissibility', subtitle:'The Unified System Behind Standing State', equation:'Φ(x; I*) ≤ 0' },
+  { id:'c013', slug:'the-standing-state-of-happiness', number:'Essay XIII', title:'The Standing State of Happiness', subtitle:'H is the residual output of a system satisfying the admissibility gate.', equation:'Φ(x; I*) ≤ 0  ⇒  H' },
 ]
 
 export default function CanonicalEssaysIndex() {
@@ -21,7 +22,7 @@ export default function CanonicalEssaysIndex() {
     <>
       <Head>
         <title>Canonical Essays — Standing State Press</title>
-        <meta name="description" content="Twelve foundational essays authored directly from the system architecture." />
+        <meta name="description" content="Thirteen foundational essays authored directly from the system architecture." />
       </Head>
       <main style={{ padding: '4rem', color: '#fff', background: '#000', minHeight: '100vh' }}>
         <h1>Canonical Essays</h1>
