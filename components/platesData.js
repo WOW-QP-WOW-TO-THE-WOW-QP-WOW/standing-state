@@ -248,12 +248,26 @@ export const PLATES = [
       { label: 'x*', anchor: 'xstar' },
     ],
   },
+  {
+  id: 'XIV',
+  slug: 'gate-of-admissibility',
+  title: 'The Gate of Admissibility — Unified System',
+  summary: 'Unified admissibility operator binding invariant budget, drift, topology, biological load, and path termination.',
+  governingCondition: 'Φ(x; I*) ≤ 0',
+  description: 'Composite admissibility operator encoding invariant budget, drift constraint, and topology trigger. Traversal defined by 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t). Return governed by Φ(x) → 0 as Σ ↓ and K_auto ↑. Termination: † = path halts, field persists.',
+  volume: 'I',
+  chapter: 'Admissibility Gate',
+  image: '/plates/plate-xiv-gate-of-admissibility.png',
+  linkedVars: ['phi', 'sigma', 'k-auto', 'boundary-integrity', 'identity-coordinate'],
+  linkedGlossary: ['admissibility-delta']
+},
+
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
   description: 'Thirteen plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 13,
+  count: 14,
   volume: 'Volume II — The Biological Sabbath of Being Healthier',
 }
