@@ -521,4 +521,11 @@ export const EXTENDED_TERMS = [
     definition: 'The governing inequality for scaling systems under exploit pressure. Governance velocity (γ) must exceed effective exploit-pressure (αₑff). Δ > 0: system remains governable. Δ = 0: hysteresis-band entry, trip threshold approached. Δ < 0: forcing outruns correction, failure onset. Extends Standing State from identity invariance (İ = 0) and Lyapunov contraction (λ_min(K_s) > σ) into controlled expansion regimes. Cross-domain instantiation: AI tool autonomy, financial leverage, civic debt, individual stress. Different fuels, same law. Burnout is Δ < 0. Bankruptcy is Δ < 0. AI runaway is Δ < 0. Full standalone definition: /system/glossary/admissibility-delta. Companion: Plate XII (Control Monument). Doctrine: D002 (Δ Control Law, OAGI v1.2).',
     source: 'M044',
   },
+  {
+    id: 'gate-of-admissibility',
+    symbol: 'Φ(x; I*) ≤ 0',
+    name: 'Gate of Admissibility (Apex Operator)',
+    definition: 'The unified admissibility operator. Governs every prior plate as the apex of the Standing State architecture. A system remains coherent only when its movement remains admissible relative to its invariant reference I*. Composite structure: invariant tier (I* = constant ∀ t) → admissible flow (Φ(x; I*) ≤ 0 ⇒ x → I*) → topology trigger (x ∉ S(I*) ⇒ †). Traversal occurs only within 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t) — the intersection of admissibility and reachability. Return is subtractive: Φ(x) → 0 as Σ ↓ and K_auto ↑. Termination dagger † = path halts, field persists. Cross-domain: biology (stress · boundary · correction · return), computation (execution · authority · topology · control), finance (leverage · exposure · liquidity · failure), personal development (attention from identity vs from fear). Different substrates, same law. Full standalone definition: /system/glossary/gate-of-admissibility. Companion: Plate XIV (Gate of Admissibility). Doctrine: D003 (Admissibility Gate).',
+    source: 'C012',
+  },
 ]
