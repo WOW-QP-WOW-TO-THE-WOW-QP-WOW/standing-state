@@ -109,14 +109,6 @@ export default function PlatesGallery() {
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="footer">
-        <div className="wrap footerInner">
-          <div className="fMark">Standing State Press</div>
-          <div className="fCopy">© Leon Powdar · All rights reserved</div>
-          <div className="fSig">Signal → Completion → Repair</div>
-        </div>
-      </footer>
 
       <script
         dangerouslySetInnerHTML={{
