@@ -528,4 +528,11 @@ export const EXTENDED_TERMS = [
     definition: 'The unified admissibility operator. Governs every prior plate as the apex of the Standing State architecture. A system remains coherent only when its movement remains admissible relative to its invariant reference I*. Composite structure: invariant tier (I* = constant ∀ t) → admissible flow (Φ(x; I*) ≤ 0 ⇒ x → I*) → topology trigger (x ∉ S(I*) ⇒ †). Traversal occurs only within 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t) — the intersection of admissibility and reachability. Return is subtractive: Φ(x) → 0 as Σ ↓ and K_auto ↑. Termination dagger † = path halts, field persists. Cross-domain: biology (stress · boundary · correction · return), computation (execution · authority · topology · control), finance (leverage · exposure · liquidity · failure), personal development (attention from identity vs from fear). Different substrates, same law. Full standalone definition: /system/glossary/gate-of-admissibility. Companion: Plate XIV (Gate of Admissibility). Doctrine: D003 (Admissibility Gate).',
     source: 'C012',
   },
+  {
+    id: 'happiness',
+    symbol: 'H',
+    name: 'Standing State of Happiness (Expression Output)',
+    definition: 'Residual output of a system satisfying the admissibility gate. H := stable output under Φ(x; I*) ≤ 0. Binary: Φ ≤ 0 ⇒ H stable; Φ > 0 ⇒ H unavailable. No gradients. No partial states. H is not in the action space — it cannot be optimized, acquired, or pursued. Targeting H as an input increases load and raises Φ, the drift signature: H recedes as it is sought. Misclassifications: pleasure ≠ H, relief ≠ H, stimulation ≠ H, escape ≠ H — each terminates with its proximal cause and does not survive substrate change. H is not a feeling registered by the system; H is the operating condition of the system when contradiction has been removed. Felt sense in narrative register (M043) is the sensory reflection of K_auto operating without interference. Position: C012 (Gate) → C013 (Expression). Companion: C013 canonical, M043 narrative mirror.',
+    source: 'C013',
+  },
 ]
