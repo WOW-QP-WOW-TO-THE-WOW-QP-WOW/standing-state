@@ -12,6 +12,8 @@ const ESSAYS = [
   { id:'c008', slug:'surrender', number:'Essay VIII', title:'Surrender', subtitle:'Jurisdictional integrity. Output does not rewrite identity.', equation:'I* = 0     x ⇏ I*' },
   { id:'c009', slug:'external-identity-and-consent', number:'Essay IX', title:'External Identity and Consent', subtitle:'External identities produce signal. They require consent to propagate.', equation:'External signal ⇒ ℐ(I*, ∇c) ⇏ I*' },
   { id:'c010', slug:'the-architecture-of-return', number:'Essay X', title:'The Architecture of Return', subtitle:'Return is not constructed. It is revealed when interference is removed.', equation:'I ⇒ ∇c ⇒ ℐ ⇒ 𝒞u ⇒ x ⇒ Φ(x) → 0' },
+  { id:'c011', slug:'the-admissibility-gate', number:'Essay XI', title:'The Admissibility Gate', subtitle:'Identity defines. Admissibility filters. Execution manifests.', equation:'Defined(S) ∧ Evaluated(x_t ∈ S) ⇒ Enforcement' },
+  { id:'c012', slug:'gate-of-admissibility', number:'Essay XII', title:'The Gate of Admissibility', subtitle:'The Unified System Behind Standing State', equation:'Φ(x; I*) ≤ 0' },
 ]
 
 export default function CanonicalEssaysIndex() {
@@ -19,7 +21,7 @@ export default function CanonicalEssaysIndex() {
     <>
       <Head>
         <title>Canonical Essays — Standing State Press</title>
-        <meta name="description" content="Ten foundational essays authored directly from the system architecture." />
+        <meta name="description" content="Twelve foundational essays authored directly from the system architecture." />
       </Head>
       <main style={{ padding: '4rem', color: '#fff', background: '#000', minHeight: '100vh' }}>
         <h1>Canonical Essays</h1>
