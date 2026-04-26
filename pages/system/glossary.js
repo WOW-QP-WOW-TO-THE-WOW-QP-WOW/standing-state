@@ -211,7 +211,7 @@ export default function Glossary() {
         <section style={{ paddingBottom: '6rem' }}>
           <div className="wrap">
             <div className="glossSectionHead" style={{ marginTop: '4rem', marginBottom: '2.5rem' }}>
-              <span className="glossEyebrow">Extended Definitions — M019 through M044</span>
+              <span className="glossEyebrow">Extended Definitions — M019 through M044 · C012</span>
               <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(1.4rem,3vw,2rem)', fontWeight: 400, color: 'var(--white)', marginTop: '0.5rem' }}>
                 Corpus Glossary
               </h2>
