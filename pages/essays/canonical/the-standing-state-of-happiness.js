@@ -3,7 +3,7 @@
  * C013 — The Standing State of Happiness
  *
  * Canonical · Apex+1 · Expression Under the Gate
- * Source register: structural rewrite of M043 (medium narrative).
+ * Source register: structural rewrite of M045 (medium narrative).
  * Position: C012 (Gate) → C013 (Expression).
  *
  * H is the residual output of a system satisfying the admissibility gate.
@@ -246,7 +246,7 @@ export default function StandingStateOfHappinessCanonical() {
             <div className="glossVarLogicWrap">
               <div style={{ padding: '1rem 1.2rem' }}>
                 <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold-dim)', display: 'block', marginBottom: '0.4rem' }}>Narrative Layer</span>
-                <a href="/essays/medium/standing-state-of-happiness" style={{ color: 'var(--gold)' }}>M043 — The Standing State of Happiness (Mirror)</a>
+                <a href="/essays/medium/standing-state-of-happiness" style={{ color: 'var(--gold)' }}>M045 — The Standing State of Happiness (Mirror)</a>
               </div>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function StandingStateOfHappinessCanonical() {
             <a className="canonNavIndex" href="/essays/canonical">Canonical Index</a>
             <a className="canonNavLink canonNavNext" href="/essays/medium/standing-state-of-happiness">
               <span className="canonNavDir">Mirror</span>
-              <span className="canonNavTitle">M043 · Narrative</span>
+              <span className="canonNavTitle">M045 · Narrative</span>
             </a>
           </div>
 
