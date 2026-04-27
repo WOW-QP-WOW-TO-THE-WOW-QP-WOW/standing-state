@@ -421,6 +421,17 @@ const ESSAYS = [
     mirrorUrl: '/essays/medium/admissibility-manifesto',
   },
   {
+  id: 'M045',
+  title: 'The Standing State of Happiness',
+  mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-of-happiness-152387482de0',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-SS',
+  axis3: 'REG-NARRATIVE',
+  flag: 'M',
+  note: 'Narrative mirror of C013. Happiness is not pursued; it is the felt reflection of K_auto operating without interference under the admissibility gate. ID corrected from stale M043 to M045 so M043 remains The Sacred Flame.',
+  mirrorUrl: '/essays/medium/standing-state-of-happiness',
+},
+  {
     id: '011',
     title: 'The Admissibility Gate',
     mediumUrl: '',
