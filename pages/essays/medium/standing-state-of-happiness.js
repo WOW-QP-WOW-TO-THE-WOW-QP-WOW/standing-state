@@ -1,6 +1,6 @@
 /**
  * /essays/medium/standing-state-of-happiness
- * M043 — The Standing State of Happiness
+ * M045 — The Standing State of Happiness
  * Mirror · Narrative Register · VOL-SS · Paired with C013
  * Standing State Press
  *
@@ -8,7 +8,7 @@
  * Published: Apr 15, 2026
  *
  * Pairing: C013 holds the law (structural definition of H).
- *          M043 holds the experience (narrative translation for pursuit-driven register).
+ *          M045 holds the experience (narrative translation for pursuit-driven register).
  *
  * Drift signature: "H recedes as it is sought."
  * Mechanism: the felt sense of happiness is the system's awareness of K_auto
@@ -50,10 +50,10 @@ export default function StandingStateOfHappinessMirror() {
             <span className="glossBreadSep">→</span>
             <a href="/essays">Essays</a>
             <span className="glossBreadSep">→</span>
-            <span style={{ color: 'var(--gold-dim)' }}>M043</span>
+            <span style={{ color: 'var(--gold-dim)' }}>M045</span>
           </div>
           <div className="glossEyebrow">
-            M043 · Narrative Register · VOL-SS · Mirror of C013
+            M045 · Narrative Register · VOL-SS · Mirror of C013
           </div>
           <h1 className="glossH1">The Standing State of Happiness</h1>
           <p className="glossIntro" style={{ fontStyle: 'italic' }}>
