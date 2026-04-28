@@ -145,6 +145,60 @@ export default function Home() {
 
       <hr className="divider" />
 
+      {/* ── REGISTERS / GATES ── */}
+      <section className="regSec" id="registers">
+        <div className="wrap">
+          <div className="secHead reveal">
+            <span className="secLabel">The Standing State Across Registers</span>
+            <div className="secRule" />
+          </div>
+          <p className="regIntro reveal">
+            The same invariant appears across domains. Different language. Same function.
+            The domains do not define identity — they reveal it.
+          </p>
+          <div className="regGrid reveal">
+            {REGISTERS.map(r => (
+              <a
+                href={`/system/gates/${r.slug}`}
+                className="regCell regCellLink"
+                key={r.name}
+              >
+                <span className="regName">{r.name}</span>
+                <div className="regExpr">
+                  {r.exprKatex
+                    ? <KTex math={r.exprKatex} />
+                    : r.expr.split('\n').map((line, i) => (
+                        <span key={i}>{line}{i < r.expr.split('\n').length - 1 && <br />}</span>
+                      ))
+                  }
+                </div>
+                <div className="regSub">{r.sub}</div>
+                <div className="regCellCta">Enter →</div>
+              </a>
+            ))}
+          </div>
+
+          {/* Gate Grid — enter each register */}
+          <div style={{ marginTop: '3rem' }} className="reveal">
+            <div className="secHead" style={{ marginBottom: '1.5rem' }}>
+              <span className="secLabel">Enter a Register</span>
+              <div className="secRule" />
+              <a href="/system/gates" className="gatesFootLink" style={{ whiteSpace: 'nowrap', marginLeft: '1rem' }}>All Gates →</a>
+            </div>
+            <GateGrid />
+          </div>
+
+          <div className="regAxiom reveal">
+            The invariant was never divided. Only the lenses were.<br />
+            When the lenses align, the system is seen as one.
+          </div>
+        </div>
+      </section>
+
+
+      <hr className="divider" />
+
+
       {/* ── SYSTEM CHAIN ── */}
       <section className="chainSec" id="system">
         <div className="wrap">
@@ -338,56 +392,6 @@ export default function Home() {
           </div>
           <div className="corpusAxiom reveal d5">
             A becomes A, because A knows it is A.
-          </div>
-        </div>
-      </section>
-
-      {/* ── REGISTERS / GATES ── */}
-      <section className="regSec" id="registers">
-        <div className="wrap">
-          <div className="secHead reveal">
-            <span className="secLabel">The Standing State Across Registers</span>
-            <div className="secRule" />
-          </div>
-          <p className="regIntro reveal">
-            The same invariant appears across domains. Different language. Same function.
-            The domains do not define identity — they reveal it.
-          </p>
-          <div className="regGrid reveal">
-            {REGISTERS.map(r => (
-              <a
-                href={`/system/gates/${r.slug}`}
-                className="regCell regCellLink"
-                key={r.name}
-              >
-                <span className="regName">{r.name}</span>
-                <div className="regExpr">
-                  {r.exprKatex
-                    ? <KTex math={r.exprKatex} />
-                    : r.expr.split('\n').map((line, i) => (
-                        <span key={i}>{line}{i < r.expr.split('\n').length - 1 && <br />}</span>
-                      ))
-                  }
-                </div>
-                <div className="regSub">{r.sub}</div>
-                <div className="regCellCta">Enter →</div>
-              </a>
-            ))}
-          </div>
-
-          {/* Gate Grid — enter each register */}
-          <div style={{ marginTop: '3rem' }} className="reveal">
-            <div className="secHead" style={{ marginBottom: '1.5rem' }}>
-              <span className="secLabel">Enter a Register</span>
-              <div className="secRule" />
-              <a href="/system/gates" className="gatesFootLink" style={{ whiteSpace: 'nowrap', marginLeft: '1rem' }}>All Gates →</a>
-            </div>
-            <GateGrid />
-          </div>
-
-          <div className="regAxiom reveal">
-            The invariant was never divided. Only the lenses were.<br />
-            When the lenses align, the system is seen as one.
           </div>
         </div>
       </section>
