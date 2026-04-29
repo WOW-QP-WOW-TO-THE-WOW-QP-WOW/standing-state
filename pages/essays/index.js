@@ -459,7 +459,7 @@ const ESSAYS = [
   {
     id: 'M032',
     title: 'The Principle of Mana',
-    mediumUrl: '',
+    mediumUrl: 'https://medium.com/@leonsp3/the-principle-of-mana-restoring-health-through-conscious-alignment-305699eb6c3c',
     axis1: 'VAR-K',
     axis2: 'VOL-BSH1',
     axis3: 'REG-BIO',
