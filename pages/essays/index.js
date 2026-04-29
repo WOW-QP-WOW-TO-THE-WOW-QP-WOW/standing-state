@@ -338,7 +338,7 @@ const ESSAYS = [
   {
     id: 'M018',
     title: 'The Cocoon of Transformation',
-    mediumUrl: '',
+    mediumUrl: 'https://medium.com/@leonsp3/the-cocoon-of-transformation-a-journey-guided-by-divine-design-adf7d3d84e3c',
     axis1: 'PLT-COORD',
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
