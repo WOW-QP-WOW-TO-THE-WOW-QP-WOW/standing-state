@@ -339,7 +339,7 @@ const ESSAYS = [
   {
     id: 'M024',
     title: 'Neuralink through NSRL-10',
-    mediumUrl: '',
+    mediumUrl: 'Neuralink through NSRL-10 (Four-Plane Regulatory Model)…$',
     axis1: 'PLT-ADMIT',
     axis2: 'VOL-SS',
     axis3: 'REG-STRUCT',
@@ -355,7 +355,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Spiritual identity vessel essay. The Ark functions as protected consciousness, resurrection, and garden-within image. Lineage voice preserved under register lock.',
+    note: 'Neuralink / BCI governance case-study applying NSRL-10 as a four-plane regulatory model. Defines the Q-Gate as protection of self-authorship across Identity, Resonance, Mind & Motion, and Growth. Establishes sovereign consent, affect integrity, cognitive transparency, and behavioral non-coercion as admissibility conditions for neural read/write systems.',
     mirrorUrl: '/essays/medium/ark-of-i-am',
   },
   {
