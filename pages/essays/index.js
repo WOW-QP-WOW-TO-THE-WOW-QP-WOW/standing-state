@@ -324,7 +324,7 @@ const ESSAYS = [
     flag: 'M',
     note: 'Pre-formal control law. Defines internal cost (C_int), rupture threshold (ρ), and automatic refusal mechanism. Precedes Δ formalization in M044. Early discovery of admissibility failure under incoherence.',
     mirrorUrl: '/essays/medium/physics-of-refusal',
-  }
+  },
   {
     id: 'M022',
     title: 'The Blood of Christ Is Attention',
