@@ -328,7 +328,7 @@ const ESSAYS = [
   {
     id: 'M022',
     title: 'The Blood of Christ Is Attention',
-    mediumUrl: '',
+    mediumUrl: 'The Blood of Christ Is Attention: Conversations on Invested Love…$',
     axis1: 'PLT-CONSENT',
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
