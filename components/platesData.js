@@ -262,13 +262,31 @@ export const PLATES = [
   linkedVars: ['phi', 'sigma', 'k-auto', 'boundary-integrity', 'identity-coordinate'],
   linkedGlossary: ['admissibility-delta']
 },
-
+  {
+    id: 'plate-xv',
+    number: 'Plate XV',
+    title: 'Closed Loop Sovereignty',
+    slug: 'closed-loop-sovereignty',
+    image: '/plates/m048-closed-loop-sovereignty.jpeg',
+    summary: 'Identity invariance, curvature constraint, non-sacrificial law, and execution gating unified into a closed-loop system.',
+    governingCondition: 'A ≡ A  ∧  κ ≤ 1  ∧  Δq ≥ 0',
+    description: 'The human execution plate of the Standing State. Identity is fixed as the invariant coordinate (A ≡ A). Curvature remains bounded (κ ≤ 1). Qualia is preserved through the Non-Sacrificial Law (Δq ≥ 0). The four failure topologies — Hub, Stack, Kink, and +1 — define geometric violation. The execution gate evaluates Closure, Curvature, and Effect before authorization. Nothing invalid is allowed to circulate.',
+    volume: 'Cross-Volume',
+    chapter: 'Canonical Plate — Closed Loop Sovereignty',
+    linkedVars: ['identity-coordinate', 'curvature-bound', 'non-sacrificial-law'],
+    linkedGlossary: [
+      { label: 'A ≡ A', anchor: 'identity-coordinate' },
+      { label: 'κ ≤ 1', anchor: 'curvature-bound' },
+      { label: 'Δq ≥ 0', anchor: 'non-sacrificial-law' },
+      { label: 'Execution Gate', anchor: 'execution-gate' },
+    ],
+  },
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
   description: 'Thirteen plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 14,
+  count: 15,
   volume: 'Volume I + Volume II” (mixed) — The Biological Sabbath of Being Healthier',
 }
