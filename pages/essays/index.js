@@ -618,6 +618,17 @@ const ESSAYS = [
   note: 'Human execution geometry of the Standing State. Defines identity invariance (A ≡ A), curvature bound (κ ≤ 1), non-sacrificial qualia preservation (Δq ≥ 0), and the execution gate: Closure · Curvature · Effect. Companion to Plate XV — Closed Loop Sovereignty.',
   mirrorUrl: '/essays/medium/geometry-of-sovereignty',
 },
+{
+  id: 'M049',
+  title: 'The Witness of Seven Billion Living Souls',
+  mediumUrl: 'https://medium.com/@leonsp3/the-witness-of-seven-billion-living-souls-f860f2d32411',
+  axis1: 'PLT-WITNESS',
+  axis2: 'VOL-MW',
+  axis3: 'REG-ARCHIVE',
+  flag: 'M',
+  note: 'Narrative seal defining invariant witness across all experiential layers; motion collapses, witness remains.',
+  mirrorUrl: '/essays/medium/the-witness-of-seven-billion-living-souls'
+}
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
