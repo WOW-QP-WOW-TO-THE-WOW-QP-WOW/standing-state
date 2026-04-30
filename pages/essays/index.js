@@ -809,17 +809,6 @@ export default function EssaysPage() {
       </Head>
 
       
-        <div className="wrap navInner">
-          <a className="navMark" href="/">Standing State Press</a>
-          <ul className="navLinks">
-            <li><a href="/#system">System</a></li>
-            <li><a href="/#corpus">Corpus</a></li>
-            <li><a href="/system/glossary">Glossary</a></li>
-            <li><a href="/essays" style={{ color: 'var(--gold)' }}>Essays</a></li>
-            <li><a href="/#about">Author</a></li>
-          </ul>
-        </div>
-      </nav>
 
       <header className="glossHeader">
         <div className="wrap">
