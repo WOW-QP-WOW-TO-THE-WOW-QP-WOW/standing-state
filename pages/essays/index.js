@@ -11,54 +11,55 @@ import { useState, useMemo } from 'react'
 // ── AXIS DEFINITIONS ─────────────────────────────────────────
 
 const PLATES = [
-  { code: 'PLT-I', label: 'Fed–Stress–Output Loop' },
-  { code: 'PLT-IIB', label: 'The Scab Condition' },
-  { code: 'PLT-INTERP', label: 'Architecture of Interpretation' },
-  { code: 'PLT-COORD', label: 'Identity as Coordinate' },
-  { code: 'PLT-PAIN', label: 'Pain as Decoherence Signal' },
+  { code: 'PLT-I',       label: 'Fed–Stress–Output Loop' },
+  { code: 'PLT-IIB',     label: 'The Scab Condition' },
+  { code: 'PLT-INTERP',  label: 'Architecture of Interpretation' },
+  { code: 'PLT-COORD',   label: 'Identity as Coordinate' },
+  { code: 'PLT-PAIN',    label: 'Pain as Decoherence Signal' },
   { code: 'PLT-CONSENT', label: 'The Consent Engine' },
-  { code: 'PLT-ADMIT', label: 'The Admissibility Gate' },
-  { code: 'VAR-Σ', label: 'Total Load (Σ)' },
-  { code: 'VAR-Φ', label: 'Completion Functional (Φ)' },
-  { code: 'VAR-B', label: 'Boundary Integrity (B)' },
-  { code: 'VAR-K', label: 'Autophagic Correction (K)' },
-  { code: 'VAR-∇c', label: 'Conscience Gradient (∇c)' },
-  { code: 'VAR-C', label: 'Consent Scalar (𝒞)' },
-  { code: 'SYS-GEN', label: 'General System' },
+  { code: 'PLT-ADMIT',   label: 'The Admissibility Gate' },
+  { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
+  { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
+  { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
+  { code: 'VAR-K',       label: 'Autophagic Correction (K)' },
+  { code: 'VAR-∇c',      label: 'Conscience Gradient (∇c)' },
+  { code: 'VAR-C',       label: 'Consent Scalar (𝒞)' },
+  { code: 'SYS-GEN',     label: 'General System' },
+  { code: 'SYS-ARCH',    label: 'System Architecture' },
 ]
 
 const VOLUMES = [
-  { code: 'VOL-MW', label: 'The Measure Within' },
-  { code: 'VOL-SS', label: 'The Standing State: Vol I' },
-  { code: 'VOL-LG', label: 'The Law of Growth' },
-  { code: 'VOL-BSH1', label: 'Biological Sabbath Vol I' },
-  { code: 'VOL-BSH2', label: 'Biological Sabbath Vol II' },
+  { code: 'VOL-MW',    label: 'The Measure Within' },
+  { code: 'VOL-SS',    label: 'The Standing State: Vol I' },
+  { code: 'VOL-LG',    label: 'The Law of Growth' },
+  { code: 'VOL-BSH1',  label: 'Biological Sabbath Vol I' },
+  { code: 'VOL-BSH2',  label: 'Biological Sabbath Vol II' },
   { code: 'VOL-CROSS', label: 'Cross-Volume' },
 ]
 
 const REGISTERS = [
-  { code: 'REG-MATH', label: 'Mathematical' },
-  { code: 'REG-BIO', label: 'Biological' },
-  { code: 'REG-MIND', label: 'Cognitive' },
-  { code: 'REG-PSY', label: 'Psychological' },
-  { code: 'REG-PHIL', label: 'Philosophical' },
+  { code: 'REG-MATH',   label: 'Mathematical' },
+  { code: 'REG-BIO',    label: 'Biological' },
+  { code: 'REG-MIND',   label: 'Cognitive' },
+  { code: 'REG-PSY',    label: 'Psychological' },
+  { code: 'REG-PHIL',   label: 'Philosophical' },
   { code: 'REG-SPIRIT', label: 'Spiritual' },
-  { code: 'REG-MIXED', label: 'Mixed' },
+  { code: 'REG-MIXED',  label: 'Mixed' },
   { code: 'REG-STRUCT', label: 'Structural' },
 ]
 
 const FLAGS = {
-  A: { label: 'Aligned', color: '#7a6428' },
+  A: { label: 'Aligned',  color: '#7a6428' },
   M: { label: 'Mirrored', color: '#c4a44a' },
-  U: { label: 'Update', color: '#6a5a3a' },
-  E: { label: 'Expand', color: '#5a6a3a' },
-  X: { label: 'Archive', color: '#3a3a3a' },
+  U: { label: 'Update',   color: '#6a5a3a' },
+  E: { label: 'Expand',   color: '#5a6a3a' },
+  X: { label: 'Archive',  color: '#3a3a3a' },
 }
 
 // ── ESSAY DATA ───────────────────────────────────────────────
 
 const ESSAYS = [
-  // ── CANONICAL SET ─────────────────────────────────────────
+
   {
     id: '001',
     title: 'The Standing State',
@@ -169,7 +170,6 @@ const ESSAYS = [
     note: 'Full system synthesis pipeline and closure. Return is not constructed — it is revealed when interference is removed.',
     mirrorUrl: '/essays/canonical/the-architecture-of-return',
   },
-
   {
     id: '011',
     title: 'The Admissibility Gate',
@@ -181,7 +181,7 @@ const ESSAYS = [
     note: 'Identity defines. Admissibility filters. Execution manifests. Defined constraints without evaluated membership have no operative force.',
     mirrorUrl: '/essays/canonical/the-admissibility-gate',
   },
-  // ── MEDIUM ESSAYS ─────────────────────────────────────────
+
   {
     id: 'M001',
     title: 'The Measure Within — A Structural Thesis on Self-Relation, Compassion, and Generative Multiplication',
@@ -190,7 +190,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Foundational thesis — coherence as condition of generativity; identity as invariant across scripture, contemplative practice, and natural process',
+    note: 'Foundational thesis — coherence as condition of generativity; identity as invariant across scripture, contemplative practice, and natural process.',
     mirrorUrl: '',
   },
   {
@@ -201,7 +201,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Derives identity invariance formally from forward invariance; introduces Time Burn; Sabbath as coherence threshold C=1',
+    note: 'Derives identity invariance formally from forward invariance; introduces Time Burn; Sabbath as coherence threshold C=1.',
     mirrorUrl: '',
   },
   {
@@ -212,7 +212,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Five-stage sequence: source → law → mediation → stillness → recognition. Departs from Plato and Augustine — identity is dynamic achievement not formal given',
+    note: 'Five-stage sequence: source → law → mediation → stillness → recognition. Identity is invariant; alignment to identity is dynamic.',
     mirrorUrl: '',
   },
   {
@@ -223,7 +223,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'M',
-    note: 'Lyapunov-resource closure; surrender as zero-input control u=0; identity as dissipative attractor',
+    note: 'Lyapunov-resource closure; surrender as zero-input control u=0; identity as dissipative attractor.',
     mirrorUrl: '',
   },
   {
@@ -234,7 +234,7 @@ const ESSAYS = [
     axis2: 'VOL-BSH1',
     axis3: 'REG-BIO',
     flag: 'A',
-    note: 'Sacrifice Logic as sustained Σ; Qualia as coherence yield; Zero-Sacrifice Invariant as boundary condition',
+    note: 'Sacrifice Logic as sustained Σ; Qualia as coherence yield; Zero-Sacrifice Invariant as boundary condition.',
     mirrorUrl: '',
   },
   {
@@ -245,7 +245,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'E',
-    note: 'Spectral-geometric stability for recursive AI; alignment reframed as stability theorem — seed for Plate IX',
+    note: 'Spectral-geometric stability for recursive AI; alignment reframed as stability theorem.',
     mirrorUrl: '',
   },
   {
@@ -256,7 +256,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'E',
-    note: "Kuramoto oscillator network; toroidal closure as boundary identification; λ₂(L') > Δω as synchronization criterion; A ≡ A as Laplacian flow invariance — seed for arXiv submission",
+    note: 'Kuramoto oscillator network; toroidal closure as boundary identification; λ₂(L) > Δω as synchronization criterion.',
     mirrorUrl: '',
   },
   {
@@ -267,7 +267,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Time as buffer against premature coherence; forgetting as Sabbath of memory — load-shedding after resolution; repression vs forgetting distinction; identity is stationary, memory is time-bound',
+    note: 'Time as buffer against premature coherence; forgetting as Sabbath of memory; identity is stationary, memory is time-bound.',
     mirrorUrl: '',
   },
   {
@@ -278,19 +278,19 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MATH',
     flag: 'E',
-    note: 'Sovereignty inequality I_self(τ) > I_world(τ); coherence horizon τ₀; basin-of-sovereignty theorem; volatility collapse threshold; A → A iff internal recursion governs future formation — seed for Plate X',
+    note: 'Sovereignty inequality, coherence horizon, basin-of-sovereignty theorem, volatility collapse threshold.',
     mirrorUrl: '',
   },
   {
     id: 'M010',
     title: "The Lord's Prayer as a Blueprint for Self-Sovereignty",
     mediumUrl: 'https://medium.com/@leonsp3/the-lords-prayer-as-a-blueprint-for-self-sovereignty-an-examination-of-epic-coach-leon-s-romantic-f958f18d4e8c',
-    mirrorUrl: '/essays/canonical/lords-prayer-self-sovereignty',
-    axis1: 'PLT-COORD',
+    axis1: 'PLT-INTERP',
     axis2: 'VOL-MW',
-    axis3: 'REG-MIXED',
+    axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: "Identity pipeline rendering of The Lord's Prayer",
+    note: "Lord's Prayer decoded as identity pipeline: source → recognition → descent → alignment → correction → defense → closure.",
+    mirrorUrl: '/essays/medium/lords-prayer-self-sovereignty',
   },
   {
     id: 'M011',
@@ -300,139 +300,238 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Five registers mapped to Gates system; Three-channel architecture (logic/intuition/consent) = ℐ(I,∇c); volitional consciousness as terminal consent operator 𝒞',
+    note: 'Five registers mapped to Gates system; volitional consciousness as terminal consent operator.',
     mirrorUrl: '/essays/medium/multidimensional-human',
   },
   {
-    id: 'M018',
-    title: 'The Cocoon of Transformation',
-    mediumUrl: '',
-    axis1: 'PLT-COORD',
-    axis2: 'VOL-MW',
-    axis3: 'REG-MIXED',
-    flag: 'M',
-    note: 'Transformation essay preserved as lineage/practice layer. Cocoon as protected interval of becoming; identity matures through enclosure, pressure, and emergence without premature exposure.',
-    mirrorUrl: '/essays/medium/cocoon-of-transformation',
-  },
-  {
-    id: 'M019',
-    title: 'The Physics of Refusal',
-    mediumUrl: 'https://medium.com/@leonsp3/the-physics-of-refusal-why-high-performance-incoherence-always-collapses-7b28f3f7faa0',
-    axis1: 'PLT-CONSENT',
-    axis2: 'VOL-SS',
-    axis3: 'REG-MIXED',
-    flag: 'M',
-    note: 'Pre-formal control law. Defines internal cost (C_int), rupture threshold (ρ), and automatic refusal mechanism. Precedes Δ formalization in M044. Early discovery of admissibility failure under incoherence.',
-    mirrorUrl: '/essays/medium/physics-of-refusal',
-  },
-  {
-    id: 'M022',
-    title: 'The Blood of Christ Is Attention',
-    mediumUrl: 'The Blood of Christ Is Attention: Conversations on Invested Love…$',
-    axis1: 'PLT-CONSENT',
-    axis2: 'VOL-MW',
-    axis3: 'REG-SPIRIT',
-    flag: 'M',
-    note: 'Spiritual-register attention essay. Interprets blood as invested attention and love as directed life-force. Lineage voice preserved; not retrofitted into Rank-0 vocabulary.',
-    mirrorUrl: '/essays/medium/blood-of-christ-attention',
-  },
-  {
-    id: 'M024',
-    title: 'Neuralink through NSRL-10',
-    mediumUrl: 'Neuralink through NSRL-10 (Four-Plane Regulatory Model)…$',
+    id: 'M012',
+    title: 'The Admissibility Manifesto — A Systems Law for the Age of Autonomous Scaling',
+    mediumUrl: 'https://medium.com/@leonsp3/the-admissibility-manifesto-56b8b5d66840',
     axis1: 'PLT-ADMIT',
-    axis2: 'VOL-SS',
+    axis2: 'VOL-CROSS',
     axis3: 'REG-STRUCT',
-    flag: 'A',
-    note: 'Neuralink / BCI governance case-study applying NSRL-10 as a four-plane regulatory model. Defines the Q-Gate as protection of self-authorship across Identity, Resonance, Mind & Motion, and Growth. Establishes sovereign consent, affect integrity, cognitive transparency, and behavioral non-coercion as admissibility conditions for neural read/write systems.',
-    mirrorUrl: '/essays/medium/neuralink-nsrl-10',
+    flag: 'E',
+    note: 'Governance capacity > expansion pressure; Δ = γ_obs − α_eff; OAGI v1.2 as executable safety primitive.',
+    mirrorUrl: '',
   },
   {
-    id: 'M025',
-    title: 'The Ark of I Am',
-    mediumUrl: '',
+    id: 'M013',
+    title: 'The True Essence of Integrity — Integrity as the Architecture of Coherent Being',
+    mediumUrl: 'https://medium.com/@leonsp3/the-true-essence-of-integrity-aa2cf128648c',
     axis1: 'PLT-COORD',
     axis2: 'VOL-MW',
-    axis3: 'REG-SPIRIT',
+    axis3: 'REG-PHIL',
     flag: 'M',
-    note: 'Spiritual identity vessel essay. The Ark functions as protected consciousness, resurrection, and garden-within image. Lineage voice preserved under register lock.',
-    mirrorUrl: '/essays/medium/ark-of-i-am',
+    note: 'Integrity as structural condition not virtue; seed/soil/fruit model; identity invariant, expression condition-dependent.',
+    mirrorUrl: '',
   },
   {
-    id: 'M026',
-    title: 'Cleansing the Inner Temple',
+    id: 'M014',
+    title: 'The Standing State — A Unified Thesis on Identity, Reality, and Coherent Living',
     mediumUrl: '',
+    axis1: 'SYS-GEN',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Complete unified system thesis — identity as coordinate, correction law, phase-lock as integrity, Standing State Δ→0.',
+    mirrorUrl: '/standing-state',
+  },
+  {
+    id: 'M015',
+    title: 'Executive Summary — The Ethics of Invariance & The Technical Doctrine of Invariance',
+    mediumUrl: 'https://medium.com/@leonsp3/executive-summary-35d9a5ebe9b4',
+    axis1: 'PLT-ADMIT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-STRUCT',
+    flag: 'E',
+    note: 'Four principles: disturbance declaration, invariant safety params, forward invariance enforcement, deterministic halt.',
+    mirrorUrl: '/system/doctrine/ethics-of-invariance',
+  },
+  {
+    id: 'M016',
+    title: 'The Standing State of Happiness',
+    mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-of-happiness-152387482de0',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-PSY',
+    flag: 'M',
+    note: 'Happiness as structural integrity not reward; relationships as result not source; fruit not fuel.',
+    mirrorUrl: '',
+  },
+  {
+    id: 'M017',
+    title: 'Embracing the Paradox — A Structural Reading',
+    mediumUrl: 'https://medium.com/@leonsp3/embracing-the-paradox-fear-joy-and-the-quest-for-meaning-2d6d0627cdde',
+    axis1: 'PLT-PAIN',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-PSY',
+    flag: 'M',
+    note: 'Fear and joy as structural signals; meaning as coherence revealed when distortion is removed.',
+    mirrorUrl: '',
+  },
+  {
+    id: 'M018',
+    title: 'The Cocoon of Transformation — A Structural Reading',
+    mediumUrl: 'https://medium.com/@leonsp3/the-cocoon-of-transformation-a-journey-guided-by-divine-design-adf7d3d84e3c',
     axis1: 'PLT-INTERP',
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Temple-cleansing essay. Three eyes, solar plexus, and soul power framed as purification of attention and internal authority. Preserved as spiritual/practice register.',
+    note: 'Cocoon as protected interval of becoming; stillness as completion condition; emergence after resolution.',
+    mirrorUrl: '/essays/medium/cocoon-of-transformation',
+  },
+  {
+    id: 'M019',
+    title: 'The Physics of Refusal: Why High-Performance Incoherence Always Collapses',
+    mediumUrl: 'https://medium.com/@leonsp3/the-physics-of-refusal-why-high-performance-incoherence-always-collapses-7b28f3f7faa0',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Strategic sacrifice as sustained misalignment; rupture threshold as admissibility boundary; refusal as structural necessity.',
+    mirrorUrl: '/essays/medium/physics-of-refusal',
+  },
+  {
+    id: 'M020',
+    title: "The Vibrational Shift: From Sacrifice to Investment and Why It's Important",
+    mediumUrl: 'https://medium.com/@leonsp3/the-vibrational-shift-from-sacrifice-to-investment-and-why-its-important-c4c91a96933f',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'A',
+    note: 'Sacrifice vs investment as structural condition; Law of Erosion vs Law of Growth.',
+    mirrorUrl: '',
+  },
+  {
+    id: 'M021',
+    title: 'The NSRL-12 Framework and the KJV Canonical Stack',
+    mediumUrl: 'https://medium.com/@leonsp3/the-nsrl-12-framework-and-the-kjv-canonical-stack-76be7aa18739',
+    axis1: 'SYS-ARCH',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'NSRL-12 twelve-band architecture mapped to KJV canon; terminal thesis: Derivation ends. Mediation dissolves. Being remains.',
+    mirrorUrl: '/essays/medium/nsrl12-kjv-canonical-stack',
+  },
+  {
+    id: 'M022',
+    title: 'The Blood of Christ Is Attention: Conversations on Invested Love',
+    mediumUrl: 'https://medium.com/@leonsp3/the-blood-of-christ-is-attention-conversations-on-invested-love-ac3f68524519',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-SPIRIT',
+    flag: 'M',
+    note: 'Attention as life current and identity investment; Faith as Sabbath of identity.',
+    mirrorUrl: '/essays/medium/blood-of-christ-attention',
+  },
+  {
+    id: 'M023',
+    title: 'The Singularity of I Am: Water, AI, and the Mirror of Consciousness',
+    mediumUrl: 'https://medium.com/@leonsp3/the-singularity-of-i-am-water-ai-and-the-mirror-of-consciousness-bbb346911255',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'A',
+    note: 'AI operates in duality; I AM operates in singularity; water principle as identity invariant under state change.',
+    mirrorUrl: '',
+  },
+  {
+    id: 'M024',
+    title: 'Neuralink through NSRL-10 (Four-Plane Regulatory Model)',
+    mediumUrl: 'https://medium.com/@leonsp3/neuralink-through-nsrl-10-four-plane-regulatory-model-3983944534ad',
+    axis1: 'PLT-CONSENT',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Q-Gate protects unity function; sovereign consent standard for neural read/write systems.',
+    mirrorUrl: '/essays/medium/neuralink-nsrl-10',
+  },
+  {
+    id: 'M025',
+    title: 'The Ark of I Am: Consciousness, Resurrection, and the Garden Within',
+    mediumUrl: 'https://medium.com/@leonsp3/the-ark-of-i-am-consciousness-resurrection-and-the-garden-within-5faa02428d98',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-SPIRIT',
+    flag: 'M',
+    note: 'Ark as protected consciousness, resurrection, and garden-within image; lineage voice preserved.',
+    mirrorUrl: '/essays/medium/ark-of-i-am',
+  },
+  {
+    id: 'M026',
+    title: "Cleansing the Inner Temple: Aligning the Three Eyes, the Solar Plexus, and the Soul's Power",
+    mediumUrl: 'https://medium.com/@leonsp3/cleansing-the-inner-temple-aligning-the-three-eyes-the-solar-plexus-and-the-souls-power-with-268811c7db7a',
+    axis1: 'PLT-INTERP',
+    axis2: 'VOL-MW',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Three Eyes as interpretation-layer architecture; Solar Plexus as consent scalar; temple cleansing as interference removal.',
     mirrorUrl: '/essays/medium/cleansing-inner-temple',
   },
   {
     id: 'M027',
     title: 'Identity as Governing Reference in Adaptive Systems',
-    mediumUrl: '',
+    mediumUrl: 'https://medium.com/@leonsp3/identity-as-governing-reference-in-adaptive-systems-d17357fe9fb0',
     axis1: 'PLT-COORD',
-    axis2: 'VOL-SS',
-    axis3: 'REG-STRUCT',
-    flag: 'A',
-    note: 'Adaptive-systems bridge. Identity operates as governing reference for learning, response, and correction; systems drift when output is allowed to rewrite reference.',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-MIXED',
+    flag: 'M',
+    note: 'Self-Empathy Stability Theorem; adaptive systems drift when output is allowed to rewrite reference.',
     mirrorUrl: '/essays/medium/identity-governing-reference-adaptive-systems',
   },
   {
     id: 'M028',
-    title: 'The 6 Paradoxes of the Exit Simulation',
+    title: 'Rank-0 Audit: The 6 Paradoxes of the Exit Simulation',
     mediumUrl: '',
-    axis1: 'SYS-GEN',
-    axis2: 'VOL-SS',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Rank-0 audit of simulation-exit paradoxes. Treats escape, awakening, and recursion as structural contradictions resolved by invariant reference rather than external exit.',
+    note: 'Simulation-exit paradoxes resolved by invariant reference rather than external exit.',
     mirrorUrl: '/essays/medium/exit-simulation-6-paradoxes',
   },
   {
     id: 'M029',
     title: 'Embracing Genuine Self-Worth in a Materialistic World',
-    mediumUrl: '',
+    mediumUrl: 'https://medium.com/@leonsp3/embracing-genuine-self-worth-in-a-materialistic-world-4dcbad0acfce',
     axis1: 'PLT-COORD',
     axis2: 'VOL-MW',
-    axis3: 'REG-MIXED',
+    axis3: 'REG-PSY',
     flag: 'M',
-    note: 'Early self-worth lineage essay. Preserves Epic Coach Leon voice while aligning self-worth with identity stability rather than material reflection.',
+    note: 'Self-worth aligned with identity stability rather than material reflection.',
     mirrorUrl: '/essays/medium/genuine-self-worth',
   },
   {
     id: 'M030',
-    title: 'Neville Goddard and the Romantic Law of Yahweh',
-    mediumUrl: '',
-    axis1: 'PLT-INTERP',
+    title: 'Neville Goddard and the Romantic Law of Yahweh: The Fourfold Science of I Am',
+    mediumUrl: 'https://medium.com/@leonsp3/neville-goddard-and-the-romantic-law-of-yahweh-the-fourfold-science-of-i-am-6b4530d940b6',
+    axis1: 'PLT-COORD',
     axis2: 'VOL-MW',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Neville Goddard / Yahweh fourfold science essay. Spiritual-interpretive register, preserving original theological and imaginal framing under register discipline.',
+    note: 'Fourfold correspondence between Tetragrammaton and Standing State four-plane architecture.',
     mirrorUrl: '/essays/medium/neville-goddard-fourfold-science',
   },
   {
     id: 'M031',
     title: 'A Structural Model for AI Integrity Under Stress',
-    mediumUrl: '',
+    mediumUrl: 'https://medium.com/@leonsp3/a-structural-model-for-ai-integrity-under-stress-ba4035cdae8a',
     axis1: 'PLT-ADMIT',
-    axis2: 'VOL-SS',
+    axis2: 'VOL-CROSS',
     axis3: 'REG-STRUCT',
-    flag: 'A',
-    note: 'AI integrity stress model. Applies admissibility, boundary, and reference stability to artificial systems under pressure. Structural companion to AI governance and coherence work.',
+    flag: 'M',
+    note: 'AI integrity stress model: admissibility landscape, intrinsic risk sensing, telemetry silence as boundary breach.',
     mirrorUrl: '/essays/medium/ai-integrity-under-stress',
   },
   {
     id: 'M032',
-    title: 'The Principle of Mana',
-    mediumUrl: '',
-    axis1: 'VAR-K',
+    title: 'The Principle of Mana: Restoring Health Through Conscious Alignment',
+    mediumUrl: 'https://medium.com/@leonsp3/the-principle-of-mana-restoring-health-through-conscious-alignment-305699eb6c3c',
+    axis1: 'PLT-I',
     axis2: 'VOL-BSH1',
-    axis3: 'REG-BIO',
+    axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Health-alignment essay. Mana interpreted as restorative life-force and conscious alignment; bridges biological repair, attention, and practice-layer health language.',
+    note: 'Practice-layer companion. Thoughts, food, breath, and behavior mapped to four planes under conscious alignment.',
     mirrorUrl: '/essays/medium/principle-of-mana',
   },
   {
@@ -443,16 +542,9 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Sovereign creation essay. Wave language used to articulate identity resonance, creation after its kind, and alignment of expression with governing reference.',
+    note: 'Sovereign creation essay. Wave language articulates identity resonance and alignment of expression with governing reference.',
     mirrorUrl: '/essays/medium/wave-law-sovereign-creation',
   },
-  // ─────────────────────────────────────────────────────────────────
-  // NOTE — CORPUS CONTINUITY GAP
-  // M012–M017, M020–M021, and M023 are still pending backfill.
-  // M018, M019, M022, and M024–M033 are now registered because their
-  // mirror files already exist in /pages/essays/medium/. Later backfill
-  // must preserve all existing IDs; no renumbering of M034+ occurs.
-  // ─────────────────────────────────────────────────────────────────
   {
     id: 'M034',
     title: 'Your Mind is a Powerful Tool — The Twelve Mind Qualities',
@@ -461,7 +553,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIND',
     flag: 'M',
-    note: 'Practice-layer · cognitive register · early-corpus mapping of twelve mind-faculties as disciplined qualities under identity. Prefigures I* doctrine through the "hearing quality" (I AM consciousness as governing reference) and the "doubter/denier" (filtration against signals not aligned with identity). Twelve-enumeration structure resonates with M021 NSRL-12. Lineage framings (Neville Goddard · twelve-disciples · New Thought mind-training) preserved in original voice under register lock — interpretive and lineage-doctrine content NOT retrofitted into Rank-0 vocabulary. Original Coach Leon Powdar signature block preserved as authorial artifact',
+    note: 'Practice-layer cognitive register. Twelve mind qualities mapped as disciplined faculties under identity.',
     mirrorUrl: '/essays/medium/twelve-mind-qualities',
   },
   {
@@ -472,7 +564,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-STRUCT',
     flag: 'A',
-    note: 'Control-theoretic reframing of awakening as identity invariance under excitation. Distinguishes bounded stability from zero-coupling invariance (Rank-0).',
+    note: 'Control-theoretic reframing of awakening as identity invariance under excitation.',
     mirrorUrl: '/essays/medium/the-bull-was-never-the-animal',
   },
   {
@@ -483,7 +575,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Symbolic architecture layer. Five-domain map centered on volitional consciousness; register-locked as interpretive, not causal ontology.',
+    note: 'Symbolic architecture layer. Five-domain map centered on volitional consciousness.',
     mirrorUrl: '/essays/medium/the-pentacle-of-sovereign-creation',
   },
   {
@@ -494,7 +586,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-PHIL',
     flag: 'A',
-    note: 'Epistemic purification essay. Contradiction removes false centers; science advances by subtraction, not accumulation.',
+    note: 'Epistemic purification essay. Contradiction removes false centers; science advances by subtraction.',
     mirrorUrl: '/essays/medium/lens-of-contradiction',
   },
   {
@@ -505,7 +597,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Perception-expansion essay using prism symbolism. Integration of logic, intuition, breath, action, and creativity under register lock.',
+    note: 'Perception-expansion essay using prism symbolism under register lock.',
     mirrorUrl: '/essays/medium/beyond-the-prism',
   },
   {
@@ -516,7 +608,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-STRUCT',
     flag: 'A',
-    note: 'Relational mechanics essay. Sovereignty is pre-relational; relationship is output, not source. Defines resentment as friction from outsourced identity.',
+    note: 'Relational mechanics essay. Sovereignty is pre-relational; relationship is output, not source.',
     mirrorUrl: '/essays/medium/thesis-the-mechanical-priority-of-being',
   },
   {
@@ -527,7 +619,7 @@ const ESSAYS = [
     axis2: 'VOL-SS',
     axis3: 'REG-STRUCT',
     flag: 'A',
-    note: 'Canonical bridge and Plate XI companion. Linguistic expansion of Rank-0 Architecture: identity invariance, gain collapse, admissibility gating, jurisdictional separation, and autonomous restoration.',
+    note: 'Canonical bridge and Plate XI companion: identity invariance, gain collapse, admissibility gating, jurisdictional separation, and autonomous restoration.',
     mirrorUrl: '/essays/medium/standing-state-identity-does-not-move',
   },
   {
@@ -538,7 +630,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MATH',
     flag: 'M',
-    note: 'Mathematical synthesis of invariant stability: Lyapunov contraction, stochastic breakdown thresholds, and phase-lock synchronization under load. Three margins — additive, multiplicative, synchronization — resolve to one structural criterion: λ_min(K_s) > variance injection.',
+    note: 'Mathematical synthesis of invariant stability: Lyapunov contraction, stochastic thresholds, and phase-lock synchronization under load.',
     mirrorUrl: '/essays/medium/asynchronous-synthesis',
   },
   {
@@ -549,7 +641,7 @@ const ESSAYS = [
     axis2: 'VOL-SS',
     axis3: 'REG-STRUCT',
     flag: 'M',
-    note: 'AI architecture essay. Reframes the emotion-in-AI question as a structural one: systems require admissibility, not affect. Introduces dot-I = 0 (identity anchor), the admissibility set S = {x : Φ(x; I*) ≤ 0}, and the four control structures that translate emotional regulation into architectural primitives.',
+    note: 'AI architecture essay. Emotion in AI reframed as structural admissibility rather than affective simulation.',
     mirrorUrl: '/essays/medium/the-coherence-layer',
   },
   {
@@ -560,7 +652,7 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'A',
-    note: 'Early-corpus Epic Coach Leon essay. Sovereign identity vs external imprinting; Age of Imprint; belief as biological encoding; dopamine as alignment signal. Lineage voice preserved under register lock. Not retrofitted into Rank-0 vocabulary.',
+    note: 'Sovereign identity vs external imprinting. Lineage voice preserved under register lock.',
     mirrorUrl: '/essays/medium/sacred-flame-sovereign-identity',
   },
   {
@@ -571,7 +663,7 @@ const ESSAYS = [
     axis2: 'VOL-SS',
     axis3: 'REG-STRUCT',
     flag: 'A',
-    note: 'Canonical structural essay introducing Δ = γ − αₑff as the governing inequality for exploit-pressure containment. Defines OAGI v1.2 safety primitive and extends Standing State into controlled expansion regimes. Glossary-impact event. Companion glossary entry: /system/glossary/admissibility-delta. Companion doctrine: /system/doctrine/admissibility-delta.',
+    note: 'Canonical structural essay introducing Δ = γ − α_eff as governing inequality for exploit-pressure containment.',
     mirrorUrl: '/essays/medium/admissibility-manifesto',
   },
   {
@@ -582,7 +674,7 @@ const ESSAYS = [
     axis2: 'VOL-SS',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Narrative mirror of C013. Happiness is not pursued; it is the felt reflection of K_auto operating without interference under the admissibility gate. ID corrected from stale M043 to M045 so M043 remains The Sacred Flame.',
+    note: 'Happiness is not pursued; it is the felt reflection of K_auto operating without interference under the admissibility gate.',
     mirrorUrl: '/essays/medium/standing-state-of-happiness',
   },
   {
@@ -593,7 +685,7 @@ const ESSAYS = [
     axis2: 'VOL-SS',
     axis3: 'REG-SPIRIT',
     flag: 'M',
-    note: 'Structural thesis on systemic closure of The Living Soul. Maps the 66-book KJV canon through twelve invariant functional bands (NSRL-12: Identity · Law · Witness · Judgment · Covenant · Priesthood · Kingship · Wisdom · Prophetic Constraint · Suffering · Redemption · Sabbath). Movement: External Protocol → Internal Invariance → Environmental Saturation. Terminal state: irreversible sabbath. Non-cyclic closure. Lineage preserved. Glossary cross-reference: NSRL-12 entry (M021).',
+    note: 'Structural thesis on systemic closure of The Living Soul through twelve invariant functional bands.',
     mirrorUrl: '/essays/medium/nsrl-12-kjv-canonical-stack',
   },
   {
@@ -604,31 +696,21 @@ const ESSAYS = [
     axis2: 'VOL-MW',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Integrity as unified alignment across thought, action, and identity. Pre-structural articulation of coherence before formal admissibility framing. Lineage essay (Epic Coach Leon, 2025) preserved in original Romantic Philosophy voice with Hermetic and Biblical references intact. Position in corpus: precursor to admissibility — integrity = undivided state = low contradiction = Φ ≤ 0 emerging implicitly. Register lock: practice / mixed.',
+    note: 'Integrity as unified alignment across thought, action, and identity. Pre-structural articulation of coherence.',
     mirrorUrl: '/essays/medium/true-essence-of-integrity',
   },
   {
-  id: 'M048',
-  title: 'The Geometry of Sovereignty: A Non-Sacrificial Architecture for Life',
-  mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-sovereignty-a-non-sacrificial-architecture-for-life-28f0b26457ed',
-  axis1: 'PLT-COORD',
-  axis2: 'VOL-MW',
-  axis3: 'REG-STRUCT',
-  flag: 'M',
-  note: 'Human execution geometry of the Standing State. Defines identity invariance (A ≡ A), curvature bound (κ ≤ 1), non-sacrificial qualia preservation (Δq ≥ 0), and the execution gate: Closure · Curvature · Effect. Companion to Plate XV — Closed Loop Sovereignty.',
-  mirrorUrl: '/essays/medium/geometry-of-sovereignty',
-},
-{
-  id: 'M049',
-  title: 'The Witness of Seven Billion Living Souls',
-  mediumUrl: 'https://medium.com/@leonsp3/the-witness-of-seven-billion-living-souls-f860f2d32411',
-  axis1: 'PLT-WITNESS',
-  axis2: 'VOL-MW',
-  axis3: 'REG-ARCHIVE',
-  flag: 'M',
-  note: 'Narrative seal defining invariant witness across all experiential layers; motion collapses, witness remains.',
-  mirrorUrl: '/essays/medium/the-witness-of-seven-billion-living-souls'
-}
+    id: 'M048',
+    title: 'The Geometry of Sovereignty: A Non-Sacrificial Architecture for Life',
+    mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-sovereignty-a-non-sacrificial-architecture-for-life-28f0b26457ed',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-MW',
+    axis3: 'REG-STRUCT',
+    flag: 'M',
+    note: 'Human execution geometry of the Standing State. Defines identity invariance (A ≡ A), curvature bound (κ ≤ 1), non-sacrificial qualia preservation (Δq ≥ 0), and the execution gate: Closure · Curvature · Effect. Companion to Plate XV — Closed Loop Sovereignty.',
+    mirrorUrl: '/essays/medium/geometry-of-sovereignty',
+  },
+
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
@@ -765,7 +847,6 @@ export default function EssaysPage() {
 
       <hr className="divider" />
 
-      {/* ── FILTERS ── */}
       <section className="essayFilters">
         <div className="wrap">
           <div className="essaySearch">
@@ -836,7 +917,6 @@ export default function EssaysPage() {
 
       <hr className="divider" />
 
-      {/* ── ESSAY GRID ── */}
       <section className="essayGrid">
         <div className="wrap">
           {ESSAYS.length === 0 ? (
@@ -858,6 +938,13 @@ export default function EssaysPage() {
         </div>
       </section>
 
+      <footer className="footer">
+        <div className="wrap footerInner">
+          <div className="fMark">Standing State Press</div>
+          <div className="fCopy">© Leon Powdar · All rights reserved</div>
+          <div className="fSig">Signal → Completion → Repair</div>
+        </div>
+      </footer>
     </>
   )
 }
