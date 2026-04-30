@@ -276,6 +276,8 @@ export const CANONICAL_ESSAYS = [
     ],
     finalStatement: 'A becomes A, because A knows it is A.',
   },
+  // c012 uses static override:
+// pages/essays/canonical/gate-of-admissibility.js
   {
     id: 'c012',
     slug: 'gate-of-admissibility',
@@ -288,7 +290,6 @@ export const CANONICAL_ESSAYS = [
     equation: 'Φ(x; I*) ≤ 0',
     thesis: 'This is the gate. Not a metaphor. Not a suggestion. Not a philosophical preference.',
     mirrorUrl: '/essays/canonical/gate-of-admissibility',
+    override: true
   },
 ] 
-// c012 uses static override:
-// pages/essays/canonical/gate-of-admissibility.js
