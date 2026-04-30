@@ -7,26 +7,72 @@ export default function GeometryOfSovereignty() {
         <title>M048 — Geometry of Sovereignty</title>
       </Head>
 
-      <main className="essayWrap">
-        <h1>The Geometry of Sovereignty</h1>
+      <section className="essayWrap">
 
-        <p><strong>A ≡ A</strong></p>
+        <div className="essayMeta">
+          <span className="essayId">M048</span>
+          <span className="essayFlag">MIRRORED</span>
+        </div>
 
-        <p>
-        Most systems fail because they attempt to stabilize through effort instead of structure.
+        <h1 className="essayTitle">
+          The Geometry of Sovereignty
+        </h1>
+
+        <p className="essaySubtitle">
+          A Non-Sacrificial Architecture for Life
         </p>
 
-        <a href="/system/plates/closed-loop-sovereignty">
-          View Plate →
-        </a>
+        <div className="essayLinks">
+          <a
+            href="https://medium.com/@leonsp3/the-geometry-of-sovereignty-a-non-sacrificial-architecture-for-life-28f0b26457ed"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read on Medium →
+          </a>
+        </div>
 
-        <section>
-          <h2>Execution Gate</h2>
-          <p>Closure · Curvature · Effect</p>
-        </section>
+        <div className="essayBody">
 
-        <a href="/system/doctrine">Enforcement Layer →</a>
-      </main>
+          <p>
+            Most systems fail for a single reason: they attempt to stabilize through effort instead of structure.
+          </p>
+
+          <h2>I. The Invariant</h2>
+          <p>
+            A ≡ A. Identity is not performance. It is the invariant coordinate.
+          </p>
+
+          <h2>II. The Curvature Bound</h2>
+          <p>
+            κ ≤ 1 defines structural capacity. Exceed it, and distortion appears.
+          </p>
+
+          <h2>III. The Non-Sacrificial Law</h2>
+          <p>
+            Δq ≥ 0. No interaction may reduce presence.
+          </p>
+
+          <h2>IV. Execution Gate</h2>
+          <ul>
+            <li>Closure — A ≡ A</li>
+            <li>Curvature — κ ≤ 1</li>
+            <li>Effect — Δq ≥ 0</li>
+          </ul>
+
+          <p>
+            If any condition fails: Refuse. Cease. Silence.
+          </p>
+
+        </div>
+
+        <div style={{ marginTop: '3rem' }}>
+          <a href="/system/plates/plate-xv" className="essayPlateLink">
+            View Plate XV →
+          </a>
+        </div>
+
+      </section>
     </>
   )
 }
