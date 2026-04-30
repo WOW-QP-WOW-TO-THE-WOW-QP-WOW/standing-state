@@ -259,8 +259,14 @@ export const PLATES = [
   volume: 'I',
   chapter: 'Admissibility Gate',
   image: '/plates/plate-xiv-gate-of-admissibility.png',
-  linkedVars: ['phi', 'sigma', 'k-auto', 'boundary-integrity', 'identity-coordinate'],
-  linkedGlossary: ['admissibility-delta']
+  linkedVars: ['phi', 'sigma', 'kauto', 'xstar', 'admissibility-delta']
+  linkedGlossary: [
+  { label: 'Φ(x)', anchor: 'phi' },
+  { label: 'Σ', anchor: 'sigma' },
+  { label: 'K_auto', anchor: 'kauto' },
+  { label: 'I*', anchor: 'xstar' },
+  { label: 'Δ', anchor: 'admissibility-delta' },
+],
 },
   {
     id: 'plate-xv',
