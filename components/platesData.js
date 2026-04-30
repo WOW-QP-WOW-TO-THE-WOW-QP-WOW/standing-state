@@ -292,7 +292,7 @@ export const PLATES = [
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirteen plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  description: 'Fifteen plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
   count: 15,
   volume: 'Volume I + Volume II” (mixed) — The Biological Sabbath of Being Healthier',
 }
