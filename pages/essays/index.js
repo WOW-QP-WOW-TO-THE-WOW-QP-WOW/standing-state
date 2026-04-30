@@ -926,7 +926,9 @@ export default function EssaysPage() {
           )}
         </div>
       </section>
-
+    </>
+  )
+}
 
 EssaysPage.hideFooter = true
 EssaysPage.hideHeader = true
