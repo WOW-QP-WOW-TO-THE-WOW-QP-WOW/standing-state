@@ -262,19 +262,7 @@ export const CANONICAL_ESSAYS = [
       {
         paragraph: 'Across all domains examined — AI governance, psychological vigilance, social identity — the same structural error appears: definition is mistaken for enforcement. Systems define constraints, identity, admissible domains — then assume that definition alone guarantees behavior. It does not. The correct structure unifies three layers into a single functional chain: Identity → Admissibility → Execution. Identity defines what the system is. Admissibility defines what is allowed. Execution determines what actually occurs. The failure across domains arises when these are separated.'
       },
-      {
-  id: 'c012',
-  slug: 'gate-of-admissibility',
-  number: 'Essay XII',
-  title: 'The Gate of Admissibility',
-  subtitle: 'The Unified System Behind Standing State',
-  axis1: 'PLT-ADMIT',
-  axis2: 'VOL-CROSS',
-  axis3: 'REG-STRUCT',
-  equation: 'Φ(x; I*) ≤ 0',
-  thesis: 'This is the gate. Not a metaphor. Not a suggestion. Not a philosophical preference.',
-  mirrorUrl: '/essays/canonical/gate-of-admissibility',
-},
+      
       {
         paragraph: 'The correction is not external to the law — it is the law. A system can be perfectly defined and still encounter states outside its admissible set at runtime — through noise, perturbation, coupling, or incomplete observability. Therefore: Defined(S) ∧ ¬Evaluated(x_t ∈ S) ⇒ No Enforcement. Membership cannot be assumed; it must be verified at the boundary. Monitoring alone is insufficient — monitoring observes state without gating execution. Admissibility couples evaluation to action: the gate conditions execution on Φ(x), not after it. Cohesion cannot compensate for structural decay. More coordination does not equal more integrity. More oversight does not restore collapsed constraint geometry.'
       },
@@ -283,8 +271,22 @@ export const CANONICAL_ESSAYS = [
       },
       {
         paragraph: 'The I*/I_d distinction preserves coherence across all three domains. Invariant identity does not drift — İ* = 0. Designed identity can fail when A ⊄ I_d. Restoration remains possible because the invariant is never compromised; only the designed expression drifts. The gate operates on designed structure; identity does not require the gate because identity does not move. The minimal irreducible form closes the system: İ* = 0, Φ(x) ≤ 0 defines S, x_t ∈ S ⇒ execute, x_t ∉ S ⇒ block. No evaluation → no enforcement → no system. Identity defines. Admissibility filters. Execution manifests. This is not reaction. It is the only way structure becomes real.'
-      }
+      },
+    
     ],
     finalStatement: 'A becomes A, because A knows it is A.',
+  },
+  {
+    id: 'c012',
+    slug: 'gate-of-admissibility',
+    number: 'Essay XII',
+    title: 'The Gate of Admissibility',
+    subtitle: 'The Unified System Behind Standing State',
+    axis1: 'PLT-ADMIT',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-STRUCT',
+    equation: 'Φ(x; I*) ≤ 0',
+    thesis: 'This is the gate. Not a metaphor. Not a suggestion. Not a philosophical preference.',
+    mirrorUrl: '/essays/canonical/gate-of-admissibility',
   },
 ]
