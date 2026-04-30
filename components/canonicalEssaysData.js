@@ -1,6 +1,6 @@
 /**
  * CANONICAL ESSAYS DATA
- * Ten foundational essays authored directly from the system architecture.
+ * Twelve foundational essays authored directly from the system architecture.
  * These are not blog posts. They are system declarations.
  * standingstate.com/essays/canonical/[slug]
  */
