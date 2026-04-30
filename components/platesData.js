@@ -281,7 +281,7 @@ export const PLATES = [
     chapter: 'Canonical Plate — Closed Loop Sovereignty',
     linkedVars: ['identity-coordinate', 'curvature-bound', 'non-sacrificial-law'],
     linkedGlossary: [
-      { label: 'A ≡ A', anchor: 'identity-coordinate' },
+      { label: 'A ≡ A', anchor: 'xstar' },
       { label: 'κ ≤ 1', anchor: 'curvature-bound' },
       { label: 'Δq ≥ 0', anchor: 'non-sacrificial-law' },
       { label: 'Execution Gate', anchor: 'execution-gate' },
