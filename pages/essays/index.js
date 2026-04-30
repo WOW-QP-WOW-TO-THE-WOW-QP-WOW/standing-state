@@ -808,7 +808,7 @@ export default function EssaysPage() {
         <meta name="description" content="400 essays indexed to the Standing State system. Cross-referenced by plate, volume, and register." />
       </Head>
 
-      <nav className="nav">
+      
         <div className="wrap navInner">
           <a className="navMark" href="/">Standing State Press</a>
           <ul className="navLinks">
@@ -938,13 +938,6 @@ export default function EssaysPage() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="wrap footerInner">
-          <div className="fMark">Standing State Press</div>
-          <div className="fCopy">© Leon Powdar · All rights reserved</div>
-          <div className="fSig">Signal → Completion → Repair</div>
-        </div>
-      </footer>
-    </>
-  )
-}
+
+EssaysPage.hideFooter = true
+EssaysPage.hideHeader = true
