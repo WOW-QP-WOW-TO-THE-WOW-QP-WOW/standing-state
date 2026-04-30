@@ -263,6 +263,19 @@ export const CANONICAL_ESSAYS = [
         paragraph: 'Across all domains examined — AI governance, psychological vigilance, social identity — the same structural error appears: definition is mistaken for enforcement. Systems define constraints, identity, admissible domains — then assume that definition alone guarantees behavior. It does not. The correct structure unifies three layers into a single functional chain: Identity → Admissibility → Execution. Identity defines what the system is. Admissibility defines what is allowed. Execution determines what actually occurs. The failure across domains arises when these are separated.'
       },
       {
+  id: 'c012',
+  slug: 'gate-of-admissibility',
+  number: 'Essay XII',
+  title: 'The Gate of Admissibility',
+  subtitle: 'The Unified System Behind Standing State',
+  axis1: 'PLT-ADMIT',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-STRUCT',
+  equation: 'Φ(x; I*) ≤ 0',
+  thesis: 'This is the gate. Not a metaphor. Not a suggestion. Not a philosophical preference.',
+  mirrorUrl: '/essays/canonical/gate-of-admissibility',
+},
+      {
         paragraph: 'The correction is not external to the law — it is the law. A system can be perfectly defined and still encounter states outside its admissible set at runtime — through noise, perturbation, coupling, or incomplete observability. Therefore: Defined(S) ∧ ¬Evaluated(x_t ∈ S) ⇒ No Enforcement. Membership cannot be assumed; it must be verified at the boundary. Monitoring alone is insufficient — monitoring observes state without gating execution. Admissibility couples evaluation to action: the gate conditions execution on Φ(x), not after it. Cohesion cannot compensate for structural decay. More coordination does not equal more integrity. More oversight does not restore collapsed constraint geometry.'
       },
       {
