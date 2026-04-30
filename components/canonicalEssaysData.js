@@ -289,4 +289,6 @@ export const CANONICAL_ESSAYS = [
     thesis: 'This is the gate. Not a metaphor. Not a suggestion. Not a philosophical preference.',
     mirrorUrl: '/essays/canonical/gate-of-admissibility',
   },
-]
+] 
+// c012 uses static override:
+// pages/essays/canonical/gate-of-admissibility.js
