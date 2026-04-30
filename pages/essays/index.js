@@ -607,6 +607,17 @@ const ESSAYS = [
     note: 'Integrity as unified alignment across thought, action, and identity. Pre-structural articulation of coherence before formal admissibility framing. Lineage essay (Epic Coach Leon, 2025) preserved in original Romantic Philosophy voice with Hermetic and Biblical references intact. Position in corpus: precursor to admissibility — integrity = undivided state = low contradiction = Φ ≤ 0 emerging implicitly. Register lock: practice / mixed.',
     mirrorUrl: '/essays/medium/true-essence-of-integrity',
   },
+  {
+  id: 'M048',
+  title: 'The Geometry of Sovereignty: A Non-Sacrificial Architecture for Life',
+  mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-sovereignty-a-non-sacrificial-architecture-for-life-28f0b26457ed',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-MW',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'Human execution geometry of the Standing State. Defines identity invariance (A ≡ A), curvature bound (κ ≤ 1), non-sacrificial qualia preservation (Δq ≥ 0), and the execution gate: Closure · Curvature · Effect. Companion to Plate XV — Closed Loop Sovereignty.',
+  mirrorUrl: '/essays/medium/geometry-of-sovereignty',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
