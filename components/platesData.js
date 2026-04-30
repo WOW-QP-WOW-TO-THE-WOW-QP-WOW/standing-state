@@ -249,7 +249,7 @@ export const PLATES = [
     ],
   },
   {
-  id: 'XIV',
+  id: 'plate-xiv',
   number: 'Plate XIV',
   slug: 'gate-of-admissibility',
   title: 'The Gate of Admissibility — Unified System',
