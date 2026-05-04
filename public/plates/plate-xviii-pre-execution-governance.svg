@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="field" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#1c1608"/>
+      <stop offset="40%" stop-color="#0a0805"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6dd9a"/>
+      <stop offset="50%" stop-color="#c89539"/>
+      <stop offset="100%" stop-color="#6b4814"/>
+    </linearGradient>
+    <linearGradient id="goldFlat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e9c878"/>
+      <stop offset="100%" stop-color="#a07a2a"/>
+    </linearGradient>
+    <radialGradient id="sealGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a2a10" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#1a1206" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.7  0 0 0 0 0.55  0 0 0 0 0.25  0 0 0 0.06 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#d6a84b"/>
+    </marker>
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#3a2a10" stroke-width="0.6"/>
+    </pattern>
+    <style>
+      .plate-num{fill:#c89539;font-size:22px;letter-spacing:18px;font-variant:small-caps}
+      .title{fill:#f3e2b6;font-size:56px;font-weight:600;letter-spacing:10px}
+      .sub{fill:#d8b264;font-size:19px;letter-spacing:6px;font-style:italic}
+      .rule-label{fill:#9b7028;font-size:13px;letter-spacing:8px;font-variant:small-caps}
+      .h{fill:#f0dcaa;font-size:18px;letter-spacing:5px;font-variant:small-caps;font-weight:600}
+      .roman{fill:#c89539;font-size:14px;letter-spacing:4px;font-variant:small-caps}
+      .body{fill:#e6d6b6;font-size:17px;letter-spacing:0.3px}
+      .body-it{fill:#e6d6b6;font-size:16px;font-style:italic;letter-spacing:0.3px}
+      .small{fill:#b8a075;font-size:14px;letter-spacing:0.4px}
+      .caption{fill:#8e7340;font-size:12px;letter-spacing:3px;font-variant:small-caps}
+      .formula{fill:#f6e8c3;font-size:26px;font-style:italic}
+      .formula-sm{fill:#f6e8c3;font-size:20px;font-style:italic}
+      .glyph{fill:#f6e8c3;font-size:30px;font-style:italic}
+      .gold{fill:#d6a84b}
+      .green{fill:#6fc985}
+      .red{fill:#e07564}
+      .blue{fill:#7fb0e8}
+      .panel{fill:#080603;stroke:url(#goldFlat);stroke-width:1}
+      .panel-dim{fill:#070501;stroke:#5e4516;stroke-width:0.8}
+      .node{fill:#0a0703;stroke:url(#goldFlat);stroke-width:1.2}
+      .rule{stroke:#7a5a1e;stroke-width:0.7;fill:none}
+      .rule-thin{stroke:#5e4516;stroke-width:0.5;fill:none}
+      .rule-bold{stroke:url(#gold);stroke-width:2;fill:none}
+    </style>
+  </defs>
+
+  <!-- field -->
+  <rect width="1800" height="1200" fill="url(#field)"/>
+  <rect width="1800" height="1200" filter="url(#grain)" opacity="0.5"/>
+
+  <!-- double border -->
+  <rect x="36" y="36" width="1728" height="1128" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
+  <rect x="50" y="50" width="1700" height="1100" fill="none" stroke="#7a5a1e" stroke-width="0.6"/>
+  <!-- corner ornaments -->
+  <g stroke="#a07a2a" stroke-width="1" fill="none">
+    <path d="M50 78 L78 78 L78 50"/><path d="M1750 78 L1722 78 L1722 50"/>
+    <path d="M50 1122 L78 1122 L78 1150"/><path d="M1750 1122 L1722 1122 L1722 1150"/>
+    <circle cx="78" cy="78" r="3" fill="#c89539"/><circle cx="1722" cy="78" r="3" fill="#c89539"/>
+    <circle cx="78" cy="1122" r="3" fill="#c89539"/><circle cx="1722" cy="1122" r="3" fill="#c89539"/>
+  </g>
+
+  <!-- masthead -->
+  <text class="plate-num" x="900" y="98" text-anchor="middle">— PLATE  XVIII —</text>
+  <line class="rule" x1="640" y1="112" x2="1160" y2="112"/>
+  <text class="title" x="900" y="170" text-anchor="middle">PRE-EXECUTION GOVERNANCE</text>
+  <text class="sub" x="900" y="208" text-anchor="middle">Reference-Anchored  ·  Constraint-Gated  ·  Coherence-Resolved  ·  Safety-Latched</text>
+  <line class="rule-bold" x1="700" y1="232" x2="900" y2="232"/>
+  <line class="rule-bold" x1="900" y1="232" x2="1100" y2="232"/>
+  <circle cx="900" cy="232" r="3.5" fill="#d6a84b"/>
+
+  <!-- ============================ TIER I — THREE LAW STONES ============================ -->
+  <text class="rule-label" x="78" y="266">I.  FOUNDING LAWS</text>
+  <line class="rule-thin" x1="240" y1="262" x2="1722" y2="262"/>
+
+  <!-- Stone 1: Identity -->
+  <g transform="translate(72,282)">
+    <rect class="panel" width="540" height="160" rx="2"/>
+    <text class="roman" x="22" y="30">i</text>
+    <text class="h" x="50" y="30">IDENTITY  —  INVARIANT REFERENCE</text>
+    <line class="rule-thin" x1="22" y1="44" x2="518" y2="44"/>
+    <text class="formula" x="270" y="86" text-anchor="middle">I★ = const ,    dI★/dt = 0</text>
+    <text class="body-it" x="22" y="120">The reference is fixed. It does not drift with the system.</text>
+    <text class="caption gold" x="22" y="146">reference is not learned from neighbors</text>
+  </g>
+
+  <!-- Stone 2: Admissibility -->
+  <g transform="translate(632,282)">
+    <rect class="panel" width="540" height="160" rx="2"/>
+    <text class="roman" x="22" y="30">ii</text>
+    <text class="h" x="50" y="30">ADMISSIBILITY  —  THE GATE</text>
+    <line class="rule-thin" x1="22" y1="44" x2="518" y2="44"/>
+    <text class="formula" x="270" y="86" text-anchor="middle">Φ ( x ; I★ )  ≤  0</text>
+    <text class="body green" x="22" y="120">Φ ≤ 0    →    execution permitted</text>
+    <text class="body red" x="22" y="146">Φ &gt; 0    →    execution denied</text>
+  </g>
+
+  <!-- Stone 3: Correction -->
+  <g transform="translate(1192,282)">
+    <rect class="panel" width="540" height="160" rx="2"/>
+    <text class="roman" x="22" y="30">iii</text>
+    <text class="h" x="50" y="30">CORRECTION FROM TESTING</text>
+    <line class="rule-thin" x1="22" y1="44" x2="518" y2="44"/>
+    <text class="body-it" x="22" y="76">Neighbor consensus cannot define ground truth</text>
+    <text class="body-it" x="22" y="100">when intrinsic variation is part of the signal.</text>
+    <line class="rule-thin" x1="22" y1="118" x2="518" y2="118"/>
+    <text class="caption gold" x="22" y="144">lattice = structure   ·   reference = invariant law</text>
+  </g>
+
+  <!-- ============================ TIER II — SEVEN-STAGE FLOW ============================ -->
+  <text class="rule-label" x="78" y="488">II.  SYSTEM FLOW   ·   IDENTITY  →  ADMISSIBILITY  →  EXECUTION</text>
+  <line class="rule-thin" x1="640" y1="484" x2="1722" y2="484"/>
+
+  <g transform="translate(72,510)">
+    <rect class="panel" width="1660" height="220" rx="2"/>
+    <!-- inner deco rule -->
+    <line class="rule-thin" x1="20" y1="200" x2="1640" y2="200"/>
+
+    <!-- nodes -->
+    <g transform="translate(40,40)">
+      <!-- I -->
+      <g>
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">i</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">identity</text>
+        <text class="glyph" x="100" y="100" text-anchor="middle">I★</text>
+      </g>
+      <!-- II -->
+      <g transform="translate(230,0)">
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">ii</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">projection</text>
+        <text class="glyph" x="100" y="100" text-anchor="middle">x ᵢ</text>
+      </g>
+      <!-- III -->
+      <g transform="translate(460,0)">
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">iii</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">coupling</text>
+        <text class="glyph blue" x="100" y="100" text-anchor="middle">K</text>
+      </g>
+      <!-- IV -->
+      <g transform="translate(690,0)">
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">iv</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">gate</text>
+        <text class="glyph gold" x="100" y="100" text-anchor="middle">Φ</text>
+      </g>
+      <!-- V -->
+      <g transform="translate(920,0)">
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">v</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">safety latch</text>
+        <text class="glyph red" x="100" y="100" text-anchor="middle">L</text>
+      </g>
+      <!-- VI -->
+      <g transform="translate(1150,0)">
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">vi</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">recovery</text>
+        <text class="glyph green" x="100" y="100" text-anchor="middle">K_auto</text>
+      </g>
+      <!-- VII -->
+      <g transform="translate(1380,0)">
+        <rect class="node" width="200" height="130" rx="2"/>
+        <text class="roman" x="100" y="28" text-anchor="middle">vii</text>
+        <line class="rule-thin" x1="40" y1="38" x2="160" y2="38"/>
+        <text class="caption gold" x="100" y="58" text-anchor="middle">rejection</text>
+        <text class="glyph red" x="100" y="100" text-anchor="middle">†</text>
+      </g>
+
+      <!-- arrows between nodes -->
+      <g stroke="#c89539" stroke-width="1.6" fill="none" marker-end="url(#arrow)">
+        <path d="M204 65 H226"/>
+        <path d="M434 65 H456"/>
+        <path d="M664 65 H686"/>
+        <path d="M894 65 H916"/>
+        <path d="M1124 65 H1146"/>
+        <path d="M1354 65 H1376"/>
+      </g>
+    </g>
+
+    <!-- footer caption inside flow -->
+    <text class="caption" x="830" y="216" text-anchor="middle">reference  →  state  →  field  →  gate  →  latch  →  recovery  →  rejection</text>
+  </g>
+
+  <!-- ============================ TIER III — FOUR DOCTRINE PANELS ============================ -->
+  <text class="rule-label" x="78" y="770">III.  DOCTRINE</text>
+  <line class="rule-thin" x1="240" y1="766" x2="1722" y2="766"/>
+
+  <!-- Coherence -->
+  <g transform="translate(72,786)">
+    <rect class="panel" width="400" height="200" rx="2"/>
+    <text class="roman" x="22" y="30">i</text>
+    <text class="h" x="50" y="30">COHERENCE FIELD</text>
+    <line class="rule-thin" x1="22" y1="44" x2="378" y2="44"/>
+    <text class="formula-sm" x="200" y="92" text-anchor="middle">Q ᵢ  =  1  −  ‖ x ᵢ − x̂ ᵢ ‖ / ε ᵢ</text>
+    <line class="rule-thin" x1="80" y1="116" x2="320" y2="116"/>
+    <text class="body green" x="22" y="148">Q reveals structure.</text>
+    <text class="body red" x="22" y="176">Q does not define truth.</text>
+  </g>
+
+  <!-- Latch -->
+  <g transform="translate(492,786)">
+    <rect class="panel" width="400" height="200" rx="2"/>
+    <text class="roman" x="22" y="30">ii</text>
+    <text class="h" x="50" y="30">SAFETY LATCH</text>
+    <line class="rule-thin" x1="22" y1="44" x2="378" y2="44"/>
+    <text class="formula-sm" x="200" y="92" text-anchor="middle">L ᵢ ( t+1 )  =  L ᵢ ( t )  ∨  spike ᵢ ( t )</text>
+    <line class="rule-thin" x1="80" y1="116" x2="320" y2="116"/>
+    <text class="body green" x="22" y="148">Recovery may restore state.</text>
+    <text class="body red" x="22" y="176">Recovery does not erase memory.</text>
+  </g>
+
+  <!-- Lyapunov -->
+  <g transform="translate(912,786)">
+    <rect class="panel" width="400" height="200" rx="2"/>
+    <text class="roman" x="22" y="30">iii</text>
+    <text class="h" x="50" y="30">LYAPUNOV BOUND</text>
+    <line class="rule-thin" x1="22" y1="44" x2="378" y2="44"/>
+    <text class="formula-sm" x="200" y="86" text-anchor="middle">V  =  Σ ‖ x ᵢ − x̂ ᵢ ‖ ²</text>
+    <text class="formula-sm green" x="200" y="120" text-anchor="middle">dV / dt  ≤  0</text>
+    <line class="rule-thin" x1="80" y1="138" x2="320" y2="138"/>
+    <text class="body-it" x="22" y="170">Drift is constrained through gating.</text>
+  </g>
+
+  <!-- Final Law -->
+  <g transform="translate(1332,786)">
+    <rect class="panel" width="400" height="200" rx="2"/>
+    <text class="roman" x="22" y="30">iv</text>
+    <text class="h" x="50" y="30">FINAL SYSTEM LAW</text>
+    <line class="rule-thin" x1="22" y1="44" x2="378" y2="44"/>
+    <text class="body" x="22" y="80"><tspan class="gold">·</tspan>  Only the admissible may execute.</text>
+    <text class="body" x="22" y="118"><tspan class="gold">·</tspan>  Only the coherent may propagate.</text>
+    <text class="body" x="22" y="156"><tspan class="gold">·</tspan>  Only the violating is remembered.</text>
+    <line class="rule-thin" x1="22" y1="178" x2="378" y2="178"/>
+  </g>
+
+  <!-- ============================ COLOPHON / SEAL ============================ -->
+  <line class="rule-thin" x1="78" y1="1018" x2="800" y2="1018"/>
+  <line class="rule-thin" x1="1000" y1="1018" x2="1722" y2="1018"/>
+
+  <!-- central seal -->
+  <g transform="translate(900,1062)">
+    <circle r="120" fill="url(#sealGlow)"/>
+    <circle r="74" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
+    <circle r="60" fill="none" stroke="#7a5a1e" stroke-width="0.6"/>
+    <circle r="34" fill="none" stroke="#7a5a1e" stroke-width="0.5"/>
+    <!-- cardinal ticks -->
+    <g stroke="#c89539" stroke-width="1.2">
+      <line x1="0" y1="-78" x2="0" y2="-66"/>
+      <line x1="0" y1="66" x2="0" y2="78"/>
+      <line x1="-78" y1="0" x2="-66" y2="0"/>
+      <line x1="66" y1="0" x2="78" y2="0"/>
+    </g>
+    <!-- diagonal hairlines -->
+    <g stroke="#5e4516" stroke-width="0.4">
+      <line x1="-52" y1="-52" x2="52" y2="52"/>
+      <line x1="-52" y1="52" x2="52" y2="-52"/>
+    </g>
+    <text x="0" y="14" text-anchor="middle" font-size="58" font-style="italic" fill="#f3e2b6" filter="url(#softGlow)">A</text>
+    <!-- circumscribed text -->
+    <defs>
+      <path id="sealArc" d="M 0,0 m -90,0 a 90,90 0 1,1 180,0" fill="none"/>
+    </defs>
+    <text font-size="11" letter-spacing="6" fill="#a07a2a">
+      <textPath href="#sealArc" startOffset="50%" text-anchor="middle">STANDING  STATE  ·  PHASE  REFERENCE</textPath>
+    </text>
+  </g>
+
+  <!-- motto -->
+  <text class="sub" x="900" y="1132" text-anchor="middle">A becomes A, because A knows it is A.</text>
+
+  <!-- footer -->
+  <text class="caption" x="78" y="1150">Standing  State  Press  ·  standingstate.com</text>
+  <text class="caption" x="1722" y="1150" text-anchor="end">Leon  Powdar  ·  Phase  Reference</text>
+</svg>
