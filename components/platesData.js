@@ -311,7 +311,7 @@ export const PLATES = [
   number: 'XVII',
   title: 'The Nature of the Soul',
   slug: 'nature-of-the-soul',
-  image: '/plates/plate-xvii-nature-of-the-soul.svg',
+  image: '/plates/plate-xvii-nature-of-the-soul.png',
   summary: 'The soul as archetypal identity expressed through the four planes of manifestation.',
   governingCondition: 'dI*/dt = 0 ∧ Identity manifests through plane transitions',
   description: 'The soul is the identity of an archetype expressed through planes of manifestation. Living Consciousness, Resonance, Mind and Motion, and Creation and Growth form the descent and ascent through which invariant identity becomes living expression. Identity remains invariant; expression changes by plane.',
