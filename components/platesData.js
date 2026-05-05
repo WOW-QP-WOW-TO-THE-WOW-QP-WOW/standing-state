@@ -292,7 +292,7 @@ export const PLATES = [
   number: 'XVI',
   title: 'Coherence–Execution Equivalence',
   slug: 'coherence-execution-equivalence',
-  image: '/plates/plate-xvi-coherence-execution.png',
+  image: '/plates/plate-xvi-coherence-execution.svg',
   summary: 'Execution emerges only when coherence satisfies admissibility and is amplified through system capacity.',
   governingCondition: 'S = Φ · Γ² ; Φ(x; I*) ≤ 0',
   description: 'Execution is not an output produced by force. It is a resolved state that emerges when coherence satisfies the admissibility boundary and propagates through system capacity. If Φ > 0, execution does not occur. The system does not degrade — it refuses.',
