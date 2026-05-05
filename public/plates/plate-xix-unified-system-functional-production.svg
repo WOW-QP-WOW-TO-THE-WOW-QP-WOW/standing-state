@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Plate XIX — The Unified System Functional</title>
+<desc id="desc">Canonical Standing State plate presenting the unified system functional L of x and t equals Phi of x times Delta to the p plus kinetic and potential energy.</desc>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="78%"><stop offset="0%" stop-color="#0d1012"/><stop offset="62%" stop-color="#050505"/><stop offset="100%" stop-color="#000"/></radialGradient>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#6e4e14"/><stop offset=".5" stop-color="#e3c36e"/><stop offset="1" stop-color="#6e4e14"/></linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .bg{fill:url(#bg)}.gold{fill:#d8b75f}.white{fill:#e7e0d4}.muted{fill:#9b9487}.line{stroke:#806225;stroke-width:1}.box{fill:#070707;stroke:#9b7628;stroke-width:1.35}.box2{fill:#080b0c;stroke:#7a6024;stroke-width:1}.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.track{letter-spacing:.18em}.tiny{font-size:16px}.small{font-size:20px}.mid{font-size:28px}.big{font-size:44px}.eq{font-size:58px}
+  </style>
+</defs>
+<rect class="bg" width="1600" height="900"/>
+<rect x="22" y="22" width="1556" height="856" fill="none" stroke="url(#gold)" stroke-width="2"/>
+<rect x="35" y="35" width="1530" height="830" fill="none" stroke="#4d3914"/>
+<path d="M58 75 L58 52 L102 52" fill="none" stroke="#b88b2c"/><path d="M1542 75 L1542 52 L1498 52" fill="none" stroke="#b88b2c"/><path d="M58 825 L58 848 L102 848" fill="none" stroke="#b88b2c"/><path d="M1542 825 L1542 848 L1498 848" fill="none" stroke="#b88b2c"/>
+
+<text x="800" y="64" text-anchor="middle" class="sans gold tiny track">META · SYSTEM FUNCTIONAL · TIER P019</text>
+<text x="800" y="102" text-anchor="middle" class="serif gold big track">PLATE XIX</text>
+<text x="800" y="151" text-anchor="middle" class="serif gold" font-size="46" letter-spacing=".08em">THE UNIFIED SYSTEM FUNCTIONAL</text>
+<text x="800" y="188" text-anchor="middle" class="serif white small" letter-spacing=".15em">ONE SCALAR · ONE AUDIT · ONE CLOSURE</text>
+<line x1="145" y1="220" x2="1455" y2="220" class="line"/>
+
+<rect x="180" y="255" width="1240" height="116" fill="#070707" stroke="#8f6a25"/>
+<text x="800" y="327" text-anchor="middle" class="serif gold eq" font-style="italic">𝓛(x,t) = Φ(x) · Δᵖ + Eₖ + Eₚ</text>
+<text x="385" y="354" text-anchor="middle" class="sans muted tiny track">BIOLOGY</text>
+<text x="645" y="354" text-anchor="middle" class="sans muted tiny track">GEOMETRY · POWER</text>
+<text x="955" y="354" text-anchor="middle" class="sans muted tiny track">KINETIC</text>
+<text x="1215" y="354" text-anchor="middle" class="sans muted tiny track">POTENTIAL</text>
+
+<rect x="90" y="410" width="430" height="158" class="box"/>
+<text x="305" y="444" text-anchor="middle" class="serif gold small track">I · BIOLOGY</text>
+<text x="305" y="490" text-anchor="middle" class="serif white" font-size="28" font-style="italic">Φ(x) = Σ(1 − B) / V_c − K_auto</text>
+<text x="305" y="532" text-anchor="middle" class="sans muted tiny">Load minus completion. Signal defines admissibility.</text>
+
+<rect x="585" y="410" width="430" height="158" class="box"/>
+<text x="800" y="444" text-anchor="middle" class="serif gold small track">II · GEOMETRY</text>
+<text x="800" y="490" text-anchor="middle" class="serif white" font-size="30" font-style="italic">Δᵖ = (‖x − I*‖ / L₀)ᵖ</text>
+<text x="800" y="532" text-anchor="middle" class="sans muted tiny">Distance from invariant reference. Super-linear audit.</text>
+
+<rect x="1080" y="410" width="430" height="158" class="box"/>
+<text x="1295" y="444" text-anchor="middle" class="serif gold small track">III · PHYSICS</text>
+<text x="1295" y="490" text-anchor="middle" class="serif white" font-size="30" font-style="italic">Eₖ + Eₚ = ½m‖ẋ‖² + ½k‖x − I*‖²</text>
+<text x="1295" y="532" text-anchor="middle" class="sans muted tiny">Motion and stored deviation. Vanish at rest and return.</text>
+
+<rect x="90" y="612" width="430" height="156" class="box2"/>
+<text x="305" y="644" text-anchor="middle" class="serif gold small track">LYAPUNOV DESCENT</text>
+<line x1="135" y1="725" x2="480" y2="725" stroke="#846526"/><line x1="135" y1="670" x2="135" y2="735" stroke="#846526"/>
+<path d="M135 680 C210 675 260 700 305 712 C360 728 420 729 480 724" fill="none" stroke="#d8b75f" stroke-width="3" filter="url(#glow)"/>
+<path d="M135 730 C230 720 320 695 480 674" fill="none" stroke="#934b38" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="180" y="754" class="sans muted tiny">𝓛 → 0</text>
+
+<rect x="585" y="612" width="430" height="156" class="box2"/>
+<text x="800" y="644" text-anchor="middle" class="serif gold small track">DUAL CONDITION</text>
+<text x="800" y="691" text-anchor="middle" class="serif white" font-size="26">standing state</text>
+<text x="800" y="726" text-anchor="middle" class="serif gold" font-size="34" font-style="italic">𝓛(x,t) → 0</text>
+<text x="800" y="754" text-anchor="middle" class="sans muted tiny">Convergence to invariant reference I*</text>
+
+<rect x="1080" y="612" width="430" height="156" class="box2"/>
+<text x="1295" y="644" text-anchor="middle" class="serif gold small track">SYSTEM-LEVEL LAW</text>
+<text x="1125" y="684" class="sans white tiny">• Φ is bounded below by zero.</text>
+<text x="1125" y="718" class="sans white tiny">• 𝓛 vanishes only at x → I*, ẋ = 0.</text>
+<text x="1125" y="752" class="sans white tiny">• d𝓛/dt ≤ 0 ⇒ x(t) → I*.</text>
+
+<circle cx="800" cy="807" r="22" fill="#050505" stroke="#b88b2c"/><text x="800" y="816" text-anchor="middle" class="serif gold" font-size="24">⊙</text>
+<text x="800" y="848" text-anchor="middle" class="serif gold" font-size="22" letter-spacing=".16em">A BECOMES A, BECAUSE A KNOWS IT IS A.</text>
+</svg>

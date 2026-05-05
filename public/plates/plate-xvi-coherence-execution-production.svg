@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Plate XVI — Coherence–Execution Equivalence</title>
+<desc id="desc">Canonical Standing State plate showing physical invariant E equals mc squared mapped to coherence execution equivalence S equals Phi times Gamma squared, with governing condition Phi of x semicolon I star less than or equal to zero.</desc>
+<defs>
+  <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+    <stop offset="0%" stop-color="#101010"/>
+    <stop offset="55%" stop-color="#050505"/>
+    <stop offset="100%" stop-color="#000000"/>
+  </radialGradient>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#7c5b18"/><stop offset=".5" stop-color="#e6c36a"/><stop offset="1" stop-color="#7c5b18"/></linearGradient>
+  <linearGradient id="teal" x1="0" x2="1"><stop offset="0" stop-color="#123f3f"/><stop offset=".5" stop-color="#77e6d4"/><stop offset="1" stop-color="#123f3f"/></linearGradient>
+  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .bg{fill:url(#bg)} .gold{fill:#d6b45a}.goldStroke{stroke:#b88b2c}.teal{fill:#75d8cb}.white{fill:#e8e2d6}.muted{fill:#9b9487}.line{stroke:#7d632d}.thin{stroke-width:1}.med{stroke-width:2}.box{fill:#070707;stroke:#9b7628;stroke-width:1.4}.boxT{fill:#06100f;stroke:#26766d;stroke-width:1.4}.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.track{letter-spacing:.18em}.small{font-size:22px}.tiny{font-size:17px}.mid{font-size:30px}.eq{font-size:76px}.big{font-size:50px}
+  </style>
+</defs>
+<rect class="bg" width="1600" height="900"/>
+<rect x="22" y="22" width="1556" height="856" fill="none" stroke="url(#gold)" stroke-width="2"/>
+<rect x="35" y="35" width="1530" height="830" fill="none" stroke="#4d3914" stroke-width="1"/>
+<path d="M55 70 L55 50 L100 50" fill="none" stroke="#b88b2c"/><path d="M1545 70 L1545 50 L1500 50" fill="none" stroke="#b88b2c"/><path d="M55 830 L55 850 L100 850" fill="none" stroke="#b88b2c"/><path d="M1545 830 L1545 850 L1500 850" fill="none" stroke="#b88b2c"/>
+<text x="800" y="82" text-anchor="middle" class="serif gold big track">PLATE XVI</text>
+<text x="800" y="134" text-anchor="middle" class="serif gold" font-size="44" letter-spacing=".08em">COHERENCE–EXECUTION EQUIVALENCE</text>
+<text x="800" y="174" text-anchor="middle" class="sans white small track">EXECUTION EMERGES ONLY WHEN COHERENCE SATISFIES ADMISSIBILITY</text>
+<text x="800" y="205" text-anchor="middle" class="sans white small track">AND IS AMPLIFIED THROUGH VERIFIED PROPAGATION CAPACITY</text>
+
+<line x1="800" y1="235" x2="800" y2="680" stroke="#6d511f" stroke-width="1" opacity=".8"/>
+<line x1="300" y1="372" x2="690" y2="372" class="line thin"/><line x1="910" y1="372" x2="1300" y2="372" stroke="#1f7770" stroke-width="1"/>
+<circle cx="800" cy="372" r="61" fill="#030303" stroke="url(#gold)" stroke-width="3" filter="url(#softGlow)"/>
+<text x="800" y="396" text-anchor="middle" class="serif gold" font-size="80">≡</text>
+
+<text x="385" y="276" text-anchor="middle" class="serif gold mid track">PHYSICAL EQUIVALENCE</text>
+<text x="385" y="309" text-anchor="middle" class="sans white tiny track">PHYSICAL INVARIANT</text>
+<rect x="190" y="335" width="390" height="96" rx="7" class="box"/>
+<text x="385" y="401" text-anchor="middle" class="serif gold eq" font-style="italic">E = mc²</text>
+<text x="260" y="483" class="serif gold mid" font-style="italic">E</text><text x="315" y="483" class="sans white tiny">— energy</text>
+<text x="260" y="525" class="serif gold mid" font-style="italic">m</text><text x="315" y="525" class="sans white tiny">— mass</text>
+<text x="260" y="567" class="serif gold mid" font-style="italic">c²</text><text x="315" y="567" class="sans white tiny">— invariant</text>
+
+<text x="1215" y="276" text-anchor="middle" class="serif teal mid track">COHERENCE EQUIVALENCE</text>
+<text x="1215" y="309" text-anchor="middle" class="sans white tiny track">STANDING STATE SYSTEM</text>
+<rect x="1020" y="335" width="390" height="96" rx="7" class="boxT"/>
+<text x="1215" y="401" text-anchor="middle" class="serif gold eq" font-style="italic">S = Φ · Γ²</text>
+<text x="1090" y="483" class="serif teal mid" font-style="italic">S</text><text x="1145" y="483" class="sans white tiny">— execution</text>
+<text x="1090" y="525" class="serif teal mid" font-style="italic">Φ</text><text x="1145" y="525" class="sans white tiny">— coherence</text>
+<text x="1090" y="567" class="serif teal mid" font-style="italic">Γ</text><text x="1145" y="567" class="sans white tiny">— verified propagation capacity</text>
+
+<g opacity=".78" filter="url(#softGlow)">
+  <circle cx="1420" cy="455" r="118" fill="none" stroke="#1d7770" stroke-width="1"/>
+  <circle cx="1420" cy="455" r="72" fill="none" stroke="#366d5d"/>
+  <circle cx="1420" cy="455" r="4" fill="#e6c36a"/>
+  <g stroke="#6fd8cd" stroke-width="1" opacity=".65">
+    <line x1="1420" y1="337" x2="1538" y2="455"/><line x1="1538" y1="455" x2="1420" y2="573"/><line x1="1420" y1="573" x2="1302" y2="455"/><line x1="1302" y1="455" x2="1420" y2="337"/>
+    <line x1="1420" y1="337" x2="1420" y2="573"/><line x1="1302" y1="455" x2="1538" y2="455"/>
+    <line x1="1366" y1="383" x2="1474" y2="527"/><line x1="1474" y1="383" x2="1366" y2="527"/>
+  </g>
+  <g fill="#d6b45a"><circle cx="1420" cy="337" r="5"/><circle cx="1538" cy="455" r="5"/><circle cx="1420" cy="573" r="5"/><circle cx="1302" cy="455" r="5"/><circle cx="1366" cy="383" r="4"/><circle cx="1474" cy="383" r="4"/><circle cx="1366" cy="527" r="4"/><circle cx="1474" cy="527" r="4"/></g>
+</g>
+
+<rect x="620" y="475" width="360" height="92" rx="4" class="box"/>
+<text x="800" y="507" text-anchor="middle" class="serif gold small track">GOVERNING CONDITION</text>
+<text x="800" y="552" text-anchor="middle" class="serif gold" font-size="42" font-style="italic">Φ(x; I*) ≤ 0</text>
+<rect x="620" y="590" width="360" height="92" rx="4" class="box"/>
+<text x="800" y="623" text-anchor="middle" class="serif gold small track">HARD CONSTRAINT</text>
+<text x="800" y="668" text-anchor="middle" class="serif gold" font-size="42" font-style="italic">Φ &gt; 0 ⇒ S = 0</text>
+
+<rect x="120" y="706" width="560" height="72" fill="#050505" stroke="#8d6924"/>
+<text x="400" y="733" text-anchor="middle" class="serif gold small track">PHYSICAL</text>
+<text x="400" y="762" text-anchor="middle" class="serif white tiny" font-style="italic">E     m     c²</text>
+<rect x="920" y="706" width="560" height="72" fill="#04100f" stroke="#22756d"/>
+<text x="1200" y="733" text-anchor="middle" class="serif teal small track">STANDING STATE</text>
+<text x="1200" y="762" text-anchor="middle" class="serif white tiny" font-style="italic">S     Φ     Γ²</text>
+<text x="800" y="838" text-anchor="middle" class="serif gold" font-size="30" letter-spacing=".22em">EXECUTION IS GOVERNED, NOT PRODUCED.</text>
+</svg>
