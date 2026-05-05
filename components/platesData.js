@@ -10,10 +10,11 @@
 
 export const PLATES = [
 {
-id: ‘plate-i’,
-number: ‘Plate I’,
-title: ‘The Fed–Stress–Output Loop’,
-slug: ‘plate-i’,
+id: 'plate-i',
+number: 'Plate I',
+title: 'The Fed–Stress–Output Loop',
+slug: 'plate-i',
+
 image: ‘/plates/plate-i.jpg’,
 summary: ‘Signal overload sustains external-state dominance. When Σ is sustained, Φ(x) does not converge.’,
 governingCondition: ‘Σ sustained ⇒ Φ(x) does not converge’,
