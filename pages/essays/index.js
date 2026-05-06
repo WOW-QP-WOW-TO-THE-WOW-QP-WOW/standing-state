@@ -732,6 +732,17 @@ const ESSAYS = [
   note: 'Soul as archetypal identity expressed through the four planes of manifestation: Living Consciousness, Resonance, Mind and Motion, Creation and Growth. Companion to Plate XVII (Nature of the Soul). Identity remains invariant; expression changes by plane.',
   mirrorUrl: '/essays/medium/the-nature-of-the-soul-from-undifferentiated-source-to-living-identity',
 },
+{
+  id: 'M051',
+  title: 'The Internal Compass: Deviation Detection and Corrective Return',
+  mediumUrl: 'https://medium.com/@leonsp3/the-internal-compass-mastering-lifes-black-hole-through-holistic-self-mastery-b4fcf2169103',
+  axis1: 'PLT-PAIN',
+  axis2: 'VOL-MW',
+  axis3: 'REG-MIXED',
+  flag: 'M',
+  note: 'Canonical post-Rank-0 translation of the original 2025 phase-reference essay. Negative state as deviation detection (∇c), not identity verdict. Recalibration as subtractive — return to coherence via removal of interference, not application of force. Original Medium publication preserved as lineage source; canonical register corrected for operational admissibility.',
+  mirrorUrl: '/essays/medium/the-internal-compass',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
