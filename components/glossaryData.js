@@ -563,4 +563,11 @@ export const EXTENDED_TERMS = [
     definition: 'The pre-execution boundary that evaluates whether a proposed state x is admissible under the invariant reference I*. The gate does not generate, modify, or optimize outcomes — it only permits or denies execution. If Φ(x; I*) ≤ 0, the state is admissible and may execute. If Φ(x; I*) > 0, execution is halted. The gate is evaluated before any effect is committed. It enforces jurisdictional separation (x ⇏ I*): state cannot rewrite identity. Execution Gate is the operational boundary across biological, computational, and systemic domains. Companion: Plate X (Admissibility & Execution), Plate XVIII (Pre-Execution Governance).',
     source: 'Cross-Plate',
   },
+  {
+    id: 'audit-scalar',
+    symbol: '𝓛',
+    name: 'Audit Scalar',
+    definition: 'Unified scalar combining coherence deviation, geometric displacement, and energetic state into one convergence measure governing admissible system evolution. Definitional form: 𝓛(x,t) = Φ(x) · Δ^p + E_k + E_p — the biological coherence term (Φ) modulated by geometric distance from the invariant reference (Δ^p), summed with the physical energy terms (kinetic E_k and potential E_p). 𝓛 is a state measure, not an authorization: it does not gate execution at a single instant (that is the Execution Gate), and it does not specify trajectory descent (that is the Convergence Law). 𝓛 reports where the system stands relative to closure; 𝓛 → 0 indicates alignment with I*. Companion: Plate XIX (The Unified System Functional). Trajectory law on 𝓛: see Plate XX.',
+    source: 'Cross-Plate',
+  },
 ]
