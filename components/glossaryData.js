@@ -570,4 +570,11 @@ export const EXTENDED_TERMS = [
     definition: 'Unified scalar combining coherence deviation, geometric displacement, and energetic state into one convergence measure governing admissible system evolution. Definitional form: 𝓛(x,t) = Φ(x) · Δ^p + E_k + E_p — the biological coherence term (Φ) modulated by geometric distance from the invariant reference (Δ^p), summed with the physical energy terms (kinetic E_k and potential E_p). 𝓛 is a state measure, not an authorization: it does not gate execution at a single instant (that is the Execution Gate), and it does not specify trajectory descent (that is the Convergence Law). 𝓛 reports where the system stands relative to closure; 𝓛 → 0 indicates alignment with I*. Companion: Plate XIX (The Unified System Functional). Trajectory law on 𝓛: see Plate XX.',
     source: 'Cross-Plate',
   },
+  {
+    id: 'witness',
+    symbol: 'W',
+    name: 'Witness Invariant',
+    definition: 'The invariant witnessing position through which changing states become observable without altering identity itself. dW/dt = 0: while x(t) varies across body, role, narrative, emotion, and silence, the witnessing position remains invariant. W is not the contents of awareness and not an object within state-space; it is the stable observational coordinate through which variation becomes legible. Witness does not replace I*; it preserves continuity of recognition across changing states. Companion: Plate XXI (Witness Invariance).',
+    source: 'P021',
+  },
 ]
