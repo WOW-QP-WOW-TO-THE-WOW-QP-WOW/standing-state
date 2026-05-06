@@ -721,6 +721,17 @@ const ESSAYS = [
   note: 'Narrative seal defining invariant witness across all experiential layers; motion collapses, witness remains.',
   mirrorUrl: '/essays/medium/the-witness-of-seven-billion-living-souls'
 },
+{
+  id: 'M050',
+  title: 'The Nature of the Soul: From Undifferentiated Source to Living Identity',
+  mediumUrl: 'https://medium.com/@leonsp3/the-nature-of-the-soul-from-undifferentiated-source-to-living-identity-108f8a0bf7fa',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-MW',
+  axis3: 'REG-SPIRIT',
+  flag: 'M',
+  note: 'Soul as archetypal identity expressed through the four planes of manifestation: Living Consciousness, Resonance, Mind and Motion, Creation and Growth. Companion to Plate XVII (Nature of the Soul). Identity remains invariant; expression changes by plane.',
+  mirrorUrl: '/essays/medium/the-nature-of-the-soul-from-undifferentiated-source-to-living-identity',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
