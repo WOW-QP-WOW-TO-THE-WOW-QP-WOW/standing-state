@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="field" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#0a1220"/>
+      <stop offset="45%" stop-color="#04060c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6dd9a"/>
+      <stop offset="50%" stop-color="#c89539"/>
+      <stop offset="100%" stop-color="#6b4814"/>
+    </linearGradient>
+    <linearGradient id="goldFlat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e9c878"/>
+      <stop offset="100%" stop-color="#a07a2a"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a2a10" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#1a1206" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#2a1110" stop-opacity="0.74"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#101b2a" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#122a18" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .plate-num{fill:#c89539;font-size:22px;letter-spacing:18px;font-variant:small-caps}
+      .title{fill:#f3e2b6;font-size:54px;font-weight:600;letter-spacing:9px}
+      .sub{fill:#d8b264;font-size:18px;letter-spacing:6px;font-style:italic}
+      .stamp{fill:#9b7028;font-size:11px;letter-spacing:7px;font-variant:small-caps}
+      .rule-label{fill:#9b7028;font-size:13px;letter-spacing:8px;font-variant:small-caps}
+      .h{fill:#f0dcaa;font-size:18px;letter-spacing:5px;font-variant:small-caps;font-weight:600}
+      .roman{fill:#c89539;font-size:14px;letter-spacing:4px;font-variant:small-caps}
+      .body-it{fill:#e6d6b6;font-size:16px;font-style:italic;letter-spacing:0.3px}
+      .small{fill:#b8a075;font-size:14px;letter-spacing:0.4px}
+      .caption{fill:#8e7340;font-size:12px;letter-spacing:3px;font-variant:small-caps}
+      .formula-master{fill:#f6e8c3;font-size:54px;font-style:italic}
+      .formula{fill:#f6e8c3;font-size:29px;font-style:italic}
+      .formula-sm{fill:#f6e8c3;font-size:21px;font-style:italic}
+      .label{fill:#c89539;font-size:13px;letter-spacing:5px;font-variant:small-caps}
+      .gold{fill:#d6a84b}.green{fill:#6fc985}.red{fill:#e07564}.blue{fill:#7fb0e8}
+      .panel{fill:#050709;stroke:url(#goldFlat);stroke-width:1}
+      .panel-meta{fill:#060912;stroke:url(#gold);stroke-width:1.4}
+      .rule{stroke:#7a5a1e;stroke-width:0.7;fill:none}
+      .rule-thin{stroke:#5e4516;stroke-width:0.5;fill:none}
+      .rule-bold{stroke:url(#gold);stroke-width:2;fill:none}
+    </style>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#field)"/>
+  <rect x="36" y="36" width="1728" height="1128" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
+  <rect x="50" y="50" width="1700" height="1100" fill="none" stroke="#7a5a1e" stroke-width="0.6"/>
+  <rect x="62" y="62" width="1676" height="1076" fill="none" stroke="#3a2a10" stroke-width="0.4"/>
+  <g stroke="#a07a2a" stroke-width="1" fill="none">
+    <path d="M50 78 L78 78 L78 50"/><path d="M1750 78 L1722 78 L1722 50"/>
+    <path d="M50 1122 L78 1122 L78 1150"/><path d="M1750 1122 L1722 1122 L1722 1150"/>
+    <circle cx="78" cy="78" r="3" fill="#c89539"/><circle cx="1722" cy="78" r="3" fill="#c89539"/>
+    <circle cx="78" cy="1122" r="3" fill="#c89539"/><circle cx="1722" cy="1122" r="3" fill="#c89539"/>
+  </g>
+
+  <text class="stamp" x="900" y="78" text-anchor="middle">SOVEREIGNTY · HUMAN EXECUTION · TIER P015</text>
+  <text class="plate-num" x="900" y="118" text-anchor="middle">— PLATE XV —</text>
+  <line class="rule" x1="640" y1="132" x2="1160" y2="132"/>
+  <text class="title" x="900" y="186" text-anchor="middle">CLOSED LOOP SOVEREIGNTY</text>
+  <text class="sub" x="900" y="222" text-anchor="middle">Identity Invariance · Curvature Constraint · Non-Sacrificial Law</text>
+  <line class="rule-bold" x1="700" y1="246" x2="1100" y2="246"/>
+  <circle cx="900" cy="246" r="3.5" fill="#d6a84b"/>
+
+  <text class="rule-label" x="78" y="280">I. GOVERNING CONDITION</text>
+  <line class="rule-thin" x1="405" y1="276" x2="1722" y2="276"/>
+  <g transform="translate(140,300)">
+    <rect class="panel-meta" width="1520" height="230" rx="2"/>
+    <rect x="14" y="14" width="1492" height="202" fill="none" stroke="#3a2a10" stroke-width="0.4"/>
+    <ellipse cx="760" cy="110" rx="540" ry="72" fill="url(#centerGlow)"/>
+    <text class="formula-master" x="760" y="112" text-anchor="middle" filter="url(#softGlow)">A ≡ A  ∧  κ ≤ 1  ∧  Δq ≥ 0</text>
+    <text class="formula-sm" x="760" y="162" text-anchor="middle">identity fixed · curvature bounded · qualia preserved</text>
+    <line class="rule-thin" x1="380" y1="182" x2="1140" y2="182"/>
+    <text class="label" x="760" y="207" text-anchor="middle">nothing invalid is allowed to circulate</text>
+  </g>
+
+  <text class="rule-label" x="78" y="582">II. CONSTITUENT LAWS</text>
+  <line class="rule-thin" x1="390" y1="578" x2="1722" y2="578"/>
+  <g transform="translate(90,605)">
+    <rect class="panel" width="500" height="175" rx="2"/>
+    <ellipse cx="250" cy="96" rx="220" ry="58" fill="url(#blueGlow)"/>
+    <text class="roman" x="22" y="34">i</text>
+    <text class="h" x="50" y="34">IDENTITY INVARIANCE</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula blue" x="250" y="94" text-anchor="middle">A ≡ A</text>
+    <text class="body-it" x="22" y="132">The invariant coordinate does not move.</text>
+    <text class="caption blue" x="22" y="158">reference sealed</text>
+  </g>
+  <g transform="translate(650,605)">
+    <rect class="panel" width="500" height="175" rx="2"/>
+    <ellipse cx="250" cy="96" rx="220" ry="58" fill="url(#centerGlow)"/>
+    <text class="roman" x="22" y="34">ii</text>
+    <text class="h" x="50" y="34">CURVATURE BOUND</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula gold" x="250" y="94" text-anchor="middle">κ ≤ 1</text>
+    <text class="body-it" x="22" y="132">Interface load remains geometrically bearable.</text>
+    <text class="caption gold" x="22" y="158">no overload torsion</text>
+  </g>
+  <g transform="translate(1210,605)">
+    <rect class="panel" width="500" height="175" rx="2"/>
+    <ellipse cx="250" cy="96" rx="220" ry="58" fill="url(#greenGlow)"/>
+    <text class="roman" x="22" y="34">iii</text>
+    <text class="h" x="50" y="34">NON-SACRIFICIAL LAW</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula green" x="250" y="94" text-anchor="middle">Δq ≥ 0</text>
+    <text class="body-it" x="22" y="132">Qualia cannot be spent to sustain structure.</text>
+    <text class="caption green" x="22" y="158">life not consumed</text>
+  </g>
+
+  <text class="rule-label" x="78" y="830">III. FAILURE TOPOLOGIES</text>
+  <line class="rule-thin" x1="435" y1="826" x2="1722" y2="826"/>
+  <g transform="translate(90,850)">
+    <rect class="panel" width="375" height="215" rx="2"/>
+    <ellipse cx="187" cy="112" rx="155" ry="58" fill="url(#redGlow)"/>
+    <text class="roman" x="22" y="34">i</text><text class="h" x="50" y="34">HUB</text>
+    <line class="rule-thin" x1="22" y1="48" x2="353" y2="48"/>
+    <circle cx="187" cy="98" r="28" fill="none" stroke="#e07564" stroke-width="2"/>
+    <line x1="187" y1="98" x2="122" y2="145" stroke="#e07564" stroke-width="1.2"/>
+    <line x1="187" y1="98" x2="252" y2="145" stroke="#e07564" stroke-width="1.2"/>
+    <line x1="187" y1="98" x2="187" y2="155" stroke="#e07564" stroke-width="1.2"/>
+    <text class="body-it" x="22" y="186">One center carrying too many interfaces.</text>
+  </g>
+  <g transform="translate(500,850)">
+    <rect class="panel" width="375" height="215" rx="2"/>
+    <ellipse cx="187" cy="112" rx="155" ry="58" fill="url(#redGlow)"/>
+    <text class="roman" x="22" y="34">ii</text><text class="h" x="50" y="34">STACK</text>
+    <line class="rule-thin" x1="22" y1="48" x2="353" y2="48"/>
+    <rect x="137" y="75" width="100" height="22" fill="none" stroke="#e07564"/>
+    <rect x="127" y="104" width="120" height="22" fill="none" stroke="#e07564"/>
+    <rect x="117" y="133" width="140" height="22" fill="none" stroke="#e07564"/>
+    <text class="body-it" x="22" y="186">Unclosed layers pile without release.</text>
+  </g>
+  <g transform="translate(910,850)">
+    <rect class="panel" width="375" height="215" rx="2"/>
+    <ellipse cx="187" cy="112" rx="155" ry="58" fill="url(#redGlow)"/>
+    <text class="roman" x="22" y="34">iii</text><text class="h" x="50" y="34">KINK</text>
+    <line class="rule-thin" x1="22" y1="48" x2="353" y2="48"/>
+    <path d="M110 145 L165 92 L205 130 L265 75" fill="none" stroke="#e07564" stroke-width="2.2"/>
+    <circle cx="205" cy="130" r="8" fill="#e07564"/>
+    <text class="body-it" x="22" y="186">A trajectory bends beyond closure.</text>
+  </g>
+  <g transform="translate(1320,850)">
+    <rect class="panel" width="375" height="215" rx="2"/>
+    <ellipse cx="187" cy="112" rx="155" ry="58" fill="url(#redGlow)"/>
+    <text class="roman" x="22" y="34">iv</text><text class="h" x="50" y="34">+1</text>
+    <line class="rule-thin" x1="22" y1="48" x2="353" y2="48"/>
+    <circle cx="157" cy="112" r="35" fill="none" stroke="#e07564"/>
+    <circle cx="230" cy="112" r="35" fill="none" stroke="#e07564"/>
+    <text x="197" y="123" text-anchor="middle" fill="#e07564" font-size="36">+</text>
+    <text class="body-it" x="22" y="186">One added load breaks the bound.</text>
+  </g>
+
+  <line class="rule-thin" x1="78" y1="1108" x2="780" y2="1108"/>
+  <line class="rule-thin" x1="1020" y1="1108" x2="1722" y2="1108"/>
+  <text class="sub" x="900" y="1158" text-anchor="middle">A becomes A, because A knows it is A.</text>
+  <text class="caption" x="78" y="1175">Standing State Press · standingstate.com</text>
+  <text class="caption" x="1722" y="1175" text-anchor="end">P015 · Plate XV · Closed Loop Sovereignty</text>
+</svg>
