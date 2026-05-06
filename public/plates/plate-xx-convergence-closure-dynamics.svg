@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="field" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#0a1220"/>
+      <stop offset="45%" stop-color="#04060c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6dd9a"/>
+      <stop offset="50%" stop-color="#c89539"/>
+      <stop offset="100%" stop-color="#6b4814"/>
+    </linearGradient>
+    <linearGradient id="goldFlat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e9c878"/>
+      <stop offset="100%" stop-color="#a07a2a"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a2a10" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#1a1206" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#122a18" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a1110" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#101b2a" stop-opacity="0.78"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="20"/>
+      <feColorMatrix values="0 0 0 0 0.7 0 0 0 0 0.55 0 0 0 0 0.25 0 0 0 0.05 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#c89539"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L10,4 z" fill="#6fc985"/>
+    </marker>
+    <style>
+      .plate-num{fill:#c89539;font-size:22px;letter-spacing:18px;font-variant:small-caps}
+      .title{fill:#f3e2b6;font-size:54px;font-weight:600;letter-spacing:9px}
+      .sub{fill:#d8b264;font-size:18px;letter-spacing:6px;font-style:italic}
+      .stamp{fill:#9b7028;font-size:11px;letter-spacing:7px;font-variant:small-caps}
+      .rule-label{fill:#9b7028;font-size:13px;letter-spacing:8px;font-variant:small-caps}
+      .h{fill:#f0dcaa;font-size:18px;letter-spacing:5px;font-variant:small-caps;font-weight:600}
+      .roman{fill:#c89539;font-size:14px;letter-spacing:4px;font-variant:small-caps}
+      .body-it{fill:#e6d6b6;font-size:16px;font-style:italic;letter-spacing:0.3px}
+      .small{fill:#b8a075;font-size:14px;letter-spacing:0.4px}
+      .caption{fill:#8e7340;font-size:12px;letter-spacing:3px;font-variant:small-caps}
+      .formula-master{fill:#f6e8c3;font-size:54px;font-style:italic}
+      .formula{fill:#f6e8c3;font-size:29px;font-style:italic}
+      .formula-sm{fill:#f6e8c3;font-size:21px;font-style:italic}
+      .label{fill:#c89539;font-size:13px;letter-spacing:5px;font-variant:small-caps}
+      .gold{fill:#d6a84b}
+      .green{fill:#6fc985}
+      .red{fill:#e07564}
+      .blue{fill:#7fb0e8}
+      .panel{fill:#050709;stroke:url(#goldFlat);stroke-width:1}
+      .panel-meta{fill:#060912;stroke:url(#gold);stroke-width:1.4}
+      .rule{stroke:#7a5a1e;stroke-width:0.7;fill:none}
+      .rule-thin{stroke:#5e4516;stroke-width:0.5;fill:none}
+      .rule-bold{stroke:url(#gold);stroke-width:2;fill:none}
+    </style>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#field)"/>
+  <rect width="1800" height="1200" filter="url(#grain)" opacity="0.45"/>
+  <rect x="36" y="36" width="1728" height="1128" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
+  <rect x="50" y="50" width="1700" height="1100" fill="none" stroke="#7a5a1e" stroke-width="0.6"/>
+  <rect x="62" y="62" width="1676" height="1076" fill="none" stroke="#3a2a10" stroke-width="0.4"/>
+  <g stroke="#a07a2a" stroke-width="1" fill="none">
+    <path d="M50 78 L78 78 L78 50"/><path d="M1750 78 L1722 78 L1722 50"/>
+    <path d="M50 1122 L78 1122 L78 1150"/><path d="M1750 1122 L1722 1122 L1722 1150"/>
+    <circle cx="78" cy="78" r="3" fill="#c89539"/><circle cx="1722" cy="78" r="3" fill="#c89539"/>
+    <circle cx="78" cy="1122" r="3" fill="#c89539"/><circle cx="1722" cy="1122" r="3" fill="#c89539"/>
+  </g>
+  <text class="stamp" x="900" y="78" text-anchor="middle">TRAJECTORY · GOVERNANCE · TIER P020</text>
+  <text class="plate-num" x="900" y="118" text-anchor="middle">— PLATE XX —</text>
+  <line class="rule" x1="640" y1="132" x2="1160" y2="132"/>
+  <text class="title" x="900" y="186" text-anchor="middle">CONVERGENCE &amp; CLOSURE DYNAMICS</text>
+  <text class="sub" x="900" y="222" text-anchor="middle">Trajectory Admissibility · Descent Law · Temporal Closure</text>
+  <line class="rule-bold" x1="700" y1="246" x2="900" y2="246"/>
+  <line class="rule-bold" x1="900" y1="246" x2="1100" y2="246"/>
+  <circle cx="900" cy="246" r="3.5" fill="#d6a84b"/>
+
+  <text class="rule-label" x="78" y="280">I. THE TRAJECTORY LAW</text>
+  <line class="rule-thin" x1="360" y1="276" x2="1722" y2="276"/>
+  <g transform="translate(140,300)">
+    <rect class="panel-meta" width="1520" height="230" rx="2"/>
+    <rect x="14" y="14" width="1492" height="202" fill="none" stroke="#3a2a10" stroke-width="0.4"/>
+    <ellipse cx="760" cy="110" rx="520" ry="70" fill="url(#centerGlow)"/>
+    <text class="formula-master" x="760" y="112" text-anchor="middle" filter="url(#softGlow)">d𝓛 / dt ≤ 0</text>
+    <text class="formula-sm" x="760" y="160" text-anchor="middle">Φ(x; I*) ≤ 0</text>
+    <line class="rule-thin" x1="440" y1="178" x2="1080" y2="178"/>
+    <text class="label" x="760" y="204" text-anchor="middle">descent is admissible · increase is divergence · closure is approached</text>
+    <text class="caption" x="40" y="42">from · p019</text>
+    <text class="caption" x="1480" y="42" text-anchor="end">to · closure</text>
+  </g>
+
+  <text class="rule-label" x="78" y="582">II. RELATIONSHIP TO THE SYSTEM STACK</text>
+  <line class="rule-thin" x1="500" y1="578" x2="1722" y2="578"/>
+  <g transform="translate(90,605)">
+    <rect class="panel" width="500" height="175" rx="2"/>
+    <text class="roman" x="22" y="34">i</text>
+    <text class="h" x="50" y="34">P016 · EXECUTION AUTHORITY</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula" x="250" y="92" text-anchor="middle">Φ(x; I*) ≤ 0</text>
+    <text class="body-it" x="22" y="130">Instantaneous gate. Does this movement execute?</text>
+    <text class="caption gold" x="22" y="156">authorization boundary</text>
+  </g>
+  <g transform="translate(650,605)">
+    <rect class="panel" width="500" height="175" rx="2"/>
+    <text class="roman" x="22" y="34">ii</text>
+    <text class="h" x="50" y="34">P019 · SYSTEM MEASURE</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula" x="250" y="92" text-anchor="middle">𝓛(x,t)</text>
+    <text class="body-it" x="22" y="130">Unified audit scalar. Where does the system stand?</text>
+    <text class="caption gold" x="22" y="156">measurement layer</text>
+  </g>
+  <g transform="translate(1210,605)">
+    <rect class="panel" width="500" height="175" rx="2"/>
+    <text class="roman" x="22" y="34">iii</text>
+    <text class="h" x="50" y="34">P020 · TRAJECTORY LAW</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula" x="250" y="92" text-anchor="middle">d𝓛/dt ≤ 0</text>
+    <text class="body-it" x="22" y="130">Temporal gate. Is the system moving toward closure?</text>
+    <text class="caption gold" x="22" y="156">descent constraint</text>
+  </g>
+  <path d="M 590 692 C 610 692, 628 692, 650 692" fill="none" stroke="#c89539" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <path d="M 1150 692 C 1170 692, 1188 692, 1210 692" fill="none" stroke="#c89539" stroke-width="1.4" marker-end="url(#arrow)"/>
+
+  <text class="rule-label" x="78" y="830">III. OUTCOME STATES</text>
+  <line class="rule-thin" x1="340" y1="826" x2="1722" y2="826"/>
+  <g transform="translate(90,850)">
+    <rect class="panel" width="500" height="215" rx="2"/>
+    <ellipse cx="250" cy="112" rx="225" ry="70" fill="url(#greenGlow)"/>
+    <text class="roman" x="22" y="34">i</text>
+    <text class="h" x="50" y="34">CONVERGENCE</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula green" x="250" y="98" text-anchor="middle">d𝓛/dt &lt; 0</text>
+    <text class="body-it" x="22" y="136">The audit scalar descends. Deviation is being reduced.</text>
+    <line class="rule-thin" x1="22" y1="160" x2="478" y2="160"/>
+    <text class="caption green" x="22" y="190">admissible trajectory</text>
+  </g>
+  <g transform="translate(650,850)">
+    <rect class="panel" width="500" height="215" rx="2"/>
+    <ellipse cx="250" cy="112" rx="225" ry="70" fill="url(#blueGlow)"/>
+    <text class="roman" x="22" y="34">ii</text>
+    <text class="h" x="50" y="34">CLOSURE</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula blue" x="250" y="98" text-anchor="middle">d𝓛/dt = 0</text>
+    <text class="body-it" x="22" y="136">The system rests at the boundary of no further deviation.</text>
+    <line class="rule-thin" x1="22" y1="160" x2="478" y2="160"/>
+    <text class="caption blue" x="22" y="190">steady state · closure band</text>
+  </g>
+  <g transform="translate(1210,850)">
+    <rect class="panel" width="500" height="215" rx="2"/>
+    <ellipse cx="250" cy="112" rx="225" ry="70" fill="url(#redGlow)"/>
+    <text class="roman" x="22" y="34">iii</text>
+    <text class="h" x="50" y="34">DIVERGENCE</text>
+    <line class="rule-thin" x1="22" y1="48" x2="478" y2="48"/>
+    <text class="formula red" x="250" y="98" text-anchor="middle">d𝓛/dt &gt; 0</text>
+    <text class="body-it" x="22" y="136">The scalar rises. The system moves away from closure.</text>
+    <line class="rule-thin" x1="22" y1="160" x2="478" y2="160"/>
+    <text class="caption red" x="22" y="190">inadmissible trajectory · halt</text>
+  </g>
+
+  <g transform="translate(250,1005)">
+    <path d="M 0 50 C 150 52, 270 16, 440 22 S 680 90, 830 88" fill="none" stroke="#e07564" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.75"/>
+    <path d="M 0 12 C 120 18, 240 56, 390 75 S 660 91, 830 96" fill="none" stroke="#6fc985" stroke-width="2.2" filter="url(#softGlow)" marker-end="url(#arrowGreen)"/>
+    <line x1="0" y1="98" x2="830" y2="98" stroke="#7a5a1e" stroke-width="0.7" stroke-dasharray="2 4"/>
+    <text class="caption" x="-20" y="18" text-anchor="end">𝓛</text>
+    <text class="caption" x="845" y="102">t</text>
+    <text class="small green" x="650" y="70">descent</text>
+    <text class="small red" x="420" y="32">rejected rise</text>
+  </g>
+
+  <line class="rule-thin" x1="78" y1="1108" x2="780" y2="1108"/>
+  <line class="rule-thin" x1="1020" y1="1108" x2="1722" y2="1108"/>
+  <g transform="translate(900,1108)">
+    <circle r="40" fill="url(#centerGlow)"/>
+    <circle r="28" fill="none" stroke="url(#gold)" stroke-width="1.4"/>
+    <circle r="20" fill="none" stroke="#7a5a1e" stroke-width="0.5"/>
+    <text x="0" y="9" text-anchor="middle" font-size="30" font-style="italic" fill="#f3e2b6" filter="url(#softGlow)">𝓛</text>
+  </g>
+  <text class="sub" x="900" y="1158" text-anchor="middle">A becomes A, because A knows it is A.</text>
+  <text class="caption" x="78" y="1175">Standing State Press · standingstate.com</text>
+  <text class="caption" x="1722" y="1175" text-anchor="end">P020 · Plate XX · Trajectory Governance</text>
+</svg>
