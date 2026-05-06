@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" font-family="Georgia, 'Times New Roman', serif">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="42%" r="80%">
+    <stop offset="0%" stop-color="#08111d"/><stop offset="55%" stop-color="#050506"/><stop offset="100%" stop-color="#000"/>
+  </radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#f4dda0"/><stop offset="50%" stop-color="#c49a45"/><stop offset="100%" stop-color="#6f4b18"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+    <stop offset="0%" stop-color="#3a2609" stop-opacity=".85"/><stop offset="65%" stop-color="#120b03" stop-opacity=".35"/><stop offset="100%" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="redg" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#331111" stop-opacity=".75"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <radialGradient id="greeng" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#12331c" stop-opacity=".75"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <radialGradient id="blueg" cx="50%" cy="50%" r="55%"><stop offset="0%" stop-color="#10213b" stop-opacity=".75"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="2.5"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>
+    .stamp{fill:#9b7028;font-size:11px;letter-spacing:7px;font-variant:small-caps}
+    .plate{fill:#c89539;font-size:22px;letter-spacing:18px;font-variant:small-caps}
+    .title{fill:#f3e2b6;font-size:52px;font-weight:600;letter-spacing:8px}
+    .sub{fill:#d8b264;font-size:18px;letter-spacing:6px;font-style:italic}
+    .ruleLabel{fill:#9b7028;font-size:13px;letter-spacing:8px;font-variant:small-caps}
+    .h{fill:#f0dcaa;font-size:18px;letter-spacing:5px;font-weight:600;font-variant:small-caps}
+    .roman{fill:#c89539;font-size:14px;letter-spacing:4px;font-variant:small-caps}
+    .formula{fill:#f6e8c3;font-size:34px;font-style:italic}
+    .formulaBig{fill:#f6e8c3;font-size:56px;font-style:italic}
+    .body{fill:#e6d6b6;font-size:17px;font-style:italic}
+    .cap{fill:#8e7340;font-size:12px;letter-spacing:3px;font-variant:small-caps}
+    .panel{fill:#050709;stroke:url(#gold);stroke-width:1.1}
+    .line{stroke:#76561d;stroke-width:.7}
+    .line2{stroke:url(#gold);stroke-width:2}
+  </style>
+</defs>
+
+
+<rect width="1800" height="1200" fill="url(#bg)"/>
+<rect x="36" y="36" width="1728" height="1128" fill="none" stroke="url(#gold)" stroke-width="2.2"/>
+<rect x="50" y="50" width="1700" height="1100" fill="none" stroke="#76561d" stroke-width=".6"/>
+<text class="stamp" x="900" y="78" text-anchor="middle">BIOLOGY · TRIAGE · TIER P022</text>
+<text class="plate" x="900" y="118" text-anchor="middle">— PLATE XXII —</text>
+<line class="line" x1="640" y1="132" x2="1160" y2="132"/>
+<text class="title" x="900" y="186" text-anchor="middle">BIOLOGICAL STANDING STATE</text>
+<text class="sub" x="900" y="222" text-anchor="middle">Stress, connective tissue, and the triage logic of human repair</text>
+<line class="line2" x1="700" y1="246" x2="1100" y2="246"/>
+<circle cx="900" cy="246" r="4" fill="#d6a84b"/>
+
+<text class="ruleLabel" x="78" y="285">I. GOVERNING CONDITION</text><line class="line" x1="390" y1="280" x2="1722" y2="280"/>
+<g transform="translate(140,310)">
+  <rect class="panel" width="1520" height="220"/>
+  <ellipse cx="760" cy="112" rx="560" ry="70" fill="url(#glow)"/>
+  <text class="formulaBig" x="760" y="112" text-anchor="middle" filter="url(#soft)">Σ ↑ ⇒ Repair Triage</text>
+  <text class="formula" x="760" y="166" text-anchor="middle">Σ ↓ ∧ B(t) holds ⇒ K_auto ↑ ⇒ Φ(x) → 0</text>
+</g>
+<text class="ruleLabel" x="78" y="585">II. TRIAGE SEQUENCE</text><line class="line" x1="360" y1="580" x2="1722" y2="580"/>
+
+<g transform="translate(90,615)">
+  <rect class="panel" width="500" height="175" rx="2"/>
+  <ellipse cx="250.0" cy="93.5" rx="210.0" ry="58.333333333333336" fill="url(#redg)"/>
+  <text class="h" x="28" y="38">LOAD</text>
+  <line class="line" x1="28" y1="54" x2="472" y2="54"/>
+  <text class="formula" fill="#e07564" x="250.0" y="87.5" text-anchor="middle">Σ ↑</text>
+  <text class="body" x="28" y="127">survival allocation outranks repair</text>
+</g>
+
+
+<g transform="translate(650,615)">
+  <rect class="panel" width="500" height="175" rx="2"/>
+  <ellipse cx="250.0" cy="93.5" rx="210.0" ry="58.333333333333336" fill="url(#blueg)"/>
+  <text class="h" x="28" y="38">BOUNDARY</text>
+  <line class="line" x1="28" y1="54" x2="472" y2="54"/>
+  <text class="formula" fill="#7fb0e8" x="250.0" y="87.5" text-anchor="middle">B(t)</text>
+  <text class="body" x="28" y="127">connective tissue holds structural integrity</text>
+</g>
+
+
+<g transform="translate(1210,615)">
+  <rect class="panel" width="500" height="175" rx="2"/>
+  <ellipse cx="250.0" cy="93.5" rx="210.0" ry="58.333333333333336" fill="url(#greeng)"/>
+  <text class="h" x="28" y="38">REPAIR</text>
+  <line class="line" x1="28" y1="54" x2="472" y2="54"/>
+  <text class="formula" fill="#6fc985" x="250.0" y="87.5" text-anchor="middle">K_auto ↑</text>
+  <text class="body" x="28" y="127">correction resumes when load decreases</text>
+</g>
+
+<text class="ruleLabel" x="78" y="835">III. BIOLOGICAL CLOSURE STATES</text><line class="line" x1="515" y1="830" x2="1722" y2="830"/>
+
+<g transform="translate(90,860)">
+  <rect class="panel" width="500" height="205" rx="2"/>
+  <ellipse cx="250.0" cy="108.5" rx="210.0" ry="68.33333333333333" fill="url(#redg)"/>
+  <text class="h" x="28" y="38">TRIAGE</text>
+  <line class="line" x1="28" y1="54" x2="472" y2="54"/>
+  <text class="formula" fill="#e07564" x="250.0" y="102.5" text-anchor="middle">Σ high</text>
+  <text class="body" x="28" y="157">repair is deferred under sustained demand</text>
+</g>
+
+
+<g transform="translate(650,860)">
+  <rect class="panel" width="500" height="205" rx="2"/>
+  <ellipse cx="250.0" cy="108.5" rx="210.0" ry="68.33333333333333" fill="url(#blueg)"/>
+  <text class="h" x="28" y="38">HOLD</text>
+  <line class="line" x1="28" y1="54" x2="472" y2="54"/>
+  <text class="formula" fill="#7fb0e8" x="250.0" y="102.5" text-anchor="middle">B(t) intact</text>
+  <text class="body" x="28" y="157">boundary contains exposure while load falls</text>
+</g>
+
+
+<g transform="translate(1210,860)">
+  <rect class="panel" width="500" height="205" rx="2"/>
+  <ellipse cx="250.0" cy="108.5" rx="210.0" ry="68.33333333333333" fill="url(#greeng)"/>
+  <text class="h" x="28" y="38">RETURN</text>
+  <line class="line" x1="28" y1="54" x2="472" y2="54"/>
+  <text class="formula" fill="#6fc985" x="250.0" y="102.5" text-anchor="middle">Φ(x) → 0</text>
+  <text class="body" x="28" y="157">standing state returns as interference clears</text>
+</g>
+
+<line class="line" x1="78" y1="1108" x2="780" y2="1108"/><line class="line" x1="1020" y1="1108" x2="1722" y2="1108"/>
+<text class="sub" x="900" y="1158" text-anchor="middle">Signal → Completion → Repair</text>
+<text class="cap" x="78" y="1175">Standing State Press · standingstate.com</text>
+<text class="cap" x="1722" y="1175" text-anchor="end">P022 · Plate XXII · Biological Standing State</text>
+</svg>
