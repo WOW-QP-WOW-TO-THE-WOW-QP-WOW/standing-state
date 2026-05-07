@@ -766,6 +766,17 @@ const ESSAYS = [
   note: 'The body operates a structural triage logic under chronic stress, redirecting resources toward survival functions while long-term tissue maintenance loses priority. Connective tissue as living regulatory infrastructure; noise profile as accumulated interference; the Biological Sabbath as reduction of systemic interference allowing repair signaling to operate with less obstruction. Companion to Plate XXII. Descriptive observation, not clinical authority.',
   mirrorUrl: '/essays/medium/the-biological-standing-state',
 },
+{
+  id: 'M054',
+  title: 'The Geometry of Home: Desire, Orientation, and the Five Gates of Convergence',
+  mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-home-desire-orientation-and-the-five-gates-of-convergence-c747c4dd7dbe',
+  axis1: 'PLT-GATES',
+  axis2: 'VOL-MW',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'Convergence topology defining "home" as resolved identity-coordinate alignment. Desire activates direction, orientation establishes relational position, admissibility evaluates traversal, execution propagates coherent movement, and resolution completes convergence toward I*. Companion to Plate XXIII (queued). Mathematics, religion, and philosophy as different syntaxes for the same invariant structure.',
+  mirrorUrl: '/essays/medium/the-geometry-of-home',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
