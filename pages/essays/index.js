@@ -755,6 +755,17 @@ const ESSAYS = [
   note: 'Five interpretive governance protocols — biological, emotional, cognitive, symbolic, and structural — through which identity filters, regulates, and stabilizes reality after fragmentation. The Standing State emerges as coherent governance across all five layers; reality stabilizes when internal governance stabilizes.',
   mirrorUrl: '/essays/medium/the-five-gates',
 },
+{
+  id: 'M053',
+  title: 'The Biological Standing State: Stress, Connective Tissue, and the Triage Logic of Human Repair',
+  mediumUrl: 'https://medium.com/@leonsp3/the-biological-standing-state-stress-connective-tissue-and-the-triage-logic-of-human-repair-682e0bcfa3be',
+  axis1: 'PLT-I',
+  axis2: 'VOL-BSH2',
+  axis3: 'REG-BIO',
+  flag: 'M',
+  note: 'The body operates a structural triage logic under chronic stress, redirecting resources toward survival functions while long-term tissue maintenance loses priority. Connective tissue as living regulatory infrastructure; noise profile as accumulated interference; the Biological Sabbath as reduction of systemic interference allowing repair signaling to operate with less obstruction. Companion to Plate XXII. Descriptive observation, not clinical authority.',
+  mirrorUrl: '/essays/medium/the-biological-standing-state',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
