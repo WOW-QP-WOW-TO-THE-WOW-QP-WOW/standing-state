@@ -752,8 +752,8 @@ const ESSAYS = [
   axis2: 'VOL-MW',
   axis3: 'REG-STRUCT',
   flag: 'M',
-  note: 'Defines the five-gate admissibility framework: structural coherence, identity consistency, register integrity, operational admissibility, and formal closure where applicable. Governance topology establishing jurisdictional separation between registers and the lawful conditions under which each register terminates.',
-  mirrorUrl: '',
+  note: 'Five interpretive governance protocols — biological, emotional, cognitive, symbolic, and structural — through which identity filters, regulates, and stabilizes reality after fragmentation. The Standing State emerges as coherent governance across all five layers; reality stabilizes when internal governance stabilizes.',
+  mirrorUrl: '/essays/medium/the-five-gates',
 },
 ]
 
