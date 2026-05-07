@@ -18,6 +18,7 @@ const PLATES = [
   { code: 'PLT-PAIN',    label: 'Pain as Decoherence Signal' },
   { code: 'PLT-CONSENT', label: 'The Consent Engine' },
   { code: 'PLT-ADMIT',   label: 'The Admissibility Gate' },
+  { code: 'PLT-GATES',   label: 'The Five Gates' },
   { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
   { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
   { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
@@ -742,6 +743,17 @@ const ESSAYS = [
   flag: 'M',
   note: 'Canonical post-Rank-0 translation of the original 2025 phase-reference essay. Negative state as deviation detection (∇c), not identity verdict. Recalibration as subtractive — return to coherence via removal of interference, not application of force. Original Medium publication preserved as lineage source; canonical register corrected for operational admissibility.',
   mirrorUrl: '/essays/medium/the-internal-compass',
+},
+{
+  id: 'M052',
+  title: 'The Five Gates: Internal Governance and the Structure of Interpreted Reality',
+  mediumUrl: 'https://medium.com/@leonsp3/the-five-gates-internal-governance-and-the-structure-of-interpreted-reality-625ddeb20d33',
+  axis1: 'PLT-GATES',
+  axis2: 'VOL-MW',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'Defines the five-gate admissibility framework: structural coherence, identity consistency, register integrity, operational admissibility, and formal closure where applicable. Governance topology establishing jurisdictional separation between registers and the lawful conditions under which each register terminates.',
+  mirrorUrl: '',
 },
 ]
 
