@@ -425,12 +425,33 @@ export const PLATES = [
   ],
   relatedEssay: 'M053',
 },
+{
+  id: 'P023',
+  number: 'XXIII',
+  title: 'Geometry of Home',
+  slug: 'geometry-of-home',
+  image: '/plates/plate-xxiii-geometry-of-home.png',
+  summary: 'Convergence to the identity-coordinate I* through five gates: desire, orientation, admissibility, execution, resolution. One topology, many syntaxes — mathematics, religion, philosophy, psychology converging on the same invariant structure.',
+  governingCondition: 'x → I*  ;  Φ(x; I*) ≤ 0',
+  description: 'Plate XXIII compresses the convergence topology of the Standing State. Traversal from any state x toward the identity-coordinate I* proceeds lawfully through five gates: desire activates direction, orientation establishes relational position, admissibility evaluates whether the proposed pathway can lawfully pass, execution propagates coherent movement, and resolution completes coordinate alignment. The cross-domain table demonstrates that mathematics, religion, philosophy, and psychology articulate the same invariant structure through different syntaxes. Feelings register as feedback (F = f(Δ, Σ, B, M)) — telemetry that informs the gates, not the path itself. Coherence is measured through S = Φ · Γ². Home is not a place; it is resolved identity-coordinate alignment. Companion to essay M054.',
+  volume: 'Volume I',
+  chapter: 'Convergence Topology',
+  linkedVars: ['xstar', 'phi', 'capacity', 'execution', 'sigma'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+    { label: 'Γ', anchor: 'capacity' },
+    { label: 'S', anchor: 'execution' },
+    { label: 'Σ', anchor: 'sigma' },
+  ],
+  relatedEssay: 'M054',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-two plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 22,
+  description: 'Twenty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 23,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
