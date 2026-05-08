@@ -774,7 +774,7 @@ const ESSAYS = [
   axis2: 'VOL-MW',
   axis3: 'REG-STRUCT',
   flag: 'M',
-  note: 'Convergence topology defining "home" as resolved identity-coordinate alignment. Desire activates direction, orientation establishes relational position, admissibility evaluates traversal, execution propagates coherent movement, and resolution completes convergence toward I*. Companion to Plate XXIII (queued). Mathematics, religion, and philosophy as different syntaxes for the same invariant structure.',
+  note: 'Convergence topology defining "home" as resolved identity-coordinate alignment. Desire activates direction, orientation establishes relational position, admissibility evaluates traversal, execution propagates coherent movement, and resolution completes convergence toward I*. Companion to Plate XXIII. Mathematics, religion, and philosophy as different syntaxes for the same invariant structure.',
   mirrorUrl: '/essays/medium/the-geometry-of-home',
 },
 ]
