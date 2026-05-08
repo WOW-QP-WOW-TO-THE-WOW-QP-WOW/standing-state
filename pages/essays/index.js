@@ -19,6 +19,7 @@ const PLATES = [
   { code: 'PLT-CONSENT', label: 'The Consent Engine' },
   { code: 'PLT-ADMIT',   label: 'The Admissibility Gate' },
   { code: 'PLT-GATES',   label: 'The Five Gates' },
+  { code: 'PLT-SOV',     label: 'Sovereignty Calculus' },
   { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
   { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
   { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
@@ -776,6 +777,17 @@ const ESSAYS = [
   flag: 'M',
   note: 'Convergence topology defining "home" as resolved identity-coordinate alignment. Desire activates direction, orientation establishes relational position, admissibility evaluates traversal, execution propagates coherent movement, and resolution completes convergence toward I*. Companion to Plate XXIII. Mathematics, religion, and philosophy as different syntaxes for the same invariant structure.',
   mirrorUrl: '/essays/medium/the-geometry-of-home',
+},
+{
+  id: 'M055',
+  title: 'The Sovereignty Calculus of Inference',
+  mediumUrl: 'https://medium.com/@leonsp3/the-sovereignty-calculus-of-inference-a5a14ccacdd3',
+  axis1: 'PLT-SOV',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'Stability obeys an inequality: V̇ < 0. Every open system exists inside a bounded region of coherence; internal contraction must dominate injected variance. Inference depth without proportional oversight is structural leverage — beyond the sovereignty peak d*, additional intelligence reduces sovereignty. Four institutional states: Standing, Drift, Driven, Collapse. Collapse is not dramatic; it is geometric. The informational form (I_self > I_world) and the geometric form (V̇ < 0) are the same law in different coordinate systems. Companion to Plate XXIV.',
+  mirrorUrl: '/essays/medium/the-sovereignty-calculus-of-inference',
 },
 ]
 
