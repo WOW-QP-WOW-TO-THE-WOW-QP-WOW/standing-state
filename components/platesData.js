@@ -446,12 +446,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M054',
 },
+{
+  id: 'P024',
+  number: 'XXIV',
+  title: 'The Sovereignty Calculus of Inference',
+  slug: 'sovereignty-calculus-of-inference',
+  image: '/plates/plate-xxiv-sovereignty-calculus-of-inference.svg',
+  summary: 'Authority, weight, and the lawful right to conclude. Inference is never neutral — sovereignty determines who may conclude and how much their conclusions count.',
+  governingCondition: 'S(I) ≥ θ  ;  I_self > I_world ⟺ V̇ < 0',
+  description: 'Plate XXIV defines the sovereignty calculus governing lawful inference. The Inference Sovereignty Function S(I) = Σ wᵢ · Lᵢ · Cᵢ · Aᵢ aggregates four factors per source: Authority Weight (wᵢ), Legitimacy (Lᵢ), Competence (Cᵢ), and Accountability (Aᵢ). Coherence (Hᵢ) operates as the binding meta-factor — the integrity condition over the four-factor product, not a fifth multiplicand. Inferences are admissible for action-governance only when S(I) ≥ θ. The foundational bridge law I_self > I_world ⟺ V̇ < 0 establishes that informational sovereignty and geometric contraction are the same law in different coordinate systems: when self-integrity exceeds world-pressure, variance decreases. The Variance Dissipation Law V̇ = −k · (I_self − I_world) · S(I) shows that sovereign inferences dissipate variance proportionally to sovereignty itself. The sovereign inference flow proceeds: Claim → Evaluate → Score → Admit → Act. Witness here denotes audit capacity — the evaluative function that judges inferences by the five sovereignty factors — distinct from P021 Witness, which is the invariant observational coordinate. Non-sacrificial structure: hierarchy is the geometry of responsibility, not power. Companion to essay M055.',
+  volume: 'Volume I',
+  chapter: 'Sovereign Adjudication',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'M055',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 23,
+  description: 'Twenty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 24,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
