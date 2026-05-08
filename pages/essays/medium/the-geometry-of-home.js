@@ -316,7 +316,7 @@ export default function M054() {
             <p>Status: Mirrored</p>
             <p>Register: Convergence Topology / Structural</p>
             <p>Volume: The Measure Within</p>
-            <p>Companion plate: P023 (queued) — The Geometry of Home</p>
+            <p>Companion plate: P023 — The Geometry of Home</p>
           </section>
 
           {/* Axiom */}
