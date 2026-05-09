@@ -20,6 +20,7 @@ const PLATES = [
   { code: 'PLT-ADMIT',   label: 'The Admissibility Gate' },
   { code: 'PLT-GATES',   label: 'The Five Gates' },
   { code: 'PLT-SOV',     label: 'Sovereignty Calculus' },
+  { code: 'PLT-HCP',     label: 'Mechanical Containment' },
   { code: 'VAR-Σ',       label: 'Total Load (Σ)' },
   { code: 'VAR-Φ',       label: 'Completion Functional (Φ)' },
   { code: 'VAR-B',       label: 'Boundary Integrity (B)' },
@@ -788,6 +789,17 @@ const ESSAYS = [
   flag: 'M',
   note: 'Stability obeys an inequality: V̇ < 0. Every open system exists inside a bounded region of coherence; internal contraction must dominate injected variance. Inference depth without proportional oversight is structural leverage — beyond the sovereignty peak d*, additional intelligence reduces sovereignty. Four institutional states: Standing, Drift, Driven, Collapse. Collapse is not dramatic; it is geometric. The informational form (I_self > I_world) and the geometric form (V̇ < 0) are the same law in different coordinate systems. Companion to Plate XXIV.',
   mirrorUrl: '/essays/medium/the-sovereignty-calculus-of-inference',
+},
+{
+  id: 'M056',
+  title: 'The Mechanical Priority of Being',
+  mediumUrl: 'https://medium.com/@leonsp3/the-mechanical-priority-of-being-090f07c616c8',
+  axis1: 'PLT-HCP',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'Being is not a narrative achievement — it is a mechanical prerequisite defined by a stationary state. Identity is a Rank-0 coordinate: invariant, non-derivable, non-teleological. The Hybrid Containment Protocol (HCP) governs lawful dissipation: hex-cell compartmentalization, boundary integrity, black-body dissipation, axis supremacy. Six-Vector Phase-Lock (Work · Family · Body · Money · Mission · Rest) treats stress as phase-jitter, not identity corruption. NSRL-11 authorizes zero-vector response, hard boundary lockdown, and auto-ablative shell investment to preserve the invariant core. Governing condition: ∫V dt = 0 ; I* = constant. Companion to Plate XXV.',
+  mirrorUrl: '/essays/medium/the-mechanical-priority-of-being',
 },
 ]
 
