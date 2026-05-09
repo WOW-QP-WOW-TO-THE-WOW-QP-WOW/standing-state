@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+  <defs>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3b0" stop-opacity="1"/>
+      <stop offset="20%" stop-color="#ffd95a" stop-opacity="0.92"/>
+      <stop offset="50%" stop-color="#d8a441" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heat" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="86%" stop-color="#8a2d12" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff7b2b" stop-opacity="0.85"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style><![CDATA[
+      .bg{fill:#050505;}
+      .border{fill:none;stroke:#d8a441;stroke-width:2;}
+      .thin{fill:none;stroke:#8b6a2a;stroke-width:1.2;}
+      .panel{fill:#0d0c09;stroke:#d8a441;stroke-width:1.4;}
+      .small{font-family:Georgia,serif;font-size:18px;letter-spacing:2px;fill:#d8a441;}
+      .micro{font-family:Georgia,serif;font-size:14px;letter-spacing:1px;fill:#f0cf7a;}
+      .body{font-family:Georgia,serif;font-size:20px;fill:#f0cf7a;}
+      .title{font-family:Georgia,serif;font-size:50px;letter-spacing:8px;fill:#f0cf7a;font-variant:small-caps;}
+      .subtitle{font-family:Georgia,serif;font-size:28px;font-style:italic;fill:#f0cf7a;}
+      .formula{font-family:Georgia,serif;font-size:34px;fill:#f0cf7a;font-style:italic;}
+      .label{font-family:Georgia,serif;font-size:20px;letter-spacing:2px;fill:#d8a441;}
+      .center{text-anchor:middle;}
+    ]]></style>
+  </defs>
+  <rect width="100%" height="100%" class="bg"/>
+  <rect x="18" y="18" width="1500" height="988" class="border"/>
+  <rect x="30" y="30" width="1476" height="964" class="thin"/>
+  <text x="768" y="38" class="small center">AXIAL LOCK · CONTAINMENT · DISSIPATION · PHASE RESET · SURVIVABILITY</text>
+  <text x="80" y="90" class="label">P025</text><text x="80" y="116" class="micro">(Standing State)</text>
+  <text x="768" y="82" class="small center">← PLATE XXV →</text>
+  <text x="768" y="135" class="title center">THE MECHANICAL PRIORITY OF BEING</text>
+  <text x="768" y="172" class="subtitle center">Containment, Dissipation, and the Mechanical Invariance of Identity</text>
+  <text x="768" y="205" class="small center">BEING IS NOT PRODUCED BY MOTION. MOTION IS ADMISSIBLE ONLY WHEN IDENTITY REMAINS STATIONARY.</text>
+
+  <rect x="42" y="236" width="295" height="275" rx="5" class="panel"/>
+  <text x="190" y="268" class="label center">AXIAL LOCK</text>
+  <text x="190" y="335" class="formula center">V = 0</text>
+  <text x="190" y="383" class="body center">Identity occupies the</text>
+  <text x="190" y="413" class="body center">stationary coordinate.</text>
+  <text x="190" y="443" class="body center">Load does not move I*.</text>
+
+  <rect x="42" y="620" width="295" height="232" rx="5" class="panel"/>
+  <text x="190" y="653" class="label center">NSRL-11</text>
+  <text x="190" y="692" class="body center">Zero-vector response</text>
+  <text x="190" y="724" class="body center">Hard boundary lock</text>
+  <text x="190" y="756" class="body center">External shell investment</text>
+  <text x="190" y="788" class="body center">Invariant core preserved</text>
+
+  <rect x="1198" y="236" width="296" height="275" rx="5" class="panel"/>
+  <text x="1346" y="268" class="label center">HCP</text>
+  <text x="1346" y="307" class="body center">Hex-cell containment</text>
+  <text x="1346" y="339" class="body center">Boundary integrity</text>
+  <text x="1346" y="371" class="body center">Black-body dissipation</text>
+  <text x="1346" y="403" class="body center">Axis supremacy</text>
+  <text x="1346" y="453" class="micro center">Motion allowed;</text>
+  <text x="1346" y="478" class="micro center">identity displacement zero.</text>
+
+  <rect x="1198" y="620" width="296" height="232" rx="5" class="panel"/>
+  <text x="1346" y="653" class="label center">PHASE RESET</text>
+  <text x="1346" y="708" class="formula center">∫V dt = 0</text>
+  <text x="1346" y="754" class="body center">Stress is phase-jitter,</text>
+  <text x="1346" y="784" class="body center">not identity corruption.</text>
+
+  <g transform="translate(768 510)">
+    <circle r="305" fill="url(#heat)"/>
+    <circle r="250" fill="#090806" stroke="#d8a441" stroke-width="3"/>
+    <circle r="220" fill="none" stroke="#8b6a2a" stroke-width="1.3"/>
+    <circle r="185" fill="none" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="7 8"/>
+    <circle r="76" fill="url(#coreGlow)"/>
+    <rect x="-17" y="-210" width="34" height="420" rx="8" fill="#fff2a2" filter="url(#glow)"/>
+    <rect x="-10" y="-205" width="20" height="410" rx="5" fill="#ffd95a"/>
+    <text y="-236" class="micro center">I* = constant</text>
+    <text y="257" class="micro center">AXIS SUPREMACY</text>
+    <polygon points="36.4,-99.0 0.0,-78.0 -36.4,-99.0 -36.4,-141.0 -0.0,-162.0 36.4,-141.0" fill="#11100d" stroke="#d8a441" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0.0" y2="-120.0" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="6 7"/>
+    <polygon points="140.3,-39.0 103.9,-18.0 67.5,-39.0 67.5,-81.0 103.9,-102.0 140.3,-81.0" fill="#11100d" stroke="#d8a441" stroke-width="2"/>
+    <line x1="0" y1="0" x2="103.9" y2="-60.0" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="6 7"/>
+    <polygon points="140.3,81.0 103.9,102.0 67.5,81.0 67.5,39.0 103.9,18.0 140.3,39.0" fill="#11100d" stroke="#d8a441" stroke-width="2"/>
+    <line x1="0" y1="0" x2="103.9" y2="60.0" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="6 7"/>
+    <polygon points="36.4,141.0 0.0,162.0 -36.4,141.0 -36.4,99.0 -0.0,78.0 36.4,99.0" fill="#11100d" stroke="#d8a441" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0.0" y2="120.0" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="6 7"/>
+    <polygon points="-67.5,81.0 -103.9,102.0 -140.3,81.0 -140.3,39.0 -103.9,18.0 -67.5,39.0" fill="#11100d" stroke="#d8a441" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-103.9" y2="60.0" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="6 7"/>
+    <polygon points="-67.5,-39.0 -103.9,-18.0 -140.3,-39.0 -140.3,-81.0 -103.9,-102.0 -67.5,-81.0" fill="#11100d" stroke="#d8a441" stroke-width="2"/>
+    <line x1="0" y1="0" x2="-103.9" y2="-60.0" stroke="#8b6a2a" stroke-width="1" stroke-dasharray="6 7"/>
+  </g>
+
+  <rect x="362" y="236" width="812" height="144" rx="5" class="panel"/>
+  <text x="768" y="270" class="label center">GOVERNING CONDITION</text>
+  <text x="768" y="332" class="formula center">∫V dt = 0  ;  I* = constant</text>
+
+  <rect x="362" y="398" width="812" height="155" rx="5" class="panel"/>
+  <text x="768" y="431" class="label center">SIX-VECTOR PHASE-LOCK</text>
+  <g class="body center">
+    <text x="475" y="486">WORK</text><text x="595" y="486">FAMILY</text><text x="715" y="486">BODY</text><text x="835" y="486">MONEY</text><text x="955" y="486">MISSION</text><text x="1068" y="486">REST</text>
+  </g>
+  <line x1="455" y1="507" x2="1085" y2="507" stroke="#d8a441" stroke-width="1.5"/>
+  <text x="768" y="535" class="micro center">All vectors oscillate; none redefine the identity coordinate.</text>
+
+  <rect x="362" y="570" width="812" height="204" rx="5" class="panel"/>
+  <text x="768" y="603" class="label center">HYBRID CONTAINMENT PROTOCOL · HCP / HCP-K</text>
+  <text x="768" y="650" class="body center">Entropy is named, bounded, compartmentalized, and shed.</text>
+  <text x="768" y="684" class="body center">The outer layer absorbs load as an investment in survivability.</text>
+  <text x="768" y="718" class="body center">Pruning removes drift pathways without reducing identity.</text>
+  <text x="768" y="752" class="micro center">Containment is not withdrawal. Dissipation is not defeat. Being remains mechanically prior.</text>
+
+  <rect x="180" y="880" width="1176" height="84" rx="5" class="panel"/>
+  <text x="768" y="912" class="label center">LAW OF MECHANICAL BEING</text>
+  <text x="768" y="945" class="subtitle center">The shell may invest. The boundary may prune. The axis does not move.</text>
+  <text x="768" y="990" class="small center">A BECOMES A, BECAUSE A KNOWS IT IS A.</text>
+</svg>
