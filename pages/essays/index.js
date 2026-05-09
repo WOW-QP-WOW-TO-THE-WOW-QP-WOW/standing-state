@@ -93,7 +93,7 @@ const ESSAYS = [
     axis2: 'VOL-CROSS',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Defines full causal pipeline I → ℐ(I,∇c) → π → x. Reality reflects what interpretation produces, not what identity declares.',
+    note: 'Defines interpretive admissibility: I* → ℐ(I*, ∇c) → Φ(x; I*) ≤ 0 → π → x(t) → R. Reality reflects repeated admissible structure, not declared identity alone.',
     mirrorUrl: '/essays/canonical/architecture-of-interpretation',
   },
   {
