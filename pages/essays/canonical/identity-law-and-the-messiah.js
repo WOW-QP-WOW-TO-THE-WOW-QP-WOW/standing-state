@@ -505,12 +505,14 @@ export default function IdentityLawAndTheMessiah() {
               color: 'var(--gray-lt)',
             }}
           >
-            Refined read-on-site rendering &nbsp;·&nbsp; lineage:{' '}
+            Refined read-on-site rendering &nbsp;·&nbsp; originally published on Medium:{' '}
             <a
-              href="/essays/canonical/architecture-of-interpretation"
+              href="https://medium.com/@leonsp3/identity-law-and-the-messiah-69f6cfde235a"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: 'var(--gold)' }}
             >
-              Architecture of Interpretation →
+              View original →
             </a>
           </div>
 
