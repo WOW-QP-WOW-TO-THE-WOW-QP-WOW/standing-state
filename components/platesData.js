@@ -464,12 +464,29 @@ export const PLATES = [
   ],
   relatedEssay: 'M055',
 },
+{
+  id: 'P025',
+  number: 'XXV',
+  title: 'The Mechanical Priority of Being',
+  slug: 'mechanical-priority-of-being',
+  image: '/plates/plate-xxv-mechanical-priority-of-being.svg',
+  summary: 'Containment, dissipation, and the mechanical invariance of identity. Being is not produced by motion — motion is admissible only when identity remains stationary.',
+  governingCondition: '∫V dt = 0  ;  I* = constant',
+  description: 'Plate XXV defines the mechanical containment topology of the Standing State. Identity occupies the stationary coordinate (Axial Lock: V = 0); load does not move I*. The Hybrid Containment Protocol (HCP) governs lawful dissipation through four operating principles: hex-cell compartmentalization isolates entropy into discrete cells so local failure does not propagate; boundary integrity closes the domain against cascade coupling; black-body dissipation radiates high-energy stimulus outward without internalization; axis supremacy permits orientation change while identity displacement remains zero. The Six-Vector Phase-Lock — Work, Family, Body, Money, Mission, Rest — synchronizes operational domains as oscillatory vectors phase-locked to the invariant identity coordinate; stress registers as phase-jitter rather than identity corruption; phase-reset returns the system to baseline so ∫V dt = 0 holds at the identity level. NSRL-11 formalizes edge-case containment: zero-vector response, hard boundary lockdown, and auto-ablative shell investment that allows the public layer to char while the invariant core remains intact. Pruning is admissible: selective reduction, controlled dissipation, coupling removal — not identity reduction. The shell may invest. The boundary may prune. The axis does not move. Companion to essay M056.',
+  volume: 'Volume I',
+  chapter: 'Containment & Survivability',
+  linkedVars: ['xstar'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+  ],
+  relatedEssay: 'M056',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 24,
+  description: 'Twenty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 25,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
