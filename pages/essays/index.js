@@ -868,6 +868,41 @@ function EssayCard({ essay }) {
   )
 }
 
+// ── SEARCH ────────────────────────────────────────────────────
+// Schema-faithful coordinate search across existing ESSAYS fields.
+// Resolves axis1/axis2/axis3 codes against PLATES/VOLUMES/REGISTERS
+// labels so search matches either the code (PLT-SOV) or the human
+// label (Sovereignty Calculus). Flag matches either code (M) or
+// label (Mirrored). No data migration; no platesData.js import.
+
+const normalize = (value = '') =>
+  String(value).toLowerCase().replace(/[^a-z0-9]/g, '')
+
+const PLATE_LABELS    = Object.fromEntries(PLATES.map(p => [p.code, p.label]))
+const VOLUME_LABELS   = Object.fromEntries(VOLUMES.map(v => [v.code, v.label]))
+const REGISTER_LABELS = Object.fromEntries(REGISTERS.map(r => [r.code, r.label]))
+
+const matchesSearch = (essay, query) => {
+  const q = normalize(query)
+  if (!q) return true
+  const fields = [
+    essay.id,
+    essay.title,
+    essay.note,
+    essay.axis1,
+    essay.axis2,
+    essay.axis3,
+    essay.flag,
+    essay.mirrorUrl,
+    essay.mediumUrl,
+    PLATE_LABELS[essay.axis1],
+    VOLUME_LABELS[essay.axis2],
+    REGISTER_LABELS[essay.axis3],
+    FLAGS[essay.flag] && FLAGS[essay.flag].label,
+  ]
+  return fields.some(field => normalize(field).includes(q))
+}
+
 // ── PAGE ──────────────────────────────────────────────────────
 
 export default function EssaysPage() {
@@ -883,7 +918,7 @@ export default function EssaysPage() {
       if (filterVol && e.axis2 !== filterVol) return false
       if (filterReg && e.axis3 !== filterReg) return false
       if (filterFlag && e.flag !== filterFlag) return false
-      if (search && !e.title.toLowerCase().includes(search.toLowerCase())) return false
+      if (search && !matchesSearch(e, search)) return false
       return true
     })
   }, [filterPlate, filterVol, filterReg, filterFlag, search])
