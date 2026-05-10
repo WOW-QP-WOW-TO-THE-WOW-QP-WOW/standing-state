@@ -205,7 +205,7 @@ const ESSAYS = [
     axis3: 'REG-MIXED',
     flag: 'M',
     note: 'Derives identity invariance formally from forward invariance; introduces Time Burn; Sabbath as coherence threshold C=1.',
-    mirrorUrl: '',
+    mirrorUrl: '/essays/canonical/time-identity-and-the-end-of-contradiction',
   },
   {
     id: 'M003',
