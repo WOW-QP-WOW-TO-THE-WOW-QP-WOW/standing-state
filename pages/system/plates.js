@@ -5,6 +5,11 @@
  *
  * Plates fix form. Glossary fixes meaning.
  * This is a technical archive, not a design portfolio.
+ *
+ * P025 ↔ P026 RELATION LAYER
+ * The connective inscription renders between P025 and P026
+ * only when both plates exist in PLATES data. Otherwise the
+ * grid renders exactly as before. No new route. No orphan markup.
  */
 
 import Head from 'next/head'
@@ -13,6 +18,13 @@ import PlateCard from '../../components/PlateCard'
 import { PLATES, PLATES_META } from '../../components/platesData'
 
 export default function PlatesGallery() {
+  // Resolve the paired indices once. If either plate is absent,
+  // pairIndex stays null and the inscription does not render.
+  const p025Index = PLATES.findIndex(p => p.id === 'P025')
+  const p026Index = PLATES.findIndex(p => p.id === 'P026')
+  const pairIndex =
+    p025Index !== -1 && p026Index === p025Index + 1 ? p025Index : null
+
   return (
     <>
       <Head>
@@ -81,9 +93,17 @@ export default function PlatesGallery() {
       <section className="platesSec">
         <div className="wrap">
           <div className="platesGrid">
-            {PLATES.map((plate, i) => (
-              <PlateCard key={plate.id} plate={plate} index={i} />
-            ))}
+            {PLATES.map((plate, i) => [
+              <PlateCard key={plate.id} plate={plate} index={i} />,
+              /*
+                Connective inscription — renders only after the P025 card,
+                immediately before P026. The pairing reads in DOM order
+                P025 → inscription → P026 within the vertical plates stack.
+              */
+              pairIndex !== null && i === pairIndex
+                ? <PairedInscription key="pair-p025-p026" />
+                : null,
+            ])}
           </div>
         </div>
       </section>
@@ -124,5 +144,58 @@ export default function PlatesGallery() {
         }}
       />
     </>
+  )
+}
+
+/**
+ * PairedInscription
+ *
+ * The connective inscription that sits between the P025 and P026 cards.
+ * Spatial phase-lock: the inscription occupies the same column-width as a
+ * plate card so the relation reads inline within the stack.
+ *
+ * No new route. No new doctrine. No glossary mutation.
+ * Removes the adjacency residue per Operational Rule 19.
+ */
+function PairedInscription() {
+  return (
+    <div className="pairInscription reveal" role="note" aria-label="P025 ↔ P026 connective inscription">
+      <div className="pairInscriptionAccent" />
+      <div className="pairInscriptionBody">
+        <div className="pairInscriptionOrnament" aria-hidden="true">
+          <span className="pairInscriptionRule" />
+          <span className="pairInscriptionSeal">☉</span>
+          <span className="pairInscriptionRule" />
+        </div>
+
+        <div className="pairInscriptionPrimary">
+          ONE INVARIANT · TWO LAWFUL OPERATIONS
+        </div>
+        <div className="pairInscriptionSecondary">
+          Containment under pressure · Return through stillness
+        </div>
+
+        <div className="pairInscriptionFormula" aria-hidden="true">
+          <KTex math={'\\text{Standing State} \\;=\\; \\mathcal{C}_{\\text{hold}} \\,\\cap\\, \\mathcal{C}_{\\text{clarify}}'} />
+        </div>
+
+        <div className="pairInscriptionCompression">
+          <span>The axiom contains what the plates unfold.</span>
+          <span>P025 holds the becoming.</span>
+          <span>P026 clarifies the knowing.</span>
+          <span>Their intersection is the Standing State.</span>
+        </div>
+
+        <div className="pairInscriptionTerminal">
+          <em>A becomes A, because A knows it is A.</em>
+        </div>
+
+        <div className="pairInscriptionOrnament" aria-hidden="true">
+          <span className="pairInscriptionRule" />
+          <span className="pairInscriptionSeal">☉</span>
+          <span className="pairInscriptionRule" />
+        </div>
+      </div>
+    </div>
   )
 }
