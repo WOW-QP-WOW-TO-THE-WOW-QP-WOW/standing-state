@@ -2134,3 +2134,126 @@ body::before {
     line-height: 1.7;
   }
 }
+/* =========================================================
+   P025 ↔ P026 paired inscription
+   Appended to styles/globals.css
+   Uses existing tokens. No new variables introduced.
+   ========================================================= */
+
+.pairInscription {
+  display: grid;
+  grid-template-columns: 3px 1fr;
+  align-items: stretch;
+  border: var(--rule);
+  border-top: none;
+  background: var(--deep);
+  position: relative;
+}
+
+.pairInscriptionAccent {
+  background: var(--gold);
+}
+
+.pairInscriptionBody {
+  padding: 3.5rem 2rem;
+  text-align: center;
+  font-family: var(--serif);
+  color: var(--gold-lt);
+}
+
+.pairInscriptionOrnament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+}
+
+.pairInscriptionOrnament + .pairInscriptionOrnament,
+.pairInscriptionTerminal + .pairInscriptionOrnament {
+  margin: 1.5rem 0 0;
+}
+
+.pairInscriptionRule {
+  display: inline-block;
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gold-dim) 50%,
+    transparent 100%
+  );
+}
+
+.pairInscriptionSeal {
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+
+.pairInscriptionPrimary {
+  font-size: 0.95rem;
+  letter-spacing: 0.32em;
+  color: var(--gold);
+  margin: 0 0 0.75rem;
+  font-weight: 500;
+}
+
+.pairInscriptionSecondary {
+  font-size: 0.92rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  color: var(--gold-lt);
+  margin: 0 0 1.75rem;
+}
+
+.pairInscriptionFormula {
+  margin: 0 0 1.75rem;
+  font-size: 0.95rem;
+  color: var(--gold);
+}
+
+.pairInscriptionCompression {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0 0 1.75rem;
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--gold-lt);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.pairInscriptionTerminal {
+  font-size: 1.05rem;
+  color: var(--gold-lt);
+  letter-spacing: 0.04em;
+}
+
+.pairInscriptionTerminal em {
+  font-style: italic;
+}
+
+/* Narrow viewports — preserve readability, no layout change required */
+@media (max-width: 640px) {
+  .pairInscriptionBody {
+    padding: 2.5rem 1.25rem;
+  }
+  .pairInscriptionPrimary {
+    font-size: 0.82rem;
+    letter-spacing: 0.22em;
+  }
+  .pairInscriptionSecondary {
+    font-size: 0.85rem;
+  }
+  .pairInscriptionCompression {
+    font-size: 0.85rem;
+  }
+  .pairInscriptionTerminal {
+    font-size: 0.95rem;
+  }
+  .pairInscriptionRule {
+    width: 48px;
+  }
+}
