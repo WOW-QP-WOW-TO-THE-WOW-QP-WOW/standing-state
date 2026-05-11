@@ -801,6 +801,17 @@ const ESSAYS = [
   note: 'Being is not a narrative achievement — it is a mechanical prerequisite defined by a stationary state. Identity is a Rank-0 coordinate: invariant, non-derivable, non-teleological. The Hybrid Containment Protocol (HCP) governs lawful dissipation: hex-cell compartmentalization, boundary integrity, black-body dissipation, axis supremacy. Six-Vector Phase-Lock (Work · Family · Body · Money · Mission · Rest) treats stress as phase-jitter, not identity corruption. NSRL-11 authorizes zero-vector response, hard boundary lockdown, and auto-ablative shell investment to preserve the invariant core. Governing condition: ∫V dt = 0 ; I* = constant. Companion to Plate XXV.',
   mirrorUrl: '/essays/medium/the-mechanical-priority-of-being',
 },
+{
+  id: 'M057',
+  title: 'The Sabbath of Coherence: Identity, Phase-Lock, and the Lawful Return of the Living Self',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'Identity is not a frozen point but a lawful coherence basin S(I*) = { x : Φ(x; I*) ≤ 0 } — the coordinate holds while becoming traverses lawful space. Six synchronized refinements phase-lock around the invariant: maturation without erasure, basin as lawful coherence space, recognition governing traversal, Sabbath as interference removal, phase-lock over hierarchy, and faith = knowledge as the same lawful relation under different conditions of synchronization. Governing law: Σ↓ ⇒ Φ(x; I*)↓. Sabbath is not inactivity but lawful subtraction — coherence unfolded by interference removal, not produced by effort. The fullness was always complete; knowing is lawful phase-lock with the archetype; coherence unfolds as interference is removed. Companion to Plate XXVI.',
+  mirrorUrl: '',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
