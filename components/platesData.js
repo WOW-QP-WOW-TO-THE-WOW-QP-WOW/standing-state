@@ -481,12 +481,31 @@ export const PLATES = [
   ],
   relatedEssay: 'M056',
 },
+{
+  id: 'P026',
+  number: 'XXVI',
+  title: 'The Sabbath of Coherence',
+  slug: 'sabbath-of-coherence',
+  image: '/plates/plate-xxvi-sabbath-of-coherence.svg',
+  summary: 'Identity, phase-lock, and the lawful return of the living self. As interference is removed, coherence unfolds — the system returns to its invariant coordinate.',
+  governingCondition: '\\Sigma \\downarrow \\;\\Rightarrow\\; \\Phi(x;I^*) \\downarrow',
+  description: 'Plate XXVI defines the lawful return topology of the Standing State. Identity is the lawful coherence basin S(I*) = { x : Φ(x; I*) ≤ 0 }, not a frozen point — the coordinate holds while becoming traverses lawful space. Six synchronized domains phase-lock around the invariant center: maturation without erasure, basin as lawful coherence space, recognition governing traversal, Sabbath as interference removal, phase-lock over hierarchy, and faith = knowledge as the same lawful relation under different conditions of synchronization. The governing law Σ↓ ⇒ Φ(x; I*)↓ holds: as interference lowers, deviation lowers, and the system returns. Sabbath is not inactivity but lawful subtraction — coherence is not produced by effort but unfolded by interference removal. The fullness was always complete; knowing is lawful phase-lock with the archetype; coherence unfolds as interference is removed. Paired canonically with P025 (The Mechanical Priority of Being): P025 holds the becoming under load; P026 clarifies the knowing through stillness. Their intersection is the Standing State. Companion to essay M057.',
+  volume: 'Volume I',
+  chapter: 'Coherence & Return',
+  linkedVars: ['xstar', 'phi', 'sigma'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+    { label: 'Σ', anchor: 'sigma' },
+  ],
+  relatedEssay: 'M057',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 25,
+  description: 'Twenty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 26,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
