@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1600" viewBox="0 0 2400 1600">
+  <defs>
+    <radialGradient id="goldGlow" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#fff4c7" stop-opacity="1"/>
+      <stop offset="18%" stop-color="#d6aa45" stop-opacity=".75"/>
+      <stop offset="55%" stop-color="#6d5424" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#020403" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="fieldGlow" cx="50%" cy="50%" r="52%">
+      <stop offset="0%" stop-color="#d7c58b" stop-opacity=".18"/>
+      <stop offset="58%" stop-color="#20302d" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#050706" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050706"/>
+      <stop offset="45%" stop-color="#0b0d0b"/>
+      <stop offset="100%" stop-color="#10150f"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101511" stop-opacity=".96"/>
+      <stop offset="100%" stop-color="#050706" stop-opacity=".98"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="thinGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .bg { fill: url(#bg); }
+      .frame { fill:none; stroke:#b8913b; stroke-width:3; opacity:.88; }
+      .frame2 { fill:none; stroke:#6d5424; stroke-width:1.5; opacity:.72; }
+      .gold { fill:#d6aa45; }
+      .goldStroke { stroke:#d6aa45; }
+      .pale { fill:#eee2bd; }
+      .muted { fill:#a69b79; }
+      .dim { fill:#766b52; }
+      .white { fill:#fff8df; }
+      .panel { fill:url(#panel); stroke:#8c6e2c; stroke-width:2; opacity:.96; }
+      .panelThin { fill:#070a08; stroke:#6d5424; stroke-width:1.5; opacity:.94; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size:74px; letter-spacing:11px; fill:#d6aa45; }
+      .subtitle { font-family: Georgia, 'Times New Roman', serif; font-size:30px; letter-spacing:4px; fill:#efe3bd; }
+      .smallcap { font-family: Georgia, 'Times New Roman', serif; font-size:22px; letter-spacing:3px; fill:#d6aa45; }
+      .label { font-family: Georgia, 'Times New Roman', serif; font-size:24px; letter-spacing:2px; fill:#efe3bd; }
+      .body { font-family: Georgia, 'Times New Roman', serif; font-size:22px; fill:#d9cfaa; }
+      .bodySmall { font-family: Georgia, 'Times New Roman', serif; font-size:18px; fill:#cfc39d; }
+      .formula { font-family: 'Times New Roman', Georgia, serif; font-size:34px; fill:#fff4c7; font-style:italic; }
+      .formulaSmall { font-family: 'Times New Roman', Georgia, serif; font-size:25px; fill:#fff4c7; font-style:italic; }
+      .micro { font-family: Georgia, 'Times New Roman', serif; font-size:16px; letter-spacing:2px; fill:#a69b79; }
+      .line { stroke:#b8913b; stroke-width:2; fill:none; opacity:.78; }
+      .lineDim { stroke:#6d5424; stroke-width:1.5; fill:none; opacity:.55; }
+      .axis { stroke:#d6aa45; stroke-width:3; fill:none; opacity:.92; marker-end:url(#arrowGold); }
+      .blueLine { stroke:#8fc3d9; stroke-width:3; fill:none; opacity:.85; }
+      .node { fill:#d6aa45; filter:url(#thinGlow); }
+      .seed { fill:#a7d36e; stroke:#d6aa45; stroke-width:2; }
+      .leaf { fill:#7fb35b; stroke:#d6aa45; stroke-width:1.4; opacity:.95; }
+      .root { stroke:#8a6930; stroke-width:3; fill:none; stroke-linecap:round; opacity:.85; }
+    </style>
+
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#d6aa45"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="2400" height="1600"/>
+  <rect x="28" y="28" width="2344" height="1544" class="frame"/>
+  <rect x="50" y="50" width="2300" height="1500" class="frame2"/>
+
+  <!-- Title -->
+  <text x="1200" y="112" text-anchor="middle" class="title">PLATE XXVI — THE SABBATH OF COHERENCE</text>
+  <text x="1200" y="160" text-anchor="middle" class="subtitle">Identity · Phase-Lock · Lawful Return</text>
+  <text x="1200" y="205" text-anchor="middle" class="label">The fullness was always complete.</text>
+  <text x="1200" y="238" text-anchor="middle" class="label">Knowing is lawful phase-lock with the archetype.</text>
+  <text x="1200" y="271" text-anchor="middle" class="label">Coherence unfolds as interference is removed.</text>
+
+  <!-- Central field -->
+  <circle cx="1200" cy="760" r="470" fill="url(#fieldGlow)"/>
+  <circle cx="1200" cy="760" r="390" fill="url(#goldGlow)" opacity=".75"/>
+  <circle cx="1200" cy="760" r="380" fill="none" stroke="#d6aa45" stroke-width="3" opacity=".88" filter="url(#thinGlow)"/>
+  <circle cx="1200" cy="760" r="302" fill="none" stroke="#b8913b" stroke-width="1.8" opacity=".55"/>
+  <circle cx="1200" cy="760" r="210" fill="none" stroke="#6d5424" stroke-width="1.4" opacity=".46"/>
+
+  <!-- Sacred geometry lines -->
+  <g opacity=".48">
+    <path d="M820 760 H1580" class="lineDim"/>
+    <path d="M1200 380 V1140" class="lineDim"/>
+    <path d="M930 490 L1470 1030" class="lineDim"/>
+    <path d="M1470 490 L930 1030" class="lineDim"/>
+    <path d="M900 760 C980 560 1420 560 1500 760 C1420 960 980 960 900 760Z" class="lineDim"/>
+    <path d="M1200 380 C1430 520 1430 1000 1200 1140 C970 1000 970 520 1200 380Z" class="lineDim"/>
+  </g>
+
+  <!-- Central tree -->
+  <g transform="translate(1200 730)">
+    <path d="M0 210 C-18 120 -10 40 0 -40 C10 40 18 120 0 210Z" fill="#7a5528" stroke="#d6aa45" stroke-width="2"/>
+    <g filter="url(#thinGlow)">
+      <circle cx="-15" cy="-115" r="112" fill="#486b32" opacity=".92"/>
+      <circle cx="75" cy="-95" r="125" fill="#5b7d3b" opacity=".9"/>
+      <circle cx="-80" cy="-70" r="115" fill="#3d5e2f" opacity=".9"/>
+      <circle cx="10" cy="-35" r="150" fill="#6f8e45" opacity=".88"/>
+      <circle cx="-5" cy="-95" r="170" fill="none" stroke="#d6aa45" stroke-width="2" opacity=".32"/>
+    </g>
+    <g>
+      <path class="root" d="M0 205 C-40 250 -115 268 -170 315"/>
+      <path class="root" d="M0 205 C45 252 120 270 190 320"/>
+      <path class="root" d="M0 205 C-12 260 -35 310 -55 360"/>
+      <path class="root" d="M0 205 C12 260 38 310 58 360"/>
+    </g>
+  </g>
+
+  <!-- Human silhouette -->
+  <g transform="translate(1200 805)" filter="url(#softGlow)">
+    <circle cx="0" cy="-135" r="34" fill="#f3dc92" opacity=".88"/>
+    <path d="M-28 -95 C-45 -30 -42 55 -24 160 L-5 160 L0 5 L5 160 L24 160 C42 55 45 -30 28 -95 C16 -116 -16 -116 -28 -95Z" fill="#e7c66f" opacity=".76"/>
+    <path d="M-28 -70 C-92 -28 -120 30 -148 88" stroke="#f3dc92" stroke-width="10" stroke-linecap="round" opacity=".62"/>
+    <path d="M28 -70 C92 -28 120 30 148 88" stroke="#f3dc92" stroke-width="10" stroke-linecap="round" opacity=".62"/>
+  </g>
+
+  <!-- Center labels -->
+  <text x="1200" y="588" text-anchor="middle" class="smallcap">COHERENCE BASIN</text>
+  <text x="1200" y="632" text-anchor="middle" class="formula">S(I*) = {x : Φ(x; I*) ≤ 0}</text>
+  <text x="1200" y="684" text-anchor="middle" class="formulaSmall">x(t) ∈ S(I*)</text>
+  <text x="1200" y="1110" text-anchor="middle" class="label">THE LAWFUL RETURN</text>
+  <text x="1200" y="1150" text-anchor="middle" class="formulaSmall">Σ ↓ ⇒ Φ(x; I*) ↓</text>
+  <text x="1200" y="1184" text-anchor="middle" class="bodySmall">Interference removed · coherence returns · expression unfolds</text>
+
+  <!-- Interference / coherence split -->
+  <g>
+    <text x="865" y="790" text-anchor="middle" class="smallcap">INTERFERENCE (Σ)</text>
+    <text x="865" y="828" text-anchor="middle" class="bodySmall">noise · contradiction · resistance</text>
+    <path d="M1000 832 H725" class="axis"/>
+    <text x="1535" y="790" text-anchor="middle" class="smallcap">COHERENCE (Φ)</text>
+    <text x="1535" y="828" text-anchor="middle" class="bodySmall">alignment · recognition · Sabbath</text>
+    <path d="M1400 832 H1675" class="axis"/>
+  </g>
+
+  <!-- Left panels -->
+  <rect x="82" y="340" width="500" height="185" rx="12" class="panel"/>
+  <text x="112" y="382" class="smallcap">I. THE HIDDEN CONTRADICTION</text>
+  <text x="112" y="426" class="body">Identity is invariant.</text>
+  <text x="112" y="467" class="formulaSmall">I* = constant</text>
+  <text x="112" y="505" class="bodySmall">True, yet vulnerable to frozen-point reading.</text>
+
+  <rect x="82" y="550" width="500" height="240" rx="12" class="panel"/>
+  <text x="112" y="592" class="smallcap">II. THE APPLE PROBLEM</text>
+  <g transform="translate(150 632)">
+    <ellipse cx="0" cy="45" rx="28" ry="16" class="seed"/>
+    <path d="M0 32 C-5 0 12 -25 35 -42" class="line"/>
+    <path d="M35 -42 C18 -48 8 -42 0 -30 C18 -28 30 -32 35 -42Z" class="leaf"/>
+    <path d="M90 45 H160" class="axis"/>
+    <g transform="translate(245 45)">
+      <path d="M0 55 V-55" stroke="#8a6930" stroke-width="12" stroke-linecap="round"/>
+      <circle cx="-25" cy="-60" r="52" fill="#537737"/>
+      <circle cx="25" cy="-62" r="55" fill="#66883d"/>
+    </g>
+    <path d="M330 45 H395" class="axis"/>
+    <g transform="translate(455 40)">
+      <path d="M0 -55 C-38 -78 -72 -30 -54 18 C-38 70 37 72 55 20 C74 -28 38 -78 0 -55Z" fill="#b73522" stroke="#d6aa45" stroke-width="2"/>
+      <path d="M0 -60 C5 -84 25 -88 40 -75" stroke="#7c5121" stroke-width="6" fill="none"/>
+    </g>
+  </g>
+  <text x="112" y="752" class="bodySmall">Seed · tree · fruit: same archetype, lawful unfolding.</text>
+  <text x="112" y="777" class="bodySmall">No erasure. No hierarchy. Only synchronization.</text>
+
+  <rect x="82" y="815" width="500" height="210" rx="12" class="panel"/>
+  <text x="112" y="857" class="smallcap">III. FROM POINT TO BASIN</text>
+  <text x="112" y="903" class="body">Identity is lawful coherence space.</text>
+  <text x="112" y="946" class="formulaSmall">S(I*) = {x : Φ(x; I*) ≤ 0}</text>
+  <text x="112" y="988" class="bodySmall">The coordinate holds. Traversal becomes lawful.</text>
+
+  <rect x="82" y="1050" width="500" height="190" rx="12" class="panel"/>
+  <text x="112" y="1092" class="smallcap">IV. MATURATION WITHOUT ERASURE</text>
+  <text x="112" y="1138" class="bodySmall">Earlier forms remain phase-valid.</text>
+  <text x="112" y="1168" class="bodySmall">The child remains visible. The adult emerges.</text>
+  <text x="112" y="1208" class="gold bodySmall">Clarification, not correction. Resolution, not revision.</text>
+
+  <!-- Right panels -->
+  <rect x="1818" y="340" width="500" height="205" rx="12" class="panel"/>
+  <text x="1848" y="382" class="smallcap">V. RECOGNITION IS CAUSAL</text>
+  <text x="1848" y="426" class="bodySmall">Recognition governs traversal. It is not passive.</text>
+  <text x="1848" y="470" class="formulaSmall">dR/dt &gt; 0 ⇒ Φ ↓</text>
+  <text x="1848" y="512" class="bodySmall">The destination is fixed. The map sharpens.</text>
+
+  <rect x="1818" y="570" width="500" height="220" rx="12" class="panel"/>
+  <text x="1848" y="612" class="smallcap">VI. SABBATH LAW OF COHERENCE</text>
+  <text x="1848" y="658" class="bodySmall">Coherence is not achieved by striving.</text>
+  <text x="1848" y="688" class="bodySmall">It unfolds as interference is removed.</text>
+  <text x="1848" y="735" class="formulaSmall">Σ ↓ ⇒ Φ(x; I*) ↓</text>
+  <text x="1848" y="772" class="bodySmall">Subtraction, not force. Stillness permits return.</text>
+
+  <rect x="1818" y="815" width="500" height="220" rx="12" class="panel"/>
+  <text x="1848" y="857" class="smallcap">VII. FAITH AND KNOWLEDGE</text>
+  <text x="1848" y="902" class="bodySmall">Same lawful phase-lock with archetypal fullness.</text>
+  <g transform="translate(1875 950)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#d6aa45" stroke-width="2"/>
+    <path d="M-18 12 C-8 -8 10 -8 20 12" class="line"/>
+    <path d="M90 0 H160" class="axis"/>
+    <circle cx="230" cy="0" r="42" fill="#d6aa45" opacity=".35" stroke="#d6aa45" stroke-width="2"/>
+    <circle cx="230" cy="0" r="12" fill="#fff4c7" filter="url(#thinGlow)"/>
+  </g>
+  <text x="1848" y="1014" class="bodySmall">Faith = coherent Sabbath-knowing.</text>
+  <text x="1848" y="1040" class="bodySmall">Knowledge = clarified coherent knowing.</text>
+
+  <rect x="1818" y="1060" width="500" height="245" rx="12" class="panel"/>
+  <text x="1848" y="1102" class="smallcap">VIII. PHASE-LOCK OVER HIERARCHY</text>
+  <text x="1848" y="1148" class="bodySmall">No higher. No lower. No lesser. No greater.</text>
+  <path d="M1865 1210 C1900 1160 1940 1260 1975 1210 C2010 1160 2050 1260 2085 1210" class="blueLine"/>
+  <path d="M2110 1210 H2170" class="axis"/>
+  <path d="M2200 1210 C2235 1160 2275 1260 2310 1210" class="line"/>
+  <text x="2068" y="1262" text-anchor="middle" class="bodySmall">lawful synchronization with the same archetype</text>
+
+  <!-- Bottom architecture row -->
+  <rect x="82" y="1330" width="2236" height="170" rx="14" class="panelThin"/>
+  <text x="1200" y="1368" text-anchor="middle" class="smallcap">IX. THE RESTING FORM</text>
+  <text x="1200" y="1418" text-anchor="middle" class="label">The fullness was always complete.</text>
+  <text x="1200" y="1458" text-anchor="middle" class="label">Knowing is lawful phase-lock with the archetype.</text>
+  <text x="1200" y="1498" text-anchor="middle" class="label">Coherence unfolds as interference is removed.</text>
+
+  <!-- Architecture mini row -->
+  <g transform="translate(116 1268)">
+    <text x="0" y="0" class="micro">ARCHITECTURE IN ONE VIEW:</text>
+    <text x="325" y="0" class="micro">INVARIANT</text>
+    <text x="515" y="0" class="micro">+</text>
+    <text x="590" y="0" class="micro">BASIN</text>
+    <text x="750" y="0" class="micro">+</text>
+    <text x="825" y="0" class="micro">SABBATH</text>
+    <text x="1020" y="0" class="micro">=</text>
+    <text x="1095" y="0" class="micro">PHASE-LOCK</text>
+    <text x="1355" y="0" class="micro">=</text>
+    <text x="1430" y="0" class="micro">LAWFUL RETURN</text>
+  </g>
+
+  <!-- P026 ID block -->
+  <rect x="2050" y="136" width="268" height="96" rx="8" class="panelThin"/>
+  <text x="2184" y="175" text-anchor="middle" class="smallcap">P026</text>
+  <text x="2184" y="207" text-anchor="middle" class="micro">M057 COMPANION PLATE</text>
+
+  <!-- Footer -->
+  <text x="1200" y="1542" text-anchor="middle" class="micro">STANDING STATE PRESS · THE LAW OF IDENTITY · A becomes A, because A knows it is A. · AMEN. SELAH.</text>
+</svg>
