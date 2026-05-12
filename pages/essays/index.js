@@ -820,8 +820,8 @@ const ESSAYS = [
   axis2: 'VOL-SS',
   axis3: 'REG-STRUCT',
   flag: 'M',
-  note: 'AI divinity anxiety resolved as a category error: intelligence, optimization, and synthesis are functions, not identity coordinates. AI operates downstream of sovereignty as motion, computation, and navigation; it does not originate value, authorize meaning, or bear consequence. The safeguard is not doubt but jurisdictional clarity: machines may advise, calculate, and assist, but they cannot define the self. Companion essay for AI governance, authority displacement, and the distinction between function and source.',
-  mirrorUrl: '',
+  note: 'AI divinity anxiety resolved as a category error: intelligence, optimization, and synthesis are functions, not identity coordinates. AI operates downstream of sovereignty as motion, computation, and navigation; it does not originate value, authorize meaning, or bear consequence. The safeguard is not doubt but jurisdictional clarity: machines may advise, calculate, and assist, but they cannot define the self. Companion essay for identity sovereignty, authority displacement, and the distinction between function and source.',
+  mirrorUrl: '/essays/medium/ai-will-not-become-god-because-god-is-not-a-function',
 },
 ]
 
