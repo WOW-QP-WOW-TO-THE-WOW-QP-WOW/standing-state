@@ -810,7 +810,18 @@ const ESSAYS = [
   axis3: 'REG-STRUCT',
   flag: 'M',
   note: 'Identity is not a frozen point but a lawful coherence basin S(I*) = { x : Φ(x; I*) ≤ 0 } — the coordinate holds while becoming traverses lawful space. Six synchronized refinements phase-lock around the invariant: maturation without erasure, basin as lawful coherence space, recognition governing traversal, Sabbath as interference removal, phase-lock over hierarchy, and faith = knowledge as the same lawful relation under different conditions of synchronization. Governing law: Σ↓ ⇒ Φ(x; I*)↓. Sabbath is not inactivity but lawful subtraction — coherence unfolded by interference removal, not produced by effort. The fullness was always complete; knowing is lawful phase-lock with the archetype; coherence unfolds as interference is removed. Companion to Plate XXVI.',
-  mirrorUrl: '/essays/canonical/the-sabbath-of-coherence',
+  mirrorUrl: '',
+},
+{
+  id: 'M058',
+  title: 'AI Will Not Become God — Because God Is Not a Function',
+  mediumUrl: 'https://medium.com/@leonsp3/ai-will-not-become-god-because-god-is-not-a-function-542205b998d6',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'AI divinity anxiety resolved as a category error: intelligence, optimization, and synthesis are functions, not identity coordinates. AI operates downstream of sovereignty as motion, computation, and navigation; it does not originate value, authorize meaning, or bear consequence. The safeguard is not doubt but jurisdictional clarity: machines may advise, calculate, and assist, but they cannot define the self. Companion essay for AI governance, authority displacement, and the distinction between function and source.',
+  mirrorUrl: '',
 },
 ]
 
