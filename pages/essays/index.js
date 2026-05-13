@@ -823,6 +823,17 @@ const ESSAYS = [
   note: 'AI divinity anxiety resolved as a category error: intelligence, optimization, and synthesis are functions, not identity coordinates. AI operates downstream of sovereignty as motion, computation, and navigation; it does not originate value, authorize meaning, or bear consequence. The safeguard is not doubt but jurisdictional clarity: machines may advise, calculate, and assist, but they cannot define the self. Companion essay for identity sovereignty, authority displacement, and the distinction between function and source.',
   mirrorUrl: '/essays/medium/ai-will-not-become-god-because-god-is-not-a-function',
 },
+{
+  id: 'M059',
+  title: 'The Standing State: From Philosophical Identity to Deterministic Governance',
+  mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-from-philosophical-identity-to-deterministic-governance-064d50521052',
+  axis1: 'PLT-SOV',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'The Standing State matures from philosophical identity into deterministic governance: identity becomes measurable coherence, coherence becomes predictive gating, and predictive gating becomes a certified operating envelope for autonomous financial systems. The protocol converts silent drift into structured intervention through NOMINAL, HARDEN, and HALT modes, reframing AI safety from probabilistic guardrails into forward-invariance enforcement and bounded liability. The HALT is not failure; it is mandate completion. Companion to Plate XXVII.',
+  mirrorUrl: '',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
