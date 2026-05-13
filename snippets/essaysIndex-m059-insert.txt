@@ -1,0 +1,27 @@
+// In pages/essays/index.js, locate the M058 entry (around line 815–824)
+// which currently ends the ESSAYS array:
+//
+//   {
+//     id: 'M058',
+//     ...
+//     mirrorUrl: '/essays/medium/ai-will-not-become-god-because-god-is-not-a-function',
+//   },
+// ]
+//
+// Insert the following M059 entry between the M058 closer `},` and the
+// array closer `]`. Indentation is 2-space, matching M058.
+
+{
+  id: 'M059',
+  title: 'The Standing State: From Philosophical Identity to Deterministic Governance',
+  mediumUrl: 'https://medium.com/@leonsp3/the-standing-state-from-philosophical-identity-to-deterministic-governance-064d50521052',
+  axis1: 'PLT-SOV',
+  axis2: 'VOL-SS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note: 'The Standing State matures from philosophical identity into deterministic governance: identity becomes measurable coherence, coherence becomes predictive gating, and predictive gating becomes a certified operating envelope for autonomous financial systems. The protocol converts silent drift into structured intervention through NOMINAL, HARDEN, and HALT modes, reframing AI safety from probabilistic guardrails into forward-invariance enforcement and bounded liability. The HALT is not failure; it is mandate completion. Companion to Plate XXVII.',
+  mirrorUrl: '',
+},
+
+// After insertion, the ESSAYS array closes with `]` on the next line.
+// No other field in the file is touched.
