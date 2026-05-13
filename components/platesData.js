@@ -500,12 +500,27 @@ export const PLATES = [
   ],
   relatedEssay: 'M057',
 },
+{
+  id: 'P027',
+  number: 'XXVII',
+  title: 'Deterministic Governance',
+  slug: 'deterministic-governance',
+  image: '/plates/plate-xxvii-deterministic-governance.svg',
+  summary: 'Forward invariance for autonomous systems. The Standing State becomes an executable governance protocol: predict the next state, compute coherence, and execute only within the certified operating envelope.',
+  governingCondition: '\\hat{\\mathcal{I}}_{k+1} \\ge \\epsilon \\Rightarrow \\text{EXECUTE};\\; \\hat{\\mathcal{I}}_{k+1} < \\epsilon \\Rightarrow \\text{HARDEN or HALT}',
+  description: 'Plate XXVII defines deterministic governance as the institutional form of Standing State invariance. Autonomous systems do not fail only by explosion; they fail by silent drift. The governance protocol prevents drift before execution by predicting the next state, computing identity coherence, and allowing action only when the predicted state remains inside the certified operating envelope. When coherence approaches the boundary, the system hardens. When coherence violates the threshold, the system halts. Availability becomes negotiable; identity does not. The HALT is not failure — it is mandate completion. Companion to essay M059.',
+  volume: 'Volume I',
+  chapter: 'Governance & Forward Invariance',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [],
+  relatedEssay: 'M059',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 26,
+  description: 'Twenty-seven plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 27,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
