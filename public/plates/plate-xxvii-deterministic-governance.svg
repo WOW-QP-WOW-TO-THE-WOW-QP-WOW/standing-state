@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1600" viewBox="0 0 2400 1600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050607"/>
+      <stop offset="42%" stop-color="#111820"/>
+      <stop offset="100%" stop-color="#070807"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#f7e7a6" stop-opacity=".95"/>
+      <stop offset="20%" stop-color="#d6aa45" stop-opacity=".58"/>
+      <stop offset="58%" stop-color="#1b3646" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#050607" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="safeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#79d7df" stop-opacity=".72"/>
+      <stop offset="100%" stop-color="#112d40" stop-opacity=".15"/>
+    </linearGradient>
+    <linearGradient id="haltGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#682020" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#e25339" stop-opacity=".68"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="thinGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#d6aa45"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8fc3d9"/>
+    </marker>
+    <style>
+      .bg { fill:url(#bg); }
+      .frame { fill:none; stroke:#b8913b; stroke-width:3; opacity:.86; }
+      .frame2 { fill:none; stroke:#3a4b55; stroke-width:2; opacity:.78; }
+      .panel { fill:#091014; stroke:#5e6f78; stroke-width:2; opacity:.95; }
+      .panelGold { fill:#090d0e; stroke:#b8913b; stroke-width:2.2; opacity:.96; }
+      .panelBlue { fill:#071018; stroke:#6aaec4; stroke-width:2; opacity:.9; }
+      .title { font-family: Georgia, 'Times New Roman', serif; font-size:72px; letter-spacing:8px; fill:#e7d49b; }
+      .subtitle { font-family: Georgia, 'Times New Roman', serif; font-size:31px; letter-spacing:3px; fill:#d8e4e8; }
+      .smallcap { font-family: Georgia, 'Times New Roman', serif; font-size:22px; letter-spacing:3px; fill:#d6aa45; }
+      .label { font-family: Georgia, 'Times New Roman', serif; font-size:24px; letter-spacing:1.5px; fill:#e9e0bd; }
+      .body { font-family: Georgia, 'Times New Roman', serif; font-size:22px; fill:#d4cfb8; }
+      .bodySmall { font-family: Georgia, 'Times New Roman', serif; font-size:18px; fill:#bfc8c9; }
+      .micro { font-family: Georgia, 'Times New Roman', serif; font-size:16px; letter-spacing:2px; fill:#9ba7a8; }
+      .formula { font-family: 'Times New Roman', Georgia, serif; font-size:34px; fill:#fff4c7; font-style:italic; }
+      .formulaSmall { font-family: 'Times New Roman', Georgia, serif; font-size:25px; fill:#fff4c7; font-style:italic; }
+      .line { stroke:#b8913b; stroke-width:2; fill:none; opacity:.82; }
+      .lineDim { stroke:#5e6f78; stroke-width:1.5; fill:none; opacity:.55; }
+      .lineBlue { stroke:#8fc3d9; stroke-width:2.5; fill:none; opacity:.85; }
+      .lineRed { stroke:#e25339; stroke-width:2.5; fill:none; opacity:.82; }
+      .axis { stroke:#d6aa45; stroke-width:3; fill:none; marker-end:url(#arrowGold); }
+      .axisBlue { stroke:#8fc3d9; stroke-width:3; fill:none; marker-end:url(#arrowBlue); }
+      .grid { stroke:#637179; stroke-width:1; opacity:.25; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="2400" height="1600"/>
+  <rect x="28" y="28" width="2344" height="1544" class="frame"/>
+  <rect x="52" y="52" width="2296" height="1496" class="frame2"/>
+
+  <text x="1200" y="112" text-anchor="middle" class="title">PLATE XXVII — DETERMINISTIC GOVERNANCE</text>
+  <text x="1200" y="160" text-anchor="middle" class="subtitle">Forward Invariance for Autonomous Systems</text>
+  <text x="1200" y="205" text-anchor="middle" class="label">Predict the next state. Compute coherence. Execute only inside the certified envelope.</text>
+
+  <circle cx="1200" cy="710" r="410" fill="url(#coreGlow)" opacity=".85"/>
+  <circle cx="1200" cy="710" r="310" fill="none" stroke="#d6aa45" stroke-width="3" opacity=".86" filter="url(#thinGlow)"/>
+  <circle cx="1200" cy="710" r="220" fill="none" stroke="#70848a" stroke-width="1.8" opacity=".62"/>
+  <circle cx="1200" cy="710" r="130" fill="none" stroke="#d6aa45" stroke-width="1.5" opacity=".45"/>
+
+  <g opacity=".44">
+    <path d="M890 710 H1510" class="lineDim"/>
+    <path d="M1200 400 V1020" class="lineDim"/>
+    <path d="M980 490 L1420 930" class="lineDim"/>
+    <path d="M1420 490 L980 930" class="lineDim"/>
+  </g>
+
+  <text x="1200" y="490" text-anchor="middle" class="smallcap">CERTIFIED OPERATING ENVELOPE</text>
+  <text x="1200" y="548" text-anchor="middle" class="formula">Îₖ₊₁ ≥ ε ⇒ EXECUTE</text>
+  <text x="1200" y="594" text-anchor="middle" class="formulaSmall">Îₖ₊₁ &lt; ε ⇒ HARDEN or HALT</text>
+
+  <g transform="translate(1030 655)">
+    <rect x="0" y="0" width="340" height="74" rx="10" fill="#0b2719" stroke="#7ed3a1" stroke-width="2"/>
+    <circle cx="40" cy="37" r="20" fill="#7ed3a1" opacity=".8"/>
+    <text x="82" y="31" class="label">NOMINAL</text>
+    <text x="82" y="58" class="bodySmall">Full capability</text>
+    <rect x="0" y="92" width="340" height="74" rx="10" fill="#2a2410" stroke="#d6aa45" stroke-width="2"/>
+    <circle cx="40" cy="129" r="20" fill="#d6aa45" opacity=".82"/>
+    <text x="82" y="123" class="label">HARDEN</text>
+    <text x="82" y="150" class="bodySmall">Restricted actions</text>
+    <rect x="0" y="184" width="340" height="74" rx="10" fill="#2a0d0d" stroke="#e25339" stroke-width="2"/>
+    <circle cx="40" cy="221" r="20" fill="#e25339" opacity=".86"/>
+    <text x="82" y="215" class="label">HALT</text>
+    <text x="82" y="242" class="bodySmall">Execution suspended</text>
+  </g>
+
+  <text x="1200" y="982" text-anchor="middle" class="label">The system reduces activity before it reduces integrity.</text>
+  <text x="1200" y="1025" text-anchor="middle" class="formulaSmall">HALT is not failure — it is mandate completion.</text>
+
+  <rect x="90" y="315" width="560" height="360" rx="14" class="panelGold"/>
+  <text x="124" y="360" class="smallcap">I. PREDICTIVE GATING</text>
+  <text x="124" y="412" class="body">Before action executes:</text>
+  <text x="160" y="466" class="bodySmall">1. Predict next state</text>
+  <text x="160" y="510" class="formulaSmall">ŝᵏ⁺¹</text>
+  <text x="160" y="558" class="bodySmall">2. Compute coherence</text>
+  <text x="160" y="602" class="formulaSmall">Îₖ₊₁</text>
+  <text x="160" y="650" class="bodySmall">3. Execute only if coherence remains admissible</text>
+  <path d="M430 522 H595" class="axis"/>
+
+  <rect x="90" y="705" width="560" height="310" rx="14" class="panel"/>
+  <text x="124" y="750" class="smallcap">II. RESIDUAL LOGGING</text>
+  <text x="124" y="804" class="body">Every halt is explainable.</text>
+  <text x="150" y="858" class="bodySmall">▸ violation code</text>
+  <text x="150" y="902" class="bodySmall">▸ residual vector</text>
+  <text x="150" y="946" class="bodySmall">▸ mode transition</text>
+  <text x="150" y="990" class="bodySmall">▸ timestamp</text>
+
+  <rect x="1750" y="315" width="560" height="410" rx="14" class="panelBlue"/>
+  <text x="1784" y="360" class="smallcap">III. σ*(ε) FRONTIER</text>
+  <text x="1784" y="405" class="bodySmall">Boundary where permanent HALT probability remains bounded.</text>
+  <g transform="translate(1815 462)">
+    <rect x="0" y="0" width="420" height="210" fill="#071118" stroke="#7c8a90" stroke-width="1.5"/>
+    <path d="M0 42 H420" class="grid"/><path d="M0 84 H420" class="grid"/><path d="M0 126 H420" class="grid"/><path d="M0 168 H420" class="grid"/>
+    <path d="M70 0 V210" class="grid"/><path d="M140 0 V210" class="grid"/><path d="M210 0 V210" class="grid"/><path d="M280 0 V210" class="grid"/><path d="M350 0 V210" class="grid"/>
+    <path d="M0 210 L0 0 M0 210 L420 210" stroke="#d6aa45" stroke-width="2"/>
+    <path d="M0 190 C80 120 165 80 250 70 C320 62 370 35 420 18 L420 210 Z" fill="url(#safeGrad)" opacity=".78"/>
+    <path d="M0 190 C90 120 170 80 250 70 C320 62 370 35 420 18" class="lineBlue"/>
+    <path d="M110 210 C185 168 250 130 315 92 C355 68 390 42 420 18 L420 210 Z" fill="url(#haltGrad)" opacity=".72"/>
+    <path d="M110 210 C185 168 250 130 315 92 C355 68 390 42 420 18" class="lineRed"/>
+    <text x="78" y="150" class="bodySmall">SAFE ZONE</text>
+    <text x="260" y="135" class="bodySmall">HALT TRIGGER ZONE</text>
+    <text x="142" y="34" class="micro">Resilience Boundary</text>
+    <text x="320" y="237" class="micro">Coherence Strictness ε</text>
+    <text x="-42" y="20" class="micro" transform="rotate(-90 -42 20)">Threshold σ</text>
+  </g>
+
+  <rect x="1750" y="760" width="560" height="255" rx="14" class="panelGold"/>
+  <text x="1784" y="805" class="smallcap">IV. BOUNDED LIABILITY</text>
+  <text x="1784" y="858" class="bodySmall">Availability is negotiable.</text>
+  <text x="1784" y="902" class="bodySmall">Regulatory breach is not.</text>
+  <text x="1784" y="946" class="bodySmall">Every halt is mathematically explained.</text>
+  <text x="1784" y="990" class="bodySmall">Mode transitions and residuals are logged.</text>
+
+  <rect x="90" y="1100" width="2220" height="300" rx="14" class="panelGold"/>
+  <text x="1200" y="1150" text-anchor="middle" class="smallcap">THE GOVERNANCE THEOREM</text>
+  <text x="1200" y="1214" text-anchor="middle" class="formula">rₖ = Φ(sₖ)</text>
+  <text x="1200" y="1272" text-anchor="middle" class="formula">𝓘ₖ = exp(−rₖᵀ W rₖ)</text>
+  <text x="1200" y="1330" text-anchor="middle" class="label">Predictive gating converts silent drift into deterministic intervention.</text>
+  <text x="1200" y="1374" text-anchor="middle" class="label">The system will not become something it is not authorized to be.</text>
+
+  <g transform="translate(225 1460)">
+    <text x="0" y="0" class="micro">NEXT STATE</text><path d="M125 -6 H245" class="axis"/>
+    <text x="285" y="0" class="micro">COHERENCE</text><path d="M430 -6 H550" class="axis"/>
+    <text x="590" y="0" class="micro">ENVELOPE</text><path d="M735 -6 H855" class="axis"/>
+    <text x="895" y="0" class="micro">NOMINAL / HARDEN / HALT</text><path d="M1195 -6 H1315" class="axis"/>
+    <text x="1355" y="0" class="micro">AUDIT TRAIL</text><path d="M1515 -6 H1635" class="axis"/>
+    <text x="1675" y="0" class="micro">INSURABILITY</text>
+  </g>
+
+  <rect x="90" y="120" width="260" height="92" rx="8" class="panel"/>
+  <text x="220" y="158" text-anchor="middle" class="smallcap">P027</text>
+  <text x="220" y="190" text-anchor="middle" class="micro">M059 COMPANION PLATE</text>
+
+  <rect x="1830" y="120" width="480" height="92" rx="8" class="panel"/>
+  <text x="2070" y="156" text-anchor="middle" class="micro">STANDING STATE PRESS · THE LAW OF IDENTITY</text>
+  <text x="2070" y="192" text-anchor="middle" class="bodySmall">A becomes A, because A knows it is A.</text>
+
+  <text x="1200" y="1538" text-anchor="middle" class="micro">PREVENTS SILENT DRIFT · CERTIFIES OPERATIONAL RISK · ENABLES INSURABILITY · AMEN. SELAH.</text>
+</svg>
