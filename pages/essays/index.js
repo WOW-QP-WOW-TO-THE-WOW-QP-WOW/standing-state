@@ -834,6 +834,18 @@ const ESSAYS = [
   note: 'The Standing State matures from philosophical identity into deterministic governance: identity becomes measurable coherence, coherence becomes predictive gating, and predictive gating becomes a certified operating envelope for autonomous financial systems. The protocol converts silent drift into structured intervention through NOMINAL, HARDEN, and HALT modes, reframing AI safety from probabilistic guardrails into forward-invariance enforcement and bounded liability. The HALT is not failure; it is mandate completion. Companion to Plate XXVII.',
   mirrorUrl: '',
 },
+{
+  id: 'M060',
+  title: 'The Standing State: Lawful Motion Under Invariant Identity',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note:
+    'Canonical synthesis thesis: the Standing State is standing under load in love of its identity coordinate and in surrender to what lies beyond its rightful jurisdiction. Compresses the six-layer architecture: I*(jurisdiction), Φ(x; I*) ≤ 0, K_auto, u = 0, sustained uncorrected Σ, and EXECUTE ↔ RESTORE ↔ HALT.',
+  mirrorUrl: '/essays/canonical/standing-state-lawful-motion',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
