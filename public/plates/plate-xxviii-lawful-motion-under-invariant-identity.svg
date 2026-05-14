@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="18%" r="75%">
+      <stop offset="0%" stop-color="#3a2b12" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#101010" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="basinGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d5b35e" stop-opacity="0.34"/>
+      <stop offset="52%" stop-color="#d5b35e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d5b35e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4df9b"/>
+      <stop offset="45%" stop-color="#b8913e"/>
+      <stop offset="100%" stop-color="#6f4f18"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d6b25d"/>
+    </marker>
+    <style>
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+      .sans { font-family: Arial, Helvetica, sans-serif; }
+      .title { fill:#f3ead6; font-size:82px; font-weight:700; letter-spacing:-2px; }
+      .subtitle { fill:#c9aa62; font-size:34px; letter-spacing:1px; }
+      .smallcap { fill:#a98a44; font-size:21px; letter-spacing:6px; text-transform:uppercase; }
+      .label { fill:#efe5cf; font-size:29px; font-weight:700; }
+      .body { fill:#cfc4ae; font-size:25px; }
+      .micro { fill:#bba66f; font-size:20px; letter-spacing:1px; }
+      .goldStroke { stroke:#b8913e; stroke-width:3; fill:none; }
+      .thinGold { stroke:#b8913e; stroke-width:1.5; fill:none; opacity:0.75; }
+      .dimStroke { stroke:#6d5b36; stroke-width:1.5; fill:none; opacity:0.55; }
+      .softLine { stroke:#d6b25d; stroke-width:3; fill:none; opacity:0.88; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="2200" fill="url(#bgGlow)"/>
+  <rect x="70" y="70" width="1460" height="2060" fill="none" stroke="#b8913e" stroke-width="2" opacity="0.55"/>
+  <rect x="100" y="100" width="1400" height="2000" fill="none" stroke="#6d5b36" stroke-width="1" opacity="0.55"/>
+
+  <text x="800" y="170" text-anchor="middle" class="smallcap sans">Standing State Press · Plate XXVIII</text>
+  <text x="800" y="270" text-anchor="middle" class="title serif">Lawful Motion</text>
+  <text x="800" y="325" text-anchor="middle" class="subtitle serif">Under Invariant Identity</text>
+  <line x1="260" y1="380" x2="1340" y2="380" class="thinGold"/>
+
+  <g transform="translate(0,430)">
+    <text x="800" y="0" text-anchor="middle" class="smallcap sans">Architectural Resolution</text>
+
+    <text x="275" y="90" text-anchor="middle" class="label serif">MEASURE</text>
+    <text x="525" y="90" text-anchor="middle" class="label serif">IDENTITY</text>
+    <text x="800" y="90" text-anchor="middle" class="label serif">ADMISSIBILITY</text>
+    <text x="1125" y="90" text-anchor="middle" class="label serif">EXECUTION</text>
+
+    <line x1="360" y1="82" x2="450" y2="82" class="softLine" marker-end="url(#arrowGold)"/>
+    <line x1="620" y1="82" x2="705" y2="82" class="softLine" marker-end="url(#arrowGold)"/>
+    <line x1="930" y1="82" x2="1030" y2="82" class="softLine" marker-end="url(#arrowGold)"/>
+
+    <text x="800" y="150" text-anchor="middle" class="body serif">Measure precedes governance · Identity precedes admissibility · Admissibility precedes execution</text>
+  </g>
+
+  <g transform="translate(0,725)">
+    <ellipse cx="800" cy="475" rx="510" ry="330" fill="url(#basinGlow)"/>
+    <ellipse cx="800" cy="475" rx="510" ry="330" class="goldStroke" opacity="0.70"/>
+    <ellipse cx="800" cy="475" rx="395" ry="250" class="thinGold" opacity="0.55"/>
+    <ellipse cx="800" cy="475" rx="260" ry="160" class="dimStroke"/>
+
+    <path d="M390 470 C520 305, 660 330, 775 456 C905 598, 1032 610, 1210 445" class="softLine" marker-end="url(#arrowGold)"/>
+    <path d="M475 610 C620 720, 830 720, 965 570 C1058 465, 1132 448, 1235 520" class="thinGold" marker-end="url(#arrowGold)"/>
+    <path d="M522 350 C650 235, 830 270, 895 390 C960 515, 900 640, 765 665" class="dimStroke" marker-end="url(#arrowGold)"/>
+
+    <line x1="395" y1="300" x2="598" y2="385" class="softLine" opacity="0.72" marker-end="url(#arrowGold)"/>
+    <line x1="1190" y1="665" x2="990" y2="575" class="softLine" opacity="0.72" marker-end="url(#arrowGold)"/>
+    <line x1="1080" y1="245" x2="940" y2="355" class="softLine" opacity="0.72" marker-end="url(#arrowGold)"/>
+
+    <circle cx="800" cy="475" r="72" fill="#080808" stroke="url(#gold)" stroke-width="4" filter="url(#softGlow)"/>
+    <text x="800" y="493" text-anchor="middle" class="serif" fill="#f4df9b" font-size="62" font-weight="700">I*</text>
+    <text x="800" y="585" text-anchor="middle" class="micro sans">IDENTITY COORDINATE</text>
+
+    <text x="800" y="105" text-anchor="middle" class="label serif">S(I*) = { x : Phi(x; I*) ≤ 0 }</text>
+    <text x="800" y="142" text-anchor="middle" class="body serif">Basin of lawful motion</text>
+
+    <text x="320" y="820" text-anchor="start" class="micro sans">RESTORE: return vector inside capacity</text>
+    <text x="1280" y="820" text-anchor="end" class="micro sans">HALT: boundary refusal at breach</text>
+
+    <text x="265" y="475" text-anchor="middle" class="micro sans" transform="rotate(-88 265 475)">ADMISSIBILITY BOUNDARY</text>
+    <text x="1335" y="475" text-anchor="middle" class="micro sans" transform="rotate(88 1335 475)">NO OVERREACH BEYOND SCOPE</text>
+  </g>
+
+  <g transform="translate(0,1580)">
+    <line x1="260" y1="0" x2="1340" y2="0" class="thinGold"/>
+    <text x="800" y="62" text-anchor="middle" class="smallcap sans">Governing Condition</text>
+    <text x="800" y="128" text-anchor="middle" class="serif" fill="#f3ead6" font-size="38">I* = constant ∧ x<tspan baseline-shift="sub" font-size="24">t</tspan> ∈ S(I*) ⇒ EXECUTE ↔ RESTORE ↔ HALT</text>
+    <text x="800" y="176" text-anchor="middle" class="body serif">Correction is not the goal. Coherent execution is.</text>
+  </g>
+
+  <g transform="translate(0,1815)">
+    <rect x="250" y="0" width="1100" height="205" fill="#110f0a" stroke="#b8913e" stroke-width="1.5" opacity="0.95"/>
+    <text x="800" y="48" text-anchor="middle" class="smallcap sans">Operational Resolution</text>
+    <text x="800" y="96" text-anchor="middle" class="label serif">Stand under load.</text>
+    <text x="800" y="132" text-anchor="middle" class="label serif">Remain oriented to the coordinate.</text>
+    <text x="800" y="168" text-anchor="middle" class="label serif">Surrender what is not yours. Continue lawfully.</text>
+  </g>
+
+  <g transform="translate(0,2070)">
+    <line x1="260" y1="0" x2="1340" y2="0" class="thinGold"/>
+    <text x="800" y="45" text-anchor="middle" class="micro sans">The Standing State is not stillness and not force · It is lawful motion under invariant identity</text>
+    <text x="800" y="82" text-anchor="middle" class="smallcap sans">Standing State Press · standingstate.com</text>
+  </g>
+</svg>
