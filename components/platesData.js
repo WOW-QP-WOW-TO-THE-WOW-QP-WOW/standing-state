@@ -515,12 +515,27 @@ export const PLATES = [
   linkedGlossary: [],
   relatedEssay: 'M059',
 },
+{
+  id: 'P028',
+  number: 'XXVIII',
+  title: 'Lawful Motion Under Invariant Identity',
+  slug: 'lawful-motion-under-invariant-identity',
+  image: '/plates/plate-xxviii-lawful-motion-under-invariant-identity.svg',
+  summary: 'The Standing State as lawful motion under invariant identity. The basin S(I*) is rendered as the admissible region within which execution proceeds; identity stands at the center as the invariant coordinate; motion flows lawfully within scope.',
+  governingCondition: 'I^{*} = \\text{constant} \\;\\wedge\\; x_{t} \\in S(I^{*}) \\Rightarrow \\text{EXECUTE} \\leftrightarrow \\text{RESTORE} \\leftrightarrow \\text{HALT}',
+  description: 'Plate XXVIII renders the Standing State at its synthesis-canonical resolution. The architectural sequence — measure, identity, admissibility, execution — is shown in lawful order at the top register. The basin S(I*) is rendered with the identity coordinate at the center and admissible trajectories flowing within scope. RESTORE returns the system inside capacity when admissibility is threatened; HALT refuses motion at boundary breach. The operational seal compresses the architecture to four lines: stand under load, remain oriented to the coordinate, surrender what is not yours, continue lawfully. The Standing State is not stillness and not force — it is lawful motion under invariant identity. Companion to essay M060.',
+  volume: 'Volume I',
+  chapter: 'Synthesis & Lawful Motion',
+  linkedVars: ['xstar', 'phi', 'sigma', 'kauto'],
+  linkedGlossary: [],
+  relatedEssay: 'M060',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-seven plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 27,
+  description: 'Twenty-eight plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 28,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
