@@ -843,7 +843,7 @@ const ESSAYS = [
   axis3: 'REG-STRUCT',
   flag: 'M',
   note:
-    'Canonical synthesis thesis: the Standing State is standing under load in love of its identity coordinate and in surrender to what lies beyond its rightful jurisdiction. Compresses the six-layer architecture: I*(jurisdiction), Φ(x; I*) ≤ 0, K_auto, u = 0, sustained uncorrected Σ, and EXECUTE ↔ RESTORE ↔ HALT.',
+  'Canonical synthesis thesis: Standing State as lawful motion under invariant identity. Six-layer architecture: I*(jurisdiction), Φ(x; I*) ≤ 0, K_auto, u = 0, sustained uncorrected Σ, and EXECUTE / RESTORE / HALT. Operational seal: stand under load, remain oriented to the coordinate, surrender what is not yours, continue lawfully.',
   mirrorUrl: '/essays/canonical/standing-state-lawful-motion',
 },
 ]
