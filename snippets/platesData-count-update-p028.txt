@@ -1,0 +1,9 @@
+// In components/platesData.js, PLATES_META, change:
+count: 27,
+
+// to:
+count: 28,
+
+// And update description accordingly:
+// from: "Twenty-seven plates constitute the visual authority layer..."
+// to:   "Twenty-eight plates constitute the visual authority layer..."
