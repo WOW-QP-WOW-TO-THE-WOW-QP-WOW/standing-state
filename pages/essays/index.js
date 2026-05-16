@@ -846,6 +846,18 @@ const ESSAYS = [
   'Canonical synthesis thesis: Standing State as lawful motion under invariant identity. Six-layer architecture: I*(jurisdiction), Φ(x; I*) ≤ 0, K_auto, u = 0, sustained uncorrected Σ, and EXECUTE / RESTORE / HALT. Operational seal: stand under load, remain oriented to the coordinate, surrender what is not yours, continue lawfully.',
   mirrorUrl: '/essays/canonical/standing-state-lawful-motion',
 },
+{
+  id: 'M061',
+  title: 'The Geometry of Lawful Arrival: Identity, Consequence, and the Architecture of Return',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-STRUCT',
+  flag: 'A',
+  note:
+  'Synthesis essay at phenomenological emphasis. Names the negative ground of the Standing State architecture: the architecture exists because consequence exists. In a world without cost, shortest path and successful arrival collapse into the same thing; admissibility, gates, and return would be vacuous. Reality charges cost, so lawful traversal becomes necessary. The lawful path is formally compressed as 𝒫* = argmax(Arrival ∩ Integrity); motion proceeds only while Φ(x; I*) ≤ 0. Introduces the phenomenological signature WOW — phase-lock recognized — as the felt instant x → I* resolves. Public compression: the first principle is not speed; the first principle is arriving alive. Straight lines belong to worlds without consequence. Companion to Plate XXIX.',
+  mirrorUrl: '',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
