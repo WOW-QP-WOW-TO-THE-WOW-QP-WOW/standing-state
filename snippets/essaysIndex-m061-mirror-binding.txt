@@ -1,0 +1,19 @@
+// In pages/essays/index.js, locate the M061 entry and update two fields:
+
+// CHANGE flag from 'A' to 'M':
+//   - flag: 'A',
+//   + flag: 'M',
+
+// CHANGE mirrorUrl from empty to the canonical mirror path:
+//   - mirrorUrl: '',
+//   + mirrorUrl: '/essays/canonical/the-geometry-of-lawful-arrival',
+
+// No other field in the M061 entry is touched. No other essay entry
+// in the registry is touched. Bracket balance is preserved.
+//
+// After this change, M061's READ ON SITE button will resolve to
+// the bespoke canonical mirror page at:
+//   /essays/canonical/the-geometry-of-lawful-arrival
+//
+// The mirror page itself is added as a NEW file at:
+//   pages/essays/canonical/the-geometry-of-lawful-arrival.js
