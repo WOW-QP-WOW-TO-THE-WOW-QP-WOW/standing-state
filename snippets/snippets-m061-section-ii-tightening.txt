@@ -1,0 +1,50 @@
+// Surgical edit to: pages/essays/canonical/the-geometry-of-lawful-arrival.js
+// Section II (Identity as Coordinate) only.
+// No other section is touched. No other file is touched.
+
+// ── CHANGE 1: Equation block ──
+// Replace the KTex math expression in Section II's first equation block:
+
+//   BEFORE:
+//     <KTex math="I^{*} \;=\; \text{constant}" display />
+
+//   AFTER:
+//     <KTex math="I^{*} \;=\; \text{invariant coordinate}" display />
+
+
+// ── CHANGE 2: New clarifying paragraph ──
+// Insert this paragraph as the FIRST paragraph in the canonEssayBody div
+// that immediately follows the I* equation block:
+
+//   <p className="canonEssayPara">
+//     Identity is not a frozen state and not a fixed moment in time. It is the
+//     invariant coordinate through which living motion remains coherent.
+//   </p>
+
+
+// ── CHANGE 3: Extension of existing "State changes" paragraph ──
+// Append one sentence to the existing paragraph that begins "State changes.":
+
+//   BEFORE:
+//     <p className="canonEssayPara">
+//       State changes. Conditions change. Pressure changes. Yet identity remains.
+//     </p>
+
+//   AFTER:
+//     <p className="canonEssayPara">
+//       State changes. Conditions change. Pressure changes. Yet identity remains.
+//       The system moves; the coordinate holds.
+//     </p>
+
+
+// Net diff: +6 lines / -1 line.
+// No equation block added to Section II — the parameterized x(t) → I*
+// is not introduced earlier per ruling 3c. Section V retains x → I* as the
+// singular phase-lock recognition moment.
+//
+// All other elements of Section II are preserved exactly:
+//   - The intro paragraph ("Movement only becomes meaningful...")
+//   - The lead-in paragraph ("Within the Standing State, identity functions...")
+//   - The gold-styled paragraph ("The task is not to move infinitely...")
+//   - The admissibility paragraph and Φ(x; I*) ≤ 0 equation block
+//   - The closing paragraph ("When admissibility fails, restoration becomes necessary...")
