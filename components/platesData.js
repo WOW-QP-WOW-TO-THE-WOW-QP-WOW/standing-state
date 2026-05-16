@@ -530,12 +530,27 @@ export const PLATES = [
   linkedGlossary: [],
   relatedEssay: 'M060',
 },
+{
+  id: 'P029',
+  number: 'XXIX',
+  title: 'The Geometry of Lawful Arrival',
+  slug: 'the-geometry-of-lawful-arrival',
+  image: '/plates/plate-xxix-the-geometry-of-lawful-arrival.svg',
+  summary: 'The Standing State at the phenomenological-synthesis register: lawful traversal navigates consequence, interference load, and capacity bounds through five gates of convergence to arrive at the identity coordinate. The straight line belongs to worlds without consequence.',
+  governingCondition: '\\mathcal{P}^{*} = \\arg\\max\\,(\\text{Arrival} \\cap \\text{Integrity})',
+  description: 'Plate XXIX renders the geometry of lawful arrival. A dashed straight line of imagined optimization runs from start to terminus, valid only in worlds without consequence — argmin(d) = argmax(success) only when cost is zero. The lawful path curves through five gates — Recognition · Orientation · Admissibility · Execute · Resolution — navigating around the three fields reality imposes: Consequence, Σ (interference load), and capacity bounds. The terminus is I* — the invariant identity coordinate — reached not by shortest distance but by survivable arrival. The first principle is not speed; the first principle is arriving alive. WOW marks the moment x → I* resolves into phase-lock recognition. Motion proceeds only while Φ(x; I*) ≤ 0. Companion to essay M061.',
+  volume: 'Volume I',
+  chapter: 'Synthesis & Lawful Arrival',
+  linkedVars: ['xstar', 'phi', 'sigma'],
+  linkedGlossary: [],
+  relatedEssay: 'M061',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-eight plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 28,
+  description: 'Twenty-nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 29,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
