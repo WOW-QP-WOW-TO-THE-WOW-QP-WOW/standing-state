@@ -147,12 +147,17 @@ export default function GeometryOfLawfulArrivalCanonical() {
             </div>
             <div className="canonEssayEqBlock">
               <div className="canonEssayEq">
-                <KTex math="I^{*} \;=\; \text{constant}" display />
+                <KTex math="I^{*} \;=\; \text{invariant coordinate}" display />
               </div>
             </div>
             <div className="canonEssayBody">
               <p className="canonEssayPara">
+                Identity is not a frozen state and not a fixed moment in time. It is the
+                invariant coordinate through which living motion remains coherent.
+              </p>
+              <p className="canonEssayPara">
                 State changes. Conditions change. Pressure changes. Yet identity remains.
+                The system moves; the coordinate holds.
               </p>
               <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
                 The task is not to move infinitely. The task is to move lawfully relative
