@@ -1,0 +1,13 @@
+// In components/platesData.js, PLATES_META, change:
+count: 28,
+
+// to:
+count: 29,
+
+// And update description accordingly:
+// from: "Twenty-eight plates constitute the visual authority layer..."
+// to:   "Twenty-nine plates constitute the visual authority layer..."
+//
+// Note: if the live repo currently has count: 27 (P028 not yet deployed),
+// apply BOTH count updates in sequence: 27 → 28 (P028 landing) and
+// 28 → 29 (P029 landing). See P028 patch README for that flow.

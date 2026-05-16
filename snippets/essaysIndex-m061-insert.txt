@@ -1,0 +1,33 @@
+// In pages/essays/index.js, locate the M060 entry (last entry before array close)
+// which currently ends the ESSAYS array:
+//
+//   {
+//     id: 'M060',
+//     ...
+//     mirrorUrl: '/essays/canonical/standing-state-lawful-motion',
+//   },
+// ]
+//
+// Insert the following M061 entry between the M060 closer `},` and the
+// array closer `]`. Indentation is 2-space, matching M060.
+
+{
+  id: 'M061',
+  title: 'The Geometry of Lawful Arrival: Identity, Consequence, and the Architecture of Return',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-STRUCT',
+  flag: 'A',
+  note:
+  'Synthesis essay at phenomenological emphasis. Names the negative ground of the Standing State architecture: the architecture exists because consequence exists. In a world without cost, shortest path and successful arrival collapse into the same thing; admissibility, gates, and return would be vacuous. Reality charges cost, so lawful traversal becomes necessary. The lawful path is formally compressed as 𝒫* = argmax(Arrival ∩ Integrity); motion proceeds only while Φ(x; I*) ≤ 0. Introduces the phenomenological signature WOW — phase-lock recognized — as the felt instant x → I* resolves. Public compression: the first principle is not speed; the first principle is arriving alive. Straight lines belong to worlds without consequence. Companion to Plate XXIX.',
+  mirrorUrl: '',
+},
+
+// After insertion, the ESSAYS array closes with `]` on the next line.
+// No other field in the file is touched.
+//
+// Flag is 'A' (Aligned) per ruling: M061 lands at registry resolution only.
+// No bespoke canonical mirror page is included in this patch.
+// mirrorUrl is empty; a future patch can add the mirror page and update
+// this field if the canonical mirror is later authored.
