@@ -853,10 +853,10 @@ const ESSAYS = [
   axis1: 'PLT-COORD',
   axis2: 'VOL-CROSS',
   axis3: 'REG-STRUCT',
-  flag: 'A',
+  flag: 'M',
   note:
   'Synthesis essay at phenomenological emphasis. Names the negative ground of the Standing State architecture: the architecture exists because consequence exists. In a world without cost, shortest path and successful arrival collapse into the same thing; admissibility, gates, and return would be vacuous. Reality charges cost, so lawful traversal becomes necessary. The lawful path is formally compressed as 𝒫* = argmax(Arrival ∩ Integrity); motion proceeds only while Φ(x; I*) ≤ 0. Introduces the phenomenological signature WOW — phase-lock recognized — as the felt instant x → I* resolves. Public compression: the first principle is not speed; the first principle is arriving alive. Straight lines belong to worlds without consequence. Companion to Plate XXIX.',
-  mirrorUrl: '',
+  mirrorUrl: '/essays/canonical/the-geometry-of-lawful-arrival',
 },
 ]
 
