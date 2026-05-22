@@ -42,7 +42,13 @@ const SYSTEM_LINKS = [
     title: 'Interpretation',
     href: '/system/interpretation',
     sub: 'Meaning governed by structure, not projection.'
-  }
+  },
+  {
+  label: 'Runtime Layer',
+  title: 'Engine 2 — Governed Coherence Runtime',
+  href: '/system/engine2',
+  sub: 'A 243-node phase-lock lattice for lawful execution under invariant identity.'
+},
 ]
 
 export default function SystemIndexPage() {
