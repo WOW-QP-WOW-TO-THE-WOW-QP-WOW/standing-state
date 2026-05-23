@@ -334,6 +334,15 @@ export default function Home() {
               <span className="systemLinkTitle">Doctrine →</span>
               <span className="systemLinkSub">Engineering standards that enforce the Standing State at execution.</span>
             </a>
+            <a href="/system/engine2" className="systemLinkCard">
+            <span className="systemLinkLabel">Runtime Layer</span>
+            <span className="systemLinkTitle">
+             Engine 2 — Governed Coherence Runtime →
+             </span>
+            <span className="systemLinkSub">
+             A 243-node phase-lock lattice for lawful execution under invariant identity.
+             </span>
+             </a>
             <a href="/essays" className="systemLinkCard">
               <span className="systemLinkLabel">Commentary Layer</span>
               <span className="systemLinkTitle">Essays →</span>
