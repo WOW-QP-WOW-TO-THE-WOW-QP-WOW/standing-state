@@ -238,7 +238,7 @@ const ESSAYS = [
     axis3: 'REG-BIO',
     flag: 'A',
     note: 'Sacrifice Logic as sustained Σ; Qualia as coherence yield; Zero-Sacrifice Invariant as boundary condition.',
-    mirrorUrl: '',
+    mirrorUrl: '/essays/canonical/stop-buying-your-life',
   },
   {
     id: 'M006',
