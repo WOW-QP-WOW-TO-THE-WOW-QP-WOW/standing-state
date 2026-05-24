@@ -549,17 +549,19 @@ export default function Engine2Page() {
                   aria-label="Omega Quadrant Field artifact"
                 >
                   {/* Symbolic placeholder — replace with <img src="/engine2/omega-quadrant-field.png" /> when artifact lands */}
-                  <div
-                    style={{
-                      fontFamily: DISPLAY,
-                      fontSize: 'clamp(3rem, 9vw, 6rem)',
-                      color: GOLD_DIM,
-                      opacity: 0.45,
-                      letterSpacing: '0.05em',
-                    }}
-                  >
-                    Ω
-                  </div>
+                 <img
+  src="/engine2/omega-quadrant-field.png"
+  alt="Omega Quadrant Field"
+  style={{
+    width: '100%',
+    aspectRatio: '1 / 1',
+    objectFit: 'cover',
+    display: 'block',
+    border: `1px solid ${BORDER}`,
+    background: BLACK,
+    marginBottom: '1.8rem'
+  }}
+/>
                   <div
                     style={{
                       position: 'absolute',
