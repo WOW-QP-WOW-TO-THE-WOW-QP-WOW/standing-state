@@ -548,34 +548,21 @@ export default function Engine2Page() {
                   }}
                   aria-label="Omega Quadrant Field artifact"
                 >
-                  {/* Symbolic placeholder — replace with <img src="/engine2/omega-quadrant-field.png" /> when artifact lands */}
+                  
                  <img
-  src="/engine2/omega-quadrant-field.png"
-  alt="Omega Quadrant Field"
-  style={{
-    width: '100%',
-    aspectRatio: '1 / 1',
-    objectFit: 'cover',
-    display: 'block',
-    border: `1px solid ${BORDER}`,
-    background: BLACK,
-    marginBottom: '1.8rem'
-  }}
-/>
-                  <div
-                    style={{
-                      position: 'absolute',
-                      bottom: '0.6rem',
-                      right: '0.7rem',
-                      fontFamily: DISPLAY,
-                      fontSize: '7px',
-                      letterSpacing: '0.3em',
-                      color: GRAY_MID,
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    Artifact pending
-                  </div>
+                   src="/engine2/omega-quadrant-field.png"
+                    alt="Omega Quadrant Field"
+                     style={{
+                      width: '100%',
+                       aspectRatio: '1 / 1',
+                     objectFit: 'cover',
+                   display: 'block',
+                   border: `1px solid ${BORDER}`,
+                   background: BLACK,
+                   marginBottom: '1.8rem'
+                  }}
+                 />
+                 
                 </div>
 
                 <h3
@@ -693,35 +680,19 @@ export default function Engine2Page() {
                   }}
                   aria-label="243-Node Phase-Lock Lattice artifact"
                 >
-                  {/* Symbolic placeholder — replace with <img src="/engine2/phase-lock-lattice.png" /> when artifact lands */}
-                  <div
-                    style={{
-                      fontFamily: DISPLAY,
-                      fontSize: 'clamp(1.6rem, 4.5vw, 2.4rem)',
-                      color: GOLD_DIM,
-                      opacity: 0.45,
-                      letterSpacing: '0.18em',
-                      textAlign: 'center',
-                      lineHeight: 1.4,
-                    }}
-                  >
-                    243<br />
-                    <span style={{ fontSize: '0.5em', letterSpacing: '0.3em', color: GRAY_MID }}>NODES</span>
-                  </div>
-                  <div
-                    style={{
-                      position: 'absolute',
-                      bottom: '0.6rem',
-                      right: '0.7rem',
-                      fontFamily: DISPLAY,
-                      fontSize: '7px',
-                      letterSpacing: '0.3em',
-                      color: GRAY_MID,
-                      textTransform: 'uppercase',
-                    }}
-                  >
-                    Artifact pending
-                  </div>
+                <img
+                  src="/engine2/phase-lock-lattice.png"
+                   alt="243-Node Phase-Lock Lattice"
+                  style={{
+                   width: '100%',
+                   aspectRatio: '1 / 1',
+                   objectFit: 'cover',
+                   display: 'block',
+                   border: `1px solid ${BORDER}`,
+                   background: BLACK,
+                   marginBottom: '1.8rem'
+                   }}
+                  />
                 </div>
 
                 <h3
