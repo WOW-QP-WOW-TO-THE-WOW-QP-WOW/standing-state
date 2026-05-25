@@ -2257,3 +2257,64 @@ body::before {
     width: 48px;
   }
 }
+
+/* ─────────────────────────────────────────────────────────
+   Scripture seals — codex monument pacing
+   Scoped via .scriptureSeal applied to gold-bordered axiom blocks
+   and .scriptureFinal applied to the chapter closing declaration.
+   The audit calls these "liturgical seals / codex monuments" —
+   they should breathe as pause points in the geometry.
+   ───────────────────────────────────────────────────────── */
+
+.scriptureSeal {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 2.4rem 2.4rem;
+  border: 1px solid var(--gold-dim);
+  background: var(--panel);
+}
+.scriptureSeal .canonEssayEq {
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+  line-height: 1.9;
+}
+
+.scriptureFinal {
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 4rem;
+  padding: 1.5rem 0;
+}
+.scriptureFinal .canonEssayFinalRule {
+  height: 1px;
+  background: var(--gold-dim);
+  margin: 1.4rem auto;
+  width: 220px;
+  opacity: 0.7;
+}
+.scriptureFinal .canonEssayFinalText {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold);
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 720px) {
+  .scriptureSeal {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem 1.5rem;
+  }
+  .scriptureSeal .canonEssayEq {
+    font-size: 1.05rem;
+  }
+  .scriptureFinal {
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+  }
+  .scriptureFinal .canonEssayFinalText {
+    font-size: 1rem;
+  }
+}
