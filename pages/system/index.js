@@ -44,10 +44,16 @@ const SYSTEM_LINKS = [
     sub: 'Meaning governed by structure, not projection.'
   },
   {
-  label: 'Runtime Layer',
-  title: 'Engine 2 — Governed Coherence Runtime',
-  href: '/system/engine2',
-  sub: 'A 243-node phase-lock lattice for lawful execution under invariant identity.'
+    label: 'Runtime Layer',
+    title: 'Engine 2 — Governed Coherence Runtime',
+    href: '/system/engine2',
+    sub: 'A 243-node phase-lock lattice for lawful execution under invariant identity.'
+  },
+  {
+    label: 'Scripture Layer',
+    title: 'Scripture',
+    href: '/system/scripture',
+    sub: 'Source-text interpretation. Proverbs 1–25 decoded through the Romantic Philosophy of the Living Soul.'
   },
 ]
 
