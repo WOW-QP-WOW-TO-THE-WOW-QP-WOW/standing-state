@@ -198,7 +198,7 @@ export default function ProverbsChapterPage({ chapter, prev, next }) {
             </h2>
             <SectionProse source={ch.synthesis.body} />
             {ch.synthesis.invariant && (
-              <div className="canonEssayEqBlock" style={{ margin: '2rem 0' }}>
+              <div className="canonEssayEqBlock scriptureSeal">
                 <div className="canonEssayEq">{PROVERBS_META.axiom}</div>
               </div>
             )}
@@ -209,9 +209,9 @@ export default function ProverbsChapterPage({ chapter, prev, next }) {
             <h2 className="canonEssayPara" style={{ fontSize: '1.4rem', color: 'var(--gold)', marginTop: '2.4rem' }}>
               VII. Closing Declaration
             </h2>
-            <div className="canonEssayFinal">
+            <div className="canonEssayFinal scriptureFinal">
               <div className="canonEssayFinalRule" />
-              <p className="canonEssayFinalText" style={{ fontStyle: 'italic' }}>{ch.closing}</p>
+              <p className="canonEssayFinalText">{ch.closing}</p>
               <div className="canonEssayFinalRule" />
             </div>
           </section>
