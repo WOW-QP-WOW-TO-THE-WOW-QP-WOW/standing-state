@@ -545,12 +545,43 @@ export const PLATES = [
   linkedGlossary: [],
   relatedEssay: 'M061',
 },
+{
+  id: "P030",
+  number: "XXX",
+  title: "The Gradient of Living Consciousness",
+  slug: "gradient-living-consciousness",
+  image: "/plates/p030-gradient-living-consciousness.svg",
+  summary:
+    "A geometric, physical, and phase-locked theory of degrees of freedom around invariant identity. Consciousness scales through lawful freedom while remaining coordinated around invariant identity.",
+  governingCondition:
+    "I* = constant · Sn = {x : Φ(x; I*n) ≤ 0} · I*n → Φ(I*n) → I*n+1 · C ∝ (Df)^α, α > 1",
+  description:
+    "P030 formalizes living consciousness as a gradient of lawful degrees of freedom around invariant identity. Plants sustain reactive coherence, animals emotional coherence, and human beings volitional embodiment through archetypal traversal and self-witness. Identity remains closed locally while developmental globally.",
+  volume: "Cross Volume",
+  chapter: "Identity & Consciousness",
+  linkedVars: [
+    "I*",
+    "Φ(x;I*)",
+    "Df",
+    "C",
+    "Identity",
+    "Consciousness",
+    "Self-Witness"
+  ],
+  linkedGlossary: [
+    "identity-invariance",
+    "gate-of-admissibility",
+    "coherence-function",
+    "standing-state",
+    "phase-lock"
+  ]
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Twenty-nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 29,
+  description: 'Thirty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 30,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
 }
