@@ -858,6 +858,30 @@ const ESSAYS = [
   'Synthesis essay at phenomenological emphasis. Names the negative ground of the Standing State architecture: the architecture exists because consequence exists. In a world without cost, shortest path and successful arrival collapse into the same thing; admissibility, gates, and return would be vacuous. Reality charges cost, so lawful traversal becomes necessary. The lawful path is formally compressed as 𝒫* = argmax(Arrival ∩ Integrity); motion proceeds only while Φ(x; I*) ≤ 0. Introduces the phenomenological signature WOW — phase-lock recognized — as the felt instant x → I* resolves. Public compression: the first principle is not speed; the first principle is arriving alive. Straight lines belong to worlds without consequence. Companion to Plate XXIX.',
   mirrorUrl: '/essays/canonical/the-geometry-of-lawful-arrival',
 },
+{
+  id: 'M066',
+  title: 'The Gradient of Living Consciousness: A Geometric, Physical, and Phase-Locked Theory of Degrees of Freedom Around Invariant Identity',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MIXED',
+  flag: 'M',
+  note:
+  'Primary canonical thesis. Establishes Existence = Identity and Consciousness = Identification as the foundation of the Gradient of Living Consciousness. To exist is to possess lawful distinction. To be conscious is to recognize distinction. The greater the lawful power of identification, the greater the degrees of freedom a system may embody while remaining coherent to itself. The thesis runs the lawful sequence Existence → Identity → Identification → Embodiment → Becoming, anchored beneath all motion by the invariant: A becomes A, because A knows it is A. I* remains invariant; state does not author identity; the environment may perturb state but cannot rewrite identity. Mirrored to canonical page.',
+  mirrorUrl: '/essays/canonical/the-gradient-of-living-consciousness',
+},
+{
+  id: 'M066-F',
+  title: 'Technical Appendix: Formal Mathematical Architecture (Appendix to M066)',
+  mediumUrl: '',
+  axis1: 'SYS-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MATH',
+  flag: 'M',
+  note:
+  'Technical appendix to M066. Formalizes the Gradient of Living Consciousness through dynamical systems, geometry, and control theory while keeping ontology primary. Mathematics serves ontology. Identity is treated not as an attractor but as the Rank-0 invariant coordinate prior to motion: ∂I*/∂S = 0. Consciousness is formalized as the Identification Operator 𝒫_I acting as an Ontological Recognition Filter that repeatedly maps state x(t) toward I*. Jurisdictional Inversion is named as the principal human failure mode — state attempting to author identity. The Unified Sovereign Control Law is given as ẋ = f(x) + G(x)·(I* − 𝒫_I(x(t))), with sovereignty defined as the preservation of an invariant geometric coordinate across an expanding field of environmental transformations. Appendix layer; does not displace M066 as primary. Mirrored to canonical appendix page.',
+  mirrorUrl: '/essays/canonical/the-gradient-of-living-consciousness-appendix',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
