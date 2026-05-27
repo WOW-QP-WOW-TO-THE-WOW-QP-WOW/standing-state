@@ -546,35 +546,19 @@ export const PLATES = [
   relatedEssay: 'M061',
 },
 {
-  id: "P030",
-  number: "XXX",
-  title: "The Gradient of Living Consciousness",
-  slug: "gradient-living-consciousness",
-  image: "/plates/p030-gradient-living-consciousness.svg",
-  summary:
-    "A geometric, physical, and phase-locked theory of degrees of freedom around invariant identity. Consciousness scales through lawful freedom while remaining coordinated around invariant identity.",
-  governingCondition:
-    "I* = constant · Sn = {x : Φ(x; I*n) ≤ 0} · I*n → Φ(I*n) → I*n+1 · C ∝ (Df)^α, α > 1",
-  description:
-    "P030 formalizes living consciousness as a gradient of lawful degrees of freedom around invariant identity. Plants sustain reactive coherence, animals emotional coherence, and human beings volitional embodiment through archetypal traversal and self-witness. Identity remains closed locally while developmental globally.",
-  volume: "Cross Volume",
-  chapter: "Identity & Consciousness",
-  linkedVars: [
-    "I*",
-    "Φ(x;I*)",
-    "Df",
-    "C",
-    "Identity",
-    "Consciousness",
-    "Self-Witness"
-  ],
-  linkedGlossary: [
-    "identity-invariance",
-    "gate-of-admissibility",
-    "coherence-function",
-    "standing-state",
-    "phase-lock"
-  ]
+  id: 'P031',
+  number: 'XXXI',
+  title: 'The Geometry of Durable Value',
+  slug: 'the-geometry-of-durable-value',
+  image: '/plates/plate-xxxi-geometry-of-durable-value.svg',
+  summary: 'The Law of Growth at the architecture register: merit, extraction, and the law of coherent exchange across biology, identity, markets, institutions, and civilizations. Merit creates durable value. Extraction without contribution tends toward erosion.',
+  governingCondition: '\\Delta V = C - E\\,;\\quad C \\ge E\\,;\\quad E > C',
+  description: 'Plate XXXI renders the geometry of durable value as a four-quadrant monument under one governing equation: ΔV = C − E. The center holds the law of coherent exchange. Four registers radiate outward — Biological Restoration (R ≥ D), Identity & Earned Coherence (money magnifies structure), Marketplace & Institutions (merit creates durable value), and Failure Modes of Extraction (hollow roots, identity debt, institutional decay). Six seasons rim the field: plant, build, protect, wait, harvest, restore. Durability condition: C ≥ E. Erosion condition: E > C. The marketplace does not invent this law. It merely reveals it. Reality eventually audits whether value was planted or merely taken. Companion to essay M064. The slot at Plate XXX is reserved for the Gradient of Living Consciousness stack and is not occupied here.',
+  volume: 'Volume I + The Law of Growth',
+  chapter: 'Architecture · The Law of Coherent Exchange',
+  linkedVars: [],
+  linkedGlossary: [],
+  relatedEssay: 'M064',
 },
 ]
 
@@ -583,5 +567,5 @@ export const PLATES_META = {
   subtitle: 'Canonical Structural Artifacts',
   description: 'Thirty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
   count: 30,
-  volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier',
+  volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
