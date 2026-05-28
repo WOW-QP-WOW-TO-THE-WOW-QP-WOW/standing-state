@@ -85,6 +85,7 @@ const REGISTERS = [
   {
     name: 'Spiritual',
     slug: 'spiritual',
+    href: '/system/scripture/proverbs',
     expr: '"I am" — Stillness',
     sub: 'Absence of interference',
   },
@@ -167,7 +168,7 @@ export default function Home() {
           <div className="regGrid reveal">
             {REGISTERS.map(r => (
               <a
-                href={`/system/gates/${r.slug}`}
+                href={r.href ? r.href : `/system/gates/${r.slug}`}
                 className="regCell regCellLink"
                 key={r.name}
               >
