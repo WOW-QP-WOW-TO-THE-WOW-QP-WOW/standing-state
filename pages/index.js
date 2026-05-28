@@ -48,11 +48,10 @@ const CORPUS = [
   {
     index: 'VI',
     tag: 'Scripture · Identity · Codex',
-    title: 'Proverbs 1–25',
-    subtitle: 'Decoded through the Romantic Philosophy of the Living Soul and the Oracle Codex',
-    desc: 'Twenty-five canonical chapters of Proverbs (KJV) read as identity-coded structure. Each chapter unfolds through the eight-section architecture: thesis, four-plane interpretation, codex integration, triune eye integration, verse decoding, identity/law synthesis, and closing declaration.',
-    href: '/system/scripture/proverbs',
-    internal: true,
+    title: 'Proverbs 1–31 (KJV)',
+    subtitle: 'The Romantic Philosophy of the Living Soul — Canonical Edition',
+    desc: 'A canonical decoding of the full Book of Proverbs through the Romantic Philosophy of the Living Soul. Wisdom rendered as lawful structure: identity, coherence, correction, stewardship, governance, bounded knowing, and embodied wisdom — culminating in the architecture of becoming.',
+    href: 'https://a.co/d/07DV1Uh0',
   },
 ]
 
@@ -381,13 +380,10 @@ export default function Home() {
           <div className="corpusList">
             {CORPUS.map((book, i) => {
               const inprod = !book.href
-              const internal = !!book.internal
               const Tag = inprod ? 'div' : 'a'
               const props = inprod
                 ? {}
-                : internal
-                  ? { href: book.href }
-                  : { href: book.href, target: '_blank', rel: 'noopener noreferrer' }
+                : { href: book.href, target: '_blank', rel: 'noopener noreferrer' }
               return (
                 <Tag
                   key={book.index}
@@ -404,9 +400,7 @@ export default function Home() {
                   <div className="bookAction">
                     {inprod
                       ? <span className="bookStatus">In Production</span>
-                      : internal
-                        ? <span className="bookLink">Read on Site →</span>
-                        : <span className="bookLink">On Amazon →</span>
+                      : <span className="bookLink">On Amazon →</span>
                     }
                   </div>
                 </Tag>
