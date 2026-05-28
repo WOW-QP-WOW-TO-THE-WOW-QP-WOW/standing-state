@@ -1,35 +1,64 @@
 /**
- * /system/scripture
- * SCRIPTURE PORTAL — Source text interpretation layer
+ * /system
+ * SYSTEM LANDING PAGE
  * standingstate.com
- *
- * Architecture: Scripture is the source-text interpretation layer.
- * Oracle Codex is the interpretive lens.
- * Doctrine is the governing law.
- * Essays are thesis objects.
  */
 
 import Head from 'next/head'
 
-const SCRIPTURE_VOLUMES = [
+const SYSTEM_LINKS = [
   {
-    label: 'Volume I',
-    title: 'Proverbs 1–25',
-    href: '/system/scripture/proverbs',
-    sub: 'Decoded through the Romantic Philosophy of the Living Soul and the Oracle Codex. Twenty-five chapters, eight-section canonical architecture.',
-    status: 'CANONICAL',
-    chapters: 25
-  }
+    label: 'Visual Authority Layer',
+    title: 'System Plates',
+    href: '/system/plates',
+    sub: 'Canonical visual artifacts. Structure fixed in form.'
+  },
+  {
+    label: 'Definition Layer',
+    title: 'Variable Glossary',
+    href: '/system/glossary',
+    sub: 'Every symbol defined once. No term drifts.'
+  },
+  {
+    label: 'Doctrine Layer',
+    title: 'Doctrine',
+    href: '/system/doctrine',
+    sub: 'System law, governance, and invariant commitments.'
+  },
+  {
+    label: 'Entry Layer',
+    title: 'Gates',
+    href: '/system/gates',
+    sub: 'Five register entry points into the Standing State system.'
+  },
+  {
+    label: 'Coordinate Layer',
+    title: 'Coordinate',
+    href: '/system/coordinate',
+    sub: 'Identity as reference coordinate and stabilizing frame.'
+  },
+  {
+    label: 'Interpretation Layer',
+    title: 'Interpretation',
+    href: '/system/interpretation',
+    sub: 'Meaning governed by structure, not projection.'
+  },
+  {
+  label: 'Runtime Layer',
+  title: 'Engine 2 — Governed Coherence Runtime',
+  href: '/system/engine2',
+  sub: 'A 243-node phase-lock lattice for lawful execution under invariant identity.'
+  },
 ]
 
-export default function ScriptureIndexPage() {
+export default function SystemIndexPage() {
   return (
     <>
       <Head>
-        <title>Scripture — Standing State Press</title>
+        <title>System — Standing State Press</title>
         <meta
           name="description"
-          content="Source-text interpretation layer. KJV scripture decoded through the Romantic Philosophy of the Living Soul and the Oracle Codex."
+          content="The Standing State system index: plates, glossary, doctrine, gates, and governing structural layers."
         />
       </Head>
 
@@ -52,17 +81,16 @@ export default function ScriptureIndexPage() {
           <div className="glossBreadcrumb">
             <a href="/">Standing State Press</a>
             <span className="glossBreadSep">→</span>
-            <a href="/system">System</a>
-            <span className="glossBreadSep">→</span>
-            <span style={{ color: 'var(--gold-dim)' }}>Scripture</span>
+            <span style={{ color: 'var(--gold-dim)' }}>System</span>
           </div>
-          <div className="glossEyebrow">Source-Text Interpretation Layer</div>
-          <h1 className="glossH1">Scripture</h1>
+          <div className="glossEyebrow">Structural Index</div>
+          <h1 className="glossH1">System</h1>
           <p className="glossIntro">
-            Scripture is the source-text interpretation layer of the Standing State system. The Oracle Codex is the interpretive lens; Doctrine is the governing law; Essays are thesis objects. The Scripture layer holds the canonical decoding of source texts as identity-coded structure.
+            The Standing State system is organized through fixed layers: plates, glossary, doctrine, gates, and governing coordinates.
+            This page is the central index for the architecture.
           </p>
           <div className="glossMandate">
-            Scripture → Oracle Codex → Doctrine → Essays
+            Identity → Structure → Control → Coherence → Gate
           </div>
         </div>
       </header>
@@ -72,15 +100,15 @@ export default function ScriptureIndexPage() {
       <section className="systemLinksSection">
         <div className="wrap">
           <div className="secHead reveal">
-            <span className="secLabel">Canonical Volumes</span>
+            <span className="secLabel">System Layers</span>
             <div className="secRule" />
           </div>
           <div className="systemLinksGrid">
-            {SCRIPTURE_VOLUMES.map((vol, i) => (
-              <a key={vol.href} href={vol.href} className={`systemLinkCard reveal d${i > 4 ? 4 : i}`}>
-                <span className="systemLinkLabel">{vol.label} · {vol.chapters} Chapters · {vol.status}</span>
-                <span className="systemLinkTitle">{vol.title} →</span>
-                <span className="systemLinkSub">{vol.sub}</span>
+            {SYSTEM_LINKS.map((item, i) => (
+              <a key={item.href} href={item.href} className={`systemLinkCard reveal d${i > 4 ? 4 : i}`}>
+                <span className="systemLinkLabel">{item.label}</span>
+                <span className="systemLinkTitle">{item.title} →</span>
+                <span className="systemLinkSub">{item.sub}</span>
               </a>
             ))}
           </div>
@@ -90,16 +118,16 @@ export default function ScriptureIndexPage() {
       <section className="platesSystemNav">
         <div className="wrap">
           <div className="platesSystemNavInner reveal">
-            <a href="/system/doctrine" className="platesSystemLink">
-              <span className="platesSystemLinkLabel">Governing Law</span>
-              <span className="platesSystemLinkTitle">Doctrine →</span>
-              <span className="platesSystemLinkSub">The law beneath the scripture.</span>
+            <a href="/essays" className="platesSystemLink">
+              <span className="platesSystemLinkLabel">Corpus Layer</span>
+              <span className="platesSystemLinkTitle">Essays →</span>
+              <span className="platesSystemLinkSub">Canonical and mirrored writings.</span>
             </a>
             <div className="platesSystemDivider" />
-            <a href="/essays/canonical" className="platesSystemLink">
-              <span className="platesSystemLinkLabel">Thesis Objects</span>
-              <span className="platesSystemLinkTitle">Canonical Essays →</span>
-              <span className="platesSystemLinkSub">Essays authored from the architecture.</span>
+            <a href="/system/plates" className="platesSystemLink">
+              <span className="platesSystemLinkLabel">Companion Layer</span>
+              <span className="platesSystemLinkTitle">Plates →</span>
+              <span className="platesSystemLinkSub">The visual authority archive.</span>
             </a>
           </div>
         </div>
