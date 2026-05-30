@@ -347,7 +347,7 @@ export default function GeometryOfDifferentiatedIdentityCanonical() {
             </div>
             <div className="canonEssayEqBlock">
               <div className="canonEssayEq">
-                <KTex math="x^{*} \;=\; \operatorname*{argmin}_{x} \;\lVert x_t - I^{*} \rVert" display />
+                <KTex math="x^{*} \;=\; \operatorname*{argmin}_{x} \; \| x_t - I^{*} \|" display />
               </div>
             </div>
             <div className="canonEssayBody">
@@ -483,7 +483,10 @@ export default function GeometryOfDifferentiatedIdentityCanonical() {
             </div>
             <div className="canonEssayEqBlock">
               <div className="canonEssayEq">
-                <KTex math="\text{Differentiation} \;\rightarrow\; \text{Identity} \;\rightarrow\; \text{Consciousness} \;\rightarrow\; \text{Orientation} \;\rightarrow\; \text{Correction} \;\rightarrow\; \text{Lawful Motion}" display />
+                <KTex math="\text{Differentiation} \;\rightarrow\; \text{Identity} \;\rightarrow\; \text{Consciousness}" display />
+              </div>
+              <div className="canonEssayEq" style={{ marginTop: '0.6rem' }}>
+                <KTex math="\rightarrow\; \text{Orientation} \;\rightarrow\; \text{Correction} \;\rightarrow\; \text{Lawful Motion}" display />
               </div>
             </div>
             <div className="canonEssayBody">
