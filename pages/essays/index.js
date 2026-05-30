@@ -891,7 +891,7 @@ const ESSAYS = [
   axis3: 'REG-STRUCT',
   flag: 'M',
   note:
-  'Canonical bridge essay. Rank-0 Operational Metaphysics for Volitional Consciousness. Runs the initiation sequence from reaction to invariance: foundation (Identity Kernel I ≡ 1, Basin of Attraction, soil to tree), forensic audit through the Total Loss Scenario (descent into the Place of Dragons, non-transactional integrity, shield to scepter), public authority through Acoustic Dominion (resonance over coercion, zero internal shear, phase-lock or evacuation), and the Reset Protocol (Broken Spirit / Psalm 51 — non-destructive reformat converting internal torque into high-toughness plasticity). Worked example: executive authority under sustained load. Final synthesis as the City of the Great King — civilization built on inhabited law. Predates M060, M061, M066, M067, and Engine 2; blueprint substrate that the later essays specialize. Identity Kernel prefigures I*. Basin of Attraction prefigures phase-lock geometry. Psalm 51 reset prefigures RESTORE / Sabbath. Internal torque prefigures metabolic debt. Master Clock prefigures phase synchronization. Engine 2 fulfils what M065 forecast.',
+  'Canonical bridge essay establishing Rank-0 operational metaphysics before later specialization. Identity Kernel, Basin of Attraction, reset protocol, internal torque, and Master Clock appear here as blueprint primitives later fulfilled by Standing State, M067, and Engine 2.',
   mirrorUrl: '/essays/canonical/the-architecture-of-invariance',
 },
 {
@@ -920,14 +920,14 @@ const ESSAYS = [
 },
 {
   id: 'M067',
-  title: 'The Geometry of Differentiated Identity: A Geometric, Physical, and Phase-Locked Theory of Conscious Orientation Around Invariant Identity',
+  title: 'The Geometry of Differentiated Identity',
   mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-differentiated-identity-c5e6b257139f',
   axis1: 'PLT-COORD',
   axis2: 'VOL-CROSS',
   axis3: 'REG-MIXED',
   flag: 'M',
   note:
-  'Canonical convergence essay. Formalises the lawful sequence Differentiation → Identity → Consciousness → Orientation → Correction → Lawful Motion as a single geometric architecture around the invariant identity coordinate I*. Hidden prerequisite: A ≠ ¬A — differentiation precedes identity. Governing forms: dI*/dt = 0 (identity invariance), C(x) = ∂𝓘/∂D (consciousness as identification scaled with differentiation), x* = argmin ‖xₜ − I*‖ (orientation minimises deviation), ẋ = f(x,t) + R(x) with R(x) = −α(1−Q)∇Δ (calculus of correction), and R ∝ I^α (nonlinear identity compounding). Diagnoses fragmentation as unauthorised attachment under the absence of invariant identity, formalises the counterfeit principle (stabilise the real until the false becomes distinguishable), redefines surrender as jurisdictional integrity (the disturbance loses write-access), and presents the GPS analogy as governance geometry: the destination existed before recognition; recognition reorganises motion. Engine 2 — the 243-node lattice — is presented as the executable embodiment via coherent specialisation around invariant identity. The Sabbath State holds maintenance coherence with defence preserved: body executes, executive remains watchful, identity unchanged. Architectural convergence document for M060, M061, M066, and Engine 2. Companion to the M067 plate.',
+  'Canonical convergence essay formalizing differentiated identity: differentiation → identity → consciousness → orientation → correction → lawful motion. Establishes I* as invariant coordinate and Engine 2 as differentiated specialization around identity.',
   mirrorUrl: '/essays/canonical/the-geometry-of-differentiated-identity',
 },
 ]
