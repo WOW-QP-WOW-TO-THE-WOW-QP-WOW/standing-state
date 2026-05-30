@@ -883,6 +883,18 @@ const ESSAYS = [
   mirrorUrl: '/essays/canonical/geometry-of-durable-value',
 },
 {
+  id: 'M065',
+  title: 'OC-V2-THESIS: The Architecture of Invariance',
+  mediumUrl: 'https://medium.com/@leonsp3/oc-v2-thesis-the-architecture-of-invariance-73978ae76c6b',
+  axis1: 'PLT-SOV',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note:
+  'Canonical bridge essay. Rank-0 Operational Metaphysics for Volitional Consciousness. Runs the initiation sequence from reaction to invariance: foundation (Identity Kernel I ≡ 1, Basin of Attraction, soil to tree), forensic audit through the Total Loss Scenario (descent into the Place of Dragons, non-transactional integrity, shield to scepter), public authority through Acoustic Dominion (resonance over coercion, zero internal shear, phase-lock or evacuation), and the Reset Protocol (Broken Spirit / Psalm 51 — non-destructive reformat converting internal torque into high-toughness plasticity). Worked example: executive authority under sustained load. Final synthesis as the City of the Great King — civilization built on inhabited law. Predates M060, M061, M066, M067, and Engine 2; blueprint substrate that the later essays specialize. Identity Kernel prefigures I*. Basin of Attraction prefigures phase-lock geometry. Psalm 51 reset prefigures RESTORE / Sabbath. Internal torque prefigures metabolic debt. Master Clock prefigures phase synchronization. Engine 2 fulfils what M065 forecast.',
+  mirrorUrl: '/essays/canonical/the-architecture-of-invariance',
+},
+{
   id: 'M066',
   title: 'The Gradient of Living Consciousness: A Geometric, Physical, and Phase-Locked Theory of Degrees of Freedom Around Invariant Identity',
   mediumUrl: '',
@@ -905,6 +917,18 @@ const ESSAYS = [
   note:
   'Technical appendix to M066. Formalizes the Gradient of Living Consciousness through dynamical systems, geometry, and control theory while keeping ontology primary. Mathematics serves ontology. Identity treated not as an attractor but as the Rank-0 invariant coordinate prior to motion: ∂I*/∂S = 0. Consciousness formalized as the Identification Operator 𝒫_I acting as an Ontological Recognition Filter that repeatedly maps state x(t) toward I*. Jurisdictional Inversion named as the principal human failure mode — state attempting to author identity. Unified Sovereign Control Law given as ẋ = f(x) + G(x)·(I* − 𝒫_I(x(t))), with sovereignty defined as the preservation of an invariant geometric coordinate across an expanding field of environmental transformations. Appendix layer; does not displace M066 as primary.',
   mirrorUrl: '/essays/canonical/the-gradient-of-living-consciousness-appendix',
+},
+{
+  id: 'M067',
+  title: 'The Geometry of Differentiated Identity: A Geometric, Physical, and Phase-Locked Theory of Conscious Orientation Around Invariant Identity',
+  mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-differentiated-identity-c5e6b257139f',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MIXED',
+  flag: 'M',
+  note:
+  'Canonical convergence essay. Formalises the lawful sequence Differentiation → Identity → Consciousness → Orientation → Correction → Lawful Motion as a single geometric architecture around the invariant identity coordinate I*. Hidden prerequisite: A ≠ ¬A — differentiation precedes identity. Governing forms: dI*/dt = 0 (identity invariance), C(x) = ∂𝓘/∂D (consciousness as identification scaled with differentiation), x* = argmin ‖xₜ − I*‖ (orientation minimises deviation), ẋ = f(x,t) + R(x) with R(x) = −α(1−Q)∇Δ (calculus of correction), and R ∝ I^α (nonlinear identity compounding). Diagnoses fragmentation as unauthorised attachment under the absence of invariant identity, formalises the counterfeit principle (stabilise the real until the false becomes distinguishable), redefines surrender as jurisdictional integrity (the disturbance loses write-access), and presents the GPS analogy as governance geometry: the destination existed before recognition; recognition reorganises motion. Engine 2 — the 243-node lattice — is presented as the executable embodiment via coherent specialisation around invariant identity. The Sabbath State holds maintenance coherence with defence preserved: body executes, executive remains watchful, identity unchanged. Architectural convergence document for M060, M061, M066, and Engine 2. Companion to the M067 plate.',
+  mirrorUrl: '/essays/canonical/the-geometry-of-differentiated-identity',
 },
 ]
 
