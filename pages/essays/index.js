@@ -883,18 +883,6 @@ const ESSAYS = [
   mirrorUrl: '/essays/canonical/geometry-of-durable-value',
 },
 {
-  id: 'M065',
-  title: 'OC-V2-THESIS: The Architecture of Invariance',
-  mediumUrl: 'https://medium.com/@leonsp3/oc-v2-thesis-the-architecture-of-invariance-73978ae76c6b',
-  axis1: 'PLT-SOV',
-  axis2: 'VOL-CROSS',
-  axis3: 'REG-STRUCT',
-  flag: 'M',
-  note:
-  'Canonical bridge essay establishing Rank-0 operational metaphysics before later specialization. Identity Kernel, Basin of Attraction, reset protocol, internal torque, and Master Clock appear here as blueprint primitives later fulfilled by Standing State, M067, and Engine 2.',
-  mirrorUrl: '/essays/canonical/the-architecture-of-invariance',
-},
-{
   id: 'M066',
   title: 'The Gradient of Living Consciousness: A Geometric, Physical, and Phase-Locked Theory of Degrees of Freedom Around Invariant Identity',
   mediumUrl: '',
@@ -919,16 +907,28 @@ const ESSAYS = [
   mirrorUrl: '/essays/canonical/the-gradient-of-living-consciousness-appendix',
 },
 {
-  id: 'M067',
-  title: 'The Geometry of Differentiated Identity',
-  mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-differentiated-identity-c5e6b257139f',
-  axis1: 'PLT-COORD',
+  id: 'M068',
+  title: 'The Life Intake Console: A Doorway Architecture for Filtering Reality Before Runtime Execution',
+  mediumUrl: '',
+  axis1: 'SYS-ARCH',
   axis2: 'VOL-CROSS',
-  axis3: 'REG-MIXED',
+  axis3: 'REG-STRUCT',
   flag: 'M',
   note:
-  'Canonical convergence essay formalizing differentiated identity: differentiation → identity → consciousness → orientation → correction → lawful motion. Establishes I* as invariant coordinate and Engine 2 as differentiated specialization around identity.',
-  mirrorUrl: '/essays/canonical/the-geometry-of-differentiated-identity',
+  'Canonical thesis introducing the Life Intake Console as the structural boundary through which reality enters the Standing State architecture. Topological inversion: governance shifts from post-entry runtime control to pre-entry admission. Five intake gates — Decision, Event, Relationship, Opportunity, Health Signal — receive raw signal and route to the wisdom layer before runtime executes. The Three Rings of Protection (Intake · Wisdom · Runtime) form concentric layers around the invariant coordinate I*. Hilltop / Valley model: the valley generates telemetry, the hilltop generates interpretation, the coordinate generates direction. The runtime no longer decides admissibility; it executes only motion that has already survived intake. The problem is not the signal; the problem is allowing the signal to bypass lawful intake and acquire write access to identity. A becomes A, because A knows it is A. Companion thesis M069 establishes the Safety & Consequence Gate and the Geometry of Fit downstream of intake.',
+  mirrorUrl: '/essays/canonical/the-life-intake-console',
+},
+{
+  id: 'M069',
+  title: 'The Geometry of Fit: Safety, Consequence, and the Survivable Path',
+  mediumUrl: '',
+  axis1: 'SYS-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-STRUCT',
+  flag: 'M',
+  note:
+  'Successor thesis to M068. Names the trichotomy admissible ≠ safe ≠ fit. Three sequential boundary layers: intake asks whether signal may enter (M068); the Safety & Consequence Gate asks what happens if executed; the Geometry of Fit asks whether the available space closes around the action. The chair scenario serves as the practical demonstration — a square peg against a round opening fails not because the peg is bad but because the geometry does not close. Many human problems share this structure: a job may be good and still not fit a season; a relationship may be healthy and still exceed available capacity; an opportunity may be profitable and still not fit current obligations. Lawful arrival therefore requires Identity + Wisdom + Safety + Geometry operating simultaneously. The Four Planes of Existence — Living Consciousness, Resonance, Mind & Motion, Creation & Growth — converge on the chair scenario as a compressed worked example. Cites M061 (The Geometry of Lawful Arrival) as upstream foundation for the architecture-exists-because-consequence-exists ground; cites M066 for identity as invariant coordinate and the Four Planes nomenclature. The first principle is not speed; the first principle is arriving alive.',
+  mirrorUrl: '/essays/canonical/the-geometry-of-fit',
 },
 ]
 
