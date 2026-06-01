@@ -930,6 +930,18 @@ const ESSAYS = [
   'Successor thesis to M068. Names the trichotomy admissible ≠ safe ≠ fit. Three sequential boundary layers: intake asks whether signal may enter (M068); the Safety & Consequence Gate asks what happens if executed; the Geometry of Fit asks whether the available space closes around the action. The chair scenario serves as the practical demonstration — a square peg against a round opening fails not because the peg is bad but because the geometry does not close. Many human problems share this structure: a job may be good and still not fit a season; a relationship may be healthy and still exceed available capacity; an opportunity may be profitable and still not fit current obligations. Lawful arrival therefore requires Identity + Wisdom + Safety + Geometry operating simultaneously. The Four Planes of Existence — Living Consciousness, Resonance, Mind & Motion, Creation & Growth — converge on the chair scenario as a compressed worked example. Cites M061 (The Geometry of Lawful Arrival) as upstream foundation for the architecture-exists-because-consequence-exists ground; cites M066 for identity as invariant coordinate and the Four Planes nomenclature. The first principle is not speed; the first principle is arriving alive.',
   mirrorUrl: '/essays/canonical/the-geometry-of-fit',
 },
+{
+  id: 'M070',
+  title: 'The Architecture of Prayer: Prayer Is Orientation Toward a Lawful Coordinate',
+  mediumUrl: 'https://medium.com/@leonsp3/the-architecture-of-prayer-568e8b2b0eb4',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-SPIRIT',
+  flag: 'M',
+  note:
+  'Canonical essay on prayer as lawful orientation, not magic, persuasion, or negotiation with uncertainty. Law precedes prayer; prayer aligns the soul with what is already lawful. Canonical sequence: Law → Identity → Prayer; Recognition → Orientation → Interpretation → Traversal → Homecoming; Faith → Belief → Arrival → Sabbath. Definitions: prayer establishes the coordinate; faith recognizes the lawfulness of the relationship; belief preserves continuity through time; arrival reveals what was already present in seed form; Sabbath witnesses completion. Faith = knowledge; Belief = continuity of orientation. The deepest prayer is rest: stillness becomes trust, trust becomes coherence, coherence becomes rest — the hidden meaning of "Be still, and know." Companion orientation essays: M054 (The Geometry of Home) for desire, orientation, and the Five Gates of Convergence; M061 (The Geometry of Lawful Arrival) for arrival through consequence; M066 (The Gradient of Living Consciousness) and its technical appendix M066-F for identity as the invariant coordinate beneath all lawful motion. Engine 2 audit: CANONICAL_ADMIT (gate 1.000, structure 0.838, register 0.827, trajectory 0.908, total 0.900).',
+  mirrorUrl: '/essays/canonical/architecture-of-prayer',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
