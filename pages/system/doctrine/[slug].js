@@ -144,6 +144,15 @@ const DOCTRINE_PAGES = {
     axis2: 'VOL-CROSS',
     axis3: 'REG-SPIRIT',
     mediumUrl: 'https://medium.com/@leonsp3/d003-fulfillment-of-the-gospel-f71475ea5560',
+    fullStack: [
+      { stage: 'Psalms', role: 'Orientation' },
+      { stage: 'Proverbs', role: 'Governance' },
+      { stage: 'Gospel', role: 'Restoration in completed form' },
+      { stage: 'Revelation', role: 'Completion' },
+      { stage: 'River', role: 'Distribution' },
+      { stage: 'Tree', role: 'Embodiment' },
+      { stage: 'Propagation', role: 'Multiplication' },
+    ],
     equation: 'Differentiation → Garden → Extension → Psalms → Proverbs → Gospel → Revelation → River → Tree → Propagation',
     intro:
       'Fulfillment doctrine. The fulfillment of the Gospel is not the restoration of the beginning — it is the restoration of the original pattern in completed form. Read as a unified architecture, Scripture traces one distinction operation maturing across ten scale-invariant stages, from the emergence of a distinguishable coordinate to the propagation of a completed pattern that remains coherent at every scale it reaches.',
@@ -300,6 +309,35 @@ export default function DoctrineSlugPage() {
                 ))}
               </div>
             </div>
+
+            {item.fullStack && (
+              <div className="plateDetailBlock">
+                <div className="plateDetailBlockLabel">Full-Stack Register · Corpus Architecture</div>
+                <div className="glossVarLogicWrap">
+                  {item.fullStack.map((row, idx) => (
+                    <div
+                      key={idx}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'baseline',
+                        gap: '1rem',
+                        padding: '0.85rem 1.2rem',
+                        borderBottom: idx < item.fullStack.length - 1 ? 'var(--rule)' : 'none',
+                      }}
+                    >
+                      <span style={{ fontFamily: 'var(--display)', fontSize: '0.95rem', color: 'var(--gold)', minWidth: '7.5rem', letterSpacing: '0.04em' }}>{row.stage}</span>
+                      <span style={{ color: 'var(--gold-dim)' }}>→</span>
+                      <span style={{ color: 'var(--offwhite)', fontSize: '0.95rem', lineHeight: 1.7 }}>{row.role}</span>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ marginTop: '0.8rem', color: 'var(--gray-lt)', fontSize: '0.85rem', fontStyle: 'italic', lineHeight: 1.7 }}>
+                  Completion → Distribution → Embodiment → Multiplication. The River carries the
+                  completed pattern; the Tree receives and embodies it; propagation occurs when the
+                  embodied pattern reproduces beyond itself. The carrier is not the propagation.
+                </div>
+              </div>
+            )}
 
             <div className="canonEssayBody">
               {item.body.map((paragraph, idx) => (
