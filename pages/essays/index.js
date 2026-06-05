@@ -353,12 +353,12 @@ const ESSAYS = [
   {
     id: 'M016',
     title: 'The Oxygen Problem: Why Abundance Alone Does Not Solve Human Flourishing',
-    mediumUrl: '',
+    mediumUrl: 'https://medium.com/@leonsp3/the-oxygen-problem-why-abundance-alone-does-not-solve-human-flourishing-36d87f6b9ba8',
     axis1: 'PLT-COORD',
     axis2: 'VOL-CROSS',
     axis3: 'REG-MIXED',
     flag: 'M',
-    note: 'Abundance without lawful circulation remains functionally scarce. Civilization flourishes through communication, access, utilization, integration, and lawful flow. The Oxygen Problem: oxygen is abundant, yet people still suffocate — existence does not guarantee access. Every resource passes four gates: Existence → Access → Utilization → Integration. The governing variable beneath all four is orientation, and beneath orientation, identity: A ≡ A; Identity → Attention → Action → Consequence. Introduces Surplus Compassionate Capitalism (compassion operates on surplus to restore sovereignty, not replace it) and the Organism Principle (the body does not weaken healthy organs to sustain life; it maintains circulation). The opposite of scarcity is not abundance — it is lawful flow. The future challenge is not producing abundance; it is engineering lawful flow.',
+    note: 'Abundance without lawful circulation remains functionally scarce. Civilization flourishes through communication, access, utilization, integration, and lawful flow. The Oxygen Problem: oxygen is abundant, yet people still suffocate — existence does not guarantee access. Every resource passes four gates: Existence → Access → Utilization → Integration. The governing variable beneath all four is orientation, and beneath orientation, identity: A ≡ A; Identity → Attention → Action → Consequence. Introduces Surplus Compassionate Capitalism (compassion operates on surplus to restore sovereignty, not replace it) and the Organism Principle (the body does not weaken healthy organs to sustain life; it maintains circulation). The opposite of scarcity is not abundance — it is lawful flow. The future challenge is not producing abundance; it is engineering lawful flow. Engine 2 audit: REGISTRY_AND_MIRROR — gate STRUCTURAL_INFERENCE 1.000, structure 0.756, register 0.627, trajectory 0.840, total 0.821; translation stage ADVANCING_TOWARD_UNIFICATION (mirrored and executable, advancing toward register convergence before canonical admission).',
     mirrorUrl: '/essays/canonical/the-oxygen-problem',
   },
   {
@@ -941,6 +941,18 @@ const ESSAYS = [
   note:
   'Canonical essay on prayer as lawful orientation, not magic, persuasion, or negotiation with uncertainty. Law precedes prayer; prayer aligns the soul with what is already lawful. Canonical sequence: Law → Identity → Prayer; Recognition → Orientation → Interpretation → Traversal → Homecoming; Faith → Belief → Arrival → Sabbath. Definitions: prayer establishes the coordinate; faith recognizes the lawfulness of the relationship; belief preserves continuity through time; arrival reveals what was already present in seed form; Sabbath witnesses completion. Faith = knowledge; Belief = continuity of orientation. The deepest prayer is rest: stillness becomes trust, trust becomes coherence, coherence becomes rest — the hidden meaning of "Be still, and know." Companion orientation essays: M054 (The Geometry of Home) for desire, orientation, and the Five Gates of Convergence; M061 (The Geometry of Lawful Arrival) for arrival through consequence; M066 (The Gradient of Living Consciousness) and its technical appendix M066-F for identity as the invariant coordinate beneath all lawful motion. Engine 2 audit: CANONICAL_ADMIT (gate 1.000, structure 0.838, register 0.827, trajectory 0.908, total 0.900).',
   mirrorUrl: '/essays/canonical/architecture-of-prayer',
+},
+{
+  id: 'M071',
+  title: 'The River Beyond the City: Psalms, Proverbs, Revelation, and the Run-Governance Architecture',
+  mediumUrl: 'https://medium.com/@leonsp3/the-river-beyond-the-city',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-SPIRIT',
+  flag: 'M',
+  note:
+  'Corpus synthesis essay. Psalms, Proverbs, and Revelation are not three subjects but three operations performed upon a single invariant coordinate — identity. Psalms orients identity, Proverbs governs identity, Revelation completes identity, and completion does not terminate: it hands the completed pattern to propagation. The spine: Identity → Coordinate → Path → City → Fractal — one identity carried through four operations (orientation, governance, completion, propagation), and through all four it remains A. Runtime stack: Psalms → Orientation (see correctly); Proverbs → Governance (move correctly); Revelation → Completion (complete correctly); Engine 2 → Propagation (expand correctly). The geometry stays inside Revelation — Square → Helix → City → Fractal — with the river of Revelation 22 as the handoff: completion becomes source. The Law of Pure Yield: lawful structure produces without consuming itself. The final image of Scripture is not closure, though a river. Visual monument: P032 (The River Beyond the City). Doctrine-layer refinement at seven-coordinate resolution: D004 (The Fulfillment of the Gospel). Registry-and-mirror-ready synthesis; Engine 2 audit may refine status.',
+  mirrorUrl: '/essays/canonical/the-river-beyond-the-city',
 },
 ]
 
