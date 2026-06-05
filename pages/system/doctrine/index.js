@@ -37,6 +37,18 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-EXEC',
     href: '/system/doctrine/admissibility-gate',
   },
+  {
+    id: 'D004',
+    slug: 'fulfillment-of-the-gospel',
+    type: 'Fulfillment Doctrine',
+    title: 'The Fulfillment of the Gospel',
+    subtitle: 'Published as “D003 — Fulfillment of the Gospel” · From Garden to River',
+    note: 'The Gospel fulfilled as restoration of the original pattern in completed form — not the restoration of the beginning. One distinction operation unfolding across ten scale-invariant stages: Differentiation → Garden → Extension → Psalms → Proverbs → Gospel → Revelation → River → Tree → Propagation. Psalms restore orientation, Proverbs restore governance, Revelation completes the audit, and the River carries the completed pattern into propagation. The pattern expands without losing itself.',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-SPIRIT',
+    href: '/system/doctrine/fulfillment-of-the-gospel',
+  },
 ]
 
 function DoctrineCard({ item }) {

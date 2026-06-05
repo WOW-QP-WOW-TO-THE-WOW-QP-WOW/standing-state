@@ -134,6 +134,54 @@ const DOCTRINE_PAGES = {
     ],
     pdfHref: null,
   },
+
+  'fulfillment-of-the-gospel': {
+    id: 'D004',
+    title: 'The Fulfillment of the Gospel',
+    subtitle: 'Published as “D003 — Fulfillment of the Gospel” · From Garden to River',
+    eyebrow: 'Fulfillment Doctrine',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-SPIRIT',
+    mediumUrl: 'https://medium.com/@leonsp3/d003-fulfillment-of-the-gospel-f71475ea5560',
+    equation: 'Differentiation → Garden → Extension → Psalms → Proverbs → Gospel → Revelation → River → Tree → Propagation',
+    intro:
+      'Fulfillment doctrine. The fulfillment of the Gospel is not the restoration of the beginning — it is the restoration of the original pattern in completed form. Read as a unified architecture, Scripture traces one distinction operation maturing across ten scale-invariant stages, from the emergence of a distinguishable coordinate to the propagation of a completed pattern that remains coherent at every scale it reaches.',
+    thesis:
+      'The Gospel fulfilled as restoration of the original pattern in completed form. The pattern returns, the pattern matures, the pattern survives, the pattern knows itself.',
+    executionConditions: [
+      'Psalms → Orientation: identity recovers its coordinate before it recovers its direction. See correctly.',
+      'Proverbs → Governance: speech, desire, and action pass governance before release. Move correctly.',
+      'Revelation → Completion: contradiction is removed; what can stand is distinguished from what cannot. Complete correctly.',
+      'Engine 2 → Propagation: the completed pattern flows from a completed source and reproduces across scales without losing identity. Expand correctly.',
+    ],
+    body: [
+      'The Gospel is often described as a message of salvation, reconciliation, forgiveness, or redemption. Each description captures an aspect of its meaning. Yet when Scripture is read as a unified architecture rather than a collection of isolated events, a deeper pattern emerges: the fulfillment of the Gospel is the restoration of lawful self-governance under an invariant identity. The story begins in a garden and ends in a river.',
+      'The Garden represents governance given — identity, perception, desire, and action aligned, with governance internal and unfractured. Extension tests that governance: the further a system extends, the greater the opportunity for drift, as desire separates from wisdom and action separates from identity. The central problem of history is therefore not motion itself, but maintaining lawful motion during extension. The remainder of Scripture addresses that problem.',
+      'Psalms recover orientation — where am I standing — before motion can be governed. Proverbs recover governance — how should I move — so that speech, desire, and action pass evaluation before release. The Gospel reveals the fulfilled pattern: identity, orientation, governance, and action existing without contradiction. Revelation completes it through terminal audit, removing contradiction so that what can stand is distinguished from what cannot. Then the decisive turn: a river proceeds from the throne. Completion does not terminate — completion becomes source.',
+      'The Tree of Life appears twice, and the two appearances are not identical. The first Tree stands in Eden before governance was tested — untested life, raw possibility. The second Tree stands in Revelation after governance has been restored, completed, and made admissible — verified, battle-hardened life that has survived maximum historical variance. The deepest structural symmetry is therefore not Garden ↔ Tree but Given Governance ↔ Verified Governance. The second Tree is not a reset to Eden. It is Eden fulfilled.',
+      'Beneath the Garden lies a more primitive condition. Before governance, before orientation, before Eden, there must first be differentiation: A must be distinguishable from not-A before A can know it is A. Differentiation is the floor — the emergence of a distinguishable coordinate — and it cannot be dug beneath, because asking for a stage prior to distinction would require a distinction before distinction, which collapses the question. Every later stage is the same distinction operation at a higher register. The operation never changes. Only the domain changes.',
+    ],
+    principles: [
+      {
+        label: '0. Differentiation — The Floor',
+        text: 'not-A → A. The emergence of a distinguishable coordinate. Before A knows it is A, A must first be distinguishable from not-A. This is the metrological condition beneath identity: differentiation is not identity, but differentiation makes identity possible. It is the only floor, because distinction is the precondition of every question that could be asked beneath it.',
+      },
+      {
+        label: 'I. Identity — The Coordinate',
+        text: 'A knows A. I* = constant; dI*/dt = 0. Once a coordinate is distinguishable, it becomes available for recognition. Identity is the invariant reference that does not adapt — it governs. Orientation, governance, completion, and propagation all rest upon this fixed point.',
+      },
+      {
+        label: 'II. Lifecycle — The Traversal',
+        text: 'A becomes A. The unfolding of the final clause through history: Garden (given governance), Extension (tested), Psalms (orientation restored), Proverbs (governance restored), Gospel (embodied reference), Revelation (completed audit), River (completion becomes source), Tree (verified life), Propagation (coherent reproduction). Given → Tested → Restored → Completed → Propagated.',
+      },
+      {
+        label: 'III. The Closure Condition',
+        text: 'The pattern expands without losing itself. Identity remains. Governance stands. Completion resolves. The River flows. The Tree yields. Propagation continues. Completion became generative rather than terminal — the proof that the source remains singular while the expression becomes distributed, without fragmentation of identity, governance, or life.',
+      },
+    ],
+    pdfHref: null,
+  },
 }
 
 export default function DoctrineSlugPage() {
@@ -289,7 +337,24 @@ export default function DoctrineSlugPage() {
               </div>
             )}
 
-            <div className="canonEssayAuthor">Standing State Press · Execution Layer</div>
+            {item.mediumUrl && (
+              <div className="plateDetailBlock" style={{ marginTop: '1.6rem' }}>
+                <div className="plateDetailBlockLabel">Source</div>
+                <div className="glossVarLogicWrap">
+                  <div style={{ padding: '1rem 1.2rem' }}>
+                    <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold-dim)', display: 'block', marginBottom: '0.4rem' }}>Medium · Standing State Press</span>
+                    <a href={item.mediumUrl} style={{ color: 'var(--gold)' }} target="_blank" rel="noopener noreferrer">D003 — Fulfillment of the Gospel — Medium</a>
+                    <div style={{ marginTop: '0.6rem', color: 'var(--gray-lt)', fontSize: '0.85rem', fontStyle: 'italic' }}>
+                      Published under the title “D003 — Fulfillment of the Gospel.” Registered in the
+                      doctrine layer as D004 (Fulfillment Doctrine) to preserve the live doctrine namespace,
+                      where D003 denotes the Admissibility Gate.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="canonEssayAuthor">Standing State Press · {item.eyebrow === 'Fulfillment Doctrine' ? 'Fulfillment Layer' : 'Execution Layer'}</div>
 
             <div className="canonEssayNav">
               <a className="canonNavLink canonNavPrev" href="/system/doctrine">
@@ -314,10 +379,22 @@ export default function DoctrineSlugPage() {
               ) : (
                 <a
                   className="canonNavLink canonNavNext"
-                  href={slug === 'admissibility-gate' ? '/system/glossary/gate-of-admissibility' : '/system/glossary/admissibility-delta'}
+                  href={
+                    slug === 'admissibility-gate'
+                      ? '/system/glossary/gate-of-admissibility'
+                      : slug === 'fulfillment-of-the-gospel'
+                      ? '/essays'
+                      : '/system/glossary/admissibility-delta'
+                  }
                 >
                   <span className="canonNavDir">Companion</span>
-                  <span className="canonNavTitle">{slug === 'admissibility-gate' ? 'Glossary Gate' : 'Glossary Δ'}</span>
+                  <span className="canonNavTitle">
+                    {slug === 'admissibility-gate'
+                      ? 'Glossary Gate'
+                      : slug === 'fulfillment-of-the-gospel'
+                      ? 'Essays — Corpus Architecture'
+                      : 'Glossary Δ'}
+                  </span>
                 </a>
               )}
             </div>
