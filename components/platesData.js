@@ -575,12 +575,27 @@ export const PLATES = [
   linkedGlossary: [],
   relatedEssay: 'M064',
 },
+{
+  id: 'P032',
+  number: 'XXXII',
+  title: 'The River Beyond the City',
+  slug: 'the-river-beyond-the-city',
+  image: '/plates/p032-river-beyond-the-city.png',
+  summary: 'The completed pattern becomes a river that heals every scale it reaches. Completion is not a terminus — it becomes the source. Identity → Coordinate → Path → City → Fractal.',
+  governingCondition: '\\text{Identity} \\to \\text{Coordinate} \\to \\text{Path} \\to \\text{City} \\to \\text{Fractal}',
+  description: 'Plate XXXII renders the architecture of Psalms, Proverbs, Revelation, and the propagating engine as a single visual monument. Four operations upon one invariant coordinate: Psalms orients identity (see correctly), Proverbs governs identity in motion (move correctly), Revelation completes identity through audit and admissibility (complete correctly), and Engine 2 carries the completed pattern into reality across scales (expand correctly). The geometry of Revelation holds within this plate: Square (audit and admissibility), Helix (lawful flow through time), City (coherence embodied), Fractal (completion become source). The river of Revelation 22 proceeds from the completed city — not a terminus but a handoff. The source remains singular while the expression becomes distributed. The Law of Pure Yield: lawful structure produces without consuming itself. The invariant does not change as it propagates. The coordinate that began it is unchanged at every scale it reaches. Companion to essay M071 (The River Beyond the City) and doctrine D004 (The Fulfillment of the Gospel).',
+  volume: 'Cross-Volume · Corpus Synthesis',
+  chapter: 'Architecture · Run-Governance · Propagation',
+  linkedVars: [],
+  linkedGlossary: [],
+  relatedEssay: 'M071',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 30,
+  description: 'Thirty-one plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 31,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
