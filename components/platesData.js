@@ -590,12 +590,27 @@ export const PLATES = [
   linkedGlossary: [],
   relatedEssay: 'M071',
 },
+{
+  id: 'P033',
+  number: 'XXXIII',
+  title: 'The Geometry of Memory, Projection, and Reality',
+  slug: 'the-geometry-of-memory-projection-and-reality',
+  image: '/plates/p033-geometry-memory-projection-reality.svg',
+  summary: 'The map is long-term memory. The projection is short-term memory. Reality is the territory. Fruit audits projection. Persistent fruit audits memory. Wisdom accumulates as memory and projection surrender to truth.',
+  governingCondition: '\\text{Map} \\to \\text{Projection} \\to \\text{Reality} \\to \\text{Fruit} \\to \\text{Wisdom}',
+  description: 'Plate XXXIII encodes the three-layer navigation architecture of the Living Soul. The map preserves historical structure: accumulated audits, validated routes, persistent patterns — it changes slowly and its purpose is stability. The projection anticipates future structure: expectations, forecasts, route selections — it changes rapidly and its purpose is navigation. Reality possesses audit authority over both. Fruit is the audit artifact of reality: temporary fruit updates projection, persistent fruit updates memory. The New York Bridge Problem demonstrates the asymmetry: a temporary block updates projection while the map remains; repeated absence of the bridge forces a map update and the new route becomes canonical. Audit geometry: projection error Ep(t)=|P(t)-R(t)| drives rapid adaptation (alpha); map error Em(t)=|M(t)-R(t)| drives conservative update (beta << alpha). The Law of Surrender: coherence is proportional to surrender over attachment — reality retains audit authority when the system releases insistence that reality conform to memory. Power Law of Wisdom: W=kN^lambda where N is successful reality corrections; each surrender increases future navigational accuracy. Terminal reduction: Identity establishes the coordinate, memory preserves the map, projection selects the route, action enters reality, fruit records consequence, wisdom accumulates, Standing State emerges. Companion to essay M073 (The Geometry of Memory, Projection, and Reality).',
+  volume: 'Cross-Volume · Navigational Architecture',
+  chapter: 'Memory · Projection · Reality · Audit · Wisdom',
+  linkedVars: [],
+  linkedGlossary: [],
+  relatedEssay: 'M073',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-two plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 32,
+  description: 'Thirty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 33,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
