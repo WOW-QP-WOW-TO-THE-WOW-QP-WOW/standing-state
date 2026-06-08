@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080604"/>
+      <stop offset="55%" stop-color="#15100a"/>
+      <stop offset="100%" stop-color="#050403"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="32%" r="55%">
+      <stop offset="0%" stop-color="#e7c56b" stop-opacity="0.36"/>
+      <stop offset="45%" stop-color="#a97828" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7d878" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#9d6b25" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f2cc6c" stop-opacity="0.98"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .gold{fill:#e8c96f}.soft{fill:#caa85a}.dim{fill:#8f7443}.line{stroke:#d8b85f;stroke-width:3;fill:none;opacity:.85}.thin{stroke:#c6a150;stroke-width:2;fill:none;opacity:.65}.box{fill:#120d08;stroke:#caa85a;stroke-width:2.5;rx:24}.small{font-family:Georgia,serif;font-size:34px;letter-spacing:2px}.body{font-family:Georgia,serif;font-size:38px}.title{font-family:Georgia,serif;font-size:76px;font-weight:bold;letter-spacing:4px}.sub{font-family:Georgia,serif;font-size:38px;font-style:italic}.label{font-family:Georgia,serif;font-size:44px;font-weight:bold;letter-spacing:3px}.micro{font-family:Georgia,serif;font-size:28px}.eq{font-family:Georgia,serif;font-size:40px;font-style:italic}.seal{font-family:Georgia,serif;font-size:36px;font-weight:bold;letter-spacing:3px}
+    </style>
+  </defs>
+
+  <rect width="1600" height="2400" fill="url(#bg)"/>
+  <rect width="1600" height="2400" fill="url(#halo)"/>
+  <rect x="52" y="52" width="1496" height="2296" fill="none" stroke="#d8b85f" stroke-width="4" opacity=".9"/>
+  <rect x="86" y="86" width="1428" height="2228" fill="none" stroke="#7d622e" stroke-width="2" opacity=".75"/>
+
+  <text x="800" y="165" text-anchor="middle" class="small dim">P033 · STANDING STATE PLATE</text>
+  <text x="800" y="255" text-anchor="middle" class="title gold">THE GEOMETRY OF</text>
+  <text x="800" y="340" text-anchor="middle" class="title gold">MEMORY, PROJECTION</text>
+  <text x="800" y="425" text-anchor="middle" class="title gold">AND REALITY</text>
+  <text x="800" y="500" text-anchor="middle" class="sub soft">A Formal Thesis on Fruit, Audit, and the Evolution of Maps</text>
+
+  <!-- top law -->
+  <rect x="190" y="565" width="1220" height="118" class="box"/>
+  <text x="800" y="615" text-anchor="middle" class="body gold">THE MAP IS NOT THE TERRITORY</text>
+  <text x="800" y="662" text-anchor="middle" class="body soft">THE PROJECTION IS NOT THE MAP · REALITY VERIFIES BOTH</text>
+
+  <!-- three pillars -->
+  <rect x="135" y="770" width="370" height="260" class="box"/>
+  <rect x="615" y="770" width="370" height="260" class="box"/>
+  <rect x="1095" y="770" width="370" height="260" class="box"/>
+  <text x="320" y="840" text-anchor="middle" class="label gold">MAP</text>
+  <text x="320" y="895" text-anchor="middle" class="body soft">Long-term memory</text>
+  <text x="320" y="948" text-anchor="middle" class="micro dim">historical observations</text>
+  <text x="320" y="988" text-anchor="middle" class="micro dim">validated routes</text>
+  <text x="800" y="840" text-anchor="middle" class="label gold">PROJECTION</text>
+  <text x="800" y="895" text-anchor="middle" class="body soft">Short-term memory</text>
+  <text x="800" y="948" text-anchor="middle" class="micro dim">forecast · route selection</text>
+  <text x="800" y="988" text-anchor="middle" class="micro dim">rapid adaptation</text>
+  <text x="1280" y="840" text-anchor="middle" class="label gold">REALITY</text>
+  <text x="1280" y="895" text-anchor="middle" class="body soft">The territory</text>
+  <text x="1280" y="948" text-anchor="middle" class="micro dim">encountered consequence</text>
+  <text x="1280" y="988" text-anchor="middle" class="micro dim">audit authority</text>
+
+  <path d="M505 900 C555 900 565 900 615 900" class="line" marker-end="url(#arrow)"/>
+  <path d="M985 900 C1035 900 1045 900 1095 900" class="line"/>
+
+  <!-- central river and tree -->
+  <path d="M800 1070 C610 1260 985 1380 735 1570 C560 1705 645 1850 470 2030" stroke="url(#river)" stroke-width="34" fill="none" opacity=".88" filter="url(#glow)"/>
+  <path d="M820 1070 C1010 1270 655 1395 900 1580 C1085 1720 960 1880 1130 2030" stroke="url(#river)" stroke-width="18" fill="none" opacity=".55"/>
+
+  <circle cx="800" cy="1345" r="185" fill="#151008" stroke="#d8b85f" stroke-width="4" opacity=".96"/>
+  <circle cx="800" cy="1345" r="235" fill="none" stroke="#8d6b32" stroke-width="2" opacity=".6"/>
+  <path d="M800 1480 L800 1260" stroke="#caa85a" stroke-width="16" stroke-linecap="round"/>
+  <path d="M800 1310 C725 1260 675 1245 615 1195" class="line"/>
+  <path d="M800 1305 C875 1250 935 1230 995 1175" class="line"/>
+  <path d="M800 1360 C720 1380 655 1425 585 1480" class="line"/>
+  <path d="M800 1360 C875 1390 950 1425 1025 1480" class="line"/>
+  <circle cx="635" cy="1208" r="22" fill="#e8c96f"/>
+  <circle cx="980" cy="1192" r="22" fill="#e8c96f"/>
+  <circle cx="610" cy="1470" r="22" fill="#e8c96f"/>
+  <circle cx="1000" cy="1472" r="22" fill="#e8c96f"/>
+  <circle cx="800" cy="1248" r="22" fill="#e8c96f"/>
+  <text x="800" y="1595" text-anchor="middle" class="label gold">FRUIT</text>
+  <text x="800" y="1645" text-anchor="middle" class="body soft">observable consequence</text>
+  <text x="800" y="1692" text-anchor="middle" class="body soft">the audit artifact of reality</text>
+
+  <!-- bridge problem -->
+  <rect x="130" y="1120" width="405" height="450" class="box"/>
+  <text x="332" y="1190" text-anchor="middle" class="label gold">BRIDGE PROBLEM</text>
+  <line x1="205" y1="1325" x2="460" y2="1325" stroke="#d8b85f" stroke-width="10"/>
+  <line x1="240" y1="1325" x2="240" y2="1378" stroke="#8f7443" stroke-width="7"/>
+  <line x1="425" y1="1325" x2="425" y2="1378" stroke="#8f7443" stroke-width="7"/>
+  <path d="M220 1260 L445 1395" stroke="#c74835" stroke-width="9" opacity=".85"/>
+  <path d="M445 1260 L220 1395" stroke="#c74835" stroke-width="9" opacity=".85"/>
+  <text x="332" y="1465" text-anchor="middle" class="body soft">temporary block</text>
+  <text x="332" y="1512" text-anchor="middle" class="body gold">updates projection</text>
+
+  <rect x="1065" y="1120" width="405" height="450" class="box"/>
+  <text x="1268" y="1190" text-anchor="middle" class="label gold">PERSISTENT FRUIT</text>
+  <circle cx="1268" cy="1320" r="74" fill="none" stroke="#d8b85f" stroke-width="8"/>
+  <path d="M1210 1320 L1326 1320" stroke="#c74835" stroke-width="8"/>
+  <path d="M1268 1262 L1268 1378" stroke="#c74835" stroke-width="8"/>
+  <text x="1268" y="1465" text-anchor="middle" class="body soft">repeated absence</text>
+  <text x="1268" y="1512" text-anchor="middle" class="body gold">updates memory</text>
+
+  <!-- equations band -->
+  <rect x="165" y="1785" width="1270" height="235" class="box"/>
+  <text x="800" y="1845" text-anchor="middle" class="label gold">AUDIT GEOMETRY</text>
+  <text x="410" y="1925" text-anchor="middle" class="eq soft">Eₚ(t)=|P(t)−R(t)|</text>
+  <text x="800" y="1925" text-anchor="middle" class="eq soft">Eₘ(t)=|M(t)−R(t)|</text>
+  <text x="1190" y="1925" text-anchor="middle" class="eq soft">W=kN^λ</text>
+  <text x="800" y="1988" text-anchor="middle" class="body gold">fruit audits projection · persistent fruit audits memory</text>
+
+  <!-- reduction -->
+  <rect x="190" y="2070" width="1220" height="120" class="box"/>
+  <text x="800" y="2120" text-anchor="middle" class="body soft">Identity establishes the coordinate · Action enters reality</text>
+  <text x="800" y="2170" text-anchor="middle" class="body gold">Wisdom accumulates as memory and projection surrender to truth</text>
+
+  <text x="800" y="2258" text-anchor="middle" class="seal gold">A BECOMES A, BECAUSE A KNOWS IT IS A</text>
+  <text x="800" y="2315" text-anchor="middle" class="small soft">RANK-0 · STANDING STATE · CLOSED</text>
+</svg>
