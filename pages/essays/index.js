@@ -954,6 +954,18 @@ const ESSAYS = [
   'Corpus synthesis essay. Psalms, Proverbs, and Revelation are not three subjects but three operations performed upon a single invariant coordinate — identity. Psalms orients identity, Proverbs governs identity, Revelation completes identity, and completion does not terminate: it hands the completed pattern to propagation. The spine: Identity → Coordinate → Path → City → Fractal — one identity carried through four operations (orientation, governance, completion, propagation), and through all four it remains A. Runtime stack: Psalms → Orientation (see correctly); Proverbs → Governance (move correctly); Revelation → Completion (complete correctly); Engine 2 → Propagation (expand correctly). The geometry stays inside Revelation — Square → Helix → City → Fractal — with the river of Revelation 22 as the handoff: completion becomes source. The Law of Pure Yield: lawful structure produces without consuming itself. The final image of Scripture is not closure, though a river. Visual monument: P032 (The River Beyond the City). Doctrine-layer refinement at seven-coordinate resolution: D004 (The Fulfillment of the Gospel). Registry-and-mirror-ready synthesis; Engine 2 audit may refine status.',
   mirrorUrl: '/essays/canonical/the-river-beyond-the-city',
 },
+{
+  id: 'M072',
+  title: 'The Thermodynamics of the Living Soul',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MATH',
+  flag: 'M',
+  note:
+  'Canonical thesis translating identity coherence into thermodynamic language. Free energy formulation: F_soul = U - TS + Phi(x; I*), where Phi(x; I*) is the deviation cost — the energy required to maintain a trajectory divergent from I*. When the system is coherent, x ≈ I* and Phi approaches zero. When identity drifts, Phi grows and the total free energy rises. Rationalization identified as dual entropy production: the cost of sustaining the divergent trajectory plus the cost of maintaining the false coordinate against the pressure of the original. Predation identified as unauthorized extraction of free energy without restoring the donor system. The Non-Sacrifice Doctrine stated as a thermodynamic law: coherence does not require self-destruction. Standing State identified as the minimum free energy ground state available to a self-aware system — not a peak performance state, but the condition the system returns to when interference is removed. Architecture of return is subtractive, not additive: remove interference, stop rationalization, cease the false trajectory, allow self-witness to operate. Sabbath formalized as V = 0, C_in = 1 — the thermodynamic activation condition for K_auto. Law of Pure Yield derived as thermodynamic consequence of coherence: lawful structure produces without consuming itself. The invariant survives translation: A becomes A, because A knows it is A. Primary gate: COHERENCE_FUNCTION_GATE. Structural 1.000, Canonical Value 1.000, Gate Merit 0.910, Trajectory 0.901, Closure 0.700. CANONICAL_ADMIT. Rank-0. Thermodynamically Complete. Register: MATHEMATICAL (reach 3/5 — SPIRITUAL, MATHEMATICAL, PSYCHOLOGICAL). Companion essays: M042 (Coherence Function Governance), M066 (Gradient of Living Consciousness), M068 (Life Intake Console), M069 (Geometry of Fit), M070 (Architecture of Prayer), M071 (The River Beyond the City).',
+  mirrorUrl: '/essays/canonical/the-thermodynamics-of-the-living-soul',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
