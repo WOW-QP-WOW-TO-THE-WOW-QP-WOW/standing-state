@@ -945,7 +945,7 @@ const ESSAYS = [
 {
   id: 'M071',
   title: 'The River Beyond the City: Psalms, Proverbs, Revelation, and the Run-Governance Architecture',
-  mediumUrl: 'https://medium.com/@leonsp3/the-river-beyond-the-city',
+  mediumUrl: 'https://medium.com/@leonsp3/the-river-beyond-the-city-fca773d7b80b',
   axis1: 'PLT-COORD',
   axis2: 'VOL-CROSS',
   axis3: 'REG-SPIRIT',
