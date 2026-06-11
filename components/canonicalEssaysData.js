@@ -292,4 +292,22 @@ export const CANONICAL_ESSAYS = [
     mirrorUrl: '/essays/canonical/gate-of-admissibility',
     override: true
   },
+  // Engine 2 Canonical Series — M073–M079
+  // These essays use static page files under pages/essays/canonical/
+  // canonicalEssaysData entries here serve as index references only
+  {
+    id: 'M079',
+    slug: 'the-architecture-of-identity-phase-space',
+    number: 'M079',
+    title: 'The Architecture of Identity Phase Space',
+    subtitle: 'A Synthesis of Memory, Attention, Restoration, Reality, and Lawful Becoming',
+    axis1: 'ENGINE-2',
+    axis2: 'VOL-CROSS',
+    axis3: 'CANONICAL',
+    equation: 'I* = constant · Memory learns · Reality verifies · Development emerges',
+    thesis: 'Identity Phase Space is the landscape within which consciousness, memory, attention, restoration, and development operate. M073–M078 establish the components. M079 establishes the landscape.',
+    seriesRole: 'Series closure — Engine 2 Canonical Series',
+    mirrorUrl: '/essays/canonical/the-architecture-of-identity-phase-space',
+    override: true
+  },
 ] 
