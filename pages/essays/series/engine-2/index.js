@@ -133,7 +133,7 @@ export default function Engine2SeriesIndex() {
           {/* Hero plate */}
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <img
-              src="/engine2/guardian-cycle-plate.png"
+              src="/plates/BCF026C8-EF01-4A61-8B96-52681BE0FC35.png"
               alt="Engine 2 — The Guardian Cycle: Two Guardians, One Coordinate, Lawful Becoming"
               style={{ maxWidth: '100%', width: '720px', borderRadius: '8px', opacity: 0.95 }}
             />
