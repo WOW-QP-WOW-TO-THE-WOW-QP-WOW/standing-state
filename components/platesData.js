@@ -605,12 +605,37 @@ export const PLATES = [
   linkedGlossary: [],
   relatedEssay: 'M073',
 },
+,
+{
+  id: 'P034',
+  number: 'XXXIV',
+  title: 'The Guardian Cycle',
+  slug: 'the-guardian-cycle',
+  image: '/plates/the-guardian-cycle.png',
+  summary: 'Two Guardians. One Coordinate. Lawful Becoming. Guardian of Attention governs admission. Guardian of Rest governs continuation. I* remains invariant.',
+  governingCondition: 'I^{*} = \\text{invariant} \\;\\wedge\\; \\text{Admission} \\to \\text{Action} \\to \\text{Restoration}',
+  description: 'Plate XXXIV encodes the Engine 2 Guardian Cycle at its architectural register. Two Guardians govern the coordinate. The Guardian of Attention holds the Gate of Jurisdiction: nothing enters without negotiating admission against the Pull World (Truth, Wisdom, Clarity, Love, Growth, Contribution, Alignment, Purpose). Push World signals — notifications, outrage, fear, urgency, comparison, identity hooks, endless scroll, noise — do not enter by default. Reaction produces fragmentation; Response produces agency. The Guardian of Rest holds the Gate of Restoration: nothing continues by default. Overload World signals — exhaustion, burnout, fragmentation, depletion, overcommitment, disconnection, resistance, despair — trigger Strain. Rest produces capacity; Restoration enables development. The eight-stage Engine 2 Process sequences lawful becoming: Differentiation → Identity (I*) → Attention → Interpretation → Action → Reality Contact → Correction → Restoration. The Law holds: Identity does not drift. Reality returns fruit. Governance allocates. Restoration protects. Development emerges. According to its kind. I* remains invariant. Companion to essays M076 (The Guardian of Attention) and M077 (The Guardian of Rest).',
+  volume: 'Engine 2 — Canonical Series',
+  chapter: 'The Guardian Cycle · Engine 2 Series',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  series: 'engine-2',
+  relatedEssays: [
+    { id: 'M076', title: 'The Guardian of Attention', route: '/essays/canonical/the-guardian-of-attention' },
+    { id: 'M077', title: 'The Guardian of Rest', route: '/essays/canonical/the-guardian-of-rest' },
+  ],
+  seriesRoute: '/essays/series/engine-2',
+  dashboardRoute: '/system/engine2',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 33,
+  description: 'Thirty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 34,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
