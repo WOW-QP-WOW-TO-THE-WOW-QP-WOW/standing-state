@@ -1033,6 +1033,17 @@ const ESSAYS = [
   note: 'Engine 2 Canonical Series — Essay V of V. Organism doctrine. Anger is a governance event, not a moral event. It signals the system has fallen below admissible conscious coherence — identity is present but no longer governing. Introduces qualia as an Engine 2 state variable: Q(t) = Rs + C + K − (O + S + F). Restoration, capacity, and coherence raise Q. Overload, strain, and fragmentation lower Q. Admissibility chain: Q(t) > Q₁ → G_A(Q) = 1 → D_E2(t) > 0. When qualia falls below threshold, development pauses — not failure, admissibility suspended. Attention Gate: when Q ≤ Q₁, the gate closes, attention is no longer lawfully available, restoration receives authority. Anger as jurisdiction failure: interpretation attempting to continue after qualia has collapsed. The pineal restoration oscillator is treated as symbolic restoration architecture, not a medical claim. Complete Engine 2 formulation: D_E2(t) = I* · G_A(Q) · G_R(c) · ∇_γΦ(x,t) · (F(t)/(R(t)+ε))^α. Identity determines orientation. Qualia determines availability. Attention determines allocation. Interpretation determines meaning. Reality determines consequence. Restoration determines continuity. I* remains invariant.',
   mirrorUrl: '/essays/canonical/anger-is-not-a-sin',
 },
+{
+  id: 'M079',
+  title: 'The Architecture of Identity Phase Space',
+  mediumUrl: '',
+  axis1: 'ENGINE-2',
+  axis2: 'VOL-CROSS',
+  axis3: 'CANONICAL',
+  flag: 'M',
+  note: 'Engine 2 Canonical Series — Essay VII of VII. Series closure and synthesis document. Identity Phase Space is the landscape within which consciousness, memory, attention, restoration, and development operate. M073–M078 establish the governing components of Engine 2: Memory, Identity, Verification, Attention, Restoration, and Disturbance. M079 establishes the navigational landscape within which those components operate. The essay defines Identity Phase Space as a unified geometry containing active consciousness, working memory, long-term memory, restoration basins, attention fields, emotional signaling domains, projection layers, and reality-contact zones — while preserving the invariant coordinate I*. The Sabbath Basin: the subconscious is not a second self but a restoration region within the same phase space; consciousness operating within a different basin during integration. Qualia treated operationally as admissibility signal, not metaphysics. Reality performs verification that interpretation cannot perform: interpretation proposes, reality disposes, the loop closes only when consequence participates. Primary contribution: the system learns without losing itself. Series closure: M073 → M074 → M075 → M076 → M077 → M078 → M079. The next constitutional layer is D005 — Engine 2 Doctrine Whitepaper.',
+  mirrorUrl: '/essays/canonical/the-architecture-of-identity-phase-space',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
