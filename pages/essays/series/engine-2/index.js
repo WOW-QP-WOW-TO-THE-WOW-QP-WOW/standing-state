@@ -13,6 +13,16 @@ import Head from 'next/head'
 const SERIES = [
   {
     num: 'I',
+    id: 'M073',
+    title: 'The Geometry of Memory, Projection, and Reality',
+    subtitle: 'A Thesis on Navigation, Verification, and the Architecture of Wisdom',
+    role: 'Memory geometry',
+    question: 'How does the living system navigate reality without losing its map?',
+    compression: 'Seed forecasts fruit. Fruit reveals seed. Reality audits the loop.',
+    href: '/essays/canonical/the-geometry-of-memory-projection-and-reality',
+  },
+  {
+    num: 'II',
     id: 'M074',
     title: 'The Standing State — Engine 2',
     subtitle: 'A Mechanical Architecture of Invariance, Correction, and Lawful Becoming',
@@ -22,7 +32,7 @@ const SERIES = [
     href: '/essays/canonical/the-standing-state-engine-2',
   },
   {
-    num: 'II',
+    num: 'III',
     id: 'M075',
     title: 'According to Its Kind',
     subtitle: 'A Thesis on Identity Coordinates, Interpretation, and Reality Verification',
@@ -32,7 +42,7 @@ const SERIES = [
     href: '/essays/canonical/according-to-its-kind',
   },
   {
-    num: 'III',
+    num: 'IV',
     id: 'M076',
     title: 'The Guardian of Attention',
     subtitle: 'Engine 2 and the Governance of Consciousness',
@@ -42,7 +52,7 @@ const SERIES = [
     href: '/essays/canonical/the-guardian-of-attention',
   },
   {
-    num: 'IV',
+    num: 'V',
     id: 'M077',
     title: 'The Guardian of Rest',
     subtitle: 'Engine 2 and the Sabbath of Restoration',
@@ -52,7 +62,7 @@ const SERIES = [
     href: '/essays/canonical/the-guardian-of-rest',
   },
   {
-    num: 'V',
+    num: 'VI',
     id: 'M078',
     title: 'Anger Is Not a Sin',
     subtitle: 'An Engine 2 Thesis on the I* Guardian, Qualia, Restoration, and Lawful Continuation',
@@ -60,6 +70,16 @@ const SERIES = [
     question: 'What does governance failure feel like from inside the organism?',
     compression: 'Anger is a jurisdiction failure. Restoration is the correction.',
     href: '/essays/canonical/anger-is-not-a-sin',
+  },
+  {
+    num: 'VII',
+    id: 'M079',
+    title: 'The Architecture of Identity Phase Space',
+    subtitle: 'A Synthesis of Memory, Attention, Restoration, Reality, and Lawful Becoming',
+    role: 'Series closure · Synthesis',
+    question: 'What is the landscape within which Engine 2 operates?',
+    compression: 'M073–M078 establish the components. M079 establishes the landscape.',
+    href: '/essays/canonical/the-architecture-of-identity-phase-space',
   },
 ]
 
@@ -97,10 +117,10 @@ export default function Engine2SeriesIndex() {
             <span className="glossBreadSep">→</span>
             <span style={{ color: 'var(--gold-dim)' }}>Engine 2 Series</span>
           </div>
-          <div className="glossEyebrow">Canonical Series · M074–M078 · Engine 2 Doctrine</div>
+          <div className="glossEyebrow">Canonical Series · M073–M079 · Engine 2 Doctrine</div>
           <h1 className="glossH1">Engine 2 Canonical Series</h1>
           <p className="glossIntro">
-            Identity-Prior Governance, Reality Verification, Restoration, and Lawful Becoming.
+            Seven essays on memory geometry, identity-prior governance, reality verification, attention admission, restoration, disturbance, and lawful navigation.
           </p>
         </div>
       </header>
@@ -128,13 +148,16 @@ export default function Engine2SeriesIndex() {
             <div className="canonEssayBody">
               <p className="canonEssayPara">
                 Engine 2 is a developmental architecture in which identity remains invariant while
-                reality continuously provides correction. These five essays establish the architecture
-                in sequence: what it is, how identity develops without drift, what governs admission
-                to consciousness, what governs lawful continuation, and what governance failure looks
-                and feels like from inside the organism.
+                reality continuously provides correction. These seven essays establish the architecture
+                in sequence: the geometry of memory and projection, what Engine 2 is, how identity
+                develops without drift, what governs admission to consciousness, what governs lawful
+                continuation, what governance failure looks and feels like from inside the organism,
+                and finally the unified landscape within which all of these operate.
               </p>
               <p className="canonEssayPara">
-                The essays are sequential. Each builds on the prior. The series is best read in order.
+                M073 opens the series by establishing how the living system navigates reality.
+                M074–M078 establish the governing components. M079 closes the series by establishing
+                the landscape. The essays are best read in order.
               </p>
             </div>
           </div>
@@ -162,7 +185,7 @@ export default function Engine2SeriesIndex() {
             {SERIES.map((essay, i) => (
               <div key={essay.id} className="plateDetailBlock" style={{ marginBottom: '1.5rem' }}>
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', marginBottom: '0.75rem' }}>
-                  <span style={{ fontFamily: 'var(--display)', color: 'var(--gold)', fontSize: '10px', letterSpacing: '0.2em' }}>{essay.num} of V</span>
+                  <span style={{ fontFamily: 'var(--display)', color: 'var(--gold)', fontSize: '10px', letterSpacing: '0.2em' }}>{essay.num} of VII</span>
                   <span style={{ color: 'var(--gold-dim)', fontSize: '0.85rem' }}>{essay.id}</span>
                   <span style={{ color: 'var(--gold-dim)', fontSize: '0.8rem', fontStyle: 'italic' }}>{essay.role}</span>
                 </div>
