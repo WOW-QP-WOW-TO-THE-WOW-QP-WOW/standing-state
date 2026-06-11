@@ -49,9 +49,19 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-SPIRIT',
     href: '/system/doctrine/fulfillment-of-the-gospel',
   },
-]
-
-function DoctrineCard({ item }) {
+  {
+    id: 'D005',
+    slug: 'i-star-guardian-doctrine',
+    type: 'Constitutional Doctrine',
+    title: 'The I* Guardian Doctrine',
+    subtitle: 'Constitutional Whitepaper · Identity Preservation, Admissibility, Restoration, and Lawful Development',
+    note: 'Synthesizes the Engine 2 Canonical Lineage (M073–M079) into a single constitutional framework. Identity remains invariant. Reality verifies interpretation. Attention governs admission. Restoration governs continuation. The I* Guardian preserves the coordinate while reality teaches lawful navigation. Canonical lineage reaches closure at M079. Future domains — trajectory, motion, identity-coupled execution — recorded as emerging inquiry from a completed coordinate.',
+    axis1: 'ENGINE-2',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    href: '/system/doctrine/i-star-guardian-doctrine',
+  },
+]({ item }) {
   return (
     <a
       href={item.href}

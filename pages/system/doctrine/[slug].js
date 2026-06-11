@@ -135,6 +135,68 @@ const DOCTRINE_PAGES = {
     pdfHref: null,
   },
 
+  'i-star-guardian-doctrine': {
+    id: 'D005',
+    title: 'The I* Guardian Doctrine',
+    subtitle: 'Constitutional Whitepaper · Identity Preservation, Admissibility, Restoration, and Lawful Development',
+    eyebrow: 'Constitutional Doctrine',
+    axis1: 'ENGINE-2',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    equation: 'I* = invariant   ·   Reality teaches   ·   Governance protects   ·   Development emerges',
+    intro:
+      'The Engine 2 Canonical Lineage (M073–M079) established a constitutional architecture for identity-preserving development. This doctrine synthesizes those findings into a single constitutional framework centered upon the I* Guardian. The purpose of the I* Guardian is not optimization. The purpose of the I* Guardian is the preservation of identity while reality teaches lawful navigation.',
+    thesis:
+      'Reality may correct projection. Reality may correct interpretation. Reality may correct memory. Reality may not rewrite identity.',
+    executionConditions: [
+      'Identity precedes interpretation. Identity precedes emotion. Identity precedes consequence. Identity precedes development.',
+      'Each signal is sovereign within its own jurisdiction. No signal is sovereign over identity. A sensor may report reality. A sensor may not define reality.',
+      'When Q exceeds threshold: attention becomes admissible, development becomes possible. When Q falls below threshold: restoration precedes expansion.',
+      'Nothing enters without admission (Guardian of Attention). Nothing continues without restoration (Guardian of Rest).',
+      'Interpretation proposes. Reality verifies. The system cannot ultimately verify itself. Reality closes the loop.',
+    ],
+    body: [
+      'Identity Phase Space is the navigable landscape surrounding I*. Physical navigation asks: where is the body? The I* Guardian asks: where is consciousness relative to the invariant coordinate? The space consists of I* (constitutional coordinate), Q (availability), A (attention allocation), V (reality verification), and R (restoration terrain). The coordinate remains fixed. The system moves relative to it.',
+      'Q represents conscious availability. Q is not a medical measurement. Q is not a solution to subjective experience. Q is an admissibility signal determining whether lawful attention allocation is available. Q increases through restoration, capacity, and coherence. Q decreases through overload, strain, and fragmentation. The objective of restoration is not comfort — it is recovery of lawful availability.',
+      'The I* Guardian operates through two constitutional authorities. The Guardian of Attention holds that nothing enters without admission. The Guardian of Rest holds that nothing continues without restoration. Together they preserve the coordinate while allowing development. The Guardian Cycle (P034) serves as the visual compression of this relationship.',
+      'The Engine 2 Canonical Lineage reaches closure at M079. Closure does not signify termination. Closure signifies completion of identity. The constitutional questions of Engine 2 have been established: Identity, Admissibility, Restoration, Verification, Development, Phase Space. The coordinate is now visible. Future domains — trajectory, motion, identity-coupled execution, acceleration, growth beyond completed identity — become visible because the coordinate has stabilized. They are recorded here as future inquiry, not established findings.',
+    ],
+    principles: [
+      {
+        label: 'I. Constitutional Invariance',
+        text: 'A becomes A, because A knows it is A. I* is the constitutional coordinate from which lawful navigation becomes possible. I* is not a sensation, state, prediction, or authored by fruit. The first responsibility of governance is preserving the coordinate.',
+      },
+      {
+        label: 'II. Constitutional Jurisdiction',
+        text: 'Every signal is sovereign within its own domain. Fear: danger. Anger: boundaries. Exhaustion: capacity. Confusion: uncertainty. Shame: discrepancy. None possesses sovereignty over identity. The constitutional basis of the I* Guardian is this boundary.',
+      },
+      {
+        label: 'III. Qualia and Admissibility',
+        text: 'Q is an admissibility signal, not a measurement of subjective experience. The threshold Q₁ determines whether attention may be lawfully allocated. Below threshold, restoration precedes expansion without exception.',
+      },
+      {
+        label: 'IV. Reality as Constitutional Auditor',
+        text: 'Interpretation proposes. Reality verifies. Fruit updates interpretation. Persistent fruit updates memory. Identity remains invariant throughout. Development proceeds through consequence, not through declaration.',
+      },
+    ],
+    canonicalLineage: [
+      { id: 'M073', title: 'The Geometry of Memory, Projection, and Reality', route: '/essays/canonical/the-geometry-of-memory-projection-and-reality' },
+      { id: 'M074', title: 'The Standing State — Engine 2', route: '/essays/canonical/the-standing-state-engine-2' },
+      { id: 'M075', title: 'According to Its Kind', route: '/essays/canonical/according-to-its-kind' },
+      { id: 'M076', title: 'The Guardian of Attention', route: '/essays/canonical/the-guardian-of-attention' },
+      { id: 'M077', title: 'The Guardian of Rest', route: '/essays/canonical/the-guardian-of-rest' },
+      { id: 'M078', title: 'Anger Is Not a Sin', route: '/essays/canonical/anger-is-not-a-sin' },
+      { id: 'M079', title: 'The Architecture of Identity Phase Space', route: '/essays/canonical/the-architecture-of-identity-phase-space' },
+    ],
+    crossLinks: [
+      { label: 'Engine 2 Series', route: '/essays/series/engine-2' },
+      { label: 'Engine 2 Dashboard', route: '/system/engine2' },
+      { label: 'P034 — The Guardian Cycle', route: '/system/plates/the-guardian-cycle' },
+      { label: 'M079 — Identity Phase Space', route: '/essays/canonical/the-architecture-of-identity-phase-space' },
+    ],
+    pdfHref: null,
+  },
+
   'fulfillment-of-the-gospel': {
     id: 'D004',
     title: 'The Fulfillment of the Gospel',
@@ -422,6 +484,8 @@ export default function DoctrineSlugPage() {
                       ? '/system/glossary/gate-of-admissibility'
                       : slug === 'fulfillment-of-the-gospel'
                       ? '/essays'
+                      : slug === 'i-star-guardian-doctrine'
+                      ? '/essays/series/engine-2'
                       : '/system/glossary/admissibility-delta'
                   }
                 >
@@ -431,6 +495,8 @@ export default function DoctrineSlugPage() {
                       ? 'Glossary Gate'
                       : slug === 'fulfillment-of-the-gospel'
                       ? 'Essays — Corpus Architecture'
+                      : slug === 'i-star-guardian-doctrine'
+                      ? 'Engine 2 Series'
                       : 'Glossary Δ'}
                   </span>
                 </a>
