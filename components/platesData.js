@@ -610,7 +610,7 @@ export const PLATES = [
   number: 'XXXIV',
   title: 'The Guardian Cycle',
   slug: 'the-guardian-cycle',
-  image: '/plates/the-guardian-cycle.png',
+  image: '/plates/BCF026C8-EF01-4A61-8B96-52681BE0FC35.png',
   summary: 'Two Guardians. One Coordinate. Lawful Becoming. Guardian of Attention governs admission. Guardian of Rest governs continuation. I* remains invariant.',
   governingCondition: 'I^{*} = \\text{invariant} \\;\\wedge\\; \\text{Admission} \\to \\text{Action} \\to \\text{Restoration}',
   description: 'Plate XXXIV encodes the Engine 2 Guardian Cycle at its architectural register. Two Guardians govern the coordinate. The Guardian of Attention holds the Gate of Jurisdiction: nothing enters without negotiating admission against the Pull World (Truth, Wisdom, Clarity, Love, Growth, Contribution, Alignment, Purpose). Push World signals — notifications, outrage, fear, urgency, comparison, identity hooks, endless scroll, noise — do not enter by default. Reaction produces fragmentation; Response produces agency. The Guardian of Rest holds the Gate of Restoration: nothing continues by default. Overload World signals — exhaustion, burnout, fragmentation, depletion, overcommitment, disconnection, resistance, despair — trigger Strain. Rest produces capacity; Restoration enables development. The eight-stage Engine 2 Process sequences lawful becoming: Differentiation → Identity (I*) → Attention → Interpretation → Action → Reality Contact → Correction → Restoration. The Law holds: Identity does not drift. Reality returns fruit. Governance allocates. Restoration protects. Development emerges. According to its kind. I* remains invariant. Companion to essays M076 (The Guardian of Attention) and M077 (The Guardian of Rest).',
