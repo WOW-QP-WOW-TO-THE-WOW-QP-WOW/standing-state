@@ -61,7 +61,9 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-CONST',
     href: '/system/doctrine/i-star-guardian-doctrine',
   },
-]({ item }) {
+]
+
+function DoctrineCard({ item }) {
   return (
     <a
       href={item.href}
