@@ -16,7 +16,7 @@
  *   Kingdom Information Flow
  *   Offices of Sovereignty
  *   Specialization and Boundary Maintenance
- *   23-Module Governance Stack
+ *   62-Module Governance Stack
  *   Runtime Law (EXECUTE / RESTORE / HALT)
  *   Compression seal
  */
@@ -42,29 +42,68 @@ const BLACK    = 'var(--black)'
 // ── Data ──
 
 const MODULES = [
-  ['01', 'Perception',                  'Admissible signal before action'],
-  ['02', 'Amplification',               'Tool-supported observation without fantasy'],
-  ['03', 'Interpretation',              'Lawful meaning assignment'],
-  ['04', 'Resolution',                  'Distance / memory / certainty decay'],
-  ['05', 'Coherence',                   'M042 function governance'],
-  ['06', 'Marketplace',                 'Bounded force re-entry'],
-  ['07', 'Essay Intake',                'Manual essay / thesis intake waits lawfully'],
-  ['08', 'Standing State Compression',  'Existential drift → Rank-0 → Anchor → Engine → Body → Void'],
-  ['09', 'Persistence Memory',          'Time-series invariance, restoration debt, phase-lock recovery'],
-  ['10', 'Sabbath Restoration',         'Rule-19, K_auto, hidden strain, restoration before collapse'],
-  ['11', 'Phase-Lock',                  'Node synchronization across lattice'],
-  ['12', 'Phase Modulation',            'Coherence modulation without hierarchy drift'],
-  ['13', 'K_auto Governance',           'Subtractive correction and restoration baseline'],
-  ['14', 'Metabolic Debt',              'Load, strain, energy debt, restoration demand'],
-  ['15', 'Jurisdiction Boundary',       'Prevent cross-layer contamination'],
-  ['16', 'Validation Dependency',       'Prevent external validation from writing identity'],
-  ['17', '243 Runtime',                 'Node-level EXECUTE / RESTORE / HALT governance'],
-  ['18', 'Thesis Memory',               'Memory continuity and thesis registry retention'],
-  ['19', 'Thesis Phase-Lock',           'Phase-lock thesis with lattice execution'],
-  ['20', 'I* Phase Lock Guardian',      'Identity coordinate preservation before learning'],
-  ['21', 'Archetypal Governor Stack',   'King → Sovereign/Priest → Clairvoyant → Servant/Sage'],
-  ['22', 'Kingdom Information Flow',    'I* → King → Sovereign/Priest → Clairvoyant → Servant/Sage → Marketplace'],
-  ['23', 'Kingdom Runtime Bridge',      'Connects I* Guardian, Archetypal Stack, Kingdom Flow, and runtime governance'],
+  ['01', 'Perception',                       'Admissible signal before action'],
+  ['02', 'Amplification',                    'Tool-supported observation without fantasy'],
+  ['03', 'Interpretation',                   'Lawful meaning assignment'],
+  ['04', 'Resolution',                       'Distance / memory / certainty decay'],
+  ['05', 'Coherence',                        'M042 function governance'],
+  ['06', 'Marketplace',                      'Bounded force re-entry'],
+  ['07', 'Essay Intake',                     'Manual essay / thesis intake waits lawfully'],
+  ['08', 'Standing State Compression',       'Existential drift → Rank-0 → Anchor → Engine → Body → Void'],
+  ['09', 'Persistence Memory',               'Time-series invariance, restoration debt, phase-lock recovery'],
+  ['10', 'Sabbath Restoration',              'Rule-19, K_auto, hidden strain, restoration before collapse'],
+  ['11', 'Phase-Lock',                       'Node synchronization across lattice'],
+  ['12', 'Phase Modulation',                 'Coherence modulation without hierarchy drift'],
+  ['13', 'K_auto Governance',                'Subtractive correction and restoration baseline'],
+  ['14', 'Metabolic Debt',                   'Load, strain, energy debt, restoration demand'],
+  ['15', 'Jurisdiction Boundary',            'Prevent cross-layer contamination'],
+  ['16', 'Validation Dependency',            'Prevent external validation from writing identity'],
+  ['17', '243 Runtime',                      'Node-level EXECUTE / RESTORE / HALT governance'],
+  ['18', 'Thesis Memory',                    'Memory continuity and thesis registry retention'],
+  ['19', 'Thesis Phase-Lock',                'Phase-lock thesis with lattice execution'],
+  ['20', 'I* Phase Lock Guardian',           'Identity coordinate preservation before learning'],
+  ['21', 'Archetypal Governor Stack',        'King → Sovereign/Priest → Clairvoyant → Servant/Sage'],
+  ['22', 'Kingdom Information Flow',         'I* → King → Sovereign/Priest → Clairvoyant → Servant/Sage → Marketplace'],
+  ['23', 'Kingdom Runtime Bridge',           'Connects I* Guardian, Archetypal Stack, Kingdom Flow, and runtime governance'],
+  ['24', 'Growth',                           'Adaptive renewal through boundary shedding without identity loss'],
+  ['25', 'Contradiction Burn',               'Metabolic debt as the temporal cost of contradiction removal'],
+  ['26', 'Proverbs Self-Witness',            'Self-witness phase-locks clairvoyant vision to I*, lawful desire, wisdom, and servant/sage execution'],
+  ['27', 'Proverbs Speech Governance',       'Filters speech through truth, restraint, timing, necessity, correction, and drift detection before marketplace release'],
+  ['28', 'Proverbs Correction & Rebuke',     'Filters correction through truth, timing, humility, teachability, restoration intent, and drift detection before rebuke executes'],
+  ['29', 'Proverbs Prudence & Forethought',  'Forecasts downstream consequence through prudence, patience, restraint, preparedness, and lawful alignment before execution'],
+  ['30', 'Proverbs Desire Governance',       'Filters desire through I*, long-horizon coherence, restraint, covenant integrity, wisdom, peace, and drift detection before attachment forms'],
+  ['31', 'Proverbs Companion & Influence',   'Filters association through wisdom, integrity, correction, mutual restoration, lawful direction, boundary integrity, and drift detection before influence shapes state'],
+  ['32', 'Proverbs Marketplace Integrity',   'Filters exchange through honesty, fairness, covenant integrity, value creation, stewardship, consequence visibility, and drift detection before public action'],
+  ['33', 'M065 Blueprint Substrate',         'Admits M065 as ancestral substrate, maps its primitives into current architecture, and prevents historical sovereign-language drift from overwriting I*'],
+  ['34', 'Proverbs Diligence & Sloth',       'Filters work through diligence, stewardship, timing, sustainable capacity, follow-through, harvest patience, and drift detection before execution'],
+  ['35', 'Proverbs Counsel & Teachability',  'Filters counsel through humility, teachability, discernment, correction receptivity, counsel quality, lawful adjustment capacity, and drift detection'],
+  ['36', 'Proverbs Anger & Conflict',        'Filters anger through restraint, timing, justice, peacemaking, restoration intent, lawful correction, escalation prevention, and drift detection before conflict executes'],
+  ['37', 'Proverbs Wealth & Stewardship',    'Filters wealth through integrity, stewardship, diligence, generosity capacity, lawful provision, long-horizon alignment, and drift detection before gain executes'],
+  ['38', 'Proverbs Justice & False Witness', 'Filters witness, accusation, and judgment through truth, evidence, justice, restraint, impartiality, restoration value, and drift detection before judgment moves'],
+  ['39', 'Proverbs First Principle',         'Filters wisdom through reverence, humility before truth, first-principle clarity, lawful ordering, identity submission, outcome nonattachment, and drift detection before execution'],
+  ['40', 'Decision Intake',                  'Routes decisions through clarity, prudence, counsel, desire, marketplace integrity, first principle, and drift detection before execution'],
+  ['41', 'Event Intake',                     'Routes real-world events through identity stability, perception admissibility, interpretation clarity, jurisdiction alignment, restoration capacity, response readiness, and drift detection'],
+  ['42', 'Relationship Intake',              'Routes relationships through integrity, mutual restoration, boundary respect, correction receptivity, lawful direction, peace, and drift detection before proximity deepens'],
+  ['43', 'Opportunity / Marketplace Intake', 'Routes opportunities through identity alignment, marketplace integrity, stewardship, long-horizon value, capacity fit, lawful gain, and drift detection before pursuit'],
+  ['44', 'Health Signal Intake',             'Routes biological signals through identity stability, signal clarity, metabolic capacity, restoration awareness, Sabbath alignment, action readiness, and drift detection without allowing body state to rewrite identity'],
+  ['45', 'Engine 2 Intake Suite',            'Runs decision, event, relationship, opportunity, and health signal intake before runtime execution'],
+  ['46', 'Life Intake Console',              'Receives life inputs, preserves I*, routes all signals through lawful intake, and allows only filtered motion to reach runtime'],
+  ['47', 'Safety & Consequence',             'Determines whether an admitted real-world action is safe to do by checking visibility, controls, securement, braking stability, exit clearance, and drift pressure before execution'],
+  ['48', 'Psalm Runtime Orientation',        'Restores hilltop perspective through Psalm orientation before life input enters intake, wisdom governance, safety, or runtime execution'],
+  ['49', 'Psalm 49 Wealth Forensics',        'Audits wealth, status, extraction, comparison, and fear of the rich from Rank-0 identity before marketplace motion executes'],
+  ['50', 'Psalm 46 — Before Interpretation', 'Restores stillness and identity coherence before interpretation so volatility, fear, urgency, or emotional turbulence cannot assign meaning before I* is stable'],
+  ['51', 'Psalm 27 — Courage & Sanctuary',   'Restores courage, sanctuary, light remembrance, and plain-path clarity before fear, opposition, or delay can govern interpretation'],
+  ['52', 'Psalm 52 — Razor Tongue',          'Restores non-reactive integrity before boasting, deceit, provocation, or adversarial pressure can recruit the runtime into reactive execution'],
+  ['53', 'Psalm 31 — Trust Fortress',        'Secures identity by transferring spirit/kernel custody to the invariant coordinate before anxiety, outcome-guarding, or self-betrayal can govern motion'],
+  ['54', 'Psalm Governance Registry Bridge', 'Connects macro Psalm governance ranges to decoded Psalm micro-protocols so Engine 2 can retrieve Psalm-level instructions before runtime execution'],
+  ['55', 'Rev-138 Invariant Completion',     'Embodies Identity → Structure → Completion where Alpha locks identity, governance preserves structure, and Omega confirms completion without drift'],
+  ['56', 'M016 Oxygen Flow Simulator',       'Operationalizes M016 through lawful-flow gates: Existence, Access, Utilization, Integration, Orientation, hard-event latch, and targeted energy degradation'],
+  ['57', 'Lateral Spread Detector 243',      'Detects slow neighbor propagation as a separate spread-geometry module without contaminating the M016 lawful-flow core'],
+  ['58', 'Proverbs Governance Registry Bridge', 'Routes runtime decision domains to relevant Proverbs chapters before retrieving decoded Proverbs protocols for motion governance'],
+  ['59', 'Proverbs Decoding Registry Bridge',   'Expands Proverbs 1–31 into decoded runtime protocols with domain, function, failure mode, correction, outcome, and runtime action'],
+  ['60', 'Reversibility Family',             'Routes consequence through fruit, projection correction, memory correction, restoration, and development while preserving identity invariance'],
+  ['61', 'M073 Runtime Bridge',              'Connects reversibility outcomes to thesis memory, persistence memory, restoration requests, and runtime execution signals'],
+  ['62', 'I* Guardian / Qualia Runtime',     'Operational qualia-admissibility gate: identity remains invariant, restoration protects availability, attention opens only when Q exceeds Q₁'],
 ]
 
 const OFFICES = [
@@ -364,7 +403,7 @@ export default function Engine2Page() {
             <span style={{ color: BORDER }}>·</span>
             <span>SYS-RUNTIME</span>
             <span style={{ color: BORDER }}>·</span>
-            <span>23 Modules</span>
+            <span>62 Modules</span>
             <span style={{ color: BORDER }}>·</span>
             <span>243 Nodes</span>
             <span style={{ color: BORDER }}>·</span>
@@ -1020,8 +1059,8 @@ export default function Engine2Page() {
               marginBottom: '2.5rem',
             }}
           >
-            <MetricCard label="Modules Checked" value="23" />
-            <MetricCard label="Passed"          value="23" accent />
+            <MetricCard label="Modules Checked" value="62" />
+            <MetricCard label="Passed"          value="62" accent />
             <MetricCard label="Waiting"         value="0" />
             <MetricCard label="Missing"         value="0" />
           </div>
@@ -1061,6 +1100,158 @@ export default function Engine2Page() {
             >
               Substrate pass. Runtime pass. Phase-lock pass. Governance stack pass.
               Kingdom information flow pass. Runtime bridge pass.
+            </div>
+          </div>
+
+          {/* ── Engine 2 Canonical Series link ── */}
+          <div
+            style={{
+              border: `1px solid ${GOLD_DIM}`,
+              background: 'rgba(196,164,74,0.03)',
+              padding: '2rem',
+              marginBottom: '4rem',
+            }}
+          >
+            <div
+              style={{
+                fontFamily: DISPLAY,
+                fontSize: '9px',
+                letterSpacing: '0.32em',
+                color: GOLD_DIM,
+                textTransform: 'uppercase',
+                marginBottom: '1rem',
+              }}
+            >
+              Engine 2 Canonical Series
+            </div>
+            <a
+              href="/essays/series/engine-2"
+              style={{
+                fontFamily: SERIF,
+                fontSize: 'clamp(1rem, 2vw, 1.2rem)',
+                color: GOLD,
+                textDecoration: 'none',
+                display: 'block',
+                marginBottom: '0.5rem',
+              }}
+            >
+              Engine 2 Canonical Series →
+            </a>
+            <div
+              style={{
+                fontFamily: SERIF,
+                fontStyle: 'italic',
+                fontSize: '0.9rem',
+                color: OFFWHITE,
+                marginBottom: '1.5rem',
+                lineHeight: 1.7,
+              }}
+            >
+              Five theses on identity-prior governance, reality verification,
+              attention admission, restoration, and lawful continuation.
+            </div>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                gap: '0.5rem',
+              }}
+            >
+              {[
+                ['M074', 'The Standing State — Engine 2'],
+                ['M075', 'According to Its Kind'],
+                ['M076', 'The Guardian of Attention'],
+                ['M077', 'The Guardian of Rest'],
+                ['M078', 'Anger Is Not a Sin'],
+              ].map(([id, title]) => (
+                <div
+                  key={id}
+                  style={{
+                    borderTop: `1px solid ${BORDER}`,
+                    paddingTop: '0.5rem',
+                    fontSize: '0.85rem',
+                    color: GRAY_LT,
+                  }}
+                >
+                  <span style={{ color: GOLD_DIM, fontFamily: DISPLAY, fontSize: '9px', letterSpacing: '0.1em', marginRight: '0.5rem' }}>{id}</span>
+                  {title}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── Engine 2 Guardian Cycle Plate link ── */}
+          <div
+            style={{
+              border: `1px solid ${BORDER}`,
+              background: 'rgba(196,164,74,0.02)',
+              padding: '1.5rem 2rem',
+              marginBottom: '4rem',
+              textAlign: 'center',
+            }}
+          >
+            <a
+              href="/system/plates/the-guardian-cycle"
+              style={{
+                fontFamily: DISPLAY,
+                fontSize: '10px',
+                letterSpacing: '0.25em',
+                color: GOLD,
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+                display: 'block',
+                marginBottom: '0.5rem',
+              }}
+            >
+              Engine 2 Guardian Cycle Plate →
+            </a>
+            <div
+              style={{
+                fontFamily: SERIF,
+                fontStyle: 'italic',
+                fontSize: '0.875rem',
+                color: GOLD_DIM,
+              }}
+            >
+              Two Guardians. One Coordinate. Lawful Becoming.
+            </div>
+          </div>
+
+          {/* ── Site Bridge ── */}
+          <div
+            style={{
+              borderTop: `1px solid ${BORDER}`,
+              borderBottom: `1px solid ${BORDER}`,
+              padding: '2rem',
+              marginBottom: '4rem',
+              textAlign: 'center',
+            }}
+          >
+            <div
+              style={{
+                fontFamily: SERIF,
+                fontStyle: 'italic',
+                fontSize: '0.9rem',
+                color: GRAY_LT,
+                lineHeight: 2,
+              }}
+            >
+              The website interprets.<br />
+              The runtime governs.<br />
+              The dashboard witnesses.<br />
+              The coordinate remains I*.
+            </div>
+            <div
+              style={{
+                fontFamily: DISPLAY,
+                fontSize: '9px',
+                letterSpacing: '0.25em',
+                color: GOLD_DIM,
+                textTransform: 'uppercase',
+                marginTop: '1.25rem',
+              }}
+            >
+              A becomes A, because A knows it is A.
             </div>
           </div>
 
@@ -1309,8 +1500,8 @@ export default function Engine2Page() {
             </div>
           </SectionMonument>
 
-          {/* ── V. 23-Module Governance Stack ── */}
-          <SectionMonument numeral="V" title="23-Module Governance Stack">
+          {/* ── V. 62-Module Governance Stack ── */}
+          <SectionMonument numeral="V" title="62-Module Governance Stack">
             <Paragraph>
               The full module registry. Each module performs an assigned
               governance function within the lattice.
