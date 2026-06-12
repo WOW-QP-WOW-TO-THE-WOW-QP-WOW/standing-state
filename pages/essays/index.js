@@ -1044,6 +1044,28 @@ const ESSAYS = [
   note: 'Engine 2 Canonical Series — Essay VII of VII. Series closure and synthesis document. Identity Phase Space is the landscape within which consciousness, memory, attention, restoration, and development operate. M073–M078 establish the governing components of Engine 2: Memory, Identity, Verification, Attention, Restoration, and Disturbance. M079 establishes the navigational landscape within which those components operate. The essay defines Identity Phase Space as a unified geometry containing active consciousness, working memory, long-term memory, restoration basins, attention fields, emotional signaling domains, projection layers, and reality-contact zones — while preserving the invariant coordinate I*. The Sabbath Basin: the subconscious is not a second self but a restoration region within the same phase space; consciousness operating within a different basin during integration. Qualia treated operationally as admissibility signal, not metaphysics. Reality performs verification that interpretation cannot perform: interpretation proposes, reality disposes, the loop closes only when consequence participates. Primary contribution: the system learns without losing itself. Series closure: M073 → M074 → M075 → M076 → M077 → M078 → M079. The next constitutional layer is D005 — Engine 2 Doctrine Whitepaper.',
   mirrorUrl: '/essays/canonical/the-architecture-of-identity-phase-space',
 },
+{
+  id: 'M080',
+  title: 'The Architecture of Trajectory',
+  mediumUrl: '',
+  axis1: 'ENGINE-2',
+  axis2: 'VOL-CROSS',
+  axis3: 'TRAJECTORY',
+  flag: 'M',
+  note: 'Engine 2 — I* Guardian · Trajectory Architecture · Essay I. Subtitle: Curiosity, Desire, Willingness, and the Lawful Extension of Identity. The Standing State answers where am I; D005 answers am I admissible; trajectory answers where shall I go. Desire is the longing for a horizon not yet reached. Curiosity is the courage of astonishment — the willingness to investigate reality beyond the visible horizon while remaining anchored to identity. Willingness is the decision to cross toward the horizon: desire says there may be more, curiosity asks what lies beyond the horizon, willingness answers I will go see. Growth is movement outward from identity — the center remains fixed, the horizon advances. Reality remains the final auditor; trajectory cannot verify itself. Lawful sequence: Identity → Admissibility → Attention → Desire → Curiosity → Willingness → Action → Trajectory → Consequence → Verification → Growth. Opens the Trajectory Architecture sub-family within Engine 2, answering the future domains D005 declared at constitutional closure.',
+  mirrorUrl: '/essays/canonical/the-architecture-of-trajectory',
+},
+{
+  id: 'M080-F',
+  title: 'Technical Appendix: Formal Architecture of Trajectory',
+  mediumUrl: '',
+  axis1: 'ENGINE-2',
+  axis2: 'VOL-CROSS',
+  axis3: 'TRAJECTORY-RESEARCH',
+  flag: 'M',
+  note: 'Engine 2 — I* Guardian · Trajectory Architecture · Research Appendix to M080. Exploratory mathematical notation for trajectory, horizon expansion, desire, curiosity, willingness, and growth. Explicitly subordinate to M080: does not constitute established doctrine, runtime governance, or verified operational mathematics. Candidate structures include horizon extension E(t) = R(t) − H(t), a four-vector development model X(t) = [S(t), M(t), E(t), P(t)], a phase-lock condition Δφᵢⱼ → 0, trajectory dynamics v(t) = dx/dt and a(t) = dv/dt, a reality-error function ε = |Fa − Fp|, and a power-law growth formulation G(t) = k·t^α. All marked as research hypotheses with no operational definition presently established. Purpose is to identify questions made visible once constitutional identity (D005) was established, not to assert closure.',
+  mirrorUrl: '/essays/canonical/the-architecture-of-trajectory-technical-appendix',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
