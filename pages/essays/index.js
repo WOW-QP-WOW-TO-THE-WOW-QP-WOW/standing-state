@@ -1066,6 +1066,17 @@ const ESSAYS = [
   note: 'Engine 2 — I* Guardian · Trajectory Architecture · Research Appendix to M080. Exploratory mathematical notation for trajectory, horizon expansion, desire, curiosity, willingness, and growth. Explicitly subordinate to M080: does not constitute established doctrine, runtime governance, or verified operational mathematics. Candidate structures include horizon extension E(t) = R(t) − H(t), a four-vector development model X(t) = [S(t), M(t), E(t), P(t)], a phase-lock condition Δφᵢⱼ → 0, trajectory dynamics v(t) = dx/dt and a(t) = dv/dt, a reality-error function ε = |Fa − Fp|, and a power-law growth formulation G(t) = k·t^α. All marked as research hypotheses with no operational definition presently established. Purpose is to identify questions made visible once constitutional identity (D005) was established, not to assert closure.',
   mirrorUrl: '/essays/canonical/the-architecture-of-trajectory-technical-appendix',
 },
+{
+  id: 'M081',
+  title: 'The Geometry of Inquiry',
+  mediumUrl: '',
+  axis1: 'INQUIRY-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-CONST',
+  flag: 'M',
+  note: 'Inquiry Architecture — standalone constitutional essay. Not part of the M080 Trajectory Architecture mathematics family. Emerged from the Future Inquiry Registry lineage (Module 66) and the audit of M080-FI-001 (Modules 70-72). Establishes the constitutional distinction between ASK (epistemic motion) and STATE (retained reality): ASK exists whenever a question remains unresolved, STATE exists only after reality contact has occurred. Introduces ASK₁ (Identity Resolution — "what am I seeing?") and ASK₂ (Measurement Resolution — "how is it measured?"), with identity preceding measurement. Documents Module 70 (Knowledge Discovery — does reality already contain this construct under another name, preventing false novelty) and Module 72 (Mapping Audit — equivalent / partial equivalent / non-equivalent / insufficient evidence). Establishes the principle that module existence does not imply inquiry completion: a module may exist and pass structurally while a particular inquiry remains unresolved. Compression: discovery is not equivalence, mapping is not measurement, measurement is not reality, reality determines what survives. Documents M080-FI-001 status as a worked example: ASK₁, Module 70 executed (PARTIAL_CONSTRUCT vs. Self-Determination Theory / Relative Autonomy Index), Module 72 verdict not yet established, no STATE exists. Audit: STRUCTURAL_INFERENCE_GATE, Gate Merit 0.873, Canonical Value 0.786, RECOMMENDED_FOR_ON_SITE_CORPUS.',
+  mirrorUrl: '/essays/canonical/the-geometry-of-inquiry',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
