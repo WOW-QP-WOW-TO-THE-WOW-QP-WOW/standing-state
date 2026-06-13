@@ -1,1 +1,14 @@
-
+{
+  "id": "M081",
+  "slug": "the-geometry-of-inquiry",
+  "title": "M081 — The Geometry of Inquiry",
+  "subtitle": "An Essay on ASK, STATE, and Constitutional Knowledge",
+  "author": "Leon Powdar (Phase Reference)",
+  "speakable": true,
+  "canonicalRoute": "/essays/canonical/the-geometry-of-inquiry",
+  "readerRoute": "/listen/the-geometry-of-inquiry",
+  "startSelector": "#essay-reader-start",
+  "bodySelector": "#essay-body",
+  "endSelector": "#essay-reader-end",
+  "readMode": "canonical_article_only"
+}
