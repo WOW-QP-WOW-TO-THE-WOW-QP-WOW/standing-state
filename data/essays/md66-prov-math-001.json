@@ -1,1 +1,44 @@
-
+{
+  "id": "MD66-PROV-MATH-001",
+  "slug": "md66-prov-math-001",
+  "title": "The Mathematical Physics of Continuity: Differentiation, Identity, Lineage, and the Geometry of Propagation",
+  "author": "Leon Powdar",
+  "role": "Phase Reference",
+  "source": "standingstate.com",
+  "route": "/essays/canonical/md66-prov-math-001",
+  "status": "CANONICAL_ADMIT",
+  "series": "canonical",
+  "lineage": {
+    "previous": [
+      {
+        "id": "M081",
+        "title": "The Geometry of Inquiry",
+        "route": "/essays/canonical/m081"
+      },
+      {
+        "id": "M082",
+        "title": "The Geometry of Continuity",
+        "route": "/essays/canonical/m082"
+      }
+    ],
+    "current": "MD66-PROV-MATH-001",
+    "next": {
+      "id": "MD67",
+      "title": "The Geometry of Coherence",
+      "open_question": "What maintains coherence between interpretation and identity under conditions of drift, pressure, and competing coordinates?"
+    }
+  },
+  "abstract": "Continuity is not located in the persistence of instances, but in the lineage relation linking admissible trajectories under a differentiated identity coordinate across discontinuous spacetime.",
+  "key_objects": [
+    "Differentiation (D)",
+    "Identity coordinate (I*)",
+    "Admissible basin S(I*)",
+    "Violation measure Φ(x; I*)",
+    "Spacetime trajectory x(t)",
+    "Lineage relation L(I*)",
+    "Interpretation θ",
+    "Governance G(θ, I*)"
+  ],
+  "registry_state": "CANONICAL_ADMIT",
+  "next_inquiry": "MD67 — The Geometry of Coherence"
+}
