@@ -1,0 +1,29 @@
+{
+  "id": "m082-geometry-of-continuity",
+  "title": "M082 — The Geometry of Continuity",
+  "subtitle": "An Essay on Identity, Invariance, and the Bridge Between States",
+  "author": "Leon Powdar (Phase Reference)",
+  "status": "CANONICAL_ADMIT",
+  "auditScores": {
+    "primaryGate": 1.000,
+    "structural": 1.000,
+    "canonicalValue": 1.000
+  },
+  "accessStatus": "RECOMMENDED_FOR_ON_SITE_CORPUS",
+  "canonicalRoute": "/essays/canonical/the-geometry-of-continuity",
+  "readerRoute": "/listen/the-geometry-of-continuity",
+  "speakable": true,
+  "startSelector": "#essay-reader-start",
+  "bodySelector": "#essay-body",
+  "endSelector": "#essay-reader-end",
+  "readMode": "article-body-only",
+  "exclude": [
+    "nav",
+    "footer",
+    ".sidebar",
+    ".related-posts",
+    ".share-buttons",
+    ".card",
+    "[data-reader-exclude]"
+  ]
+}
