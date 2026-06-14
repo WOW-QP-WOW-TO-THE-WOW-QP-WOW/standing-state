@@ -1,19 +1,16 @@
-import Head from "next/head";
-import Link from "next/link";
-import { geometryOfContinuity } from "../../../content/essays/the-geometry-of-continuity";
+import Head from 'next/head'
+import Link from 'next/link'
+import { mathematicalPhysicsOfContinuity } from '../../../content/essays/the-mathematical-physics-of-continuity'
 
-// Canonical public page for M082 — "The Geometry of Continuity"
+// Canonical public page for MD66-PROV-MATH-001
+// "The Mathematical Physics of Continuity:
+//  Differentiation, Identity, Lineage, and the Geometry of Propagation"
 //
 // Audit Status: CANONICAL_ADMIT
-// Primary Gate Score:    1.000
-// Structural Score:      1.000
-// Canonical Value Score: 1.000
-// Access Status: RECOMMENDED_FOR_ON_SITE_CORPUS
-//
-// Updated: Added Read / Site / Mirror navigation and lineage strip.
-// Mirror: pending — no Medium URL present in repo metadata.
+// Lineage: M081 → M082 → MD66
+// Mirror: pending — no Medium URL present in repo metadata
 
-const essay = geometryOfContinuity;
+const essay = mathematicalPhysicsOfContinuity
 
 const navStyle = {
   display: 'flex',
@@ -24,7 +21,7 @@ const navStyle = {
   borderTop: 'var(--rule)',
   borderBottom: 'var(--rule)',
   marginBottom: '1.5rem',
-};
+}
 
 const navLinkStyle = {
   color: 'var(--gold)',
@@ -33,18 +30,18 @@ const navLinkStyle = {
   letterSpacing: '0.15em',
   textTransform: 'uppercase',
   textDecoration: 'none',
-};
+}
 
 const navDimStyle = {
   ...navLinkStyle,
   color: 'var(--gold-dim)',
-};
+}
 
 const navSepStyle = {
   color: 'var(--gold-dim)',
   fontFamily: 'var(--display)',
   fontSize: '10px',
-};
+}
 
 const lineageStyle = {
   display: 'flex',
@@ -52,14 +49,17 @@ const lineageStyle = {
   gap: '0.6rem',
   flexWrap: 'wrap',
   marginTop: '0.5rem',
-};
+}
 
-export default function GeometryOfContinuityPage() {
+export default function MathematicalPhysicsOfContinuity() {
   return (
     <>
       <Head>
         <title>{essay.title} — standingstate.com</title>
-        <meta name="description" content={essay.subtitle} />
+        <meta
+          name="description"
+          content="Continuity is not located in the persistence of instances, but in the lineage relation linking admissible trajectories under a differentiated identity coordinate across discontinuous spacetime."
+        />
       </Head>
 
       {/* Site navigation remains here as existing layout provides */}
@@ -79,7 +79,7 @@ export default function GeometryOfContinuityPage() {
           {/* Read / Site / Mirror navigation */}
           <div style={navStyle}>
             <a
-              href="/essays/canonical/the-geometry-of-continuity"
+              href="/essays/canonical/the-mathematical-physics-of-continuity"
               style={navLinkStyle}
               aria-label="Read this essay on site"
             >
@@ -98,13 +98,13 @@ export default function GeometryOfContinuityPage() {
               M081 — Geometry of Inquiry
             </Link>
             <span style={navSepStyle}>→</span>
-            <span style={{ ...navLinkStyle }}>
+            <Link href="/essays/canonical/the-geometry-of-continuity" style={navDimStyle}>
               M082 — Geometry of Continuity
-            </span>
-            <span style={navSepStyle}>→</span>
-            <Link href="/essays/canonical/the-mathematical-physics-of-continuity" style={navDimStyle}>
-              MD66 — Mathematical Physics of Continuity
             </Link>
+            <span style={navSepStyle}>→</span>
+            <span style={navLinkStyle}>
+              MD66 — Mathematical Physics of Continuity
+            </span>
           </div>
         </header>
 
@@ -112,9 +112,17 @@ export default function GeometryOfContinuityPage() {
         <span id="essay-reader-start" aria-hidden="true" />
 
         <section id="essay-body" itemProp="articleBody">
-          {essay.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
+          {essay.sections.map((section, i) => (
+            <div key={i}>
+              <h2>{section.label}</h2>
+              {section.paragraphs.map((p, j) => (
+                <p key={j}>{p}</p>
+              ))}
+            </div>
           ))}
+
+          {/* Final statement */}
+          <p><em>{essay.finalStatement}</em></p>
         </section>
 
         {/* Reader end marker: canonical speech stream ends here */}
@@ -122,20 +130,20 @@ export default function GeometryOfContinuityPage() {
 
         {/* Post-body cross-links — outside reader stream */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '2rem', flexWrap: 'wrap', gap: '1rem', borderTop: 'var(--rule)', paddingTop: '1rem' }}>
-          <Link href="/essays/canonical/the-geometry-of-inquiry" style={navDimStyle}>
-            ← M081 · The Geometry of Inquiry
+          <Link href="/essays/canonical/the-geometry-of-continuity" style={navDimStyle}>
+            ← M082 · The Geometry of Continuity
           </Link>
-          <span style={navDimStyle}>M082 · CANONICAL_ADMIT</span>
-          <Link href="/essays/canonical/the-mathematical-physics-of-continuity" style={navDimStyle}>
-            MD66 · The Mathematical Physics of Continuity →
-          </Link>
+          <span style={navDimStyle}>MD66-PROV-MATH-001 · CANONICAL_ADMIT</span>
+          <span style={navDimStyle}>
+            MD67 · The Geometry of Coherence →
+          </span>
         </div>
       </article>
 
       {/* Related posts, cards, share buttons, sidebar, footer
           remain here as provided by the existing site layout.
           These are excluded from the reader stream via the manifest's
-          exclude selectors and via the /listen route. */}
+          exclude selectors. */}
     </>
-  );
+  )
 }
