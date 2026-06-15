@@ -1099,6 +1099,17 @@ const ESSAYS = [
   note: 'Mathematical Physics — canonical formalization. Lineage: M081 → M082 → MD66. Central claim: continuity is not located in the persistence of instances but in the lineage relation L(I*) linking admissible trajectories under a differentiated identity coordinate across discontinuous spacetime. Introduces a layered architecture: Layer 0 Differentiation (D) as precondition for identity; Layer 1 Identity Coordinate (I*) as governing reference, not a state; Layer 2 Admissible Basin S(I*) = {x : Φ(x; I*) ≤ 0} where Φ measures kind-constraint violation; Layer 3 Spacetime Trajectory x(t) ∈ S(I*); Layer 4 Lineage Relation L(I*) connecting admissible trajectories across generations via kind-preserving propagation. Distinguishes four continuity types: Lineage (identity), Energy (material), Interpretive (meaning), Inquiry (knowledge lineage). Introduces interpretation θ and governance G(θ, I*) for interpreting systems. Defines three lineage states: Active, Dormant, Extinct. Notes Genesis genealogies as independent structural observation, not proof. States explicit falsification conditions. Audit: CANONICAL_ADMIT. ID: MD66-PROV-MATH-001.',
   mirrorUrl: '/essays/canonical/the-mathematical-physics-of-continuity',
 },
+{
+  id: 'MD67',
+  title: 'The Geometry of Coherence: Restoration, Identity, and the Capacity for Reliable Return',
+  mediumUrl: '',
+  axis1: 'INQUIRY-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MATH',
+  flag: 'M',
+  note: 'Research Thesis — Status: CONSTRUCT. Verification: OPEN. Lineage: M081 → M082 → MD66 → MD67. Central claim: coherence is not the absence of error but the structural capacity for reliable return toward an identity coordinate after perturbation. Distinguishes three operational regions: Coherent (coordinate accessible, return reliable), Restoration (displacement occurred, return structurally possible), Incoherent (coordinate inaccessible, return lost). Defines provisional coherence object C(θ, I*). Introduces Sabbath Basin K_auto as the region where restoration becomes self-sustaining. States three research hypotheses: H1 Restoration Compression (dT_restore/dn < 0 across successful cycles), H2 Destination Accessibility (V_goal as independent variable beyond skill/resource/confidence), H3 Restoration Memory. Navigation domain baseline constructed with synthetic telemetry. Explicit falsification conditions stated: fails if repeated restoration shows no measurable effect on future restoration dynamics once competing variables are controlled. Empirical verification open. Complements MD66 — continuity concerns persistence, coherence concerns restoration.',
+  mirrorUrl: '/essays/canonical/the-geometry-of-coherence',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
