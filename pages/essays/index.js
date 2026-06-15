@@ -1077,6 +1077,28 @@ const ESSAYS = [
   note: 'Inquiry Architecture — standalone constitutional essay. Not part of the M080 Trajectory Architecture mathematics family. Emerged from the Future Inquiry Registry lineage (Module 66) and the audit of M080-FI-001 (Modules 70-72). Establishes the constitutional distinction between ASK (epistemic motion) and STATE (retained reality): ASK exists whenever a question remains unresolved, STATE exists only after reality contact has occurred. Introduces ASK₁ (Identity Resolution — "what am I seeing?") and ASK₂ (Measurement Resolution — "how is it measured?"), with identity preceding measurement. Documents Module 70 (Knowledge Discovery — does reality already contain this construct under another name, preventing false novelty) and Module 72 (Mapping Audit — equivalent / partial equivalent / non-equivalent / insufficient evidence). Establishes the principle that module existence does not imply inquiry completion: a module may exist and pass structurally while a particular inquiry remains unresolved. Compression: discovery is not equivalence, mapping is not measurement, measurement is not reality, reality determines what survives. Documents M080-FI-001 status as a worked example: ASK₁, Module 70 executed (PARTIAL_CONSTRUCT vs. Self-Determination Theory / Relative Autonomy Index), Module 72 verdict not yet established, no STATE exists. Audit: STRUCTURAL_INFERENCE_GATE, Gate Merit 0.873, Canonical Value 0.786, RECOMMENDED_FOR_ON_SITE_CORPUS.',
   mirrorUrl: '/essays/canonical/the-geometry-of-inquiry',
 },
+{
+  id: 'M082',
+  title: 'The Geometry of Continuity',
+  mediumUrl: '',
+  axis1: 'INQUIRY-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-CONST',
+  flag: 'M',
+  note: 'Inquiry Architecture — standalone constitutional essay. Lineage: M081 → M082 → MD66. Asks: What survives transition? Proposes that continuity is not located in states but in whatever remains invariant across state transitions. Introduces the Monday–Tuesday problem: consciousness may disappear during sleep while continuity persists, suggesting continuity is deeper than awareness. Establishes the candidate invariant coordinate I* as the quantity that survives while interpretation, memory, emotion, and knowledge evolve. Explores identity phase space as a lawful geometry: position → state, velocity → attention direction, acceleration → desire, attractors → identity coordinates. References MD66-PROV-MATH-001 as the downstream formalization inquiry. Audit: CANONICAL_ADMIT.',
+  mirrorUrl: '/essays/canonical/the-geometry-of-continuity',
+},
+{
+  id: 'MD66',
+  title: 'The Mathematical Physics of Continuity: Differentiation, Identity, Lineage, and the Geometry of Propagation',
+  mediumUrl: '',
+  axis1: 'INQUIRY-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MATH',
+  flag: 'M',
+  note: 'Mathematical Physics — canonical formalization. Lineage: M081 → M082 → MD66. Central claim: continuity is not located in the persistence of instances but in the lineage relation L(I*) linking admissible trajectories under a differentiated identity coordinate across discontinuous spacetime. Introduces a layered architecture: Layer 0 Differentiation (D) as precondition for identity; Layer 1 Identity Coordinate (I*) as governing reference, not a state; Layer 2 Admissible Basin S(I*) = {x : Φ(x; I*) ≤ 0} where Φ measures kind-constraint violation; Layer 3 Spacetime Trajectory x(t) ∈ S(I*); Layer 4 Lineage Relation L(I*) connecting admissible trajectories across generations via kind-preserving propagation. Distinguishes four continuity types: Lineage (identity), Energy (material), Interpretive (meaning), Inquiry (knowledge lineage). Introduces interpretation θ and governance G(θ, I*) for interpreting systems. Defines three lineage states: Active, Dormant, Extinct. Notes Genesis genealogies as independent structural observation, not proof. States explicit falsification conditions. Audit: CANONICAL_ADMIT. ID: MD66-PROV-MATH-001.',
+  mirrorUrl: '/essays/canonical/the-mathematical-physics-of-continuity',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
