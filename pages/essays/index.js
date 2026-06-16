@@ -1110,6 +1110,17 @@ const ESSAYS = [
   note: 'Research Thesis — Status: CONSTRUCT. Verification: OPEN. Lineage: M081 → M082 → MD66 → MD67. Central claim: coherence is not the absence of error but the structural capacity for reliable return toward an identity coordinate after perturbation. Distinguishes three operational regions: Coherent (coordinate accessible, return reliable), Restoration (displacement occurred, return structurally possible), Incoherent (coordinate inaccessible, return lost). Defines provisional coherence object C(θ, I*). Introduces Sabbath Basin K_auto as the region where restoration becomes self-sustaining. States three research hypotheses: H1 Restoration Compression (dT_restore/dn < 0 across successful cycles), H2 Destination Accessibility (V_goal as independent variable beyond skill/resource/confidence), H3 Restoration Memory. Navigation domain baseline constructed with synthetic telemetry. Explicit falsification conditions stated: fails if repeated restoration shows no measurable effect on future restoration dynamics once competing variables are controlled. Empirical verification open. Complements MD66 — continuity concerns persistence, coherence concerns restoration.',
   mirrorUrl: '/essays/canonical/the-geometry-of-coherence',
 },
+{
+  id: 'M083',
+  title: 'Identity as Attractor: From Coherence Dynamics to the I* Guardian',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-CONST',
+  flag: 'M',
+  note: 'Doctrinal Synthesis — Status: CANONICAL_CANDIDATE. Lineage: MD66 → MD67 → M083. Revisits the earlier attractor formulation of identity and develops it through the I* Guardian Doctrine (D005). Central claim: identity is not the attractor toward which coherence converges; identity is the invariant reference coordinate I* that makes coherence possible, and the attractor is the basin of lawful states surrounding identity. Transforms a theory of convergence into a theory of governance. Expressed in three registers preserving one architecture: Formal (Identity → Guardian → Development; I* → Basin of Admissibility → Attractor Trajectory), Navigational (Destination → Route Governance → Arrival), Biological (Seed → Sap → Fruit). Establishes the dependency chain Differentiation → Identity → Continuity → Governance → Development. Defines the Basin of Admissibility as the lawful region permitting development without loss of continuity, and the Guardian as a diagnostic, non-legislative steward whose authority derives entirely from I* (it protects, never authors, identity). Frames interpretation as navigation and restoration as route recalculation: the destination remains fixed while interpretation remains teachable. Distinguishes open (teachable) from closed (self-protective) systems. Governing law: a system develops through lawful relationship to invariant identity. Compression: Identity remains, Reality teaches, Governance protects, Restoration preserves, Development emerges.',
+  mirrorUrl: '/essays/canonical/identity-as-attractor',
+},
 ]
 
 // ── FILTER COMPONENT ─────────────────────────────────────────
