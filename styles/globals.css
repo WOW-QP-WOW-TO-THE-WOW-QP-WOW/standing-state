@@ -1128,15 +1128,21 @@ body::before {
 .plateDetailSec { padding: 5rem 0; border-bottom: var(--rule); }
 .plateDetailGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 3fr 2fr;
+  gap: 3.5rem;
   align-items: start;
 }
-.plateDetailVisual {}
+.plateDetailVisual {
+  width: 100%;
+}
 .plateDetailImgWrap {
   border: var(--rule);
   overflow: hidden;
   background: var(--panel);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .plateDetailImgWrap img .plateDetailImgWrap {
   border: var(--rule);
