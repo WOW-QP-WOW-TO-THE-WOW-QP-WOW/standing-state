@@ -629,12 +629,31 @@ export const PLATES = [
   seriesRoute: '/essays/series/engine-2',
   dashboardRoute: '/system/engine2',
 },
+{
+  id: 'P035',
+  number: 'XXXV',
+  title: 'The Geometry of Restoration',
+  slug: 'the-geometry-of-restoration',
+  image: '/plates/p035-geometry-of-restoration.png',
+  summary: 'Identity organizes admissible relationships. Admissible relationships generate coherent structure. Coherent structure produces observable expression. Restoration is the recovery of admissible relationship under a governing identity coordinate. The reflection follows because the relationship holds.',
+  governingCondition: '\\text{Differentiation} \\to \\text{Identity} \\to \\text{Admissible Relationship} \\to \\text{Coherent Structure} \\to \\text{Expression}',
+  description: 'Plate XXXV encodes the geometry of restoration at its architectural register. The Mirror Error occupies the upper left: polishing the reflection cannot clean the source — treating expression as cause reverses causality. The Relationship Principle occupies the upper right: water is not hydrogen or oxygen but a specific admissible relationship; when the relationship changes sufficiently, the identity disappears despite the presence of its constituent elements. The Restoration Hierarchy runs down the left column: Differentiation makes identity possible; Identity establishes admissible relationships; Admissible relationships generate coherent structure; Coherent structure produces observable expression. Diagnosis begins with expression and traces inward. Restoration begins with identity and propagates outward. The central figure (Vitruvian geometry) holds Identity as the invariant coordinate, with Admissible Relationships generating coherent structure and expression beneath. The Drift and Restoration panel encodes the asymmetry: drift occurs when relationships depart from admissibility; restoration occurs when admissible relationships are recovered. K_auto Principle: life arrives with restorative intelligence; the organism already knows; K_auto does not create restoration, it permits restoration when interference is reduced and admissible relationships regain coherence. Canonical Compression at the bottom center: Differentiation → Identity → Admissible Relationship → Coherent Structure → Expression; when admissible relationships are preserved, coherent structure remains accessible despite continual replacement of components. Falsification Condition: thesis fails if increasing identity coherence produces no measurable improvement in restoration dynamics, recovery capacity, resilience, restoration latency, or coherence maintenance. Footer seal: Identity Preserved · Relationship Restored · Coherence Returns · Restoration Follows. The reflection follows because the relationship holds. Companion to essay M084 (The Geometry of Restoration).',
+  volume: 'Cross-Volume · Identity · Continuity · Restoration',
+  chapter: 'Architecture · Admissible Relationship · Restoration',
+  linkedVars: ['xstar', 'phi', 'kauto'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+    { label: 'K_auto', anchor: 'kauto' },
+  ],
+  relatedEssay: 'M084',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 34,
+  description: 'Thirty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 35,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
