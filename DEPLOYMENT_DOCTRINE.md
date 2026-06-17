@@ -3,7 +3,7 @@
 
 ## Purpose
 
-Deploy canonical essays to standingstate.com without rediscovering repository
+Deploy canonical essays and plates to standingstate.com without rediscovering repository
 structure each time.
 
 Core command: **Read DEPLOYMENT_DOCTRINE.md and execute.**
@@ -127,9 +127,98 @@ In `pages/essays/index.js`, entries follow this shape:
 - Canonical essays: standalone static files, `pages/essays/canonical/[slug].js`
 - Dynamic routes: plates (`pages/system/plates/[slug].js`), doctrine (`pages/system/doctrine/[slug].js`)
 - Essay index: `pages/essays/index.js`, ESSAYS array
-- Corpus position at last audit: M081, P034, D005
+- Corpus position at last audit: M084, P035, D006
 - Content module pattern (`content/essays/`) is legacy/unused — do not introduce
 
 ---
 
-*D006 installed. Read this file before every canonical essay deployment.*
+## 8. Plate Registration Pattern
+
+Plates are registered in `components/platesData.js` as entries in the `PLATES` array.
+
+**Before registering a new plate:**
+- Read `components/platesData.js` tail to confirm the last plate ID and number
+- Confirm the next available slot — do not assume from corpus position alone
+- Check `PLATES_META.count` at the bottom of the file — update it to match
+
+Entry shape (confirmed from P034, P035):
+
+```js
+{
+  id: 'P035',
+  number: 'XXXV',
+  title: 'The Geometry of Restoration',
+  slug: 'the-geometry-of-restoration',
+  image: '/plates/p035-geometry-of-restoration.png',
+  summary: '...',
+  governingCondition: '\\text{Differentiation} \\to ...',
+  description: '...',
+  volume: 'Cross-Volume · Identity · Continuity · Restoration',
+  chapter: 'Architecture · Admissible Relationship · Restoration',
+  linkedVars: ['xstar', 'phi', 'kauto'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+    { label: 'K_auto', anchor: 'kauto' },
+  ],
+  relatedEssay: 'M084',
+},
+```
+
+**PLATES_META** — update description text and count together:
+```js
+export const PLATES_META = {
+  count: 35,                          // must match actual plate count
+  description: 'Thirty-five plates...', // update prose number to match
+  ...
+}
+```
+
+**Plate image path:** `/public/plates/[filename]` → referenced as `/plates/[filename]` in data
+- SVG plates scale to any width without loss — preferred for diagram plates
+- PNG plates are raster — confirm dimensions before deploying (read with Python/bash)
+- Landscape PNG plates (wider than tall) require the stacked layout (see §9)
+
+**Route:** `/system/plates/[slug]` — dynamic route, no new page file needed.
+Plate appears automatically once registered in `components/platesData.js`.
+
+**Bracket balance:** Check `{}`, `()`, `[]` on `components/platesData.js` after every edit.
+
+---
+
+## 9. Plate Layout Architecture
+
+**The plate detail page uses a shared dynamic template:** `pages/system/plates/[slug].js`
+
+Do not create per-plate page files. Registration in `platesData.js` is sufficient.
+
+**Layout:** `styles/globals.css` — `.plateDetailGrid` governs the visual layout.
+
+**Current canonical layout (as of P035 deployment):**
+
+```css
+.plateDetailGrid {
+  display: flex;
+  flex-direction: column;  /* image stacks ABOVE detail panel */
+  gap: 2.5rem;
+}
+```
+
+**Why stacked, not side-by-side:**
+- SVG plates scale without constraint at any width
+- PNG landscape plates (e.g. P035 at 1536×1024) lose legibility at half-width
+- Stacked layout works correctly for all plate types and aspect ratios
+- Mobile collapse is automatic — no additional breakpoint needed
+
+**Known failure pattern (do not repeat):**
+- Side-by-side grid (`grid-template-columns: 1fr 1fr` or `3fr 2fr`) clips landscape plates
+- Looks correct for SVG plates but fails for dense PNG landscape plates
+- The fix is `flex / column`, not adjusting grid proportions
+
+**CSS bracket balance:** Check `{}` balance on `styles/globals.css` after every edit.
+Check for duplicate rules (e.g. `.plateDetailPanel` appearing twice) after any insertion.
+
+---
+
+*D006 updated after M084/P035 deployment session. Read this file before every deployment.*
+
