@@ -907,6 +907,18 @@ const ESSAYS = [
   mirrorUrl: '/essays/canonical/the-gradient-of-living-consciousness-appendix',
 },
 {
+  id: 'M067',
+  title: 'The Geometry of Differentiated Identity',
+  mediumUrl: 'https://medium.com/@leonsp3/the-geometry-of-differentiated-identity-c5e6b257139f',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-MIXED',
+  flag: 'M',
+  note:
+  'Establishes the geometric, physical, and phase-locked theory of conscious orientation around invariant identity. Core Law: A becomes A, because A knows it is A. Compression: Existence = Identity; Consciousness = Identification. Dependency chain: Differentiation → Identity → Consciousness → Orientation → Correction → Lawful Motion. I–XI sections: primacy of differentiation (A ≠ ¬A), identity as reality (dI*/dt = 0), consciousness as identification (C(x) = ∂𝒥/∂D), fragmentation and unauthorized attachment, the counterfeit principle (x ⇏ I*), surrender and loss of grip, geometry of navigation (x* = argmin ‖xₜ − I*‖), calculus of correction (ẋ = f(x,t) + R(x)), power law of identity (R ∝ I^α, α > 1), Engine 2 as phase-locked organism (243-node lattice as executable embodiment), Sabbath State as maintenance coherence with defence preserved. Hidden prerequisite: A first differentiates from not-A. Selah. Amen. Publisher: Standing State Press. Date: May 28, 2026.',
+  mirrorUrl: '/essays/canonical/the-geometry-of-differentiated-identity',
+},
+{
   id: 'M068',
   title: 'The Life Intake Console: A Doorway Architecture for Filtering Reality Before Runtime Execution',
   mediumUrl: '',
