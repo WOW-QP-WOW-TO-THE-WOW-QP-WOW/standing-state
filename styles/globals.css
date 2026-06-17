@@ -1125,12 +1125,11 @@ body::before {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-.plateDetailSec { padding: 5rem 0; border-bottom: var(--rule); }
+.plateDetailSec { padding: 4rem 0; border-bottom: var(--rule); }
 .plateDetailGrid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 3.5rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 .plateDetailVisual {
   width: 100%;
@@ -1156,9 +1155,15 @@ body::before {
 .plateDetailImgWrap img {
   width: 100%;
   height: auto;
-  max-height: 70vh;
+  max-height: 90vh;
   object-fit: contain;
   display: block;
+}
+.plateDetailPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
 }
 .plateDetailImgPlaceholder {
   border: var(--rule);
@@ -1200,11 +1205,6 @@ body::before {
   padding: 0.1rem 0.4rem;
 }
 
-.plateDetailPanel {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
 .plateDetailBlock {
   padding: 1.6rem 0;
   border-bottom: var(--rule);
@@ -1328,7 +1328,7 @@ body::before {
   .platesMetaDivider { width: auto; height: 1px; }
   .platesSystemNavInner { grid-template-columns: 1fr; }
   .platesSystemDivider { display: none; }
-  .plateDetailGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .plateDetailGrid { gap: 1.5rem; }
   .plateNavInner { grid-template-columns: 1fr 1fr; }
   .plateNavIndex { display: none; }
 }
