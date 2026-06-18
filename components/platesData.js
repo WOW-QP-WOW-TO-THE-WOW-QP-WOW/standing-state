@@ -648,12 +648,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M084',
 },
+{
+  id: 'P036',
+  number: 'XXXVI',
+  title: 'The Bridge of Continuity',
+  slug: 'the-bridge-of-continuity',
+  image: '/plates/p036-bridge-of-continuity.png',
+  summary: 'Does continuity require admissible relationship governed by identity? The bridge hypothesis: differentiation distinguishes, identity constrains, admissible relationship transforms, continuity persists, restoration recovers. The inquiry is whether continuity requires a bridge. Reality retains jurisdiction.',
+  governingCondition: '\\text{Differentiation} \\to \\text{Identity} \\to \\text{Admissible Relationship} \\to \\text{Continuity} \\to \\text{Restoration}',
+  description: 'Plate XXXVI encodes the MD68 bridge inquiry at its architectural register. Five panels read left to right across a landscape moving from dark rocky terrain (differentiation) through brightening light to full sunrise (restoration). Panel 1 — Differentiation: A becomes distinguishable from not-A; without differentiation no boundary exists. Panel 2 — Identity: Identity constrains which states belong to the same kind; without identity no constraint exists. Panel 3 — Admissible Relationship (The Bridge): admissible relationships specify lawful transformations coherent with identity; the stone bridge at center encodes the mechanism linking identity to continuity. Panel 4 — Continuity: continuity is the observable result when admissible relationships persist through change. Panel 5 — Restoration: when continuity is threatened, restoration recovers admissible relationship under a governing identity coordinate; continuity remains possible because relationship remains recoverable. The sequential process below the bridge: Change Occurs → Transformation Happens → Lawful Path Preserves Identity → Continuity Becomes Observable. Reality Contact panel (center): the ledger, the laboratory, the body, the world. Lower row — five epistemic panels: Thermodynamic Observation (the laws of thermodynamics begin with distinguishable systems; they describe behavior; they do not establish distinction); The Inquiry (Does continuity require admissible relationship governed by identity?); Falsification Path (hypothesis fails if continuity can be demonstrated without recoverable admissible relationship; gains support if continuity consistently depends upon recoverable admissible relationship under identity); Registered Test Environment FI-M084-TRANSPLANT-001 (Can functional continuity be recovered when component continuity is interrupted through establishment of admissible relationship?); Constitutional Position (ASK precedes STATE; Inquiry precedes doctrine; Fruit precedes verification; Reality retains jurisdiction). Footer compression: Differentiation distinguishes → Identity constrains → Relationship transforms → Continuity persists → Restoration recovers. Closing line: The inquiry is whether continuity requires a bridge. Plate registration block at bottom confirms P036, Classification: Inquiry Plate, Status: REGISTER, Associated Essay: MD68. Companion to essay MD68 (The Bridge of Continuity).',
+  volume: 'Cross-Volume · Identity · Continuity · Admissible Relationship',
+  chapter: 'Bridge Hypothesis · Inquiry · Falsification',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'MD68',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 35,
+  description: 'Thirty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 36,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
