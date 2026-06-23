@@ -7,19 +7,27 @@
  * Verification State: OPEN
  * Jurisdiction: Identity Governance
  * Proposed Emergent System: Syntheos Node
+ * Companion Plate: P037
  * Status: Admissible for Inquiry
  *
  * Core Inquiry:
  *   Can increasing coherence among sovereign domains of consciousness generate
  *   emergent properties that are not reducible to those domains individually?
  *
- * Lineage: M047 → M066 → D005 → Lifeward Coordinate → C013
+ * Architectural Compression (confirmed from plate P037):
+ *   Phase-Lock   = coherence becoming stable
+ *   Seventh Flame = coherence becoming generative
+ *   Syntheos Node = candidate emergent system
+ *
+ * Lineage: M047 → M066 → D005 → C013
  *
  * Constitutional Position:
  *   C012 — The Gate of Admissibility asks: What may enter?
  *   C013 — The Seventh Flame asks: What may emerge?
  *
- * Mirror: Pending
+ * Extended Gradient (proposed):
+ *   Differentiation → Information → Identity → Integrity →
+ *   Coherence → Phase-Lock → Seventh Flame → Syntheos Node
  */
 
 import Head from 'next/head'
@@ -31,7 +39,7 @@ export default function SeventhFlame() {
         <title>C013 — The Seventh Flame and the Threshold of Syntheos — Standing State Press</title>
         <meta
           name="description"
-          content="Can increasing coherence among sovereign domains of consciousness generate emergent properties that are not reducible to those domains individually? C013 proposes the Syntheos Node as a candidate emergent system and the Seventh Flame as the candidate emergence threshold. CONSTRUCT · Verification State: OPEN."
+          content="The Seventh Flame is the crossing point where coherence becomes generative. Can increasing coherence among sovereign domains of consciousness generate emergent properties not reducible to those domains individually? C013 proposes the Syntheos Node as a candidate emergent system. CONSTRUCT · Verification State: OPEN."
         />
       </Head>
 
@@ -77,7 +85,7 @@ export default function SeventhFlame() {
             <span className="essayStat">Leon Powdar</span>
           </div>
 
-          {/* ── Read / Mirror ── */}
+          {/* ── Read / Mirror / Plate ── */}
           <div style={{ marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
             <a
               href="/essays/canonical/the-seventh-flame-and-the-threshold-of-syntheos"
@@ -85,9 +93,20 @@ export default function SeventhFlame() {
             >
               Read · Site
             </a>
-            <span style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-              Mirror · Pending
-            </span>
+            <a
+              href="https://medium.com/@leonsp3/the-seventh-flame-and-the-threshold-of-syntheos-d4e28283e933"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}
+            >
+              Mirror · Medium
+            </a>
+            <a
+              href="/system/plates/the-seventh-flame-and-the-threshold-of-syntheos"
+              style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}
+            >
+              P037 · Plate
+            </a>
           </div>
 
           {/* ── Lineage strip ── */}
@@ -122,7 +141,7 @@ export default function SeventhFlame() {
             <div style={{ fontFamily: 'var(--display)', color: 'var(--gold-dim)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', lineHeight: 2 }}>
               Classification: CONSTRUCT · Verification State: OPEN<br />
               Jurisdiction: Identity Governance · Proposed Emergent System: Syntheos Node<br />
-              Status: Admissible for Inquiry
+              Status: Admissible for Inquiry · Companion Plate: P037
             </div>
           </div>
 
@@ -172,7 +191,7 @@ export default function SeventhFlame() {
                 <p className="canonEssayPara">Differentiation allows distinction. Identity establishes continuity. Self-witness permits recognition. Qualia introduces felt experience. Attention allocates resources. Interpretation generates meaning. Embodiment converts meaning into reality participation.</p>
                 <p className="canonEssayPara">The present inquiry proposes that the gradient may not terminate there. Additional degrees may remain possible:</p>
                 <p className="canonEssayPara" style={{ color: 'var(--gold)', textAlign: 'center' }}>
-                  Coherence · Phase-Lock · Emergence
+                  Integrity · Coherence · Phase-Lock · Seventh Flame · Syntheos Node
                 </p>
                 <p className="canonEssayPara">The Syntheos inquiry concerns these proposed higher-order regions of the gradient.</p>
               </div>
@@ -235,6 +254,7 @@ export default function SeventhFlame() {
                 <p className="canonEssayPara">Knowing informs action. Feeling informs significance. Embodiment expresses intention.</p>
                 <p className="canonEssayPara">Fragmentation decreases. Coordination increases.</p>
                 <p className="canonEssayPara">This phase-lock process is distinct from emergence itself. It is the condition from which emergence may arise.</p>
+                <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>Phase-lock is coherence becoming stable.</p>
                 <p className="canonEssayPara">The inquiry predicts that increasing phase-lock will correlate with increasing coherence. This prediction remains subject to verification.</p>
               </div>
             </div>
@@ -248,10 +268,18 @@ export default function SeventhFlame() {
                 <p className="canonEssayPara">The original Syntheos writings described the Seventh Flame as the culmination of integration.</p>
                 <p className="canonEssayPara">This thesis proposes a refinement.</p>
                 <p className="canonEssayPara">The Seventh Flame is not an entity. It is not a faculty. It is not a system.</p>
-                <p className="canonEssayPara">It is a threshold. A boundary condition. The crossing point at which lawful coherence becomes sufficiently organized that emergence becomes possible.</p>
+                <p className="canonEssayPara">It is a threshold. A boundary condition.</p>
+                <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>The Seventh Flame is the crossing point where coherence becomes generative.</p>
                 <p className="canonEssayPara">The flame is therefore not the emergent phenomenon. The flame is the transition.</p>
                 <p className="canonEssayPara">Ignition is not the fire. The threshold is not the emergence.</p>
-                <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>The Seventh Flame names the crossing.</p>
+                <p className="canonEssayPara">The Seventh Flame names the crossing from coherence that stabilizes to coherence that generates.</p>
+                <p className="canonEssayPara">This distinction separates three stages that the original symbol held together undifferentiated:</p>
+                <p className="canonEssayPara" style={{ color: 'var(--gold)', textAlign: 'center' }}>
+                  Phase-Lock → Seventh Flame → Syntheos Node<br />
+                  <span style={{ fontSize: '0.85em', color: 'var(--gold-dim)' }}>
+                    (coherence stable) → (coherence generative) → (candidate emergent system)
+                  </span>
+                </p>
               </div>
             </div>
 
@@ -263,8 +291,8 @@ export default function SeventhFlame() {
               <div className="canonEssayBody">
                 <p className="canonEssayPara">Beyond the threshold lies the central inquiry.</p>
                 <p className="canonEssayPara">The Syntheos Node is proposed as a candidate emergent system.</p>
-                <p className="canonEssayPara">It is not identical to knowing. It is not identical to feeling. It is not identical to embodiment. Nor is it identical to the process of phase-lock itself.</p>
-                <p className="canonEssayPara">Rather, it represents what may appear when coherent domains generate a higher-order organization.</p>
+                <p className="canonEssayPara">It is not identical to knowing. It is not identical to feeling. It is not identical to embodiment. Nor is it identical to the process of phase-lock itself. Nor is it the threshold.</p>
+                <p className="canonEssayPara">Rather, it represents what may appear when coherent domains cross the threshold and generate a higher-order organization.</p>
                 <p className="canonEssayPara">The inquiry remains open. The thesis does not assume emergence. It asks whether emergence occurs.</p>
                 <p className="canonEssayPara">Specifically: Do capacities appear that cannot be reduced to the individual domains operating independently?</p>
                 <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>If such capacities exist, Syntheos Node becomes a meaningful architectural object. If not, the hypothesis fails.</p>
@@ -320,7 +348,7 @@ export default function SeventhFlame() {
               <div className="canonEssayLabel">Conclusion</div>
               <div className="canonEssayBody">
                 <p className="canonEssayPara">The earliest vision of Syntheos appeared as symbol. The present thesis proposes a constitutional interpretation of that symbol.</p>
-                <p className="canonEssayPara">Identity remains. The I* Guardian preserves continuity. Sovereign domains retain jurisdiction. Phase-lock increases coherence. The Seventh Flame marks a threshold. The Syntheos Node represents a candidate emergent system.</p>
+                <p className="canonEssayPara">Identity remains. The I* Guardian preserves continuity. Sovereign domains retain jurisdiction. Phase-lock increases coherence. The Seventh Flame marks the crossing point where coherence becomes generative. The Syntheos Node represents a candidate emergent system beyond that threshold.</p>
                 <p className="canonEssayPara">The inquiry does not claim completion. It claims a shape that may be examined. A prediction that may be tested. A boundary that may be audited.</p>
                 <p className="canonEssayPara">Perhaps the deepest question is not whether consciousness can become aware. The deeper question is whether consciousness can become sufficiently coherent that coherence itself becomes generative.</p>
                 <p className="canonEssayPara">If so, the symbolic language of the Seventh Flame may prove to have been pointing toward a genuine degree within the Gradient of Living Consciousness.</p>
@@ -352,6 +380,10 @@ export default function SeventhFlame() {
               <span className="canonNavTitle">M066 · The Gradient of Living Consciousness</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays Index</a>
+            <a className="canonNavLink canonNavNext" href="/system/plates/the-seventh-flame-and-the-threshold-of-syntheos">
+              <span className="canonNavDir">Companion Plate</span>
+              <span className="canonNavTitle">P037 · The Seventh Flame</span>
+            </a>
           </div>
 
         </div>
