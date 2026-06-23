@@ -1,9 +1,14 @@
 /**
- * GATES DATA — FIVE REGISTER ENTRY POINTS
+ * GATES DATA — SIX REGISTER ENTRY POINTS
  * standingstate.com/system/gates
  *
  * Each gate is an entry point into one register of the system.
  * The invariant was never divided. Only the lenses were.
+ *
+ * Gate 6 — CULTIVATION added after M085/M086/Orchard deployment.
+ * Cultivation Register: Home = According to its kind.
+ * The most universally accessible observational register.
+ * Linked corpus: The Orchard and the Return, M075, MD66, M085, M086.
  */
 
 export const gateCategories = [
@@ -71,6 +76,22 @@ export const gateCategories = [
     items: [
       { title: 'The Corpus', href: '/#corpus' },
       { title: 'System Plates', href: '/system/plates' },
+    ],
+  },
+  {
+    id: 'cultivation',
+    title: 'CULTIVATION',
+    slug: 'cultivation',
+    equation: 'Seed → Kind → Fruit',
+    description: 'According to its kind',
+    summary:
+      'Identity continuity, lawful relationship, fruit verification, lineage preservation, and restoration through the language of the orchard.',
+    items: [
+      { title: 'The Orchard and the Return', href: '/essays/canonical/the-orchard-and-the-return' },
+      { title: 'M075 — According to Its Kind', href: '/#corpus' },
+      { title: 'M085 — The Architecture of Lawful Relationship', href: '/essays/canonical/the-architecture-of-lawful-relationship' },
+      { title: 'M086 — Relationship Exhaustion and the Governance Basin', href: '/#corpus' },
+      { title: 'MD66 — Lineage', href: '/essays/canonical/the-mathematical-physics-of-continuity' },
     ],
   },
 ]
