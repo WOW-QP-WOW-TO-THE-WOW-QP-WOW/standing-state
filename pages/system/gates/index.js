@@ -14,7 +14,7 @@ export default function GatesIndexPage() {
         <title>The Gates — Standing State Press</title>
         <meta
           name="description"
-          content="Five register entry points into the Standing State system. The invariant was never divided. Only the lenses were."
+          content="Six register entry points into the Standing State system. The invariant was never divided. Only the lenses were."
         />
       </Head>
 
@@ -45,7 +45,7 @@ export default function GatesIndexPage() {
               <span className="glossBreadSep">→</span>
               <span style={{ color: 'var(--gold-dim)' }}>Gates</span>
             </div>
-            <div className="glossEyebrow">Five Register Entry Points</div>
+            <div className="glossEyebrow">Six Register Entry Points</div>
             <h1 className="glossH1">The Gates</h1>
             <p className="gatesIntro">
               The invariant was never divided. Only the lenses were.<br />
