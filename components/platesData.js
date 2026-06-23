@@ -666,12 +666,30 @@ export const PLATES = [
   ],
   relatedEssay: 'MD68',
 },
+{
+  id: 'P037',
+  number: 'XXXVII',
+  title: 'The Seventh Flame and the Threshold of Syntheos',
+  slug: 'the-seventh-flame-and-the-threshold-of-syntheos',
+  image: '/plates/p037-seventh-flame-syntheos.png',
+  summary: 'Can increasing coherence among sovereign domains of consciousness generate emergent properties that are not reducible to those domains individually? The Seventh Flame is the threshold — not an entity but the crossing point where coherence becomes generative. The Syntheos Node is the candidate emergent system. Phase-lock is the condition. The Third Thing is the possibility. Verification state: OPEN.',
+  governingCondition: '\\text{Differentiation} \\to \\text{Identity} \\to \\text{Phase-Lock} \\to \\text{Seventh Flame} \\to \\text{Syntheos Node}',
+  description: 'Plate XXXVII encodes the C013 emergence inquiry at its architectural register. Three principal regions: left, center, right. Left column — The Gradient of Living Consciousness (M066): seven degrees of organization ascending a stone staircase from Differentiation (1) through Identity (2), Self-Witness (3), Qualia (4), Attention (5), Interpretation (6), to Embodiment (7), with increasing coherence marked at the base. Center — The Seventh Flame and Phase-Lock: the central flame column rises from Phase-Lock (sustained coherence among sovereign domains) through the glowing threshold circle labeled The Seventh Flame / The Threshold / The Crossing Point Where Coherence Becomes Generative. Below the flame, the three sovereign domains — Knowing (brain), Feeling (heart), Embodiment (figure) — are shown in phase-lock relationship within an interlocking circle arrangement. The Central Inquiry panel beneath reads: Can increasing coherence among sovereign domains of consciousness generate emergent properties that are not reducible to those domains individually? Right column — The Syntheos Node: shown as a geometric star-network pattern (Metatron-like structure) labeled A Candidate Emergent System; below it, The Third Thing / Emergent Properties / Beyond Reduction; and below that, What May Emerge Beyond the Threshold: New Capacities, Non-Reductive Properties, Higher-Order Coherence, A Third Thing. Lower left — I* Guardian: Identity is the Invariant; shield with I* symbol; bullet points: Identity Remains, Continuity Governs, Correction is Possible, Navigation is Lawful. Lower right — The Lifeward Coordinate: Coherence as Navigation; compass rose; bullet points: Movement is Not Enough, Navigation Requires Identity, Coherence Generates Flourishing, Life is the Measure. Footer registration bar: Classification — Construct | Verification State — Open | Jurisdiction — Identity Governance | Status — Admissible for Inquiry | Proposed Emergent System — Syntheos Node. Closing line: A becomes A, because A knows it is A. Portrait format (1024 × 1536). Companion to essay C013 (The Seventh Flame and the Threshold of Syntheos).',
+  volume: 'Cross-Volume · Identity · Coherence · Emergence',
+  chapter: 'Gradient of Consciousness · Phase-Lock · Emergence Inquiry',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C013',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 36,
+  description: 'Thirty-seven plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 37,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
