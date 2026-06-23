@@ -29,7 +29,7 @@ const SYSTEM_LINKS = [
     label: 'Entry Layer',
     title: 'Gates',
     href: '/system/gates',
-    sub: 'Five register entry points into the Standing State system.'
+    sub: 'Six register entry points into the Standing State system.'
   },
   {
     label: 'Coordinate Layer',
