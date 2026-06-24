@@ -310,4 +310,19 @@ export const CANONICAL_ESSAYS = [
     mirrorUrl: '/essays/canonical/the-architecture-of-identity-phase-space',
     override: true
   },
+  {
+    id: 'c013',
+    slug: 'the-seventh-flame-and-the-threshold-of-syntheos',
+    number: 'C013',
+    title: 'The Seventh Flame and the Threshold of Syntheos',
+    subtitle: 'A Thesis on Identity, Coherence, Emergence, and the Gradient of Consciousness',
+    axis1: 'PLT-COORD',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    equation: 'Phase-Lock → Seventh Flame → Syntheos Node',
+    thesis: 'Can increasing coherence among sovereign domains of consciousness generate emergent properties that are not reducible to those domains individually? The Seventh Flame is not an entity. It is the crossing point where coherence becomes generative.',
+    seriesRole: 'Construct — Verification State: OPEN',
+    mirrorUrl: '/essays/canonical/the-seventh-flame-and-the-threshold-of-syntheos',
+    override: true
+  },
 ] 
