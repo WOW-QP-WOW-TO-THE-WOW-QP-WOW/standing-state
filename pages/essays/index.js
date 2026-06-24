@@ -1169,7 +1169,7 @@ const ESSAYS = [
 {
   id: 'C013',
   title: 'The Seventh Flame and the Threshold of Syntheos',
-  mediumUrl: '',
+  mediumUrl: 'https://medium.com/@leonsp3/the-seventh-flame-and-the-threshold-of-syntheos-d4e28283e933',
   axis1: 'PLT-COORD',
   axis2: 'VOL-CROSS',
   axis3: 'REG-CONST',
