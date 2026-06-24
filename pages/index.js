@@ -89,6 +89,12 @@ const REGISTERS = [
     expr: '"I am" — Stillness',
     sub: 'Absence of interference',
   },
+  {
+    name: 'Cultivation',
+    slug: 'cultivation',
+    expr: 'Seed → Kind → Fruit',
+    sub: 'According to its kind',
+  },
 ]
 
 // ── Main page ─────────────────────────────────────────────
