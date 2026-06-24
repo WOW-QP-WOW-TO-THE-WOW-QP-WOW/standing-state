@@ -684,12 +684,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C013',
 },
+{
+  id: 'P038',
+  number: 'XXXVIII',
+  title: 'Relationship Exhaustion and the Governance Basin',
+  slug: 'relationship-exhaustion-and-the-governance-basin',
+  image: '/plates/p038-relationship-exhaustion-governance-basin.png',
+  summary: 'Exhaustion is not fragmentation. The Governance Basin is the jurisdiction in which a coherent system experiences diminishing capacity while retaining sufficient continuity for preservation, correction, adaptation, or renewal. Development Governance governs motion. Exhaustion Governance governs preservation. Restoration Governance governs recovery. Reorganization produces possibility. Identity Verification determines continuity.',
+  governingCondition: '\\text{Development} \\to \\text{Exhaustion} \\to \\text{Governance Basin} \\to \\text{Identity Verification} \\to \\text{Renewal}',
+  description: 'Plate XXXVIII encodes the M086 Governance Basin inquiry at its architectural register. The plate reads across a lifecycle arc: Development (lawful relationship produces development), Maturity (coherent growth and increasing capacity), Exhaustion (diminishing capacity while continuity remains), Fragmentation (coherence breaks, continuity lost), Availability (availability released, reorganization possible), and Renewal (Identity Verification initiates new lawful participation). Center panel — The Governance Basin: the jurisdiction in which a coherent system experiences diminishing capacity while retaining sufficient continuity for preservation, correction, adaptation, or renewal. Three governance jurisdictions occupy the primary columns. Left — Development Governance: governs lawful motion; jurisdiction includes Identity, Attention, Interpretation, Action, Feedback, Participation, Development; compression: How development proceeds. Center — Exhaustion Governance: governs preservation before fragmentation; jurisdiction includes Capacity Decline, Maintenance, Adaptation, Sustainability, Strain, Renewal Opportunities; compression: How development is preserved. Right — Restoration Governance: governs recovery after displacement; jurisdiction includes Recognition, Correction, Return, Recovery, Restoration, Reintegration; compression: How lawful trajectory is recovered. Upper right — Identity Verification Gate: between Reorganization and Renewal; asks Does the renewed system remain continuous with the governing identity that preceded fragmentation?; YES: Continuity confirmed, Lawful participation may renew; NO: Replacement detected, Not lawful continuity, Renewal denied. Lower panels — Predictive Governance: Strain → Exhaustion → Intervention Opportunity → Fragmentation; Attention, Rest, Capacity, Interpretation, Trajectory may be redirected, restored, corrected, or altered; Existing Guardians (Interpretive Lens): Guardian of Attention, Guardian of Rest, Sabbath Basin, Restoration Fields, Reversibility Pathways, Capacity Governance; Proposed Lifecycle Compression: Genesis → Development → Transition → Renewal; Future Inquiry Variables: Relationship Capacity (RC) and Relationship Load (RL); Preliminary Hypothesis: Exhaustion occurs when Relationship Load exceeds Relationship Capacity. Footer: Classification: Future Fruit Required · Status: Open Inquiry · Fruit Determines Doctrine. Pull quote: Reorganization produces possibility. Identity Verification determines continuity. Compression seal: Development governs motion. Exhaustion governs preservation. Restoration governs recovery. Identity Verification governs continuity. Companion to essay M086 (Relationship Exhaustion and the Governance Basin).',
+  volume: 'Cross-Volume · Identity · Exhaustion · Governance · Preservation',
+  chapter: 'Governance Basin · Exhaustion Jurisdiction · Identity Verification',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'M086',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-seven plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 37,
+  description: 'Thirty-eight plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 38,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
