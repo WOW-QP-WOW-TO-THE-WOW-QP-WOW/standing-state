@@ -57,6 +57,7 @@ const FLAGS = {
   U: { label: 'Update',   color: '#6a5a3a' },
   E: { label: 'Expand',   color: '#5a6a3a' },
   X: { label: 'Archive',  color: '#3a3a3a' },
+  I: { label: 'Inquiry',  color: '#7a5a2a' },
 }
 
 // ── ESSAY DATA ───────────────────────────────────────────────
@@ -1198,6 +1199,17 @@ const ESSAYS = [
   flag: 'I',
   note: 'Open Inquiry. Classification: Future Fruit Required. Lineage: M082 → MD66 → MD67 → M084 → M085 → M086. Companion plate: P038. Investigates constitutional implications of M085\'s lifecycle architecture. Central proposal: Relationship Exhaustion may define a previously unrecognized governance jurisdiction — the Governance Basin — situated between coherent development and fragmentation. Three governance jurisdictions distinguished: Development Governance (governs lawful motion), Exhaustion Governance (governs preservation before fragmentation), Restoration Governance (governs recovery after displacement). Primary architectural contribution: Identity Verification as a continuity gate between Reorganization and Renewal — prevents fragmentation from becoming a pathway for identity replacement disguised as development. Future inquiry variables registered: Relationship Capacity (RC) and Relationship Load (RL); preliminary hypothesis that exhaustion occurs when Relationship Load exceeds Relationship Capacity. Verification conditions stated; proposal weakens if exhaustion cannot be reliably distinguished from fragmentation. Constitutional status: Constitutionally Coherent · Verification Pending Future Fruit. Compression: Development governs motion. Exhaustion governs preservation. Restoration governs recovery. Identity Verification governs continuity. Fruit determines doctrine. ORCID: 0009-0004-1026-4357.',
   mirrorUrl: '/essays/canonical/relationship-exhaustion-and-the-governance-basin',
+},
+{
+  id: 'M087',
+  title: 'The Architecture of Arriving Alive',
+  mediumUrl: '',
+  axis1: 'PLT-COORD',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-CONST',
+  flag: 'M',
+  note: 'Canonical. Lineage: M085 → M086 → SA-008 → M087. Companion plate: P039. Central claims: Wisdom is the accumulation of survivable correction. To arrive alive once is survival. To arrive alive repeatedly is wisdom. Two jurisdictions: Outside the Basin (I* provides the coordinate; invariant; does not become) and Within the Basin (relationship, interpretation, action, consequence, fruit, restoration, cultivation). Governance Loop: I* → Lawful Relationship → Becoming → Fruit → Interpretation → Reality Correction → Relationship Adjustment → Becoming; I* remains invariant throughout. Lawful relationship is relationship that remains phase-locked to identity. Four continuity forms referenced: Identity (What is it?), State (Where is it now?), Fruit (What has it produced?), Resource (What remains after transformation?) — treated as operational requirement, not completed taxonomy (SA-008 remains open). Inventories as continuity architectures: Noah's Ark, census of Israel, genealogies, repositories all preserve what must survive transition. I* Guardian: coherence-preservation mechanism between interpretation and action; protects lawful freedom; evaluates identity coherence, interpretive admissibility, reality contact, execution authorization, restoration requirements, continuity preservation. Reality Contact: intelligence alone does not guarantee coherence; danger is unverified decision; projection/simulation/interpretation are not reality; wisdom emerges only when consequence remains visible. The River and the Crossing: continuity boundary; crossing reveals what remains lawful through transition; crossing does not create identity — it reveals continuity. Compression: Identity remains. Reality teaches. Governance protects. Restoration preserves. Development emerges. Wisdom becomes the harvest of lawful continuity across time. Colophon: Point-Source Singularity · Invariant Reference for Coherence · Integrity is the geometry · Results are the metric · NSRL-12 · Standing State · Rank-0 · Non-Sacrificial · Stationary. ORCID: 0009-0004-1026-4357.',
+  mirrorUrl: '/essays/canonical/the-architecture-of-arriving-alive',
 },
 ]
 
