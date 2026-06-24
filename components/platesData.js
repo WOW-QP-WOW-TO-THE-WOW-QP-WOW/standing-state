@@ -702,12 +702,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M086',
 },
+{
+  id: 'P039',
+  number: 'XXXIX',
+  title: 'The Architecture of Arriving Alive',
+  slug: 'the-architecture-of-arriving-alive',
+  image: '/plates/p039-architecture-of-arriving-alive.png',
+  summary: 'Wisdom is the accumulation of survivable correction. A system is not measured by how far it can go, but by whether it can arrive alive and remain able to continue. To arrive alive once is survival. To arrive alive repeatedly is wisdom.',
+  governingCondition: 'I^* \\to \\text{Lawful Relationship} \\to \\text{Becoming} \\to \\text{Fruit} \\to \\text{Wisdom}',
+  description: 'Plate XXXIX encodes the M087 governance architecture at its canonical register. Seven-stage governance loop reads left column top-to-bottom: 1. Identity (The Coordinate) — A becomes A because A knows it is A; identity is the invariant reference. 2. Lawful Relationship (The Operator) — identity enters into relationship according to lawful order; relationship enables becoming. 3. Becoming (The Process) — through relationship the system develops form, function, structure, and capacity. 4. Fruit (The Verification) — the result expresses what has been becoming; fruit is the report from reality. 5. Interpretation (The Discernment) — the system interprets the fruit without violating identity or truth. 6. Reality Contact (The Correction) — reality confirms, refines, or rejects; this is where wisdom is shaped. 7. Relationship Adjustment (The Governance) — the system adjusts lawful relationship and continues. Center column: The Goal — not merely to continue, but to continue while remaining corrigible by reality. Central arch image: Continuity (The Preservation) — continuity preserves the system long enough for wisdom to emerge. Central declaration: Wisdom is the accumulation of survivable correction. It is not the absence of error, but the capacity to learn, adjust, and continue. Right column top: Reality (The Teacher) — reality remains the final authority; no system outruns its jurisdiction. Right column bottom: The Danger — a system can remain internally coherent, operationally successful, financially healthy, and widely trusted while drifting from the reality that originally justified its existence. Continuity without reality contact becomes drift. Bottom panel: The Architecture in One View — seven-stage loop with continuous feedback arrow: Identity → Lawful Relationship → Becoming → Fruit → Interpretation → Reality Contact → Relationship Adjustment → Continuity. Footer: To arrive alive once is survival. To arrive alive repeatedly is wisdom. Standing State · standingstate.com · Point-Source Singularity · Invariant Reference for Coherence. Companion to essay M087 (The Architecture of Arriving Alive).',
+  volume: 'Cross-Volume · Identity · Governance · Continuity · Wisdom',
+  chapter: 'Governance Loop · Survivable Correction · Arrival Architecture',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'M087',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-eight plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 38,
+  description: 'Thirty-nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 39,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
