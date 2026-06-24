@@ -526,16 +526,18 @@ body::before {
 .regIntro { font-size: 0.92rem; color: var(--gray-lt); max-width: 580px; margin-bottom: 3rem; line-height: 1.8; }
 .regGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border: var(--rule);
 }
 .regCell {
   padding: 2rem 1.4rem;
   border-right: var(--rule);
+  border-bottom: var(--rule);
   text-align: center;
   transition: background .3s;
 }
-.regCell:last-child { border-right: none; }
+.regCell:nth-child(2n) { border-right: none; }
+.regCell:nth-last-child(-n+2) { border-bottom: none; }
 .regCell:hover { background: var(--panel); }
 .regName {
   font-family: var(--display);
@@ -607,7 +609,6 @@ body::before {
   .bookAction { display: none; }
   .regGrid { grid-template-columns: 1fr 1fr; }
   .regCell:nth-child(2n) { border-right: none; }
-  .regCell { border-bottom: var(--rule); }
   .aboutGrid { grid-template-columns: 1fr; gap: 2rem; }
   .aboutSticky { position: static; }
   .footerInner { flex-direction: column; gap: 0.8rem; text-align: center; }
