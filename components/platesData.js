@@ -720,12 +720,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M087',
 },
+{
+  id: 'P040',
+  number: 'XL',
+  title: 'The Orchard and the Return',
+  slug: 'the-orchard-and-the-return',
+  image: '/plates/p040-the-orchard-and-the-return.png',
+  summary: 'Identity becomes visible as seed. Relationship becomes visible as rootedness. Development becomes visible as growth. Fruit becomes visible as verification. Restoration becomes visible as season. Renewal becomes visible as return. According to its kind.',
+  governingCondition: '\\text{Identity} \\to \\text{Relationship} \\to \\text{Development} \\to \\text{Fruit} \\to \\text{Restoration} \\to \\text{Return}',
+  description: 'Plate XL encodes the Cultivation Register at its canonical visual register. Constitutional illustration — not infographic. Central image: one orchard tree of great age, massive exposed root system occupying approximately half the composition, sunrise aligned through the trunk. TFAL centered beneath the trunk: A becomes A, because A knows it is A. Seven-stage cultivation cycle along the bottom reads left to right: 1. Identity — Seed; 2. Relationship — Rooted; 3. Development — Growing; 4. Fruit — Revealed; 5. Restoration — Rest and Renew; 6. Renewed Capacity — Season Returns; 7. Return — The Cycle Begins. Closing inscription: ACCORDING TO ITS KIND. The plate communicates the doctrine before the essay is read. Caption: Identity becomes visible as seed. Relationship becomes visible as rootedness. Development becomes visible as growth. Fruit becomes visible as verification. Restoration becomes visible as season. Renewal becomes visible as return. According to its kind. Cultivation Register companion to essay The Orchard and the Return.',
+  volume: 'Cross-Volume · Cultivation Register · Identity · Fruit · Renewal',
+  chapter: 'Cultivation Gate · According to Its Kind · Sacred Cycle',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'ORCHARD',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Thirty-nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 39,
+  description: 'Forty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 40,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
