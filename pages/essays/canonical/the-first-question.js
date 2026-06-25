@@ -107,7 +107,7 @@ export default function TheFirstQuestion() {
 
           {/* ── Companion plate strip ── */}
           <div style={{ marginTop: '0.5rem' }}>
-            <span style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Plate · P042 · Pending</span>
+            <a href="/system/plates/the-first-question" style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}>Plate · P042 · The First Question →</a>
           </div>
         </div>
       </header>
@@ -123,6 +123,21 @@ export default function TheFirstQuestion() {
           </div>
 
           <span id="essay-reader-start" aria-hidden="true" />
+
+          {/* ── Plate P042 ── */}
+          <div style={{ marginBottom: '3rem' }}>
+            <img
+              src="/plates/p042-the-first-question.png"
+              alt="P042 — The First Question plate"
+              style={{ width: '100%', display: 'block', border: 'var(--rule)' }}
+            />
+            <div style={{ fontFamily: 'var(--display)', color: 'var(--gold-dim)', fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', marginTop: '0.5rem', textAlign: 'center' }}>
+              P042 · The First Question ·{' '}
+              <a href="/system/plates/the-first-question" style={{ color: 'var(--gold-dim)', textDecoration: 'none' }}>
+                View Plate →
+              </a>
+            </div>
+          </div>
 
           {/* ── TFAL ── */}
           <div style={{ textAlign: 'center', padding: '1.5rem 0 2rem', borderBottom: 'var(--rule)', marginBottom: '2rem' }}>
