@@ -123,6 +123,30 @@ export default function OrchardAndTheReturn() {
           {/* Reader start marker */}
           <span id="essay-reader-start" aria-hidden="true" />
 
+          {/* ── Plate P040 ── */}
+          <div style={{ marginBottom: '3rem' }}>
+            <img
+              src="/plates/p040-the-orchard-and-the-return.png"
+              alt="P040 — The Orchard and the Return plate"
+              style={{ width: '100%', display: 'block', border: 'var(--rule)' }}
+            />
+            <div style={{ fontFamily: 'var(--display)', color: 'var(--gold-dim)', fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', marginTop: '0.5rem', textAlign: 'center' }}>
+              P040 · The Orchard and the Return ·{' '}
+              <a href="/system/plates/the-orchard-and-the-return" style={{ color: 'var(--gold-dim)', textDecoration: 'none' }}>
+                View Plate →
+              </a>
+            </div>
+            <div style={{ fontFamily: 'var(--serif)', color: 'var(--gold-dim)', fontSize: '0.85rem', lineHeight: 1.8, textAlign: 'center', marginTop: '1.25rem', fontStyle: 'italic' }}>
+              Identity becomes visible as seed.<br />
+              Relationship becomes visible as rootedness.<br />
+              Development becomes visible as growth.<br />
+              Fruit becomes visible as verification.<br />
+              Restoration becomes visible as season.<br />
+              Renewal becomes visible as return.<br /><br />
+              According to its kind.
+            </div>
+          </div>
+
           {/* ── Register coordinate ── */}
           <div style={{ textAlign: 'center', padding: '1.5rem 0 2rem' }}>
             <div style={{ fontFamily: 'var(--serif)', color: 'var(--gold)', fontSize: '1.05rem', lineHeight: 2, fontStyle: 'italic' }}>
