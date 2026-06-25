@@ -775,12 +775,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M089',
 },
+{
+  id: 'P043',
+  number: 'XLIII',
+  title: 'The Architecture of Lawful Relationship',
+  slug: 'the-architecture-of-lawful-relationship',
+  image: '/plates/p043-the-architecture-of-lawful-relationship.png',
+  summary: 'Growth is not produced by fragmentation. Growth is produced by lawful relationship. Identity organizes. Lawful relationship develops. Relationship exhaustion precedes fragmentation. Fragmentation releases availability. Reorganization enables new participation. Development begins again.',
+  governingCondition: '\\text{Identity} \\to \\text{Lawful Relationship} \\to \\text{Development} \\to \\text{Exhaustion} \\to \\text{Fragmentation} \\to \\text{Reorganization} \\to \\text{New Development}',
+  description: 'Plate XLIII encodes the M085 constitutional lifecycle architecture. Standing State dark palette with gold accents throughout. Title block upper left: M085 · Canonical · DI: SA-003 V-001 · Leon Powdar (PR) · Standing State Press · TFAL: A becomes A, because A knows it is A. Central element: thirteen-stage constitutional lifecycle rendered as a circular dependency diagram — 1. Differentiation (A ≠ not-A, distinction exists); 2. Information (jurisdiction between distinction and identity); 3. Identity (A becomes A, identity is established); 4. Sovereignty (the capacity to maintain identity; only a sovereign identity can enter relationship); 5. Lawful Relationship (sovereign identities participate without losing themselves); 6. Development (growth emerges from lawful relationships, not from resources alone); 7. Maturity (the basin reaches its functional fullness); 8. Relationship Exhaustion (sustaining relationships can no longer maintain coherence; the fruit ripens, the fruit falls); 9. Fragmentation (the basin ceases to sustain itself; fragmentation is the consequence, not the cause); 10. Resource Availability (the resources remain; the basin's governance is released; fragmentation releases participation capacity, it does not create development); 11. Reorganization (released resources become available for future participation; new basins emerge, new identities organize); 12. New Lawful Relationship (new relationships form lawfully); 13. New Development (development begins again, the cycle continues). Core Principle panel at center: Lawful relationship organizes resources within a coherent identity. Apple = Apple. The informational structure remains coherent. The resources remain organized. The relationships remain lawful. Left panel — The Foundation: stages 1–5 with minimal symbolic icons; closing statement: Only then can development emerge. Right panel — The General Law of Development: Identity → Relationship → Growth → Relationship Exhaustion → Fragmentation → Availability → Reorganization → Relationship → Growth. Growth is the product of lawful relationship. Fragmentation marks the transition between basins. Upper right icon: Identity · Sovereignty · Relationship · Development tree symbol. Bottom panel — Two Forms of Continuity: Identity Continuity (Lineage) — Apple → Apple → Apple → ... The lineage persists through propagation. Kind remains according to its kind; Resource Continuity (Participation) — Apple → Compost → Soil → Tree → Apple. The resources persist through participation. Participation preserves contribution. Closing line: Identity preserves lineage. Participation preserves contribution. Lower left — Key Distinctions: Fragmentation ≠ Growth; Fragmentation → Availability; Resources permit development; Resources do not generate development; Lawful relationship produces development. Lower center-left — Dependency: DI: SA-003 V-001. This essay depends only on the minimal claim that identity cannot arise absent information. The constitutional relationship between differentiation and information remains an open inquiry under DI: SA-003 V-001. Lower center — Constitutional Compression: Identity organizes. Lawful relationship develops. Relationship exhaustion precedes fragmentation. Fragmentation releases availability. Availability is a condition of possibility, not a sufficient condition for development. Reorganization creates possibility. Identity verification determines continuity. Development begins again. Lower right — The Purpose Beyond the Apple: The apple's purpose is not merely to remain an apple. Its existence participates in a lineage of lawful relationships extending beyond the lifespan of any individual manifestation. Identity organizes. Lawful relationship develops. Relationship exhaustion precedes fragmentation. Fragmentation releases availability. Reorganization enables new participation. Thus development begins again. Apple = Identity + Contribution + Time Continuity icons. Footer: DEVELOPMENT IS NOT BORN FROM DESTRUCTION. DEVELOPMENT IS BORN FROM LAWFUL RELATIONSHIP. © Leon Powdar · All rights reserved. Companion to essay M085 (The Architecture of Lawful Relationship).',
+  volume: 'Cross-Volume · Identity · Lawful Relationship · Development · Fragmentation · Reorganization',
+  chapter: 'Lifecycle Architecture · Two Forms of Continuity · Lawful Relationship Doctrine',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'M085',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-two plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 42,
+  description: 'Forty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 43,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
