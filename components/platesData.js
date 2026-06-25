@@ -738,12 +738,31 @@ export const PLATES = [
   ],
   relatedEssay: 'ORCHARD',
 },
+{
+  id: 'P041',
+  number: 'XLI',
+  title: 'The Governance of Restoration',
+  slug: 'the-governance-of-restoration',
+  image: '/plates/p041-the-governance-of-restoration.png',
+  summary: 'ASK governs the transition from exhausted lawful relationship to new lawful relationship. Biology performs restoration. Governance determines jurisdiction. Identity governs both. Reality verifies the result. Development builds. Restoration preserves. ASK governs the transition.',
+  governingCondition: '\\text{Lawful Relationship} \\to \\text{Governance Basin} \\to \\text{ASK} \\to \\text{New Lawful Relationship}',
+  description: 'Plate XLI encodes the M088 constitutional restoration architecture. Two jurisdictions frame the composition: Execution Jurisdiction (left, daylight register) — the domain of lawful participation where development proceeds according to lawful relationship; and Restoration Jurisdiction (right, moonlight register) — the domain of constitutional preservation where restoration proceeds according to constitutional priority. Twelve-stage cycle reads clockwise: 1. Input — potential enters; 2. Identity — coordinate is known; 3. Lawful Relationship — coherent participation established; 4. Development — capacity built, life proceeds according to lawful relationship; 5. Relationship Strain — pressures accumulate; 6. Relationship Exhaustion (implied in transition); 7. Governance Basin — constitutional jurisdiction between development and fragmentation; ASK (K_auto) gate at center — Automatic Self-Knowing, the constitutional transition: STOP unnecessary input, ALLOW completion, PERMIT repair; 8. Completion — exhausted lawful participation is allowed to complete; 9. Repair — intrinsic restorative processes restore capacity; 10. Identity Verification — the same identity continues, continuity confirmed; 11. New Lawful Relationship — conditions are lawful, participation is renewed; 12. Renewed Development — life resumes in coherent participation. Right panel — The Four Continuities: Identity Continuity (governing coordinate remains), Resource Continuity (usable capacity remains), Interpretive Continuity (meaning and lawful understanding remain), Lineage Continuity (coherent transmission through time remains). Lower left — The Constitutional Principle: ASK does not govern biology; ASK governs jurisdiction; Biology performs restoration; Governance determines when restoration possesses constitutional priority; Identity governs both; Reality verifies the result. Lower right — The Cycle is Law: Life is neither perpetual production nor perpetual rest; it is governed alternation between lawful participation and lawful restoration; the cycle preserves identity and permits renewed development according to its kind. Footer: Development Builds · Restoration Preserves · ASK Governs the Transition · Identity Remains · Reality Verifies. TFAL closing seal: A becomes A, because A knows it is A. Companion to essay M088 (The Governance of Restoration).',
+  volume: 'Cross-Volume · Identity · Lawful Relationship · ASK · Restoration · Renewal',
+  chapter: 'Governance of Restoration · ASK · Constitutional Restoration Cycle',
+  linkedVars: ['xstar', 'phi', 'kauto'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+    { label: 'K_auto', anchor: 'kauto' },
+  ],
+  relatedEssay: 'M088',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 40,
+  description: 'Forty-one plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 41,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
