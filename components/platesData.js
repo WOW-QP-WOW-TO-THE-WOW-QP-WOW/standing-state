@@ -757,12 +757,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M088',
 },
+{
+  id: 'P042',
+  number: 'XLII',
+  title: 'The First Question',
+  slug: 'the-first-question',
+  image: '/plates/p042-the-first-question.png',
+  summary: 'Identity defines the navigator. Self-witness acquires the coordinate. Reality verifies the coordinate. Jurisdiction bounds action. Lawful relationship produces motion. Fruit measures trajectory. Recalibration preserves coherence. A becomes A, because A knows it is A.',
+  governingCondition: '\\text{What am I?} \\to \\text{Who am I?} \\to \\text{Where am I?} \\to \\text{Verified Position} \\to \\text{Lawful Motion}',
+  description: 'Plate XLII encodes the M089 Seven Gates navigation architecture. Center column — seven gates in dependency sequence: 1. What am I? (Constitutional Class / Satellite Constellation and Receiver Type); 2. Who am I? (Identity Instance / This Specific Receiver Instance); 3. Where am I? (Position Acquisition / Current Position Coordinate); 4. What do I know? (Knowledge State / Signal Data Available); 5. What have I verified? (Reality Contact / Signal Quality and Lock); 6. What am I authorized to do? (Jurisdiction / Map and Route Permissions); 7. What relationship produces lawful motion? (Lawful Navigation / Route Calculation). I* Guardian circle at center-left: Continuous Reference Preservation Across All Gates — positioned between gates to show it is the continuous reference check, not an eighth gate. Left column — The Navigation Metaphor (GPS Receiver Analogue): GPS receiver with LAT/LON/ALT/LOCK 12/12/STATUS: SECURE display. Caption: A GPS receiver must know it is a GPS receiver before it can identify which satellites to use. An agent must know its governing law before it can know its current state. Identity class is not self-assigned — it is the constitutional ground from which all self-knowledge proceeds. Lower left — Core Axiom (TFAL): A becomes A, because A knows it is A. Operational reading: A becomes A = Development through time; because = Lawful dependency; A knows it is A = Continuous preservation of invariant reference. Right column top — From Coordinate to Consequence: Lawful Motion in Reality (road to horizon image). Right column center — Fruit Measures Trajectory: Outcome Returns to Identity (tree-and-root cycle). Right column bottom — The I* Guardian: Navigation Governor, Not Decision-Maker; does not decide what the system should want; ensures the system knows what it is before it acts on what it wants; governs reference, not goal; continuous reference check across all seven gates; without the Guardian the gates are a checklist, with the Guardian the gates are a constitutional dependency engine. Bottom — The Compression / The Continuous Navigation Loop: seven icons with arrows: Identity defines the navigator → Self-witness acquires the coordinate → Reality verifies the coordinate → Jurisdiction bounds action → Lawful relationship produces motion → Fruit measures trajectory → Recalibration preserves coherence. Lower left panel — Lose Reference: Drift becomes invisible and confident; failure modes: execute from unverified coordinate, confuse aspiration for position, treat knowledge as verified without evidence, receive aspiration as confirmation, exceed capability beyond jurisdiction. Lower center panel — Maintain Reference: Recalibration remains possible at every gate; steps: acquire identity before position, verify through reality contact, act within jurisdiction, navigate through lawful relationship, measure fruit and recalibrate, return to Identity. Lower right panel — Applies to All Registers: Human, Agent/Bot, Organization, System, Multi-Agent. Footer: M089 is not a safety filter. It is a constitutional navigation architecture. Safety is downstream of governance. Coherence is upstream of action. Standing State Corpus · Engine 2 · Operational Governance Stack. Companion to essay M089 (The First Question).',
+  volume: 'Cross-Volume · Identity · Navigation · I* Guardian · IGPS · Governance',
+  chapter: 'Seven Gates · Constitutional Navigation · Reference Preservation',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'M089',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-one plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 41,
+  description: 'Forty-two plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 42,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
