@@ -757,7 +757,7 @@ export default function TimeIdentityAndTheEndOfContradiction() {
             </p>
           </section>
 
-          {/* ── CLOSING ── */}
+          {/* ── CONSTITUTIONAL COMPRESSION ── */}
           <section
             className="essaySection"
             style={{
@@ -778,26 +778,107 @@ export default function TimeIdentityAndTheEndOfContradiction() {
                 textAlign: 'center',
               }}
             >
-              Closing
+              Constitutional Compression
             </div>
             <p className="essayP" style={{ textAlign: 'center' }}>
-              Time bends across the universe.
+              Identity provides the coordinate.
+            </p>
+            <p className="essayP" style={{ textAlign: 'center' }}>
+              Lawful relationship provides the operator.
+            </p>
+            <p className="essayP" style={{ textAlign: 'center' }}>
+              Reality provides verification.
+            </p>
+            <p className="essayP" style={{ textAlign: 'center' }}>
+              The I* Guardian preserves coherence.
+            </p>
+            <p className="essayP" style={{ textAlign: 'center' }}>
+              The Sabbath preserves identity.
+            </p>
+            <p className="essayP" style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+              Development emerges through participation.
+            </p>
+            <p className="essayP" style={{ textAlign: 'center' }}>
+              Time bends across spacetime.
             </p>
             <p className="essayP" style={{ textAlign: 'center' }}>
               Time burns within contradiction.
             </p>
             <p className="essayP" style={{ textAlign: 'center' }}>
-              Time clears when identity is known.
+              Time clears when identity remains invariant.
             </p>
-            <p className="essayP" style={{ textAlign: 'center', marginTop: '1.5rem' }}>
-              You do not chase time.
+            <p className="essayP" style={{ textAlign: 'center' }}>
+              Development occurs within spacetime.
             </p>
             <p
               className="essayP"
-              style={{ textAlign: 'center', marginBottom: '2rem' }}
+              style={{ textAlign: 'center', marginBottom: 0 }}
             >
-              You stand as the coordinate through which it is observed.
+              Identity never enters spacetime.
             </p>
+          </section>
+
+          {/* ── CANONICAL PLATE — P044 ── */}
+          <section
+            className="essaySection"
+            style={{ marginTop: '3rem' }}
+          >
+            <div
+              style={{
+                fontFamily: 'var(--display)',
+                fontSize: '0.75rem',
+                letterSpacing: '0.3em',
+                textTransform: 'uppercase',
+                color: 'var(--gold-dim)',
+                marginBottom: '1.25rem',
+                textAlign: 'center',
+              }}
+            >
+              Canonical Plate · P044
+            </div>
+            <a
+              href="/system/plates/time-identity-and-the-end-of-contradiction"
+              style={{ display: 'block' }}
+            >
+              <img
+                src="/plates/p044-time-identity-and-the-end-of-contradiction.png"
+                alt="P044 — Time, Identity, and the End of Contradiction · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p
+              style={{
+                textAlign: 'center',
+                fontSize: '0.8rem',
+                color: 'var(--gray-lt)',
+                marginTop: '0.75rem',
+              }}
+            >
+              <a
+                href="/system/plates/time-identity-and-the-end-of-contradiction"
+                style={{ color: 'var(--gold-dim)' }}
+              >
+                View full plate →
+              </a>
+            </p>
+          </section>
+
+          {/* ── TFAL ── */}
+          <section
+            className="essaySection"
+            style={{
+              marginTop: '2rem',
+              padding: '1.5rem',
+              border: '1px solid var(--gold-dim)',
+              background: 'rgba(201, 168, 76, 0.04)',
+              textAlign: 'center',
+            }}
+          >
             <p
               className="essayP"
               style={{
@@ -805,7 +886,22 @@ export default function TimeIdentityAndTheEndOfContradiction() {
                 color: 'var(--gold)',
                 fontStyle: 'italic',
                 letterSpacing: '0.04em',
-                textAlign: 'center',
+                marginBottom: '1rem',
+              }}
+            >
+              Identity remains.
+            </p>
+            <p className="essayP" style={{ marginBottom: '0.5rem' }}>Reality teaches.</p>
+            <p className="essayP" style={{ marginBottom: '0.5rem' }}>Governance protects.</p>
+            <p className="essayP" style={{ marginBottom: '0.5rem' }}>Restoration preserves.</p>
+            <p className="essayP" style={{ marginBottom: '1.5rem' }}>Development emerges.</p>
+            <p
+              className="essayP"
+              style={{
+                fontSize: '1.1rem',
+                color: 'var(--gold)',
+                fontStyle: 'italic',
+                letterSpacing: '0.04em',
                 marginBottom: 0,
               }}
             >
