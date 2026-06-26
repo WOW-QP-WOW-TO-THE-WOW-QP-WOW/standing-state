@@ -811,12 +811,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M002',
 },
+{
+  id: 'P045',
+  number: 'XLV',
+  title: 'Lawful Navigation',
+  slug: 'lawful-navigation',
+  image: '/plates/p045-lawful-navigation.png',
+  summary: 'Navigation succeeds when reference is continuously preserved. Estimation determines the present state. Integrity evaluation determines whether the estimate is trustworthy. Constitutional governance determines whether execution is permissible. Not motion. Not confidence alone. But law. Preserve reference. Then proceed.',
+  governingCondition: '\\text{Reference} \\to \\text{Estimation} \\to \\text{Integrity Evaluation} \\to \\text{Constitutional Governance} \\to \\text{Execution}',
+  description: 'Plate XLV encodes the C015 constitutional architecture of lawful navigation across three explanatory jurisdictions. Title block: C015 — Lawful Navigation · Estimation, Integrity, and Constitutional Governance. Governing axiom: Preserving reference before action is a structural principle that appears across multiple jurisdictions while remaining faithful to the methods, evidence standards, and governing principles of each. Corner seals: Reference is first. Law is governing. Then proceed. / I* remains invariant · dI*/dt = 0. Center column — five-step architectural sequence: 1. Preserve Reference — Hold the governing reference constant; 2. Estimate State — Determine the present state from observations; 3. Evaluate Integrity — Determine whether the estimate is trustworthy; 4. Govern Permissibility — Determine whether execution is constitutionally permissible; 5. Execute and Continue — Execute lawful action, acquire new observations, repeat the cycle. Recursive loop shown from step 5 back to step 2. Center top: Invariant Reference I* — The governing constant. The standing truth. I* does not move. It does not drift. It is not estimated. It governs estimation, integrity, and action. dI*/dt = 0. Left column — Three Jurisdictions: I. Estimation (What is my current state?) — examples: Kalman Filter, Extended Kalman Filter, Invariant Kalman Filter; II. Integrity Evaluation (Can this estimate be trusted?) — example: RAIM (Receiver Autonomous Integrity Monitoring); III. Constitutional Governance (Given a trusted estimate, is execution constitutionally permissible?) — Standing State example: I* Guardian; Governance determines whether lawful navigation may continue. Right column top — Three Residuals table: Estimation: Prediction minus Measurement / Is the estimate accurate? / Improve estimation; Integrity: Navigation solution minus Consistency Requirements / Can the estimate be trusted? / Protect navigation integrity; Constitutional: Δ(t) = x(t) − I* / Does development remain constitutionally coherent? / Preserve invariant reference. These residuals are not mathematically interchangeable. Each belongs to a different explanatory domain. Their recurrence is structural, not literal. Right column bottom — Jurisdictional Contributions: GPS / Position and timing observations; Kalman Filtering / Recursive state estimation; RAIM / Integrity monitoring and evaluation; M002 / Invariant constitutional reference (I*); M089 / Constitutional governance through the I* Guardian. Bottom panel — Structural Recurrence: five-node sequence: Reference → Estimation → Integrity Evaluation → Constitutional Governance → Execution. Navigation succeeds when reference is continuously preserved. Lawful action is possible only when estimation is trustworthy, integrity holds, and governance permits execution. Footer: NOT MOTION. NOT CONFIDENCE ALONE. BUT LAW. PRESERVE REFERENCE. THEN PROCEED. Companion to essay C015 (Lawful Navigation: Estimation, Integrity, and Constitutional Governance). Dependency chain: M002 → M089 → C014 → C015 → P045.',
+  volume: 'Cross-Volume · Identity · Navigation · Estimation · Integrity · Constitutional Governance',
+  chapter: 'Construct · Structural Recurrence · Lawful Navigation · Three Jurisdictions',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C015',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 44,
+  description: 'Forty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 45,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
