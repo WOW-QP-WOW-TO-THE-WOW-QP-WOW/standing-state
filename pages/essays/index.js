@@ -804,14 +804,14 @@ const ESSAYS = [
 },
 {
   id: 'M057',
-  title: 'The Sabbath of Coherence: Identity, Phase-Lock, and the Lawful Return of the Living Self',
+  title: 'The Sabbath of Coherence: Identity, Phase-Lock, and the Lawful Habitation of Identity-Defined Systems',
   mediumUrl: '',
   axis1: 'PLT-COORD',
   axis2: 'VOL-SS',
   axis3: 'REG-STRUCT',
   flag: 'M',
-  note: 'Identity is not a frozen point but a lawful coherence basin S(I*) = { x : Φ(x; I*) ≤ 0 } — the coordinate holds while becoming traverses lawful space. Six synchronized refinements phase-lock around the invariant: maturation without erasure, basin as lawful coherence space, recognition governing traversal, Sabbath as interference removal, phase-lock over hierarchy, and faith = knowledge as the same lawful relation under different conditions of synchronization. Governing law: Σ↓ ⇒ Φ(x; I*)↓. Sabbath is not inactivity but lawful subtraction — coherence unfolded by interference removal, not produced by effort. The fullness was always complete; knowing is lawful phase-lock with the archetype; coherence unfolds as interference is removed. Companion to Plate XXVI.',
-  mirrorUrl: '',
+  note: 'Constitutional replacement — supersedes earlier mirrored version. Four constitutional jurisdictions: Differentiation (I*), Development (S(I*) basin), Governance (I* Guardian), Navigation (x(t) traversal). Constitutional subject: identity-defined system — any entity whose persistence is determined relative to an invariant identity reference; biological, physical, engineered, institutional, or conceptual. Identity is not a property of the system — identity defines the system. The constitutional object is the lawful relation between an identity-defined system and its invariant reference. The Sabbath is the lawful removal of interference from development. Coherence is not manufactured — it unfolds when contradiction ceases governing the system. Restoration is the re-establishment of lawful relation; identity was never lost; only the relationship required restoration. Navigation completes M089: Where am I? (M089) → Where am I relative to I*? (M057). Constitutional sequence: M002 (invariant established) → M057 (lawful habitation) → M085 (development) → M086 (governance basin) → M088 (restoration) → M089 (navigation). Companion to Plate XXVI (P026 — constitutional replacement PNG).',
+  mirrorUrl: '/essays/canonical/the-sabbath-of-coherence',
 },
 {
   id: 'M058',
