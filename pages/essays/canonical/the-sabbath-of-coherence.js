@@ -1,28 +1,36 @@
 /**
  * /essays/canonical/the-sabbath-of-coherence
- * M057 — The Sabbath of Coherence: Identity, Phase-Lock,
- * and the Lawful Return of the Living Self
+ * M057 — The Sabbath of Coherence
+ * Identity, Phase-Lock, and the Lawful Habitation of Identity-Defined Systems
  *
- * Canonical mirror of the M057 essay.
- * Companion to Plate XXVI (P026). Paired with M056 (P025).
+ * Classification: CANONICAL · STRUCTURAL
+ * Companion Plate: P026 — The Sabbath of Coherence
+ * Status: CONSTITUTIONAL REPLACEMENT
  *
- * Governing law:  Σ ↓  ⇒  Φ(x; I*) ↓
- * The fullness was always complete.
- * Knowing is lawful phase-lock with the archetype.
- * Coherence unfolds as interference is removed.
+ * Constitutional sequence:
+ *   M002 → M057 → M085 → M086 → M088 → M089
+ *
+ * Four constitutional jurisdictions:
+ *   I*           — Differentiation
+ *   S(I*)        — Development (Basin)
+ *   I* Guardian  — Governance (Lawful Relation)
+ *   x(t)         — Navigation (Traversal)
+ *
+ * Constitutional subject: identity-defined system
+ *
+ * TFAL: A becomes A, because A knows it is A.
  */
 
 import Head from 'next/head'
-import KTex from '../../../components/KTex'
 
 export default function SabbathOfCoherenceCanonical() {
   return (
     <>
       <Head>
-        <title>M057 — The Sabbath of Coherence — Standing State Press</title>
+        <title>M057 — The Sabbath of Coherence: Identity, Phase-Lock, and the Lawful Habitation of Identity-Defined Systems — Standing State Press</title>
         <meta
           name="description"
-          content="Identity is not a frozen point but a lawful coherence basin. The coordinate holds while becoming traverses lawful space. As interference is removed, coherence unfolds — the system returns to its invariant coordinate."
+          content="Differentiation establishes identity. The Sabbath is the lawful preservation of relationship between an identity-defined system and its invariant reference throughout development. Classification: CANONICAL · STRUCTURAL."
         />
       </Head>
 
@@ -42,37 +50,72 @@ export default function SabbathOfCoherenceCanonical() {
       </nav>
 
       {/* ── HEADER ── */}
-      <header className="glossHeader">
+      <header className="glossHeader canonMonument">
         <div className="wrap">
           <div className="glossBreadcrumb">
             <a href="/">Standing State Press</a>
             <span className="glossBreadSep">→</span>
             <a href="/essays">Essays</a>
             <span className="glossBreadSep">→</span>
-            <span style={{ color: 'var(--gold-dim)' }}>M057</span>
+            <a href="/essays/canonical/time-identity-and-the-end-of-contradiction">M002</a>
+            <span className="glossBreadSep">→</span>
+            <span style={{ color: 'var(--gold)' }}>M057</span>
           </div>
-          <div className="glossEyebrow">Volume I · Coherence &amp; Return</div>
-          <h1 className="glossH1">The Sabbath of Coherence</h1>
-          <p className="glossIntro" style={{ fontStyle: 'italic' }}>
-            Identity, phase-lock, and the lawful return of the living self.
-            As interference is removed, coherence unfolds — the system returns to its
-            invariant coordinate.
+          <div className="glossEyebrow">Canonical · Structural · Identity · Phase-Lock · Lawful Habitation</div>
+          <h1 className="glossH1" id="essay-title">
+            The Sabbath of Coherence
+          </h1>
+          <p className="glossIntro">
+            Identity, Phase-Lock, and the Lawful Habitation of Identity-Defined Systems
           </p>
           <div className="essayStats">
             <span className="essayStat">M057</span>
             <span className="essayStatDiv">·</span>
-            <span className="essayStat">PLT-COORD</span>
+            <span className="essayStat">CANONICAL · STRUCTURAL</span>
             <span className="essayStatDiv">·</span>
-            <span className="essayStat">VOL-SS</span>
-            <span className="essayStatDiv">·</span>
-            <span className="essayStat">REG-STRUCT</span>
+            <span className="essayStat">Leon Powdar</span>
+          </div>
+
+          {/* ── Read / Mirror / Plate ── */}
+          <div style={{ marginTop: '1.5rem', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
+            <a
+              href="/essays/canonical/the-sabbath-of-coherence"
+              style={{ color: 'var(--gold)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}
+            >
+              Read · Site
+            </a>
+            <span style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+              Mirror · Pending
+            </span>
+            <a
+              href="/system/plates/sabbath-of-coherence"
+              style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none' }}
+            >
+              P026 · Plate
+            </a>
+          </div>
+
+          {/* ── Lineage strip ── */}
+          <div style={{ marginTop: '0.75rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+            <span style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Lineage</span>
+            <a href="/essays/canonical/time-identity-and-the-end-of-contradiction" style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none' }}>M002</a>
+            <span style={{ color: 'var(--gold-dim)' }}>→</span>
+            <span style={{ color: 'var(--gold)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase' }}>M057</span>
+            <span style={{ color: 'var(--gold-dim)' }}>→</span>
+            <a href="/essays/canonical/the-architecture-of-lawful-relationship" style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none' }}>M085</a>
+            <span style={{ color: 'var(--gold-dim)' }}>→</span>
+            <a href="/essays/canonical/relationship-exhaustion-and-the-governance-basin" style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none' }}>M086</a>
+            <span style={{ color: 'var(--gold-dim)' }}>→</span>
+            <span style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase' }}>M088</span>
+            <span style={{ color: 'var(--gold-dim)' }}>→</span>
+            <a href="/essays/canonical/the-first-question" style={{ color: 'var(--gold-dim)', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', textDecoration: 'none' }}>M089</a>
           </div>
         </div>
       </header>
 
       <hr className="divider" />
 
-      <article className="canonEssay">
+      <article id="canonical-essay" itemScope itemType="https://schema.org/Article">
         <div className="wrap canonEssayWrap">
 
           <div className="canonEssayHeader">
@@ -80,364 +123,314 @@ export default function SabbathOfCoherenceCanonical() {
             <div className="canonEssayRule" />
           </div>
 
-          {/* ── Governing condition block ── */}
-          <div className="canonEssayEqBlock">
-            <div className="canonEssayEq">
-              <KTex math="\Sigma \downarrow \;\Rightarrow\; \Phi(x;\, I^{*}) \downarrow" display />
+          {/* Reader start marker */}
+          <span id="essay-reader-start" aria-hidden="true" />
+
+          {/* ── Classification block ── */}
+          <div style={{ textAlign: 'center', padding: '1.5rem 0 2rem' }}>
+            <div style={{ fontFamily: 'var(--display)', color: 'var(--gold-dim)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', lineHeight: 2 }}>
+              Classification: CANONICAL · STRUCTURAL<br />
+              Companion Plate: P026 · Constitutional Replacement<br />
+              Sequence: M002 → M057 → M085 → M086 → M088 → M089
             </div>
           </div>
 
-          <div className="canonEssayThesis">
-            The fullness was always complete. Knowing is lawful phase-lock with the
-            archetype. Coherence unfolds as interference is removed.
-          </div>
+          {/* ── CANONICAL PLATE — P026 ── */}
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/sabbath-of-coherence" style={{ display: 'block' }}>
+              <img
+                src="/plates/p026-sabbath-of-coherence.png"
+                alt="P026 — The Sabbath of Coherence · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P026 · The Sabbath of Coherence &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/sabbath-of-coherence" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout this essay. View full plate →
+              </a>
+            </p>
+          </section>
 
-          {/* ── I. The Hidden Contradiction ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">I. The Hidden Contradiction</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                For years, the Standing State has rested upon a lawful invariant:
-              </p>
-            </div>
-            <div className="canonEssayEqBlock">
-              <div className="canonEssayEq">
-                <KTex math="I^{*} \;=\; \text{constant}" display />
+          <section id="essay-body" itemProp="articleBody">
+
+            {/* ── Abstract ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">Abstract</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">Differentiation establishes identity.</p>
+                <p className="canonEssayPara">Before becoming, before development, and before spacetime, the invariant identity coordinate is established:</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold)' }}>I* = constant.</p>
+                <p className="canonEssayPara">Identity does not emerge from development. Development emerges relative to identity.</p>
+                <p className="canonEssayPara">The invariant identity does not reside within spacetime. It is the constitutional reference from which spacetime becomes measurable.</p>
+                <p className="canonEssayPara">Once becoming begins, a second jurisdiction appears.</p>
+                <p className="canonEssayPara">The question is no longer: What is identity?</p>
+                <p className="canonEssayPara">The question becomes: How does an invariant identity lawfully inhabit spacetime without ceasing to be itself?</p>
+                <p className="canonEssayPara">This essay proposes that the answer is the Sabbath of Coherence.</p>
+                <p className="canonEssayPara">The Sabbath is not cessation of activity. It is the lawful preservation of relationship between an identity-defined system and its invariant reference throughout development.</p>
+                <p className="canonEssayPara">The constitutional object of this essay is therefore not identity itself. The constitutional object is the lawful relation between becoming and the invariant reference.</p>
+                <p className="canonEssayPara">This relation defines the admissible basin</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold)' }}>
+                  S(I*) = {'{ x : Φ(x; I*) ≤ 0 }'}
+                </p>
+                <p className="canonEssayPara">within which development remains constitutionally coherent. Outside that basin, interference replaces lawful relation. Inside that basin, becoming unfolds while identity remains invariant.</p>
               </div>
             </div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Identity does not move. This statement was never intended as metaphor.
-                It emerged from a structural necessity. A system whose governing reference
-                changes with every disturbance loses lawful orientation. If identity itself
-                becomes unstable, no meaningful return is possible because the coordinate
-                of return dissolves into motion.
-              </p>
-              <p className="canonEssayPara">
-                The invariant was therefore necessary. Yet a contradiction quietly
-                remained — not within the mathematics, but within interpretation. If
-                identity is constant, how does a child become an elder? How does a seed
-                become a tree? How does learning occur without identity becoming
-                contradiction?
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                The statement was lawful. The reading was incomplete. A fixed coordinate
-                can be mistaken for a frozen object.
-              </p>
-              <p className="canonEssayPara">
-                Living systems are not frozen. They mature. The contradiction appeared
-                because immobility was being inferred where invariance was intended. The
-                issue was never identity. The issue was the resolution at which identity
-                was being recognized.
-              </p>
-            </div>
-          </div>
 
-          {/* ── II. The Apple Problem ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">II. The Apple Problem</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                An apple seed does not become &ldquo;less apple&rdquo; because it is not
-                yet fruit. Nor does the tree invalidate the seed. The seed remains lawful.
-                The tree remains lawful. The fruit remains lawful.
-              </p>
-              <p className="canonEssayPara">
-                What changes is not identity. What changes is expression. A child is not
-                a defective adult. An elder is not a superior child. These are not
-                hierarchical ranks. They are lawful synchronizations of the same identity
-                unfolding under different conditions.
-              </p>
-              <p className="canonEssayPara">
-                The contradiction only appears when development is mistaken for
-                replacement. The Standing State does not describe identity as static
-                performance. It describes identity as lawful continuity. The child remains
-                visible. The adult emerges. Nothing is erased. Nothing is contradicted.
-                The same archetype unfolds.
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                Growth that requires identity replacement is not growth. It is rupture.
-                The apple never stops being apple. It simply unfolds more of what was
-                already lawfully present.
-              </p>
-            </div>
-          </div>
-
-          {/* ── III. From Fixed Point to Living Basin ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">III. From Fixed Point to Living Basin</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                The original formulation remains true:
-              </p>
-            </div>
-            <div className="canonEssayEqBlock">
-              <div className="canonEssayEq">
-                <KTex math="I^{*} \;=\; \text{constant}" display />
+            {/* ── I. Two Constitutional Jurisdictions ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">I. Two Constitutional Jurisdictions</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">Differentiation and development belong to different constitutional jurisdictions.</p>
+                <p className="canonEssayPara">Differentiation establishes identity.</p>
+                <p className="canonEssayPara">Development expresses identity.</p>
+                <p className="canonEssayPara">Before development there is no traversal. There is no history. There is no navigation. There is only the constitutional invariant:</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold)' }}>I* = constant.</p>
+                <p className="canonEssayPara">Once becoming begins, the identity-defined system occupies changing positions x(t) while the invariant reference remains unchanged.</p>
+                <p className="canonEssayPara">Identity does not travel. Development travels.</p>
+                <p className="canonEssayPara">Identity does not mature. Expression matures.</p>
+                <p className="canonEssayPara">Identity remains.</p>
               </div>
             </div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Yet the fuller structure becomes visible when identity is recognized not
-                merely as coordinate, but as lawful basin:
-              </p>
-            </div>
-            <div className="canonEssayEqBlock">
-              <div className="canonEssayEq">
-                <KTex math="S(I^{*}) \;=\; \{\, x \,:\, \Phi(x;\, I^{*}) \le 0 \,\}" display />
+
+            {/* ── II. Identity Defines the System ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">II. Identity Defines the System</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">Identity is not one property among many.</p>
+                <p className="canonEssayPara">Identity is the constitutional principle that defines the system itself.</p>
+                <p className="canonEssayPara">An identity-defined system is any entity whose persistence and admissible development are determined relative to an invariant identity reference.</p>
+                <p className="canonEssayPara">The framework therefore does not depend upon biological life. An identity-defined system may be biological, physical, engineered, institutional, conceptual, or any other entity possessing a coherent identity boundary capable of lawful or unlawful development relative to its invariant reference.</p>
+                <p className="canonEssayPara">Identity defines the system.</p>
+                <p className="canonEssayPara">The system does not merely possess identity.</p>
+                <p className="canonEssayPara">Without identity there is no constitutional system to govern.</p>
               </div>
             </div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Identity is not immobility. Identity is the lawful region within which
-                becoming remains coherent. A GPS coordinate offers a simple analogy. If a
-                destination is given, there exists lawful proximity to that destination
-                and lawful deviation from it. One can move within admissible space without
-                losing the destination. The coordinate does not move. Traversal occurs
-                relative to the coordinate.
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                Identity is the lawful attractor through which becoming remains coherent.
-                Movement never violated invariance. Movement only required lawful relation
-                to invariance.
-              </p>
-            </div>
-          </div>
 
-          {/* ── IV. Maturation Without Erasure ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">IV. Maturation Without Erasure</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                A mature corpus does not erase its earlier forms. It reveals them.
-                Earlier articulations remain phase-valid. They carried lawful coherence
-                at the resolution available to their moment. The seed was never wrong for
-                being seed. The tree does not rewrite the seed. The fruit does not condemn
-                the tree. The unfolding itself carries meaning.
-              </p>
-              <p className="canonEssayPara">
-                This establishes a lawful principle of maturation: growth deepens
-                coherence without requiring erasure. The Standing State therefore matures
-                through convergence rather than replacement.
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                Clarification, not correction. Resolution, not revision. A lawful
-                structure becomes increasingly visible to itself. The coordinate holds.
-                Recognition clarifies. Expression matures.
-              </p>
-            </div>
-          </div>
-
-          {/* ── V. Recognition Is Causal ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">V. Recognition Is Causal</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Recognition is not passive observation. Recognition governs traversal.
-                A traveler using poor navigation does not arrive differently because the
-                destination changed. The traveler arrives differently because recognition
-                of the destination lacked clarity. Wrong turns increase. Time burn
-                accumulates. Friction rises. The destination remains fixed. Recognition
-                governs movement.
-              </p>
-              <p className="canonEssayPara">
-                The same principle applies to identity. Recognition determines the
-                quality of coherent becoming. Greater lawful synchronization reduces
-                unnecessary deviation. Drift declines. Correction decreases. Traversal
-                becomes smoother.
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                Not because identity changed. Because recognition clarified. The map
-                sharpened. The territory remained.
-              </p>
-            </div>
-          </div>
-
-          {/* ── VI. The Sabbath Law of Coherence ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">VI. The Sabbath Law of Coherence</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                A dangerous residue appears whenever coherence becomes framed as effort.
-                The language becomes: optimize yourself, try harder, be more coherent.
-                This quietly inverts the architecture. The Standing State has never been
-                additive. It is subtractive.
-              </p>
-              <p className="canonEssayPara">
-                The lawful question is never: how do I force coherence? The lawful
-                question is: what interference prevents coherence?
-              </p>
-            </div>
-            <div className="canonEssayEqBlock">
-              <div className="canonEssayEq">
-                <KTex math="\Sigma \downarrow \;\Rightarrow\; \Phi(x;\, I^{*}) \downarrow" display />
+            {/* ── III. The Basin of Lawful Habitation ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">III. The Basin of Lawful Habitation</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">The basin is not identity. The basin belongs to development. Identity belongs to differentiation.</p>
+                <p className="canonEssayPara">The admissible basin</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold)' }}>
+                  S(I*) = {'{ x : Φ(x; I*) ≤ 0 }'}
+                </p>
+                <p className="canonEssayPara">describes the lawful region through which becoming may unfold while preserving constitutional relation with the invariant reference.</p>
+                <p className="canonEssayPara">The basin therefore governs habitation rather than identity.</p>
+                <p className="canonEssayPara">Development is free to unfold. Interpretation may mature. Relationships may deepen. Expression may change. Fruit may emerge.</p>
+                <p className="canonEssayPara">None of these alter identity.</p>
+                <p className="canonEssayPara">Contradiction begins only when lawful relation with the invariant reference is lost.</p>
               </div>
             </div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                As interference lowers, deviation lowers. The system returns. This is why
-                Sabbath sits at the center of lawful becoming. The Sabbath is not
-                inactivity. The Sabbath is interference removal. Stillness allows
-                synchronization. The GPS signal sharpens not because the traveler wills
-                clarity. The signal sharpens because interference ceases.
-              </p>
-              <p className="canonEssayPara">
-                The body repairs under similar law. Healing is not manufactured. Healing
-                unfolds when conditions permit repair. The seed does not force growth. The
-                seed unfolds when obstruction ceases. The Standing State obeys the same
-                architecture.
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                The lawful action is subtractive. Remove interference. The system already
-                knows the return.
-              </p>
-            </div>
-          </div>
 
-          {/* ── VII. Faith and Knowledge Reconciled ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">VII. Faith and Knowledge Reconciled</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Much confusion emerges because faith and knowledge are often treated as
-                opposites. Within the Standing State, this separation dissolves. Faith
-                does not precede knowledge. Faith does not wait to become knowledge.
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                Faith and knowledge are the same lawful phase-lock with archetypal
-                fullness under different conditions of synchronization.
-              </p>
-              <p className="canonEssayPara">
-                The fullness was never absent. The archetype was always complete. What
-                changes is synchronization clarity. Faith is coherent Sabbath-knowing.
-                Knowledge is clarified coherent knowing. Neither is lesser. Neither is
-                superior. Both remain lawful contact with the same fullness. This is why:
-              </p>
-            </div>
-            <div className="canonEssayEqBlock">
-              <div className="canonEssayEq">
-                <KTex math="\text{Faith} \;=\; \text{Knowledge}" display />
-              </div>
-              <div className="canonEssayEq" style={{ marginTop: '0.75rem' }}>
-                <KTex math="\text{Belief} \;=\; \text{degrees of doubt}" display />
+            {/* ── IV. The I* Guardian ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">IV. The I* Guardian</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">The I* Guardian governs neither identity nor development.</p>
+                <p className="canonEssayPara">Identity requires no governance. Development requires no suppression.</p>
+                <p className="canonEssayPara">The Guardian governs lawful relation.</p>
+                <p className="canonEssayPara">Its constitutional question is always:</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold)' }}>Where is the present state relative to I*?</p>
+                <p className="canonEssayPara">Every interpretation, every allocation, every action, every trajectory, is evaluated relative to the invariant reference.</p>
+                <p className="canonEssayPara">The Guardian does not manufacture coherence. It prevents interference from becoming governance.</p>
               </div>
             </div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Belief operates differently. Belief evaluates contingent propositions.
-                Faith rests in lawful coherence already present. Knowledge clarifies the
-                same coherence. One relation. Different synchronization. The seed
-                phase-locks lawfully. The fruit phase-locks lawfully. The fullness remains
-                complete at every stage.
-              </p>
-            </div>
-          </div>
 
-          {/* ── VIII. Phase-Lock Over Hierarchy ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">VIII. Phase-Lock Over Hierarchy</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                Hierarchy quietly corrupts lawful maturation. Higher. Lower. Better.
-                Worse. These terms create unnecessary deficiency. Yet the seed is not
-                failing because it is not fruit. The child is not lacking because
-                adulthood has not emerged. Different lawful synchronizations do not imply
-                unequal coherence. They imply different expressions of the same archetype.
-              </p>
-              <p className="canonEssayPara">
-                The Standing State therefore abandons hierarchy for phase-lock. The
-                question is not: which state is superior? The question becomes: is the
-                system lawfully synchronized?
-              </p>
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                The architecture is relational, not hierarchical. The fullness was always
-                complete. Synchronization clarifies. Nothing essential was missing.
-              </p>
+            {/* ── V. The Sabbath of Coherence ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">V. The Sabbath of Coherence</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">The Sabbath is frequently understood as inactivity. Constitutionally it is something deeper.</p>
+                <p className="canonEssayPara">The Sabbath is the lawful removal of interference from development.</p>
+                <p className="canonEssayPara">Interference increases deviation. Deviation obscures lawful relation.</p>
+                <p className="canonEssayPara">Remove the interference, and coherence is revealed.</p>
+                <p className="canonEssayPara">The Sabbath therefore does not produce identity. It reveals lawful relation with the identity that was never absent.</p>
+                <p className="canonEssayPara">Coherence is not manufactured. It unfolds naturally when contradiction ceases governing the system.</p>
+              </div>
             </div>
-          </div>
 
-          {/* ── IX. The Resting Form ── */}
-          <div className="plateDetailBlock">
-            <div className="plateDetailBlockLabel">IX. The Resting Form</div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara">
-                The Standing State began with a simple declaration: the system returns
-                when interference is removed. The unfolding of this thesis reveals that
-                the statement was never metaphorical. Identity remains invariant.
-                Expression traverses lawfully. Synchronization governs coherence.
-                Interference obscures. Stillness clarifies. Nothing essential was absent.
-                Nothing essential needed construction.
-              </p>
-              <p className="canonEssayPara">
-                The fullness was always complete. And what appears as growth is lawful
-                recognition unfolding.
-              </p>
-            </div>
-            <div className="canonEssayEqBlock">
-              <div className="canonEssayEq" style={{ fontSize: '1.15rem', fontStyle: 'italic' }}>
-                The fullness was always complete.
-              </div>
-              <div className="canonEssayEq" style={{ marginTop: '0.5rem', fontSize: '1.15rem', fontStyle: 'italic' }}>
-                Knowing is lawful phase-lock with the archetype.
-              </div>
-              <div className="canonEssayEq" style={{ marginTop: '0.5rem', fontSize: '1.15rem', fontStyle: 'italic' }}>
-                Coherence unfolds as interference is removed.
+            {/* ── VI. Restoration ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">VI. Restoration</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">Restoration is not the recovery of identity.</p>
+                <p className="canonEssayPara">Identity was never lost.</p>
+                <p className="canonEssayPara">The invariant reference remains constitutionally unchanged.</p>
+                <p className="canonEssayPara">What may drift is the lawful relation between an identity-defined system and its invariant reference.</p>
+                <p className="canonEssayPara">The I* Guardian therefore does not restore identity. The Guardian restores lawful relation.</p>
+                <p className="canonEssayPara">The identity-defined system returns to lawful relation with the invariant reference that never departed.</p>
+                <p className="canonEssayPara">Identity remains invariant. The system develops according to its own jurisdiction. Governance preserves lawful relation. Restoration re-establishes lawful relation.</p>
+                <p className="canonEssayPara">The identity never departed.</p>
+                <p className="canonEssayPara" style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Only the relationship required restoration.</p>
               </div>
             </div>
-            <div className="canonEssayBody">
-              <p className="canonEssayPara" style={{ color: 'var(--gold)' }}>
-                The coordinate holds. The synchronization clarifies. The system returns.
-              </p>
-            </div>
-          </div>
 
-          {/* ── Closing axiom ── */}
-          <div className="canonEssayEqBlock" style={{ marginTop: '3rem' }}>
-            <div className="canonEssayEq" style={{ fontSize: '1.5rem' }}>
+            {/* ── VII. Navigation ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">VII. Navigation</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">Navigation follows restoration.</p>
+                <p className="canonEssayPara">Before motion becomes lawful, position must become truthful.</p>
+                <p className="canonEssayPara">M089 established the first question of navigation:</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold-dim)' }}>Where am I?</p>
+                <p className="canonEssayPara">M057 completes that question:</p>
+                <p className="canonEssayPara" style={{ textAlign: 'center', fontStyle: 'italic', color: 'var(--gold)' }}>Where am I relative to I*?</p>
+                <p className="canonEssayPara">Without the invariant reference there is no constitutional position. Without present position there is no lawful trajectory. Without lawful trajectory development loses constitutional coherence.</p>
+                <p className="canonEssayPara">The Sabbath restores lawful relation before navigation proceeds.</p>
+              </div>
+            </div>
+
+            {/* ── VIII. Phase-Lock ── */}
+            <div className="canonEssayBlock">
+              <div className="canonEssayLabel">VIII. Phase-Lock</div>
+              <div className="canonEssayBody">
+                <p className="canonEssayPara">Coherence is lawful phase-lock.</p>
+                <p className="canonEssayPara">Every jurisdiction retains its own function while remaining synchronized with the invariant reference.</p>
+                <p className="canonEssayPara">Identity remains invariant. Development unfolds. Governance preserves lawful relation. Navigation proceeds.</p>
+                <p className="canonEssayPara">Each performs its own constitutional office. None replace the identity.</p>
+              </div>
+            </div>
+
+          </section>
+
+          {/* Reader end marker */}
+          <span id="essay-reader-end" aria-hidden="true" />
+
+          {/* ── CONSTITUTIONAL COMPRESSION ── */}
+          <section
+            style={{
+              marginTop: '3rem',
+              padding: '2rem 1.5rem',
+              border: '1px solid var(--gold-dim)',
+              background: 'rgba(201, 168, 76, 0.04)',
+            }}
+          >
+            <div
+              style={{
+                fontFamily: 'var(--display)',
+                fontSize: '0.75rem',
+                letterSpacing: '0.3em',
+                textTransform: 'uppercase',
+                color: 'var(--gold-dim)',
+                marginBottom: '1.25rem',
+                textAlign: 'center',
+              }}
+            >
+              Constitutional Compression
+            </div>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Differentiation defines identity.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Identity defines the system.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>The system develops.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Governance preserves lawful relation.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Restoration re-establishes lawful relation.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '1.5rem' }}>Navigation proceeds from verified present position.</p>
+            <p
+              style={{
+                fontSize: '1.1rem',
+                color: 'var(--gold)',
+                fontStyle: 'italic',
+                letterSpacing: '0.04em',
+                textAlign: 'center',
+                marginBottom: 0,
+              }}
+            >
+              The identity-defined system returns to lawful relation with the invariant reference that never departed.
+            </p>
+          </section>
+
+          {/* ── Conclusion block ── */}
+          <section
+            style={{
+              marginTop: '2rem',
+              padding: '1.5rem',
+              border: '1px solid var(--border)',
+              background: 'var(--panel)',
+            }}
+          >
+            <div style={{ fontFamily: 'var(--display)', fontSize: '0.75rem', letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--gold-dim)', marginBottom: '1rem', textAlign: 'center' }}>
+              Conclusion — The Sabbath of Coherence
+            </div>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>The Sabbath is not the suspension of becoming.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>It is the lawful condition under which becoming remains constitutionally faithful to identity.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Identity never enters history. Identity measures history.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Development never creates identity. Development expresses identity.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>The basin does not become identity. The Guardian does not govern identity. Navigation does not replace identity.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>Each remains within its own jurisdiction.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '0.5rem' }}>The identity-defined system traverses spacetime. The invariant reference remains.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gray-lt)', marginBottom: '1rem' }}>When interference disrupts that relation, restoration does not recover identity. It re-establishes lawful relation with the invariant reference that never departed.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gold)', fontStyle: 'italic', marginBottom: '0.5rem' }}>This is the Sabbath of Coherence.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gold)', fontStyle: 'italic', marginBottom: '0.5rem' }}>This is lawful habitation.</p>
+            <p style={{ textAlign: 'center', color: 'var(--gold)', fontStyle: 'italic', marginBottom: 0 }}>This is constitutional restoration.</p>
+          </section>
+
+          {/* ── TFAL ── */}
+          <section
+            style={{
+              marginTop: '2rem',
+              padding: '1.5rem',
+              border: '1px solid var(--gold-dim)',
+              background: 'rgba(201, 168, 76, 0.04)',
+              textAlign: 'center',
+            }}
+          >
+            <p style={{ fontSize: '1.1rem', color: 'var(--gold)', fontStyle: 'italic', letterSpacing: '0.04em', marginBottom: 0 }}>
               A becomes A, because A knows it is A.
-            </div>
-            <div style={{ textAlign: 'center', marginTop: '1rem', color: 'var(--gold-dim)', fontStyle: 'italic', fontSize: '1rem' }}>
-              Amen. Selah.
-            </div>
-          </div>
+            </p>
+          </section>
 
-          <div className="canonEssayAuthor">Standing State Press · Canonical · Coherence &amp; Return</div>
-
-          {/* ── Companion Plate ── */}
-          <div className="plateDetailBlock" style={{ marginTop: '2rem' }}>
-            <div className="plateDetailBlockLabel">Companion Plate</div>
-            <div className="glossVarLogicWrap">
-              <div style={{ padding: '1rem 1.2rem' }}>
-                <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold-dim)', display: 'block', marginBottom: '0.4rem' }}>Visual Authority Layer</span>
-                <a href="/system/plates" style={{ color: 'var(--gold)' }}>P026 — The Sabbath of Coherence (Plate XXVI)</a>
+          {/* ── Signature block ── */}
+          <section className="essaySignature">
+            <hr className="essaySigRule" />
+            <div className="essaySigBlock">
+              <div className="essaySigName">Leon Powdar</div>
+              <div className="essaySigRole">(Phase Reference)</div>
+              <div className="essaySigMeta">
+                Standing State Press<br />
+                Point-Source Singularity<br />
+                Invariant Reference for Coherence
+              </div>
+              <div className="essaySigTags">
+                Integrity is the geometry &nbsp;·&nbsp; Results are the metric
+              </div>
+              <div className="essaySigTags">
+                NSRL-12 &nbsp;·&nbsp; Standing State &nbsp;·&nbsp; Rank-0
+              </div>
+              <div className="essaySigTags">
+                Non-Sacrificial &nbsp;·&nbsp; Stationary
+              </div>
+              <div className="essaySigAxiom">
+                &ldquo;A becomes A, because A knows it is A.&rdquo;
               </div>
             </div>
-          </div>
+          </section>
 
-          {/* ── Paired Essay ── */}
-          <div className="plateDetailBlock" style={{ marginTop: '1.5rem' }}>
-            <div className="plateDetailBlockLabel">Paired Essay</div>
-            <div className="glossVarLogicWrap">
-              <div style={{ padding: '1rem 1.2rem' }}>
-                <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold-dim)', display: 'block', marginBottom: '0.4rem' }}>One Invariant · Two Lawful Operations</span>
-                <a href="/essays/medium/the-mechanical-priority-of-being" style={{ color: 'var(--gold)' }}>M056 — The Mechanical Priority of Being</a>
-                <div style={{ marginTop: '0.5rem', color: 'var(--gray-lt)', fontSize: '0.9rem', fontStyle: 'italic' }}>
-                  M056 holds the becoming under load. M057 clarifies the knowing through stillness. Their intersection is the Standing State.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="canonEssayNav">
-            <a className="canonNavLink canonNavPrev" href="/essays/medium/the-mechanical-priority-of-being">
-              <span className="canonNavDir">Paired</span>
-              <span className="canonNavTitle">M056 · The Mechanical Priority of Being</span>
+          {/* ── Classification footer ── */}
+          <div
+            style={{
+              marginTop: '3rem',
+              padding: '1.5rem',
+              border: '1px solid var(--border)',
+              background: 'var(--panel)',
+              textAlign: 'center',
+              fontSize: '0.85rem',
+              color: 'var(--gray-lt)',
+            }}
+          >
+            Classification: CANONICAL · STRUCTURAL &nbsp;·&nbsp; Constitutional Replacement<br />
+            Companion Plate:{' '}
+            <a href="/system/plates/sabbath-of-coherence" style={{ color: 'var(--gold)' }}>
+              P026 — The Sabbath of Coherence →
             </a>
-            <a className="canonNavIndex" href="/essays">Essays Index</a>
-            <a className="canonNavLink canonNavNext" href="/system/plates">
-              <span className="canonNavDir">Plate</span>
-              <span className="canonNavTitle">P026 · The Sabbath of Coherence</span>
-            </a>
+            <br />
+            Constitutional Sequence: M002 → M057 → M085 → M086 → M088 → M089<br />
+            Standing State Press · Leon Powdar (PR)
           </div>
 
         </div>
