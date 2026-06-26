@@ -123,19 +123,29 @@ export default function ArchitectureOfArrivingAlive() {
           </div>
 
           {/* ── Plate ── */}
-          <div style={{ marginBottom: '3rem' }}>
-            <img
-              src="/plates/p039-architecture-of-arriving-alive.png"
-              alt="P039 — The Architecture of Arriving Alive plate"
-              style={{ width: '100%', display: 'block', border: 'var(--rule)' }}
-            />
-            <div style={{ fontFamily: 'var(--display)', color: 'var(--gold-dim)', fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', marginTop: '0.5rem', textAlign: 'center' }}>
-              P039 · The Architecture of Arriving Alive ·{' '}
-              <a href="/system/plates/the-architecture-of-arriving-alive" style={{ color: 'var(--gold-dim)', textDecoration: 'none' }}>
-                View Plate →
+
+          {/* ── CANONICAL PLATE — P039 ── */}
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/the-architecture-of-arriving-alive" style={{ display: 'block' }}>
+              <img
+                src="/plates/p039-architecture-of-arriving-alive.png"
+                alt="P039 — The Architecture of Arriving Alive · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P039 · The Architecture of Arriving Alive &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/the-architecture-of-arriving-alive" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout this essay. View full plate →
               </a>
-            </div>
-          </div>
+            </p>
+          </section>
+
 
           <section id="essay-body" itemProp="articleBody">
 

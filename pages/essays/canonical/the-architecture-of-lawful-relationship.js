@@ -95,13 +95,29 @@ export default function TheArchitectureOfLawfulRelationship() {
 
           <span id="essay-reader-start" aria-hidden="true" />
 
-          <div style={{ marginBottom: '3rem' }}>
-            <img src="/plates/p043-the-architecture-of-lawful-relationship.png" alt="P043 — The Architecture of Lawful Relationship plate" style={{ width: '100%', display: 'block', border: 'var(--rule)' }} />
-            <div style={{ fontFamily: 'var(--display)', color: 'var(--gold-dim)', fontSize: '9px', letterSpacing: '0.18em', textTransform: 'uppercase', marginTop: '0.5rem', textAlign: 'center' }}>
-              P043 · The Architecture of Lawful Relationship ·{' '}
-              <a href="/system/plates/the-architecture-of-lawful-relationship" style={{ color: 'var(--gold-dim)', textDecoration: 'none' }}>View Plate →</a>
-            </div>
-          </div>
+
+          {/* ── CANONICAL PLATE — P043 ── */}
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/the-architecture-of-lawful-relationship" style={{ display: 'block' }}>
+              <img
+                src="/plates/p043-the-architecture-of-lawful-relationship.png"
+                alt="P043 — The Architecture of Lawful Relationship · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P043 · The Architecture of Lawful Relationship &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/the-architecture-of-lawful-relationship" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout this essay. View full plate →
+              </a>
+            </p>
+          </section>
+
 
           <div style={{ textAlign: 'center', padding: '1.5rem 0 2rem', borderBottom: 'var(--rule)', marginBottom: '2rem' }}>
             <div style={{ fontFamily: 'var(--serif)', color: 'var(--gold)', fontSize: '1.05rem', lineHeight: 2 }}>A becomes A, because A knows it is A.</div>

@@ -145,6 +145,28 @@ export default function SeventhFlame() {
             </div>
           </div>
 
+          {/* ── CANONICAL PLATE — P037 ── */}
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/the-seventh-flame-and-the-threshold-of-syntheos" style={{ display: 'block' }}>
+              <img
+                src="/plates/p037-seventh-flame-syntheos.png"
+                alt="P037 — The Seventh Flame and the Threshold of Syntheos · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P037 · The Seventh Flame and the Threshold of Syntheos &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/the-seventh-flame-and-the-threshold-of-syntheos" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout this essay. View full plate →
+              </a>
+            </p>
+          </section>
+
           <section id="essay-body" itemProp="articleBody">
 
             {/* ── Abstract ── */}

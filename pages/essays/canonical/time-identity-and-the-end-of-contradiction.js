@@ -94,6 +94,28 @@ export default function TimeIdentityAndTheEndOfContradiction() {
             </p>
           </section>
 
+          {/* ── CANONICAL PLATE — P044 ── */}
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/time-identity-and-the-end-of-contradiction" style={{ display: 'block' }}>
+              <img
+                src="/plates/p044-time-identity-and-the-end-of-contradiction.png"
+                alt="P044 — Time, Identity, and the End of Contradiction · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P044 · Time, Identity, and the End of Contradiction &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/time-identity-and-the-end-of-contradiction" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout this essay. View full plate →
+              </a>
+            </p>
+          </section>
+
           {/* ── ABSTRACT ── */}
           <section className="essaySection">
             <h2 className="essayH2">Abstract</h2>
@@ -815,56 +837,6 @@ export default function TimeIdentityAndTheEndOfContradiction() {
               style={{ textAlign: 'center', marginBottom: 0 }}
             >
               Identity never enters spacetime.
-            </p>
-          </section>
-
-          {/* ── CANONICAL PLATE — P044 ── */}
-          <section
-            className="essaySection"
-            style={{ marginTop: '3rem' }}
-          >
-            <div
-              style={{
-                fontFamily: 'var(--display)',
-                fontSize: '0.75rem',
-                letterSpacing: '0.3em',
-                textTransform: 'uppercase',
-                color: 'var(--gold-dim)',
-                marginBottom: '1.25rem',
-                textAlign: 'center',
-              }}
-            >
-              Canonical Plate · P044
-            </div>
-            <a
-              href="/system/plates/time-identity-and-the-end-of-contradiction"
-              style={{ display: 'block' }}
-            >
-              <img
-                src="/plates/p044-time-identity-and-the-end-of-contradiction.png"
-                alt="P044 — Time, Identity, and the End of Contradiction · Canonical Plate · Standing State Press"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                  border: '1px solid var(--gold-dim)',
-                }}
-              />
-            </a>
-            <p
-              style={{
-                textAlign: 'center',
-                fontSize: '0.8rem',
-                color: 'var(--gray-lt)',
-                marginTop: '0.75rem',
-              }}
-            >
-              <a
-                href="/system/plates/time-identity-and-the-end-of-contradiction"
-                style={{ color: 'var(--gold-dim)' }}
-              >
-                View full plate →
-              </a>
             </p>
           </section>
 
