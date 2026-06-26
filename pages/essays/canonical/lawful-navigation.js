@@ -130,6 +130,29 @@ export default function LawfulNavigation() {
             </div>
           </div>
 
+
+          {/* ── CANONICAL PLATE — P045 ── */}
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/lawful-navigation" style={{ display: 'block' }}>
+              <img
+                src="/plates/p045-lawful-navigation.png"
+                alt="P045 — Lawful Navigation · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P045 · Lawful Navigation &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/lawful-navigation" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout C015. View full plate →
+              </a>
+            </p>
+          </section>
+
           <section id="essay-body" itemProp="articleBody">
 
             {/* ── Abstract ── */}
@@ -389,40 +412,6 @@ export default function LawfulNavigation() {
               }}
             >
               Lawful navigation begins not with motion, but with the preservation of reference from which lawful motion becomes possible.
-            </p>
-          </section>
-
-          {/* ── CANONICAL PLATE — P045 ── */}
-          <section style={{ marginTop: '3rem' }}>
-            <div
-              style={{
-                fontFamily: 'var(--display)',
-                fontSize: '0.75rem',
-                letterSpacing: '0.3em',
-                textTransform: 'uppercase',
-                color: 'var(--gold-dim)',
-                marginBottom: '1.25rem',
-                textAlign: 'center',
-              }}
-            >
-              Canonical Plate · P045
-            </div>
-            <a href="/system/plates/lawful-navigation" style={{ display: 'block' }}>
-              <img
-                src="/plates/p045-lawful-navigation.png"
-                alt="P045 — Lawful Navigation · Canonical Plate · Standing State Press"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  display: 'block',
-                  border: '1px solid var(--gold-dim)',
-                }}
-              />
-            </a>
-            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
-              <a href="/system/plates/lawful-navigation" style={{ color: 'var(--gold-dim)' }}>
-                View full plate →
-              </a>
             </p>
           </section>
 
