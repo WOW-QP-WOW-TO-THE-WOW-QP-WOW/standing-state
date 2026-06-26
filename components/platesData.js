@@ -793,12 +793,30 @@ export const PLATES = [
   ],
   relatedEssay: 'M085',
 },
+{
+  id: 'P044',
+  number: 'XLIV',
+  title: 'Time, Identity, and the End of Contradiction',
+  slug: 'time-identity-and-the-end-of-contradiction',
+  image: '/plates/p044-time-identity-and-the-end-of-contradiction.png',
+  summary: 'Identity is the invariant coordinate outside spacetime. Development occurs within the Basin of Becoming. Lawful relationship, phase-locked to I*, is the operator of development. Reality contact determines fruit. Time Burn is the governance cost of unresolved contradiction. The Sabbath is the cessation of identity drift, not the cessation of development.',
+  governingCondition: '\\text{I*} \\to \\text{Lawful Relationship} \\to \\text{Becoming} \\to \\text{Reality Contact} \\to \\text{Fruit} \\to \\text{Verification}',
+  description: 'Plate XLIV encodes the M002 constitutional architecture as the origin point of the Standing State corpus. Two governing jurisdictions: Constitutional Jurisdiction (Outside Spacetime) — the invariant reference I*, dI*/dt = 0; identity remains stationary, neither evolves nor negotiates itself; identity answers the first question: Who is becoming? Basin of Becoming (Within Spacetime) — the jurisdiction of development containing lawful relationship, attention, interpretation, action, fruit, correction, restoration, development; time belongs here; identity does not. Constitutional Operator: Lawful relationship is relationship that remains phase-locked to I*; this is the canonical definition replacing all prior formulations. I* Guardian — operates entirely inside the Basin between interpretation and action; inputs: identity visibility, attention integrity, interpretive admissibility, reality contact, restoration requirements, execution authorization; outputs: protects coherence, authorizes action, prevents drift, preserves lawful freedom; the Guardian does not create identity — it protects coherence relative to identity. Mathematics of Invariance: x(t) state evolving through time; dx/dt = f(x,u,t); I* invariant coordinate; Δ(t) = x(t) − I*; when reference moves correction never terminates; when reference remains invariant development becomes governable. Reality Contact: Identity determines the kind; reality contact determines the fruit; factors — sunlight, water, soil, season, disease, cultivation — influence sweetness, abundance, health but do not change apple into orange; reality remains the final verifier. Time Burn: contradiction consumes developmental capacity; correction loops accumulate; attention fragments; restoration becomes necessary; Time Burn is governance load not chronological duration; when lawful relationship remains phase-locked to I* Time Burn decreases. Sabbath: not inactivity, not withdrawal; the cessation of identity drift; identity is established; development continues; relationships continue; reality continues to teach; fruit continues to verify; correction continues; The Guardian preserves this condition through continual governance; the Sabbath preserves identity. The First Question (M089 integration): Not first — Where am I going? First — Where am I? Position precedes navigation; identity precedes position; the coordinate must exist before any lawful trajectory can be determined; M089 extends this into IGPS; M002 provides the constitutional foundation. Constitutional Compression: Identity provides the coordinate; lawful relationship provides the operator; reality provides verification; the I* Guardian preserves coherence; the Sabbath preserves identity; development emerges through participation. Closing seal: Identity remains. Reality teaches. Governance protects. Restoration preserves. Development emerges. A becomes A, because A knows it is A. Companion to essay M002 (Time, Identity, and the End of Contradiction). Constitutional origin plate for the Standing State corpus.',
+  volume: 'Cross-Volume · Identity · Lawful Relationship · Time Burn · Sabbath · I* Guardian',
+  chapter: 'Constitutional Origin · Two Jurisdictions · Basin of Becoming · Invariant Coordinate',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x)', anchor: 'phi' },
+  ],
+  relatedEssay: 'M002',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 43,
+  description: 'Forty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 44,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
