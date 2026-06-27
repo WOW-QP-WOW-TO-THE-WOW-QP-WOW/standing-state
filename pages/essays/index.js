@@ -1234,6 +1234,17 @@ const ESSAYS = [
   mirrorUrl: '/essays/canonical/the-first-question',
 },
 {
+  id: 'C014',
+  title: 'Differentiated Jurisdictions: The Recursion of Lawful Development',
+  mediumUrl: '',
+  axis1: 'INQUIRY-ARCH',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-CONST',
+  flag: 'M',
+  note: 'Construct · Open Inquiry · Book III Constitutional Capstone. Classification: CONSTRUCT · OPEN INQUIRY. Companion plate: P048 — RESERVED · Pending Constitutional Review. Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014. Governing question: Does the developmental sequence Identity → Lawful Relationship → Embodiment → Development → Verification function as a structural invariant across differentiated jurisdictions, or are its apparent recurrences confined to particular domains? Three evidential registers examined: Cultivation (coherent recurrence demonstrated), Biology (sequence intelligible under differentiation, adaptation, injury, and restoration), Physics (embodiment bridge currently unresolved — principal research frontier). Admissibility conditions formally established: admissibility, revision, rejection, and advancement criteria all named. Embodiment formally introduced as the constitutional bridge through which developmental structure becomes manifest within a differentiated jurisdiction. Three corpus observations registered: (1) Construct appears as distinct stage between Inquiry and Thesis; (2) Embodiment as constitutional bridge between lawful relationship and observable development; (3) common constitutional function may recur across differentiated jurisdictions while mechanisms remain jurisdiction-specific. These observations await independent recurrence before broader constitutional status is established. Follows D007 developmental doctrine. Opens SA-010.',
+  mirrorUrl: '/essays/canonical/differentiated-jurisdictions',
+},
+{
   id: 'C015',
   title: 'Lawful Navigation: Estimation, Integrity, and Constitutional Governance',
   mediumUrl: '',
