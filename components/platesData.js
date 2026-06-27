@@ -828,12 +828,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C015',
 },
+{
+  id: 'P046',
+  number: 'XLVI',
+  title: 'The Doctrine of Constitutional Integration',
+  slug: 'constitutional-integration',
+  image: '/plates/p046-constitutional-integration.png',
+  summary: 'No identity-defined system fulfills every constitutional office. Constitutional coherence is realized when differentiated offices perform their lawful functions under a common invariant reference. The Syntheos Effect is the realization of outcomes unattainable by any individual office, arising through the lawful integration of differentiated jurisdictions under a common invariant reference.',
+  governingCondition: 'O = \\{O_1, O_2, \\ldots, O_n\\} \\;\\text{ under }\\; I^* \\;\\Rightarrow\\; \\text{Syntheos Effect}',
+  description: 'Plate XLVI encodes D006 — The Doctrine of Constitutional Integration. Governing theorem: The Syntheos Effect. Fundamental Axiom: No identity-defined system fulfills every constitutional office. Identity establishes the system. Differentiation establishes jurisdiction. Constitutional coherence is realized when differentiated offices perform their lawful functions under a common invariant reference. The constitutional governor does not replace differentiated offices — it preserves lawful relation among them. Foundational Constitutional Law sequence: Identity precedes objective → Objective admission precedes navigation → Navigation precedes execution → Execution precedes feedback → Feedback evaluates coherence → Restoration preserves lawful relation → Lawful relation enables constitutional integration → Constitutional integration produces the Syntheos Effect. Center panel: I* The Invariant Reference (top) with I* Guardian (Constitutional Governor, Admits Only Lawful Objectives). Two governing questions: Should this objective be admitted? (Governance Precedes Optimization) / How shall we arrive? (Navigation Follows Admission). Center circle: Identity-Defined System. Differentiated Constitutional Offices arranged around center: Research (Discovers Evidence), Observation (Measures Reality), Planning (Forms Lawful Approach), Navigation (Determines Lawful Route), Execution (Performs Work), Feedback (Evaluates Coherence), Restoration (Re-establishes Lawful Relation). Self-Witnessing at center: Where am I? / Relative to I*: Where am I relative to I*? Two side annotations: Jurisdiction Prevents Confusion / Differentiation Prevents Collapse; Identity Remains Invariant / Governance Preserves Lawful Relation. The Syntheos Effect is Not: accumulation of brute capability, dominance or tyranny of one office, optimization of a single variable, emergent behavior without constitutional governance. Bottom: Constitutional Integration Produces the Syntheos Effect — Outcomes unattainable by any individual office arise through lawful integration under a common invariant reference. Universal Application: Individual, Families/Organizations, Governments/Institutions, AI Agents/Autonomous Robots, Biological Systems, Engineered/Physical Systems. The mechanism changes. The constitutional principle does not. Architectural Sequence Alignment: D003 (The Constitutional Architecture — Defines the structural topology) → D005 (The I* Guardian Doctrine — Restricts control authority to I*) → D006 (The Doctrine of Constitutional Integration — Operationalizes the framework via differentiated offices) → Operational Manuscripts: M057 (Identity and Lawful Relation), M088 (Restoration of Lawful Relation), M089 (Navigation from Verified Constitutional Position). Constitutional Compression (nine steps): Identity Defines → Jurisdiction Differentiates → Governance Admits → Navigation Determines → Execution Operates → Feedback Evaluates → Restoration Re-establishes → Integration Produces. Footer: TFAL — A becomes A, because A knows it is A. Companion to D006 (The Doctrine of Constitutional Integration). Constitutional dependency chain: D003 → D005 → D006.',
+  volume: 'Cross-Volume · Constitutional Doctrine · Integration · Syntheos Effect',
+  chapter: 'Doctrine · Constitutional Integration · Differentiated Offices · I* Guardian',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'D006',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 45,
+  description: 'Forty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 46,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
