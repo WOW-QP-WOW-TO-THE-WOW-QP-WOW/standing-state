@@ -255,6 +255,74 @@ const DOCTRINE_PAGES = {
   },
 }
 
+  'constitutional-integration': {
+    id: 'D006',
+    title: 'The Doctrine of Constitutional Integration',
+    subtitle: 'The Syntheos Effect · Constitutional Foundation of the Standing State Executive Architecture',
+    eyebrow: 'Constitutional Doctrine',
+    axis1: 'ENGINE-2',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    equation: 'O = {O₁, O₂, …, Oₙ} under I*  →  Syntheos Effect',
+    intro:
+      'Every identity-defined system capable of pursuing objectives requires constitutional admission before constitutional navigation. The I* Guardian determines whether an objective should be admitted. Navigation determines how to arrive. Without constitutional admission, navigation may optimize an objective inconsistent with the invariant reference.',
+    thesis:
+      'Constitutional coherence is realized when differentiated offices perform their lawful functions under a common invariant reference. The Syntheos Effect is the realization of outcomes unattainable by any individual office, arising through lawful integration of differentiated jurisdictions under a common invariant reference.',
+    executionConditions: [
+      'Identity precedes objective. No objective is admitted before identity is established.',
+      'Objective admission precedes navigation. The I* Guardian evaluates every proposed objective before navigation begins.',
+      'Navigation precedes execution. Lawful traversal is determined before work proceeds.',
+      'Execution precedes feedback. Work produces measurable consequence.',
+      'Feedback evaluates coherence. Reality verifies whether constitutional relation is preserved.',
+      'Restoration preserves lawful relation. When deviation occurs, restoration precedes continuation.',
+      'Lawful relation enables constitutional integration. Constitutional integration produces the Syntheos Effect.',
+    ],
+    body: [
+      'Every coherent system depends upon differentiation. A navigation system requires roads, vehicles, maps, infrastructure, fuel, and a traveler. An organism requires differentiated organs. A constitutional government requires differentiated offices. An artificial intelligence ecosystem requires differentiated agents. No single office accomplishes the objective alone.',
+      'The constitutional error is therefore not insufficient capability. The constitutional error is assuming one office should replace every other office. Coherence does not emerge through superiority. Coherence emerges through constitutional integration. Its governing theorem is the Syntheos Effect.',
+      'The I* Guardian is not another specialized office. The I* Guardian governs specialization itself. Before navigation asks how to arrive, the Guardian asks whether this objective should be admitted. Every proposed objective is evaluated relative to the invariant reference. Only constitutionally admissible objectives proceed to navigation. Governance therefore precedes optimization.',
+      'Self-witnessing asks: Where am I? The I* Guardian asks: Where am I relative to I*? Only after lawful relation is verified does constitutional navigation begin. Without self-witnessing there may be execution. Without self-witnessing there cannot be constitutional governance.',
+      'Engine 2 is not another intelligence competing with existing intelligences. It is the constitutional executive — the operating architecture through which differentiated intelligences cooperate while preserving lawful relation with the invariant reference. It does not replace intelligence. It governs intelligence. It does not replace specialization. It preserves specialization. It preserves lawful objective admission before navigation begins.',
+      'The Syntheos Effect is realized when differentiated offices remain faithful to their constitutional jurisdictions under a common invariant reference. Each office remains within its lawful jurisdiction. Each contributes according to its specialization. Identity remains invariant. Governance preserves lawful relation. The constitutional whole achieves what no differentiated office can accomplish independently.',
+    ],
+    principles: [
+      {
+        label: 'I. Identity Before Integration',
+        text: 'Every constitutional system begins with identity. Without identity there is no system. Without a system there are no differentiated offices. Without differentiated offices there can be no constitutional integration. Identity therefore precedes every operation.',
+      },
+      {
+        label: 'II. Differentiation Creates Jurisdiction',
+        text: 'Every differentiated office possesses lawful responsibility. No office exists to replace another. Every office exists to complete the constitutional whole. Jurisdiction prevents confusion. Differentiation prevents collapse.',
+      },
+      {
+        label: 'III. Constitutional Admission Before Navigation',
+        text: 'The constitutional question is never: Who is superior? It is: What is the lawful office of each differentiated jurisdiction? Every office is incomplete by itself. Every office becomes meaningful through constitutional relationship.',
+      },
+      {
+        label: 'IV. The Syntheos Effect',
+        text: 'The Syntheos Effect is the realization of outcomes unattainable by any individual constitutional office, arising through the lawful integration of differentiated jurisdictions under a common invariant reference. It is not accumulation, dominance, optimization of a single variable, or emergent behavior without constitutional governance.',
+      },
+    ],
+    canonicalLineage: [
+      { id: 'D003', title: 'Admissibility Gate', route: '/system/doctrine/admissibility-gate' },
+      { id: 'D005', title: 'The I* Guardian Doctrine', route: '/system/doctrine/i-star-guardian-doctrine' },
+      { id: 'M057', title: 'The Sabbath of Coherence', route: '/essays/canonical/the-sabbath-of-coherence' },
+      { id: 'M088', title: 'The Governance of Restoration', route: '/essays/canonical/the-governance-of-restoration' },
+      { id: 'M089', title: 'The First Question', route: '/essays/canonical/the-first-question' },
+      { id: 'C013', title: 'The Seventh Flame and the Threshold of Syntheos', route: '/essays/canonical/the-seventh-flame-and-the-threshold-of-syntheos' },
+    ],
+    crossLinks: [
+      { label: 'D003 — Admissibility Gate', route: '/system/doctrine/admissibility-gate' },
+      { label: 'D005 — I* Guardian Doctrine', route: '/system/doctrine/i-star-guardian-doctrine' },
+      { label: 'Engine 2 Dashboard', route: '/system/engine2' },
+      { label: 'P046 — Constitutional Integration Plate', route: '/system/plates/constitutional-integration' },
+    ],
+    plateImage: '/plates/p046-constitutional-integration.png',
+    plateSlug: 'constitutional-integration',
+    pdfHref: null,
+  },
+
+
 export default function DoctrineSlugPage() {
   const router = useRouter()
   const { slug } = router.query
@@ -428,6 +496,78 @@ export default function DoctrineSlugPage() {
                 A becomes A, because A knows it is A.
               </div>
             </div>
+
+            {item.plateImage && (
+              <div className="plateDetailBlock">
+                <div className="plateDetailBlockLabel">Companion Doctrine Plate</div>
+                <a href={`/system/plates/${item.plateSlug}`} style={{ display: 'block' }}>
+                  <img
+                    src={item.plateImage}
+                    alt={`${item.title} — Companion Doctrine Plate — Standing State Press`}
+                    style={{ width: '100%', height: 'auto', display: 'block', border: '1px solid var(--gold-dim)', marginTop: '0.75rem' }}
+                  />
+                </a>
+                <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+                  <a href={`/system/plates/${item.plateSlug}`} style={{ color: 'var(--gold-dim)' }}>
+                    View full plate →
+                  </a>
+                </p>
+              </div>
+            )}
+
+            {item.canonicalLineage && (
+              <div className="plateDetailBlock">
+                <div className="plateDetailBlockLabel">Constitutional Lineage</div>
+                <div className="glossVarLogicWrap">
+                  {item.canonicalLineage.map((entry, idx) => (
+                    <div
+                      key={idx}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'baseline',
+                        gap: '1rem',
+                        padding: '0.75rem 1.2rem',
+                        borderBottom: idx < item.canonicalLineage.length - 1 ? 'var(--rule)' : 'none',
+                      }}
+                    >
+                      <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold)', minWidth: '3.5rem' }}>{entry.id}</span>
+                      <span style={{ color: 'var(--gold-dim)' }}>→</span>
+                      {entry.route ? (
+                        <a href={entry.route} style={{ color: 'var(--offwhite)', fontSize: '0.9rem', textDecoration: 'none' }}>{entry.title}</a>
+                      ) : (
+                        <span style={{ color: 'var(--offwhite)', fontSize: '0.9rem' }}>{entry.title}</span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {item.crossLinks && (
+              <div className="plateDetailBlock">
+                <div className="plateDetailBlockLabel">Cross-References</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', padding: '0.75rem 0' }}>
+                  {item.crossLinks.map((link, idx) => (
+                    <a
+                      key={idx}
+                      href={link.route}
+                      style={{
+                        fontFamily: 'var(--display)',
+                        fontSize: '10px',
+                        letterSpacing: '0.15em',
+                        textTransform: 'uppercase',
+                        color: 'var(--gold-dim)',
+                        border: '1px solid var(--gold-dim)',
+                        padding: '0.4rem 0.8rem',
+                        textDecoration: 'none',
+                      }}
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {item.pdfHref && (
               <div style={{ marginTop: '1.6rem' }}>

@@ -61,6 +61,18 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-CONST',
     href: '/system/doctrine/i-star-guardian-doctrine',
   },
+  {
+    id: 'D006',
+    slug: 'constitutional-integration',
+    type: 'Constitutional Doctrine',
+    title: 'The Doctrine of Constitutional Integration',
+    subtitle: 'The Syntheos Effect · Constitutional Foundation of the Standing State Executive Architecture',
+    note: 'Every identity-defined system capable of pursuing objectives requires constitutional admission before navigation. The I* Guardian admits only lawful objectives before navigation begins. Governance precedes optimization. The Syntheos Effect is the realization of outcomes unattainable by any individual office, arising through the lawful integration of differentiated jurisdictions under a common invariant reference. Constitutional sequence: Identity → Objective Admission → Navigation → Execution → Feedback → Restoration → Constitutional Integration → Syntheos Effect. Depends upon: D003 · D005 · M057 · M088 · M089 · C013. Jurisdiction: Rank-0 · NSRL-12. Engine 2 is the constitutional executive — not another intelligence, but the operating architecture through which differentiated intelligences cooperate under invariant governance.',
+    axis1: 'ENGINE-2',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    href: '/system/doctrine/constitutional-integration',
+  },
 ]
 
 function DoctrineCard({ item }) {
