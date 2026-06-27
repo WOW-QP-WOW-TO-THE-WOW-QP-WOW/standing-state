@@ -1,5 +1,11 @@
-# D006 — Canonical Essay Deployment Doctrine
+# DD06 — Canonical Deployment Doctrine
 # Standing State Press · standingstate.com
+#
+# Registry Classification: DD06 (Deployment Doctrine)
+# D-series reserved for Constitutional Doctrine.
+# DD-series reserved for Deployment and Operational Engineering Doctrine.
+# Constitutional Doctrine Registry: D003 · D005 · D006
+# Deployment Doctrine Registry: DD06
 
 ## Purpose
 
@@ -324,5 +330,38 @@ Every deployment must pass this checklist before the zip is delivered:
 
 ---
 
-*D006 updated after M087/P039 deployment session. Read this file before every deployment.*
+*DD06 — Deployment Doctrine. Read this file before every deployment.*
+
+---
+
+## 12. Registry Separation Doctrine
+
+Two registries govern the Standing State corpus. They are complementary and must not be conflated.
+
+**Constitutional Registry (D-series)**
+Records the meaning, principles, and governing architecture of the corpus.
+Authority: semantic and constitutional.
+Examples: D003 — Admissibility Gate · D005 — I* Guardian Doctrine · D006 — The Doctrine of Constitutional Integration
+
+**Deployment Registry (DD-series)**
+Records the engineering procedures that preserve constitutional integrity during implementation.
+Authority: operational.
+Examples: DD06 — This file
+
+**Rule:** Deployment does not define doctrine. Doctrine does not prescribe implementation details.
+One preserves meaning. The other preserves faithful realization.
+
+---
+
+## 13. Known Failure Patterns — Doctrine Page Deployment
+
+When adding entries to `pages/system/doctrine/[slug].js`:
+
+- Entries must be inserted **inside** the `const DOCTRINE_PAGES = { ... }` object — before the closing `}`
+- **Known failure pattern:** Python insertion targeting `export default function` marker places the entry **after** the object closes, producing a SyntaxError: `Expected ';', '}' or <eof>`
+- **Correct pattern:** Insert before the final `}` of `DOCTRINE_PAGES`, not before `export default`
+- Always verify bracket balance AND confirm the new entry position is between `const DOCTRINE_PAGES = {` and its closing `}`
+- Check: `content.find('new-slug') < content.find('export default')` is necessary but not sufficient — also verify `content.find('new-slug') < content.find('^}\n\nexport')` (the object close)
+
+*DD06 updated after D006 deployment session.*
 
