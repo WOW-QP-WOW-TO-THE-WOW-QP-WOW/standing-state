@@ -253,7 +253,6 @@ const DOCTRINE_PAGES = {
     ],
     pdfHref: null,
   },
-}
 
   'constitutional-integration': {
     id: 'D006',
@@ -321,8 +320,7 @@ const DOCTRINE_PAGES = {
     plateSlug: 'constitutional-integration',
     pdfHref: null,
   },
-
-
+}
 export default function DoctrineSlugPage() {
   const router = useRouter()
   const { slug } = router.query
