@@ -132,6 +132,8 @@ const DOCTRINE_PAGES = {
         text: 'Reachability without admissibility produces drift. Admissibility without reachability produces stagnation. Authorized movement lives only in the intersection 𝒩(x_t) = 𝒜 ∩ 𝓡(x_t). Capability is not authority. Reach is not permission. The gate constrains both into one navigable region.',
       },
     ],
+    plateImage: '/plates/plate-xiv-gate-of-admissibility.png',
+    plateSlug: 'gate-of-admissibility',
     pdfHref: null,
   },
 
@@ -251,6 +253,8 @@ const DOCTRINE_PAGES = {
         text: 'The pattern expands without losing itself. Identity remains. Governance stands. Completion resolves. The River flows. The Tree yields. Propagation continues. Completion became generative rather than terminal — the proof that the source remains singular while the expression becomes distributed, without fragmentation of identity, governance, or life.',
       },
     ],
+    plateImage: '/plates/BCF026C8-EF01-4A61-8B96-52681BE0FC35.png',
+    plateSlug: 'the-guardian-cycle',
     pdfHref: null,
   },
 
@@ -495,23 +499,6 @@ export default function DoctrineSlugPage() {
               </div>
             </div>
 
-            {item.plateImage && (
-              <div className="plateDetailBlock">
-                <div className="plateDetailBlockLabel">Companion Doctrine Plate</div>
-                <a href={`/system/plates/${item.plateSlug}`} style={{ display: 'block' }}>
-                  <img
-                    src={item.plateImage}
-                    alt={`${item.title} — Companion Doctrine Plate — Standing State Press`}
-                    style={{ width: '100%', height: 'auto', display: 'block', border: '1px solid var(--gold-dim)', marginTop: '0.75rem' }}
-                  />
-                </a>
-                <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
-                  <a href={`/system/plates/${item.plateSlug}`} style={{ color: 'var(--gold-dim)' }}>
-                    View full plate →
-                  </a>
-                </p>
-              </div>
-            )}
 
             {item.canonicalLineage && (
               <div className="plateDetailBlock">
@@ -564,6 +551,24 @@ export default function DoctrineSlugPage() {
                     </a>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {item.plateImage && (
+              <div className="plateDetailBlock">
+                <div className="plateDetailBlockLabel">Companion Doctrine Plate</div>
+                <a href={`/system/plates/${item.plateSlug}`} style={{ display: 'block' }}>
+                  <img
+                    src={item.plateImage}
+                    alt={`${item.title} — Companion Doctrine Plate — Standing State Press`}
+                    style={{ width: '100%', height: 'auto', display: 'block', border: '1px solid var(--gold-dim)', marginTop: '0.75rem' }}
+                  />
+                </a>
+                <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+                  <a href={`/system/plates/${item.plateSlug}`} style={{ color: 'var(--gold-dim)' }}>
+                    View full plate →
+                  </a>
+                </p>
               </div>
             )}
 
