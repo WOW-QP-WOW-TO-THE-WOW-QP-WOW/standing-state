@@ -9,8 +9,8 @@
 
 ## Purpose
 
-Deploy canonical essays and plates to standingstate.com without rediscovering repository
-structure each time.
+Deploy canonical essays, plates, and doctrine pages to standingstate.com without
+rediscovering repository structure each time.
 
 Core command: **Read DEPLOYMENT_DOCTRINE.md and execute.**
 
@@ -133,7 +133,7 @@ In `pages/essays/index.js`, entries follow this shape:
 - Canonical essays: standalone static files, `pages/essays/canonical/[slug].js`
 - Dynamic routes: plates (`pages/system/plates/[slug].js`), doctrine (`pages/system/doctrine/[slug].js`)
 - Essay index: `pages/essays/index.js`, ESSAYS array
-- Corpus position at last audit: M084, P035, D006
+- Corpus position at last audit: M089 · C015 · D006 · P046 · 76 Engine 2 modules
 - Content module pattern (`content/essays/`) is legacy/unused — do not introduce
 
 ---
@@ -147,43 +147,41 @@ Plates are registered in `components/platesData.js` as entries in the `PLATES` a
 - Confirm the next available slot — do not assume from corpus position alone
 - Check `PLATES_META.count` at the bottom of the file — update it to match
 
-Entry shape (confirmed from P034, P035):
+Entry shape (confirmed from P044–P046):
 
 ```js
 {
-  id: 'P035',
-  number: 'XXXV',
-  title: 'The Geometry of Restoration',
-  slug: 'the-geometry-of-restoration',
-  image: '/plates/p035-geometry-of-restoration.png',
+  id: 'P046',
+  number: 'XLVI',
+  title: 'The Doctrine of Constitutional Integration',
+  slug: 'constitutional-integration',
+  image: '/plates/p046-constitutional-integration.png',
   summary: '...',
-  governingCondition: '\\text{Differentiation} \\to ...',
+  governingCondition: '...',
   description: '...',
-  volume: 'Cross-Volume · Identity · Continuity · Restoration',
-  chapter: 'Architecture · Admissible Relationship · Restoration',
-  linkedVars: ['xstar', 'phi', 'kauto'],
+  volume: 'Cross-Volume · ...',
+  chapter: 'Doctrine · ...',
+  linkedVars: ['xstar', 'phi'],
   linkedGlossary: [
     { label: 'I*', anchor: 'xstar' },
-    { label: 'Φ(x)', anchor: 'phi' },
-    { label: 'K_auto', anchor: 'kauto' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
   ],
-  relatedEssay: 'M084',
+  relatedEssay: 'D006',
 },
 ```
 
 **PLATES_META** — update description text and count together:
 ```js
 export const PLATES_META = {
-  count: 35,                          // must match actual plate count
-  description: 'Thirty-five plates...', // update prose number to match
+  count: 46,                           // must match actual plate count
+  description: 'Forty-six plates...',  // update prose number to match
   ...
 }
 ```
 
 **Plate image path:** `/public/plates/[filename]` → referenced as `/plates/[filename]` in data
-- SVG plates scale to any width without loss — preferred for diagram plates
-- PNG plates are raster — confirm dimensions before deploying (read with Python/bash)
-- Landscape PNG plates (wider than tall) require the stacked layout (see §9)
+- PNG plates are raster — confirm dimensions before deploying
+- Landscape PNG plates (wider than tall) use stacked layout (see §9)
 
 **Route:** `/system/plates/[slug]` — dynamic route, no new page file needed.
 Plate appears automatically once registered in `components/platesData.js`.
@@ -200,7 +198,7 @@ Do not create per-plate page files. Registration in `platesData.js` is sufficien
 
 **Layout:** `styles/globals.css` — `.plateDetailGrid` governs the visual layout.
 
-**Current canonical layout (as of P035 deployment):**
+**Current canonical layout:**
 
 ```css
 .plateDetailGrid {
@@ -211,20 +209,13 @@ Do not create per-plate page files. Registration in `platesData.js` is sufficien
 ```
 
 **Why stacked, not side-by-side:**
-- SVG plates scale without constraint at any width
-- PNG landscape plates (e.g. P035 at 1536×1024) lose legibility at half-width
+- PNG landscape plates lose legibility at half-width
 - Stacked layout works correctly for all plate types and aspect ratios
-- Mobile collapse is automatic — no additional breakpoint needed
+- Mobile collapse is automatic
 
 **Known failure pattern (do not repeat):**
-- Side-by-side grid (`grid-template-columns: 1fr 1fr` or `3fr 2fr`) clips landscape plates
-- Looks correct for SVG plates but fails for dense PNG landscape plates
+- Side-by-side grid clips landscape plates
 - The fix is `flex / column`, not adjusting grid proportions
-
-**CSS bracket balance:** Check `{}` balance on `styles/globals.css` after every edit.
-Check for duplicate rules (e.g. `.plateDetailPanel` appearing twice) after any insertion.
-
----
 
 ---
 
@@ -232,52 +223,55 @@ Check for duplicate rules (e.g. `.plateDetailPanel` appearing twice) after any i
 
 A canonical essay is not complete when only the written thesis is deployed.
 
-The complete publication consists of three constitutional layers:
-
 **Layer I — Constitutional Thesis**
-The complete essay. This remains the authoritative source.
+The complete essay. Authoritative source.
 
 **Layer II — Canonical Compression**
-Near the conclusion, provide a brief constitutional compression that distills the
-governing architecture into its essential principles. This section should allow readers
-to mentally reconstruct the thesis from its compressed form.
-
-Examples:
-- Identity remains.
-- Reality teaches.
-- Governance protects.
-- Restoration preserves.
-- Development emerges.
+Near the conclusion, a brief constitutional compression distilling the governing
+architecture into essential principles.
 
 **Layer III — Canonical Plate**
-Immediately following the compression and before the signature block, embed the
-corresponding canonical plate. The plate is not decorative artwork — it is the
-geometric compression of the thesis.
+The companion plate is not decorative — it is the geometric compression of the thesis.
 
-*If the essay disappeared, the plate should allow reconstruction of the constitutional architecture.*
+**Canonical Template — established this session:**
 
-The plate therefore becomes part of the essay itself.
+```
+Classification block
+↓
+Companion Plate (full width) + Caption
+↓
+Abstract
+↓
+Essay body
+↓
+Constitutional Compression
+↓
+TFAL
+↓
+Colophon / Signature block
+```
 
-**Canonical Closing Order** — all mature canonical essays conclude using this sequence:
+**Plate position rule:** The plate renders BEFORE the Abstract, not at the close.
+The plate is the visual authority layer — a co-primary encoding, not an illustration.
+The reader sees the full structural map before entering the detailed exposition.
 
-1. Constitutional Compression
-2. Canonical Plate
-3. Signature Block / TFAL
-4. Standing State Press Colophon
+**Caption standard:**
+```
+[Plate ID] · [Title] · Companion architectural plate.
+The visual authority layer compresses the governing structure developed
+throughout this essay. View full plate →
+```
 
 **Plate Integration Rules:**
 - Search for an existing canonical plate before building the essay page
-- If one exists, integrate it into the essay
-- If no canonical plate exists, preserve the standard layout and register the plate as future work
-- Never fabricate a plate
-- Never omit an available canonical plate
+- If one exists, integrate it before the Abstract
+- If no canonical plate exists, preserve the standard layout and register as future work
+- Never fabricate a plate · Never omit an available canonical plate
 
-**Legacy Canonical Upgrade Program:**
-Earlier canonical essays should be upgraded to this standard as deployment work occurs.
-
-Priority order: M002, M066, M067, M073, M074, M075, M076, M077, M078, M085, M086, M087, C013, and subsequent canonical essays.
-
-The objective is constitutional consistency, not cosmetic consistency.
+**Corpus plate upgrade status:**
+- M002 P044 ✅ · M057 P026 ✅ · M085 P043 ✅ · M086 P038 ✅
+- M087 P039 ✅ · C013 P037 ✅ · C015 P045 ✅ · D006 P046 ✅
+- Pending: M066 · M067 · M073 · M074–M078
 
 ---
 
@@ -289,17 +283,20 @@ Every deployment must pass this checklist before the zip is delivered:
 - [ ] Essay deployed at `pages/essays/canonical/[slug].js`
 - [ ] Route resolves: `/essays/canonical/[slug]`
 - [ ] Standalone pattern confirmed (no content-module import)
+- [ ] Companion plate present BEFORE the Abstract
+- [ ] Canonical caption present beneath plate
 - [ ] Constitutional Compression present near conclusion
 - [ ] TFAL present
 - [ ] Colophon present (if applicable)
 
 **Plate Layer**
 - [ ] Canonical plate identified (existing or registered as future work)
-- [ ] Plate embedded in essay (if plate exists)
+- [ ] Plate embedded before Abstract (if plate exists)
+- [ ] Caption formatted correctly
 - [ ] Plate registered in `components/platesData.js` (if new)
 - [ ] Plate image at correct path: `public/plates/[filename]`
 - [ ] `PLATES_META.count` updated (if new plate)
-- [ ] Plate route resolves: `/system/plates/[slug]` (dynamic — no new page file needed)
+- [ ] Plate route resolves: `/system/plates/[slug]`
 
 **Registry Layer**
 - [ ] Essay registered in `pages/essays/index.js` ESSAYS array
@@ -312,7 +309,6 @@ Every deployment must pass this checklist before the zip is delivered:
 - [ ] Lineage stated in header and nav footer
 - [ ] Previous / Next navigation present
 - [ ] Medium mirror status verified (URL or Pending — never invented)
-- [ ] Homepage / gate index updated if required
 
 **Verification Layer**
 - [ ] Bracket balance verified: `{}` and `()` both 0 on all modified JS files
@@ -321,47 +317,143 @@ Every deployment must pass this checklist before the zip is delivered:
 - [ ] Repository zip regenerated with all changed files at exact repo paths
 
 **Known Failure Patterns (do not repeat)**
-- Unescaped apostrophes in single-quoted JS strings (e.g. `Noah's Ark` → `Noah\'s Ark`)
+- Unescaped apostrophes in single-quoted JS strings
 - Content-module import pattern instead of standalone page
 - Invented mirror URLs — always mark Pending if URL not supplied
 - `flag` value not defined in FLAGS object (silently falls back)
 - `PLATES_META.count` not updated after adding a plate
 - Zip missing changed files or using wrong repo paths
+- **Plate after Abstract** — plate must be BEFORE the Abstract per canonical template
 
 ---
 
-*DD06 — Deployment Doctrine. Read this file before every deployment.*
+## 12. Doctrine Page Deployment
+
+**Route:** `/system/doctrine/[slug]` — dynamic route via `pages/system/doctrine/[slug].js`
+
+**Registration:** Entries go inside `const DOCTRINE_PAGES = { ... }` in `[slug].js`
+AND as cards in `pages/system/doctrine/index.js` DOCTRINE_ITEMS array.
+
+**Entry shape:**
+```js
+'doctrine-slug': {
+  id: 'D006',
+  title: 'The Doctrine of Constitutional Integration',
+  subtitle: 'The Syntheos Effect · ...',
+  eyebrow: 'Constitutional Doctrine',
+  axis1: 'ENGINE-2',
+  axis2: 'VOL-CROSS',
+  axis3: 'REG-CONST',
+  equation: '...',
+  intro: '...',
+  thesis: '...',
+  executionConditions: [...],
+  body: [...],
+  principles: [{ label: '...', text: '...' }],
+  canonicalLineage: [{ id: '...', title: '...', route: '...' }],
+  crossLinks: [{ label: '...', route: '...' }],
+  plateImage: '/plates/p046-constitutional-integration.png',
+  plateSlug: 'constitutional-integration',
+  pdfHref: null,
+},
+```
+
+**Plate rendering in doctrine template:**
+- Template renders `{item.plateImage && ...}` conditionally — no template change needed
+- Plate renders at BOTTOM of doctrine page (after crossLinks, before author)
+- This is the INVERSE of the essay standard (essays: plate before Abstract; doctrine: plate at bottom)
+
+**Known failure pattern — CRITICAL:**
+Python insertion targeting `export default function` as marker places entry AFTER
+the object closes, producing: `SyntaxError: Expected ';', '}' or <eof>`
+
+**Correct insertion:**
+```python
+# Find the last entry's pdfHref: null,\n  },
+# Insert D006 block BEFORE the closing } of DOCTRINE_PAGES
+old_close = "    pdfHref: null,\n  },\n}\n"  # last entry before object close
+new_close = "    pdfHref: null,\n  },\n\n  'new-slug': { ... },\n}\n"
+```
+
+**Verification after insertion:**
+```python
+pages_open = content.find("const DOCTRINE_PAGES = {")
+pages_close = content.find("\nexport default function")
+new_entry_pos = content.find("'new-slug'")
+assert pages_open < new_entry_pos < pages_close  # must be TRUE
+```
+
+Also check for double comma `},,` after insertion — fix to `},`.
 
 ---
 
-## 12. Registry Separation Doctrine
+## 13. Registry Separation Doctrine
 
 Two registries govern the Standing State corpus. They are complementary and must not be conflated.
 
 **Constitutional Registry (D-series)**
 Records the meaning, principles, and governing architecture of the corpus.
 Authority: semantic and constitutional.
-Examples: D003 — Admissibility Gate · D005 — I* Guardian Doctrine · D006 — The Doctrine of Constitutional Integration
+- D003 — The Admissibility Gate
+- D005 — The I* Guardian Doctrine
+- D006 — The Doctrine of Constitutional Integration
 
 **Deployment Registry (DD-series)**
 Records the engineering procedures that preserve constitutional integrity during implementation.
 Authority: operational.
-Examples: DD06 — This file
+- DD06 — This file
+
+**Three-layer corpus architecture:**
+
+| Layer | Prefix | Question answered | Authority |
+|---|---|---|---|
+| Essays | M / C / SA | What does this jurisdiction reveal? | Semantic · Exploratory |
+| Constitutional Doctrine | D | What governs? | Semantic · Constitutional |
+| Deployment Doctrine | DD | How is it faithfully realized? | Operational · Engineering |
 
 **Rule:** Deployment does not define doctrine. Doctrine does not prescribe implementation details.
 One preserves meaning. The other preserves faithful realization.
 
 ---
 
-## 13. Known Failure Patterns — Doctrine Page Deployment
+## 14. Engine 2 Runtime Registry
 
-When adding entries to `pages/system/doctrine/[slug].js`:
+Engine 2 is a Python runtime at `standing_state_243_usb/` — not in the web repo.
+Web repo contains only dashboard pages and visual artifacts.
 
-- Entries must be inserted **inside** the `const DOCTRINE_PAGES = { ... }` object — before the closing `}`
-- **Known failure pattern:** Python insertion targeting `export default function` marker places the entry **after** the object closes, producing a SyntaxError: `Expected ';', '}' or <eof>`
-- **Correct pattern:** Insert before the final `}` of `DOCTRINE_PAGES`, not before `export default`
-- Always verify bracket balance AND confirm the new entry position is between `const DOCTRINE_PAGES = {` and its closing `}`
-- Check: `content.find('new-slug') < content.find('export default')` is necessary but not sufficient — also verify `content.find('new-slug') < content.find('^}\n\nexport')` (the object close)
+**Current runtime status:**
+- Module count: 76
+- Suite: ENGINE_2_GOVERNANCE_STACK_PASS
+- Navigation: ENGINE_2_M089_NAVIGATION_STACK_PASS
+- Constitutional admission: ENGINE_2_CONSTITUTIONAL_ADMISSION_PASS
 
-*DD06 updated after D006 deployment session.*
+**Constitutional admission module (Module 76):**
+```
+engine2_constitutional_admission_243.py
+Status: PASS
+Category: Constitutional Admission
+Sequence: D005 → D003 → D006
+```
 
+**Constitutional operating order (runtime):**
+```
+D005 — IStarGuardian.evaluate()              Constitutional authority
+D003 — AdmissibilityGate.test()              Constitutional boundary
+D006 — ConstitutionalIntegrationEngine.execute()  Constitutional execution
+```
+
+**Historical registration order (doctrine numbering):**
+```
+D003 → D005 → D006
+(Records emergence, not operation)
+```
+
+**Dashboard update pattern:**
+To register a new module, add entry to the MODULES list in `engine2_dashboard_243.py`
+and update the count variable (search for `MODULE_COUNT`, `ENGINE_2_RUNTIME_MODULES`,
+or the count tuple — pattern varies; grep for the current count to locate).
+
+---
+
+*DD06 — Deployment Doctrine. Read this file before every deployment.*
+*Updated: Constitutional trilogy session — D003 replacement · D006 deployment · C015 · M057 · canonical plate template · Engine 2 Module 76.*
