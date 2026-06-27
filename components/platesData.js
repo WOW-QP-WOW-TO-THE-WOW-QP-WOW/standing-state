@@ -844,12 +844,30 @@ export const PLATES = [
   ],
   relatedEssay: 'D006',
 },
+{
+  id: 'P047',
+  number: 'XLVII',
+  title: 'The Doctrine of Constitutional Development',
+  slug: 'constitutional-development',
+  image: '/plates/p047-constitutional-development.png',
+  summary: 'A constitutional corpus develops through lawful stages of compression while preserving the integrity, provenance, and auditability of every preceding stage. Development does not replace earlier layers. Development compresses them into higher constitutional order. Scaffolding is governance made visible.',
+  governingCondition: '\\text{Reality} \\to \\text{Inquiry} \\to \\text{Thesis} \\to \\text{Doctrine} \\to \\text{Book} \\to \\text{Corpus} \\to \\text{Reality}',
+  description: 'Plate XLVII encodes D007 — The Doctrine of Constitutional Development. Jurisdictional level: Meta-Constitutional. Object: the constitutional development and governance of the Standing State corpus. Fundamental Axiom: A constitutional corpus develops through lawful stages of compression while preserving the integrity, provenance, and auditability of every preceding stage. Development does not replace earlier layers. Development compresses them into higher constitutional order. Center column — six-stage constitutional sequence (I*-governed): I. Reality — Observation reveals phenomena requiring understanding. Foundation: provides the ground for all development. II. Inquiry — Questions are preserved without premature closure. Preserves Reality. Compresses Observation. Does Not Erase Observation. III. Thesis — A single architectural proposition is investigated. Preserves Inquiry. Compresses Questions. Does Not Erase Questions. IV. Doctrine — Multiple verified theses are integrated into constitutional principles. Preserves Thesis. Compresses Propositions. Does Not Erase Propositions. V. Book — Doctrines are organized into coherent constitutional narratives. Preserves Doctrine. Compresses Principles. Does Not Erase Principles. VI. Corpus — Books become a living constitutional archive preserving the whole developmental history. Preserves Books. Compresses Narratives. Does Not Erase Narratives. The Return Arc: The corpus returns to reality. Reality reveals new inquiry. Development continues. Three Constitutional Principles: Sequence — Each stage fulfills a distinct constitutional office. Continuity — The corpus returns to reality. Development continues. Visibility — Scaffolding is governance made visible. The Visibility of Development: An inquiry may always be revisited. A thesis may always be audited. A doctrine may always be traced to the investigations from which it emerged. The developmental history remains accessible. Scaffolding is governance made visible. Jurisdictional Level panel: This doctrine governs the constitutional development of the corpus itself. It operates at a different jurisdictional level than D003 (Admissibility), D005 (I* Guardian), and D006 (Integration), which govern constitutional operation within the architecture. D007 governs the lawful development of the architecture across time. Provenance Threads: Audit lineage remains visible across all stages. Constitutional Compression: Reality generates inquiry. Inquiry generates thesis. Thesis generates doctrine. Doctrine generates books. Books cultivate a constitutional corpus. The corpus returns to reality. Reality reveals new inquiry. Development continues. Verification Conditions: Visible provenance. Differentiated jurisdictions. Auditability across developmental stages. Reality as the final verifier. Ability for new inquiry to emerge from existing understanding. Warning: If any of these fail, constitutional development gives way to constitutional drift. I* — The Invariant: Identity remains invariant. All development occurs within the invariant. Footer: TFAL — A becomes A, because A knows it is A. Identity remains invariant. Development remains visible. The scaffolding remains auditable. Reality remains the final witness. Companion to D007 (The Doctrine of Constitutional Development).',
+  volume: 'Cross-Volume · Constitutional Doctrine · Corpus Governance · Scaffolding · Provenance',
+  chapter: 'Meta-Constitutional · Sequence · Continuity · Visibility · Return Arc',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'D007',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
-  count: 46,
+  description: 'Forty-seven plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form.',
+  count: 47,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
