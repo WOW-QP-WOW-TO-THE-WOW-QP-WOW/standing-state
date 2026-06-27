@@ -346,6 +346,70 @@ const DOCTRINE_PAGES = {
     plateSlug: 'constitutional-integration',
     pdfHref: null,
   },
+
+  'constitutional-development': {
+    id: 'D007',
+    title: 'The Doctrine of Constitutional Development',
+    subtitle: 'Sequence · Continuity · Visibility · The Lawful Maturation of the Standing State Corpus',
+    eyebrow: 'Constitutional Doctrine',
+    axis1: 'CORPUS-GOV',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    equation: 'Reality → Inquiry → Thesis → Doctrine → Book → Corpus → Reality',
+    intro:
+      'D007 governs the constitutional development of the Standing State corpus itself. It operates one jurisdictional level above D003, D005, and D006 — those doctrines govern constitutional operation within the architecture. D007 governs the lawful development of the architecture across time. A constitutional corpus develops through lawful stages of compression while preserving the integrity, provenance, and auditability of every preceding stage.',
+    thesis:
+      'Development does not replace earlier layers. Development compresses them into higher constitutional order. The constitutional architecture therefore grows without erasing its own history.',
+    executionConditions: [
+      'Visible provenance must be preserved across all developmental stages.',
+      'Differentiated jurisdictions must remain constitutionally distinct — Inquiry may not claim Doctrine authority; Doctrine may not claim Book authority.',
+      'Auditability must be maintained: every doctrine traceable to the theses from which it emerged; every thesis traceable to the inquiries that preceded it.',
+      'Reality remains the final verifier — the corpus cannot ultimately verify itself.',
+      'The ability for new inquiry to emerge from existing understanding must remain open. Should any of these fail, constitutional development gives way to constitutional drift.',
+    ],
+    body: [
+      'Every enduring architecture requires both structure and memory. A building preserves its foundations even after the scaffolding has been removed. Most intellectual systems do not. They present finished conclusions while concealing the developmental path that produced them. The Standing State adopts a different constitutional principle: the developmental record remains visible.',
+      'Knowledge develops through differentiated constitutional offices. Reality provides observations requiring understanding. Inquiry preserves questions without premature closure. Thesis essays investigate a single architectural proposition. Doctrines integrate multiple verified theses into constitutional principles. Books organize doctrines into coherent constitutional narratives. The corpus becomes the living constitutional archive preserving the whole developmental history. Each stage compresses the previous stage without abolishing it. Nothing essential is discarded.',
+      'The constitutional corpus is not the final destination. It is a living archive. As the corpus encounters new observations, reality presents questions not previously visible. New inquiries emerge. New theses develop. New doctrines mature. The constitutional cycle therefore continues: Reality → Inquiry → Thesis → Doctrine → Book → Corpus → Reality. Development proceeds through continuity rather than closure.',
+      'The Standing State preserves its scaffolding. Most intellectual traditions retain conclusions while allowing the developmental record to disappear. The Standing State retains both. An inquiry may always be revisited. A thesis may always be audited. A doctrine may always be traced to the investigations from which it emerged. Books preserve synthesis without erasing lineage. Because the developmental history remains accessible, constitutional authority is continually open to audit through provenance rather than resting upon assertion alone.',
+      'Scaffolding is governance made visible. The corpus therefore answers two distinct constitutional questions: What has become established? and How did it become mature enough to establish? The second question is inseparable from the first. This is what distinguishes a living constitutional corpus from a collection of independent writings: the developmental pathway remains visible alongside the finished work.',
+    ],
+    principles: [
+      {
+        label: 'I. The Sequence of Constitutional Development',
+        text: 'Knowledge develops through differentiated constitutional offices. Reality → Inquiry → Thesis → Doctrine → Book → Corpus. Each stage fulfills a lawful function. Each compresses the previous stage without abolishing it. Nothing essential is discarded.',
+      },
+      {
+        label: 'II. The Return Arc',
+        text: 'The corpus is not the final destination. It is a living archive. As the corpus encounters new observations, reality presents questions not previously visible. New inquiries emerge. New theses develop. New doctrines mature. Corpus → Reality → new Inquiry. Development proceeds through continuity rather than closure.',
+      },
+      {
+        label: 'III. The Visibility of Development',
+        text: 'The Standing State preserves its scaffolding. Inquiry remains visible after thesis. Thesis remains visible after doctrine. Doctrine remains visible after books. Scaffolding is governance made visible. Constitutional authority rests upon provenance, not assertion alone.',
+      },
+      {
+        label: 'IV. Jurisdictional Level',
+        text: 'D007 governs the constitutional development of the corpus itself. It therefore operates at a different jurisdictional level than D003 (Constitutional Admissibility), D005 (The I* Guardian), and D006 (Constitutional Integration). Those doctrines govern constitutional operation within the architecture. D007 governs the lawful development of the architecture across time.',
+      },
+    ],
+    canonicalLineage: [
+      { id: 'D003', title: 'The Admissibility Gate', route: '/system/doctrine/admissibility-gate' },
+      { id: 'D005', title: 'The I* Guardian Doctrine', route: '/system/doctrine/i-star-guardian-doctrine' },
+      { id: 'D006', title: 'The Doctrine of Constitutional Integration', route: '/system/doctrine/constitutional-integration' },
+      { id: 'M085', title: 'The Architecture of Lawful Relationship', route: '/essays/canonical/the-architecture-of-lawful-relationship' },
+      { id: 'M086', title: 'Relationship Exhaustion and the Governance Basin', route: '/essays/canonical/relationship-exhaustion-and-the-governance-basin' },
+      { id: 'M089', title: 'The First Question — Navigation from Verified Position', route: '/essays/canonical/the-first-question' },
+    ],
+    crossLinks: [
+      { label: 'D003 — Constitutional Admissibility', route: '/system/doctrine/admissibility-gate' },
+      { label: 'D005 — The I* Guardian', route: '/system/doctrine/i-star-guardian-doctrine' },
+      { label: 'D006 — Constitutional Integration', route: '/system/doctrine/constitutional-integration' },
+      { label: 'P047 — Constitutional Development Plate', route: '/system/plates/constitutional-development' },
+    ],
+    plateImage: '/plates/p047-constitutional-development.png',
+    plateSlug: 'constitutional-development',
+    pdfHref: null,
+  },
 }
 export default function DoctrineSlugPage() {
   const router = useRouter()

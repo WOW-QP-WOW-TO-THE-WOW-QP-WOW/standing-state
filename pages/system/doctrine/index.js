@@ -73,6 +73,18 @@ const DOCTRINE_ITEMS = [
     axis3: 'REG-CONST',
     href: '/system/doctrine/constitutional-integration',
   },
+  {
+    id: 'D007',
+    slug: 'constitutional-development',
+    type: 'Constitutional Doctrine',
+    title: 'The Doctrine of Constitutional Development',
+    subtitle: 'Sequence · Continuity · Visibility · The Lawful Maturation of the Standing State Corpus',
+    note: 'D007 governs the constitutional development of the corpus itself — one jurisdictional level above D003, D005, and D006. Those doctrines govern constitutional operation within the architecture. D007 governs the lawful development of the architecture across time. Three constitutional principles: I. The Sequence of Constitutional Development — Reality → Inquiry → Thesis → Doctrine → Book → Corpus; II. The Return Arc — the corpus returns to reality, generating new inquiry; III. The Visibility of Development — scaffolding is governance made visible; the developmental history remains auditable. Verification: provenance visible; jurisdictions differentiated; auditability preserved; reality the final verifier; new inquiry always possible. Companion plate: P047.',
+    axis1: 'CORPUS-GOV',
+    axis2: 'VOL-CROSS',
+    axis3: 'REG-CONST',
+    href: '/system/doctrine/constitutional-development',
+  },
 ]
 
 function DoctrineCard({ item }) {
