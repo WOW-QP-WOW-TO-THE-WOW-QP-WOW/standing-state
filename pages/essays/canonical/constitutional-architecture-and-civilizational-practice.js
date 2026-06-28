@@ -149,20 +149,25 @@ export default function ConstitutionalArchitectureAndCivilizationalPractice() {
           </div>
 
           {/* ── P049 COMPANION PLATE — before Abstract per DD06 §10 ── */}
-          <section style={{ marginTop: '2rem', marginBottom: '2.5rem', textAlign: 'center' }}>
-            <img
-              src="/plates/p049-constitutional-translation-atlas.png"
-              alt="P049 — The Constitutional Translation Atlas. SA-010 companion architectural plate."
-              style={{ width: '100%', maxWidth: '900px', height: 'auto', border: '1px solid var(--border)' }}
-            />
-            <div style={{ marginTop: '0.75rem', fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)' }}>
-              P049 · The Constitutional Translation Atlas · Companion architectural plate.{' '}
-              The visual authority layer compresses the governing structure developed
-              throughout this essay.{' '}
-              <a href="/system/plates/constitutional-translation-atlas" style={{ color: 'var(--gold)' }}>
-                View full plate →
+          <section style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+            <a href="/system/plates/constitutional-translation-atlas" style={{ display: 'block' }}>
+              <img
+                src="/plates/p049-constitutional-translation-atlas.png"
+                alt="P049 — The Constitutional Translation Atlas · Canonical Plate · Standing State Press"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  display: 'block',
+                  border: '1px solid var(--gold-dim)',
+                }}
+              />
+            </a>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+              P049 · The Constitutional Translation Atlas &nbsp;·&nbsp;{' '}
+              <a href="/system/plates/constitutional-translation-atlas" style={{ color: 'var(--gold-dim)' }}>
+                Companion architectural plate. The visual authority layer compresses the governing structure developed throughout this essay. View full plate →
               </a>
-            </div>
+            </p>
           </section>
 
           <section id="essay-body" itemProp="articleBody">
