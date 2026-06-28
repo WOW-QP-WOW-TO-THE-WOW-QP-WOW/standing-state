@@ -693,10 +693,10 @@ export default function ConstitutionalArchitectureAndCivilizationalPractice() {
               <span className="canonNavTitle">C015 · Lawful Navigation</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays Index</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.4, cursor: 'default' }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/the-syntheos-effect">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Future Register · Pending</span>
-            </span>
+              <span className="canonNavTitle">C016 · The Syntheos Effect</span>
+            </a>
           </div>
 
         </div>
