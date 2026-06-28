@@ -898,12 +898,30 @@ export const PLATES = [
   ],
   relatedEssay: 'SA-010',
 },
+{
+  id: 'P050',
+  number: 'L',
+  title: 'The Syntheos Effect Architectural Atlas',
+  slug: 'the-syntheos-effect-architectural-atlas',
+  image: '/plates/p050-the-syntheos-effect-architectural-atlas.png',
+  summary: 'Integration preserves differentiation. Collapse abolishes differentiation. Coherence emerges through lawful relationship. Development is the fruit of preserved constitutional integrity.',
+  governingCondition: '\\text{Differentiation} \\to \\text{Identity} \\to \\text{Authority} \\to \\text{Authorization} \\to \\text{Jurisdiction} \\to \\text{Cooperation} \\to \\text{Verification} \\to \\text{Correction} \\to \\text{Continuity} \\to \\text{Development}',
+  description: 'Plate L encodes C016 — The Syntheos Effect: Differentiation, Identity, and the Constitutional Ecology of Intelligence. Classification: Canonical Thesis · Final Draft. Status: Canonical Draft Locked · Ready for Deployment. Domain: Constitutional Intelligence Architecture. Layer: Ontic · Ontological · Governance · Methodological. Central thesis: The capability of the whole emerges not because one intelligence becomes everything, but because differentiated intelligences faithfully perform their own constitutional offices while cooperating toward shared purposes. This is the Syntheos Effect — emergence through differentiated intelligence. Eight differentiated intelligence types displayed: Personal, Scientific, Medical, Legal, Engineering, Corporate, Governmental, Educational. Each preserves its differentiated identity. Each remains accountable to its governing authority. Each cooperates through lawful constitutional relationships. The Constitutional Dependency (Section II): 1. Differentiation, 2. Identity (I*), 3. Authority, 4. Authorization, 5. Jurisdiction, 6. Cooperation, 7. Verification, 8. Correction, 9. Continuity, 10. Development, 11. Emergence. Each office depends upon the lawful completion of the office preceding it. No office exists independently. Section VII — Being, Becoming, and Bearing: Being (What is it? — established through differentiation and stabilized through identity; Standard of Truth: Identity; identity is not inferred from performance; a mango tree that dies before bearing fruit remains a mango tree; Being is constitutionally invariant), Becoming (How is it governed through time? — authority, authorization, jurisdiction, cooperation, verification, correction, continuity, development; Standard of Truth: Governance; development is lawful transformation while identity remains preserved), Bearing (What has become observable? — observable artifact of developmental history within spacetime; Standard of Truth: Observation; fruit is not identity; fruit is not governance; fruit is the historical artifact produced through the relationship between identity and reality across time; the sweetness or sourness records the season through which development matured; fruit is interpreted in light of identity). Identity (I*) — The Invariant Reference. Integration Preserves Differentiation. Collapse Abolishes the Organism. Coherence Emerges through Lawful Relationship. Section VIII — Methodology: How do we responsibly evaluate these claims? Five-step methodology: Thought Experiments (examine structural coherence across representative cases), Preserve Jurisdiction (maintain the integrity and independence of each domain), Identify Correspondence (evaluate structural recurrence without asserting equivalence), Discipline Interpretation (ensure claims remain coherent within the constitutional architecture), Confirm Recurrence (verification confirms what constitutional development already established). Methodology does not establish ontology. It evaluates structural recurrence while preserving jurisdictional integrity. The thesis proposes the constitutional dependency. The methodology evaluates its recurrence. Constitutional Compression: Integration preserves differentiation. Collapse abolishes differentiation. Coherence emerges through lawful relationship. Development is the fruit of preserved constitutional integrity. Ontological Compression (four-panel): The seed establishes the kind. The tree preserves the kind. The seasons shape the development. The fruit bears witness to the journey. Closing Reflection: Being establishes identity. Becoming governs development. Bearing records developmental history. Methodology disciplines interpretation. Coherence is preserved when differentiated jurisdictions remain faithful to their constitutional offices. Corpus Position lineage: TFAL → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016. Companion Plate: P050 — The Syntheos Effect Architectural Atlas. Right sidebar constitutional compressions: Coherence Emerges through Lawful Relationship. Development is the Fruit of Preserved Integrity. The Syntheos Effect is Constitutional Ecology. Footer: Standing State Press · Leon Powdar (PR) · C016 · Non-Sacrificial · Stationary. Differentiation · Identity · Governance · Cooperation · Emergence. Companion to essay C016 (The Syntheos Effect: Differentiation, Identity, and the Constitutional Ecology of Intelligence). Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016 → P050.',
+  volume: 'Cross-Volume · Constitutional Intelligence Architecture · Differentiation · Identity · Cooperation · Emergence',
+  chapter: 'Canonical Thesis · Final Draft · Being · Becoming · Bearing · Methodology · Constitutional Ecology',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C016',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Forty-nine plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 49,
+  description: 'Fifty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 50,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
