@@ -409,7 +409,7 @@ export default function ConstitutionalArchitectureAndCivilizationalPractice() {
                   The category determines the required evaluation outputs.
                 </p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', margin: '1.5rem 0' }}>
+                <div style={{ margin: '1.5rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--gold-dim)', background: 'rgba(201, 168, 76, 0.04)' }}>
                     <div style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', marginBottom: '0.75rem' }}>Single-Domain Register</div>
                     <p style={{ color: 'var(--gray-lt)', fontSize: '0.85rem', margin: '0 0 0.5rem' }}>Evaluates one discipline independently.</p>
@@ -540,7 +540,7 @@ export default function ConstitutionalArchitectureAndCivilizationalPractice() {
                   before its executable implementation.
                 </p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', margin: '1.5rem 0' }}>
+                <div style={{ margin: '1.5rem 0', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <div style={{ padding: '1rem 1.25rem', border: '1px solid var(--gold-dim)', background: 'rgba(201, 168, 76, 0.04)', textAlign: 'center' }}>
                     <div style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', marginBottom: '0.5rem' }}>Engine 2 Dashboard</div>
                     <div style={{ fontFamily: 'var(--display)', fontSize: '1.5rem', color: 'var(--gold)', marginBottom: '0.25rem' }}>83/83</div>
