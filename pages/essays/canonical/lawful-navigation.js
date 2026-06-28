@@ -477,6 +477,19 @@ export default function LawfulNavigation() {
             Standing State Press · Leon Powdar (PR)
           </div>
 
+          {/* ── Nav footer ── */}
+          <div className="canonEssayNav">
+            <a className="canonNavLink canonNavPrev" href="/essays/canonical/differentiated-jurisdictions">
+              <span className="canonNavDir">Previous</span>
+              <span className="canonNavTitle">C014 · Differentiated Jurisdictions</span>
+            </a>
+            <a className="canonNavIndex" href="/essays">Essays Index</a>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/constitutional-architecture-and-civilizational-practice">
+              <span className="canonNavDir">Next</span>
+              <span className="canonNavTitle">SA-010 · Constitutional Architecture</span>
+            </a>
+          </div>
+
         </div>
       </article>
 
