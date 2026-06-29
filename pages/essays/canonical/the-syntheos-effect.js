@@ -569,10 +569,10 @@ export default function TheSyntheosEffect() {
               <span className="canonNavTitle">SA-010 · Constitutional Architecture and Civilizational Practice</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays Index</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.4, cursor: 'default' }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/the-constitutional-flame-of-identity">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Future Inquiry · Pending</span>
-            </span>
+              <span className="canonNavTitle">C017 · The Constitutional Flame of Identity</span>
+            </a>
           </div>
 
         </div>
