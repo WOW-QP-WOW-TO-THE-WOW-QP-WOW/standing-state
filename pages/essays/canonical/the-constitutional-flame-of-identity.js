@@ -14,7 +14,7 @@
  * Authorship: Leon Powdar
  * ORCID: 0009-0004-1026-4357
  *
- * FE-2 applied: dI*/dt = 0 (Section III notation corrected)
+ * FE-2 applied: dI* over dt = 0 (Section III notation corrected)
  *
  * Constitutional audit: independent constitutional review concluded manuscript
  * is internally coherent; classification as OPEN INQUIRY · THESIS LEVEL is
@@ -287,7 +287,7 @@ export default function TheConstitutionalFlameOfIdentity() {
                   Development unfolds. Knowledge expands. Institutions evolve. Practices mature.
                   Relationships differentiate. Identity remains constitutionally invariant.
                 </p>
-                {/* FE-2 correction applied: dI*/dt = 0 */}
+                {/* FE-2 correction applied: dI-star over dt = 0 */}
                 <div style={{ margin: '1.5rem 0', padding: '1rem 1.5rem', border: '1px solid var(--gold-dim)', background: 'rgba(201, 168, 76, 0.04)', textAlign: 'center', fontFamily: 'var(--display)', fontSize: '1rem', color: 'var(--gold)', letterSpacing: '0.1em' }}>
                   dI*/dt = 0
                 </div>
