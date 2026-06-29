@@ -916,12 +916,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C016',
 },
+{
+  id: 'P051',
+  number: 'LI',
+  title: 'The Constitutional Flame of Identity',
+  slug: 'the-constitutional-flame-of-identity',
+  image: '/plates/p051-the-constitutional-flame-of-identity.png',
+  summary: 'Invariant Identity → Lawful Propagation → Admissibility → Consequence → Verified Fruit. The constitutional hypothesis: differentiated practices may preserve a recurring constitutional relationship while remaining faithful to their own jurisdictions. Internal coherence admits inquiry. Independent recurrence establishes constitutional confidence. Reality remains the final verifier.',
+  governingCondition: 'dI^*/dt = 0',
+  description: 'Plate LI encodes C017 — The Constitutional Flame of Identity: The I* Guardian, Virtue, and the Syntheos Effect. Classification: Canonical Thesis · Final Draft. Registration Status: Open Inquiry · Thesis Level. Jurisdiction: Rank-0 · NSRL-12. The Constitutional Relationship (top panel): Invariant Identity (I*) → Lawful Propagation (Virtue) → Admissibility (I* Guardian) → Consequence (Lawful Continuation) → Verified Fruit (Constitutional Continuity). Central image: The Constitutional Flame — the Syntheos Effect — Differentiation Preserves Coherence. Four flanking panels: Identity (the invariant reference that does not change with development; dI*/dt = 0; governance does not create identity; governance preserves lawful relationship to identity), Virtue (the lawful relationship of thought and action that preserves continuity with an identity coordinate; virtue is not perfection; it is faithful propagation of identity through time), I* Guardian (the constitutional office that evaluates whether a proposed continuation remains admissible relative to I* before consequence proceeds; an Invariant Governance Positioning System — IGPS), Sabbath (the constitutional practice through which restoration preserves lawful continuity; it preserves restoration so that lawful propagation may resume). The Constitutional Ecology (lower panel): nine differentiated offices — Philosophy (investigates truth and meaning), Ethics (cultivates virtue and character), Engineering (verifies design and manages constraint), Medicine (applies standards of care for human well-being), Law (interprets and upholds justice and procedure), Governance (evaluates admissibility and authority), Institutions (operate within standards and accountability), Nature (faithfully propagates life), Technology (propagates specification and function). Differentiated Offices · Distinct Jurisdictions · Constitutionally Related. Constitutional Verification Program (right panel): Engineering (control systems, navigation, software, safety-critical design), Biology (identity, propagation, repair, phenotype across life), Law and Governance (jurisdiction, review, authorization, execution), Ethics and Philosophy (virtue, practical reason, conscience, moral deliberation), Institutional Practice (standards, protocols, regulation, professional governance). The inquiry remains open. Reality is the final verifier. Footer: Standing State Press · standingstate.com · Integrity is the Geometry. Results are the Metric · Identity · Virtue · Guardian · Consequence · Fruit · One Constitutional Relationship. Endless Proof in Diversity. Author: Leon Powdar · ORCID: 0009-0004-1026-4357. Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016 → C017 → P051.',
+  volume: 'Cross-Volume · Constitutional Intelligence Architecture · Identity · Virtue · Admissibility · Consequence · Verification',
+  chapter: 'Canonical Thesis · Open Inquiry · Thesis Level · I* Guardian · Constitutional Ecology · Verification Program',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C017',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Fifty plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 50,
+  description: 'Fifty-one plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 51,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
