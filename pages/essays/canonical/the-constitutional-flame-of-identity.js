@@ -692,10 +692,10 @@ export default function TheConstitutionalFlameOfIdentity() {
               <span className="canonNavTitle">C016 · The Syntheos Effect</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays Index</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.4, cursor: 'default' }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/the-constitutional-ecology-of-inquiry">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Future Inquiry · Pending</span>
-            </span>
+              <span className="canonNavTitle">C018 · The Constitutional Ecology of Inquiry</span>
+            </a>
           </div>
 
         </div>
