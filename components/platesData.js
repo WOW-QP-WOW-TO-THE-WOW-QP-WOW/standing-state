@@ -934,12 +934,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C017',
 },
+{
+  id: 'P052',
+  number: 'LII',
+  title: 'The Constitutional Ecology of Inquiry',
+  slug: 'the-constitutional-ecology-of-inquiry',
+  image: '/plates/p052-the-constitutional-ecology-of-inquiry.png',
+  summary: 'Analogy invites inquiry. Reality contact establishes closure. No constitutional inquiry possesses authority to close another constitutional identity. Constitutional audit establishes internal coherence; it does not establish disciplinary truth. Domain reality contact establishes constitutional closure; reality contact is the final judge.',
+  governingCondition: '\\text{Differentiation} \\to \\text{Identity} \\to \\text{Boundary} \\to \\text{Jurisdiction} \\to \\text{Lawful Method} \\to \\text{Constitutional Audit} \\to \\text{Internal Coherence} \\to \\text{Inquiry} \\to \\text{Domain Reality Contact} \\to \\text{Constitutional Closure}',
+  description: 'Plate LII encodes C018 — The Constitutional Ecology of Inquiry: Identity, Jurisdiction, Reality Contact, and Constitutional Closure. Classification: Canonical Methodology · Final. Jurisdiction: Rank-0 · NSRL-12. Central tree image: The Constitutional Ecology of Inquiry — Differentiation Preserved, Lawful Relationship Permitted, Reality Contact Determines Closure. Root chain: Differentiation Establishes Identity \u2192 Identity Establishes Boundary \u2192 Constitutional Boundary Establishes Jurisdiction \u2192 Lawful Relationship Permitted \u2192 Completion Boundary Satisfied \u2192 Emergence Occurs. Section I — Constitutional Beginning: nine-step sequence from Differentiation through Domain Reality Contact establishing Constitutional Closure. Section II — The Water Principle: one independently verified example from chemistry; H + O + H \u2192 H2O; no amount of force, persuasion, or preference produces water; when the second hydrogen atom enters lawful relationship the completion boundary closes; hydrogen remains hydrogen, oxygen remains oxygen; this constitutional conclusion belongs to chemistry. Section V — Constitutional Inquiry: illustrative candidate domains — Biology, Theology, Economics, Governance, Artificial Intelligence, Psychology — each retains its own identity, boundary, methods, and standards; each discipline is responsible for its own closure. Section VII — Reality Contact: no author is the final judge, no methodology is the final judge, no discipline judges another discipline; reality contact is the final judge; does the proposition survive reality contact according to the lawful methods of its own jurisdiction; reality contact, not authority, analogy, aspiration, or preference, establishes constitutional closure. Section VIII — Constitutional Housekeeping: every differentiated discipline performs its own constitutional housekeeping; one discipline may invite inquiry; it may not constitutionally complete another discipline\u2019s inquiry. Section IX — Constitutional Ecology: preserves differentiation while permitting lawful relationship; permits structural correspondence without identity replacement; preserves inquiry without borrowing authority. Section X — Constitutional Audit: examines internal coherence, preservation of jurisdiction, discipline of analogy, proportionality of scope, preservation of differentiation; successful audit establishes Internal Constitutional Coherence; it does not establish disciplinary truth. Section XI — Domain Reality Contact: each discipline conducts its own inquiry through its own lawful methods; chemistry performs chemical verification, biology performs biological verification, economics performs economic verification, engineering performs engineering verification, AI performs AI verification, theology performs theological inquiry according to its own constitutional methods; only domain reality contact may establish constitutional closure. Canonical Compression (Section XII): Differentiation \u2192 Identity \u2192 Boundary \u2192 Jurisdiction \u2192 Lawful Method \u2192 Constitutional Audit \u2192 Internal Coherence \u2192 Inquiry \u2192 Domain Reality Contact \u2192 Constitutional Closure; Reality contact is the final judge. Constitutional Axiom: The Constitutional Ecology of Inquiry governs itself before it governs inquiry. Footer: Standing State Press \u00b7 standingstate.com \u00b7 Reality Contact Is the Final Judge. Constitutional lineage: C016 \u2192 Constitutional Architecture; C017 \u2192 Constitutional Hypothesis; C018 \u2192 Constitutional Methodology. Dependency chain: TFAL \u2192 M002 \u2192 M085 \u2192 M086 \u2192 M087 \u2192 M088 \u2192 M089 \u2192 C014 \u2192 C015 \u2192 SA-010 \u2192 C016 \u2192 C017 \u2192 C018 \u2192 P052.',
+  volume: 'Cross-Volume \u00b7 Constitutional Methodology \u00b7 Identity \u00b7 Jurisdiction \u00b7 Reality Contact \u00b7 Constitutional Closure',
+  chapter: 'Canonical Methodology \u00b7 Final \u00b7 Constitutional Audit \u00b7 Domain Reality Contact \u00b7 Constitutional Ecology',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C018',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Fifty-one plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 51,
+  description: 'Fifty-two plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 52,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
