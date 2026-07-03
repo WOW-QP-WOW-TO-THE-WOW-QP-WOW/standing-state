@@ -512,10 +512,10 @@ export default function TheConstitutionalEcologyOfInquiry() {
               <span className="canonNavTitle">C017 · The Constitutional Flame of Identity</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays Index</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.4, cursor: 'default' }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/the-constitutional-convergence-of-inquiry">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Future Inquiry · Pending</span>
-            </span>
+              <span className="canonNavTitle">C019 · The Constitutional Convergence of Inquiry</span>
+            </a>
           </div>
 
         </div>
