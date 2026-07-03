@@ -9,16 +9,16 @@
 
 import Head from 'next/head'
 import KTex from '../../../components/KTex'
-import { VARIABLES, GOVERNING_EQUATION, AXIOM, EXTENDED_TERMS } from '../../../components/glossaryData'
+import { CORE_TERMS, VARIABLES, GOVERNING_EQUATION, AXIOM, EXTENDED_TERMS } from '../../../components/glossaryData'
 
 export default function Glossary() {
   return (
     <>
       <Head>
-        <title>Variable Glossary — Standing State Press</title>
+        <title>Constitutional Language Registry — Standing State Press</title>
         <meta
           name="description"
-          content="The invariant definition layer. Every governing variable defined once. Definition precedes expression."
+          content="The constitutional language registry. Every term defined once, with register, jurisdiction, evidence status, and lineage. Definition precedes expression."
         />
       </Head>
 
@@ -45,12 +45,18 @@ export default function Glossary() {
             <span className="glossBreadSep">→</span>
             <span style={{ color: 'var(--gold-dim)' }}>Glossary</span>
           </div>
-          <div className="glossEyebrow">The Invariant Definition Layer</div>
-          <h1 className="glossH1">Variable Glossary</h1>
+          <div className="glossEyebrow">The Constitutional Language Registry</div>
+          <h1 className="glossH1">Glossary v3</h1>
           <p className="glossIntro">
-            Definition precedes expression. Every governing variable is defined once on this page.
-            No symbol drifts. No term is left open to reinterpretation.
-            This is the semantic foundation of the Standing State system.
+            This glossary is not merely a dictionary. It is the constitutional registry of meaning for the entire corpus.
+            Every term is defined with register, jurisdiction, evidence status, and lineage.
+            The glossary answers not only what a term means, but where it applies, what kind of claim it makes,
+            what reality contact supports it, and how it developed across the corpus.
+          </p>
+          <p className="glossIntro" style={{ fontSize: '0.9rem', color: 'var(--gray-lt)', marginTop: '0.75rem' }}>
+            Evidence status is recorded honestly. A model construct is not inferior to an empirically supported claim —
+            it is a different kind of claim requiring different evaluation.
+            No term's epistemic status has been upgraded merely because the schema was upgraded.
           </p>
           <div className="glossMandate">
             The variable never governed. The sequence did.
@@ -105,7 +111,7 @@ export default function Glossary() {
                 <KTex math={GOVERNING_EQUATION.identity} display />
               </div>
               <div className="glossEqNote">
-                The reference state is constant for all time. NSRL-11. Pathology does not corrupt identity — it degrades expression capacity.
+                I* is the cross-register invariant identity coordinate. dI*/dt = 0. Pathology does not corrupt I* — it degrades expression capacity. x*_bio is the biological reference state; I* is the constitutional identity coordinate.
               </div>
             </div>
 
@@ -115,11 +121,68 @@ export default function Glossary() {
 
       <hr className="divider" />
 
+      {/* ── CORE TERMS — CONSTITUTIONAL METHODOLOGY ── */}
+      {CORE_TERMS && CORE_TERMS.length > 0 && (
+        <section style={{ paddingBottom: '2rem' }}>
+          <div className="wrap">
+            <div className="secHead reveal" style={{ marginTop: '3rem' }}>
+              <span className="secLabel">Core Constitutional Terms</span>
+              <div className="secRule" />
+            </div>
+            <p style={{ fontFamily: 'var(--serif)', fontSize: '0.9rem', color: 'var(--gray-lt)', fontStyle: 'italic', marginBottom: '2rem' }}>
+              Methodological and architectural terms that govern the registry itself.
+            </p>
+            <div style={{ display: 'grid', gap: '1px', background: 'var(--border)' }}>
+              {CORE_TERMS.map(term => (
+                <div key={term.id} style={{ background: 'var(--black)', padding: '1.75rem 2rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap' }}>
+                      <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)' }}>
+                        {term.symbol}
+                      </span>
+                      <span style={{ fontFamily: 'var(--serif)', fontSize: '1.1rem', color: 'var(--white)' }}>
+                        {term.name}
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      {term.register && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.15rem 0.5rem' }}>
+                          {term.register}
+                        </span>
+                      )}
+                      {term.evidenceStatus && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.15rem 0.5rem', background: 'rgba(201,168,76,0.06)' }}>
+                          {term.evidenceStatus}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <p style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', color: 'var(--gray-lt)', lineHeight: 1.8, marginBottom: term.distinctions ? '0.75rem' : 0 }}>
+                    {term.definition}
+                  </p>
+                  {term.distinctions && term.distinctions.length > 0 && (
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                      {term.distinctions.map((d, i) => (
+                        <li key={i} style={{ fontFamily: 'var(--serif)', fontSize: '0.85rem', color: 'var(--gold-dim)', fontStyle: 'italic', marginTop: '0.35rem' }}>
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <hr className="divider" />
+
       {/* ── VARIABLE DEFINITIONS ── */}
       <section className="glossVarSec">
         <div className="wrap">
           <div className="secHead reveal">
-            <span className="secLabel">Governing Variables</span>
+            <span className="secLabel">Governing Variables — Biological Register</span>
             <div className="secRule" />
           </div>
 
@@ -130,7 +193,7 @@ export default function Glossary() {
                 id={v.anchor}
                 className={`glossVarCard reveal d${i > 4 ? 4 : i}`}
               >
-                {/* Symbol + Name */}
+                {/* Symbol + Name + Schema Badges */}
                 <div className="glossVarHeader">
                   <div className="glossVarSymbol">
                     <KTex math={v.symbol} />
@@ -138,6 +201,23 @@ export default function Glossary() {
                   <div className="glossVarMeta">
                     <div className="glossVarName">{v.name}</div>
                     <div className="glossVarRole">{v.role}</div>
+                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginTop: '0.35rem' }}>
+                      {v.register && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '7px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.1rem 0.4rem' }}>
+                          {v.register}
+                        </span>
+                      )}
+                      {v.evidenceStatus && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '7px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.1rem 0.4rem', background: 'rgba(201,168,76,0.06)' }}>
+                          {v.evidenceStatus}
+                        </span>
+                      )}
+                      {v.canonicalStatus && v.canonicalStatus !== 'Canonical' && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '7px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold)', border: '1px solid var(--gold-dim)', padding: '0.1rem 0.4rem' }}>
+                          {v.canonicalStatus}
+                        </span>
+                      )}
+                    </div>
                   </div>
                   <div className="glossVarAnchor">#{v.anchor}</div>
                 </div>
@@ -149,16 +229,26 @@ export default function Glossary() {
                     <p className="glossVarDef">{v.definition}</p>
                   </div>
 
-                  {/* System logic equation */}
-                  <div className="glossVarSection">
-                    <span className="glossVarSectionLabel">System Logic</span>
-                    <div className="glossVarLogicWrap">
-                      <div className="glossVarLogicEq">
-                        <KTex math={v.logic} display />
-                      </div>
-                      <div className="glossVarLogicNote">{v.logicLabel}</div>
+                  {/* Reality Contact (v3 field) */}
+                  {v.realityContact && (
+                    <div className="glossVarSection">
+                      <span className="glossVarSectionLabel">Reality Contact</span>
+                      <p className="glossVarDef" style={{ fontStyle: 'italic', color: 'var(--gray-lt)' }}>{v.realityContact}</p>
                     </div>
-                  </div>
+                  )}
+
+                  {/* System logic equation */}
+                  {v.logic && (
+                    <div className="glossVarSection">
+                      <span className="glossVarSectionLabel">System Logic</span>
+                      <div className="glossVarLogicWrap">
+                        <div className="glossVarLogicEq">
+                          <KTex math={v.logic} display />
+                        </div>
+                        {v.logicLabel && <div className="glossVarLogicNote">{v.logicLabel}</div>}
+                      </div>
+                    </div>
+                  )}
 
                   {/* Activation / Suppression */}
                   {(v.activation || v.suppression) && (
@@ -175,6 +265,30 @@ export default function Glossary() {
                           <p className="glossVarCondText">{v.suppression}</p>
                         </div>
                       )}
+                    </div>
+                  )}
+
+                  {/* Distinctions (v3 field) */}
+                  {v.distinctions && v.distinctions.length > 0 && (
+                    <div className="glossVarSection">
+                      <span className="glossVarSectionLabel">Distinctions</span>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        {v.distinctions.map((d, i) => (
+                          <li key={i} style={{ fontFamily: 'var(--serif)', fontSize: '0.87rem', color: 'var(--gold-dim)', fontStyle: 'italic', marginTop: '0.35rem' }}>
+                            {d}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Lineage (v3 field) */}
+                  {v.lineage && v.lineage.note && (
+                    <div className="glossVarSection" style={{ borderTop: '1px solid var(--border)', paddingTop: '1rem' }}>
+                      <span className="glossVarSectionLabel">Lineage</span>
+                      <p className="glossVarDef" style={{ fontSize: '0.85rem', color: 'var(--gray-lt)', fontStyle: 'italic' }}>
+                        First appearance: {v.lineage.firstAppearance}. {v.lineage.note}
+                      </p>
                     </div>
                   )}
                 </div>
@@ -223,7 +337,7 @@ export default function Glossary() {
               {EXTENDED_TERMS.map(term => (
                 <div key={term.id} style={{ background: 'var(--black)', padding: '1.75rem 2rem' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap' }}>
                       <span style={{ fontFamily: 'var(--display)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)' }}>
                         {term.symbol}
                       </span>
@@ -231,13 +345,43 @@ export default function Glossary() {
                         {term.name}
                       </span>
                     </div>
-                    <span style={{ fontFamily: 'var(--display)', fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.15rem 0.5rem' }}>
-                      {term.source}
-                    </span>
+                    <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                      {term.evidenceStatus && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.15rem 0.5rem', background: 'rgba(201,168,76,0.06)' }}>
+                          {term.evidenceStatus}
+                        </span>
+                      )}
+                      {term.source && (
+                        <span style={{ fontFamily: 'var(--display)', fontSize: '8px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', border: '1px solid var(--border)', padding: '0.15rem 0.5rem' }}>
+                          {term.source}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <p style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', color: 'var(--gray-lt)', lineHeight: 1.8 }}>
+                  {term.register && (
+                    <div style={{ marginBottom: '0.5rem' }}>
+                      <span style={{ fontFamily: 'var(--display)', fontSize: '7px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-dim)', borderLeft: '2px solid var(--gold-dim)', paddingLeft: '0.5rem' }}>
+                        Register: {term.register}
+                      </span>
+                    </div>
+                  )}
+                  <p style={{ fontFamily: 'var(--serif)', fontSize: '0.95rem', color: 'var(--gray-lt)', lineHeight: 1.8, marginBottom: term.distinctions ? '0.75rem' : 0 }}>
                     {term.definition}
                   </p>
+                  {term.distinctions && term.distinctions.length > 0 && (
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                      {term.distinctions.map((d, i) => (
+                        <li key={i} style={{ fontFamily: 'var(--serif)', fontSize: '0.85rem', color: 'var(--gold-dim)', fontStyle: 'italic', marginTop: '0.35rem' }}>
+                          {d}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {term.lineage && term.lineage.note && (
+                    <p style={{ fontFamily: 'var(--serif)', fontSize: '0.82rem', color: 'var(--gray-lt)', fontStyle: 'italic', marginTop: '0.75rem', borderTop: '1px solid var(--border)', paddingTop: '0.75rem' }}>
+                      Lineage: {term.lineage.note}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>
