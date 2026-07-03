@@ -111,7 +111,7 @@ export default function Glossary() {
                 <KTex math={GOVERNING_EQUATION.identity} display />
               </div>
               <div className="glossEqNote">
-                I* is the cross-register invariant identity coordinate. dI*/dt = 0. Pathology does not corrupt I* — it degrades expression capacity. x*_bio is the biological reference state; I* is the constitutional identity coordinate.
+                {GOVERNING_EQUATION.identityNote}
               </div>
             </div>
 
