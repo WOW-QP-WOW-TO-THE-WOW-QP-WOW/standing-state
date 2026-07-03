@@ -410,9 +410,8 @@ export const GOVERNING_EQUATION = {
   full: 'Φ_bio(x) = Σ(1 − B(t)) / Vᶜ − Kₐᵤₜₒ',
   convergence: 'Σ ↓ ∧ B(t) holds ∧ Kₐᵤₜₒ ↑  ⟹  Φ_bio(x) ↓',
   coherence: 'Φ_bio(x) → 0  ⟹  x(t) → x*_bio',
-  identity: 'I* = constant   ∀t   (cross-register invariant — not defined by this equation)',
-  note:
-    'Register-locked to the biological vitality register in Glossary v3. I* is the cross-register invariant identity coordinate and is not defined by this equation. x*_bio is the biological reference state. Φ(x; I*) is the cross-register admissibility operator — a separate construct governed by C012 and D003.',
+  identity: 'dI*/dt = 0',
+  identityNote: 'I* is the cross-register invariant identity coordinate. Not defined by this equation. x*_bio is the biological reference state. Φ(x; I*) is the cross-register admissibility operator — governed by C012 and D003.',
 }
 
 export const AXIOM = 'A becomes A, because A knows it is A.'
