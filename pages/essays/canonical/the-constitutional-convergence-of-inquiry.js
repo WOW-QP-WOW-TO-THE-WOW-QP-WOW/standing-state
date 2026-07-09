@@ -31,14 +31,14 @@ export default function TheConstitutionalConvergenceOfInquiry() {
     <>
       <Head>
         <title>C019 — The Constitutional Convergence of Inquiry — Standing State Press</title>
-        <meta
-          name="description"
-          content="C019 proposes a constitutional methodology by which independently completed inquiries may be related while preserving the identity, jurisdiction, lawful methods, and standards of verification of every participating discipline. Reality contact remains the final judge."
-        />
-        <meta property="og:title" content="C019 — The Constitutional Convergence of Inquiry — Standing State Press" />
-        <meta property="og:description" content="Higher-Order Coherence Through Differentiated Constitutional Closure. How may independently governed inquiries lawfully relate without surrendering their constitutional sovereignty?" />
-        <meta property="og:image" content="/plates/p053-the-constitutional-convergence-of-inquiry.png" />
-        <meta property="og:type" content="article" />
+        <meta name="description" content="C019 proposes a constitutional methodology by which independently completed inquiries may be related while preserving the identity, jurisdiction, lawful methods, and standards of verification of every participating discipline. Reality contact remains the final judge." key="description" />
+        <meta property="og:type" content="article" key="og:type" />
+        <meta property="og:title" content="C019 — The Constitutional Convergence of Inquiry — Standing State Press" key="og:title" />
+        <meta property="og:description" content="Higher-Order Coherence Through Differentiated Constitutional Closure. How may independently governed inquiries lawfully relate without surrendering their constitutional sovereignty?" key="og:description" />
+        <meta property="og:image" content="https://standingstate.com/plates/p053-the-constitutional-convergence-of-inquiry.png" key="og:image" />
+        <meta name="twitter:title" content="C019 — The Constitutional Convergence of Inquiry — Standing State Press" key="twitter:title" />
+        <meta name="twitter:description" content="Higher-Order Coherence Through Differentiated Constitutional Closure. How may independently governed inquiries lawfully relate without surrendering their constitutional sovereignty?" key="twitter:description" />
+        <meta name="twitter:image" content="https://standingstate.com/plates/p053-the-constitutional-convergence-of-inquiry.png" key="twitter:image" />
       </Head>
 
       {/* ── NAV ── */}

@@ -32,14 +32,14 @@ export default function TheConstitutionalEconomyOfIntelligence() {
     <>
       <Head>
         <title>C020 — The Constitutional Economy of Intelligence — Standing State Press</title>
-        <meta
-          name="description"
-          content="C020 advances a bounded constitutional synthesis: as artificial intelligence makes generation abundant, selection becomes the governing scarcity. Purpose orders attention, wisdom preserves the traveler, integrity preserves the invariant identity through changing expressions. Broader applicability remains open pending repeated reality contact."
-        />
-        <meta property="og:title" content="C020 — The Constitutional Economy of Intelligence — Standing State Press" />
-        <meta property="og:description" content="Purpose, Selection, and the Lawful Preservation of the Traveler. When possibilities become abundant, who lawfully governs the selection among them?" />
-        <meta property="og:image" content="/plates/p054-the-constitutional-stack-of-human-agency.png" />
-        <meta property="og:type" content="article" />
+        <meta name="description" content="C020 advances a bounded constitutional synthesis: as artificial intelligence makes generation abundant, selection becomes the governing scarcity. Purpose orders attention, wisdom preserves the traveler, integrity preserves the invariant identity through changing expressions. Broader applicability remains open pending repeated reality contact." key="description" />
+        <meta property="og:type" content="article" key="og:type" />
+        <meta property="og:title" content="C020 — The Constitutional Economy of Intelligence — Standing State Press" key="og:title" />
+        <meta property="og:description" content="Purpose, Selection, and the Lawful Preservation of the Traveler. When possibilities become abundant, who lawfully governs the selection among them?" key="og:description" />
+        <meta property="og:image" content="https://standingstate.com/plates/p054-the-constitutional-stack-of-human-agency.png" key="og:image" />
+        <meta name="twitter:title" content="C020 — The Constitutional Economy of Intelligence — Standing State Press" key="twitter:title" />
+        <meta name="twitter:description" content="Purpose, Selection, and the Lawful Preservation of the Traveler. When possibilities become abundant, who lawfully governs the selection among them?" key="twitter:description" />
+        <meta name="twitter:image" content="https://standingstate.com/plates/p054-the-constitutional-stack-of-human-agency.png" key="twitter:image" />
       </Head>
 
       {/* ── NAV ── */}
