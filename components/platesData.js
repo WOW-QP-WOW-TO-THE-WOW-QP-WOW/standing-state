@@ -970,12 +970,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C019',
 },
+{
+  id: 'P054',
+  number: 'LIV',
+  title: 'The Constitutional Stack of Human Agency',
+  slug: 'the-constitutional-stack-of-human-agency',
+  image: '/plates/p054-the-constitutional-stack-of-human-agency.png',
+  summary: 'Intelligence expands possibilities. Attention selects possibilities. Purpose orders attention. Reality teaches the lawful path. Wisdom preserves the traveler. Integrity preserves the invariant identity through changing expressions. Development emerges through lawful relationship. Reality contact remains the final judge.',
+  governingCondition: '\\text{Identity} \\to \\text{Purpose} \\to \\text{Attention} \\to \\text{Selection} \\to \\text{Action} \\to \\text{Reality Contact} \\to \\text{Wisdom} \\to \\text{Integrity}',
+  description: 'Plate LIV encodes C020 — The Constitutional Economy of Intelligence: Purpose, Selection, and the Lawful Preservation of the Traveler. Classification: Canonical Synthesis · Final Draft. Jurisdiction: Rank-0 · Constitutional Development. The Constitutional Sequence (eight offices): 1. Identity — differentiation establishes the invariant identity coordinate (I*); the destination is set. 2. Purpose — purpose orders attention toward the lawful destination; it governs exploration and execution. 3. Attention — attention allocates finite capacity; it is the gateway from possibility to priority. 4. Selection — selection chooses among abundant possibilities; clarity becomes leverage. 5. Action — action commits resources; lawful movement begins. 6. Reality Contact — reality teaches the lawful path; interpretation is tested and corrected. 7. Wisdom — wisdom preserves the traveler; it asks whether this path preserves life while moving toward the destination. 8. Integrity — integrity preserves continuity of identity through changing expressions. A remains A. Two Constitutional Regimes: Generation-Limited Regime — possibilities are scarce, exploration dominates, curiosity expands, generation creates opportunity, premature certainty is a liability (OPEN · EXPAND · DISCOVER). Selection-Limited Regime — possibilities are abundant, selection becomes decisive, attention is the scarce resource, clarity of purpose becomes leverage (FOCUS · DISCERN · EXECUTE). Reality determines the governing regime. Adaptation is law. Two Claims. What this synthesis supports: the constitutional sequence is coherent; abundant intelligence shifts the bottleneck from generation to selection; purpose, attention, and wisdom become increasingly consequential; reality contact remains the final authority. What remains open: boundaries between the two regimes may shift with context; the full measure of AI–human co-governance remains under inquiry; broader applicability remains open pending repeated reality contact. The Governing Principle: Intelligence expands possibilities. Attention selects possibilities. Purpose orders attention. Wisdom preserves the traveler. Integrity ensures that the one who arrives remains continuous with the identity that began the journey. To arrive alive is not merely to reach the destination. It is to preserve the integrity that made the journey possible. Constitutional status: C020 is a candidate synthesis; validation deferred; broader applicability remains open pending repeated reality contact. Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016 → C017 → C018 → C019 → C020 → P054.',
+  volume: 'Cross-Volume · Constitutional Development · Abundant Intelligence · Purpose · Selection · Integrity',
+  chapter: 'Canonical Synthesis · Final Draft · The Constitutional Stack of Human Agency · Lawful Navigation',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C020',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Fifty-three plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 53,
+  description: 'Fifty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 54,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
