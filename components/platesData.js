@@ -988,12 +988,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C020',
 },
+{
+  id: 'P055',
+  number: 'LV',
+  title: 'Wisdom in the Age of Artificial Intelligence',
+  slug: 'wisdom-in-the-age-of-artificial-intelligence',
+  image: '/plates/p055-wisdom-in-the-age-of-artificial-intelligence.png',
+  summary: 'Technology multiplies capability. Artificial intelligence multiplies candidate synthesis. Reality verifies where it can. Wisdom governs where reality cannot yet decide. Responsibility remains with the one who chooses. Capability may be delegated; judgment cannot. A becomes A, because A knows it is A.',
+  governingCondition: '\\text{Capability} \\to \\text{Candidate Synthesis} \\to \\text{Reality Contact} \\to \\text{Verification} \\to \\text{Judgment} ; \\; \\text{Identity} \\to \\text{Ownership} \\to \\text{Accountability} \\to \\text{Judgment}',
+  description: 'Plate LV encodes C021 — Wisdom in the Age of Artificial Intelligence: The Constitutional Economy of Capability and Responsibility. Classification: Canonical Synthesis · Final Draft. Jurisdiction: Rank-0 · Constitutional Development. The Progression of Capability: Writing multiplied memory; the Printing Press multiplied books; the Library multiplied organized knowledge; the Internet multiplied information; Artificial Intelligence multiplies candidate synthesis. Capability expands. Responsibility remains. Two Constitutional Jurisdictions: Where Reality Can Speak — empirical questions (observation, experiment, verification, reproducible results); reality verifies; wisdom submits. Where Reality Cannot Yet Speak — constitutional questions (justice, responsibility, purpose, meaning, value); wisdom governs and remains responsible. Where reality can speak, wisdom submits; where reality cannot yet speak, wisdom remains responsible — the more demanding jurisdiction. From Candidate to Knowledge: Synthesis (Candidate) → Contact with Reality → Verification → Fruit (Confirmed) → Doctrine (Authorized). The instrument assists before verification; it cannot authorize doctrine. Why Judgment Cannot Be Delegated: Judgment requires Accountability; Accountability requires Ownership; Ownership requires Identity; Identity alone can answer for a decision. Artificial intelligence has no identity and no ownership; it cannot bear responsibility. The Increasing Burden of Governance: greater capability multiplies both flourishing and failure; error accelerates as synthesis accelerates; the more powerful the instrument, the more mature the governor must become. Governance is the engine of civilization. The Final Principle: Capability may be delegated. Judgment cannot. Identity grounds ownership; ownership grounds accountability; accountability grounds judgment; responsibility remains with the one who chooses. The instrument may be powerful. The governor must be wise. A becomes A, because A knows it is A. Constitutional status: C021 is a candidate synthesis; validation deferred; broader applicability remains open pending repeated reality contact. Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016 → C017 → C018 → C019 → C020 → C021 → P055.',
+  volume: 'Cross-Volume · Constitutional Development · Artificial Intelligence · Capability · Responsibility · Judgment',
+  chapter: 'Canonical Synthesis · Final Draft · Wisdom in the Age of Artificial Intelligence · Capability and Responsibility',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'C021',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Fifty-four plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 54,
+  description: 'Fifty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 55,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
