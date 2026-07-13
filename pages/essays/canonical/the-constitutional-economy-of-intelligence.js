@@ -465,10 +465,10 @@ export default function TheConstitutionalEconomyOfIntelligence() {
               <span className="canonNavTitle">C019 · The Constitutional Convergence of Inquiry</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays Index</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.4, cursor: 'default' }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/wisdom-in-the-age-of-artificial-intelligence">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Future Inquiry · Pending</span>
-            </span>
+              <span className="canonNavTitle">C021 · Wisdom in the Age of Artificial Intelligence</span>
+            </a>
           </div>
 
         </div>
