@@ -667,7 +667,7 @@ const ESSAYS = [
     axis2: 'VOL-SS',
     axis3: 'REG-STRUCT',
     flag: 'A',
-    note: 'Canonical structural essay introducing Δ = γ − α_eff as governing inequality for exploit-pressure containment.',
+    note: 'Updated Edition. Architectural manifesto proposing Governance Capacity > Expansion Pressure, with Δ = γ − α_eff as a candidate inequality for exploit-pressure containment. Historical foundation preserved; present standing clarified as candidate correspondence.',
     mirrorUrl: '/essays/medium/admissibility-manifesto',
   },
   {
