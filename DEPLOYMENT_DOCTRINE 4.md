@@ -455,5 +455,213 @@ or the count tuple — pattern varies; grep for the current count to locate).
 
 ---
 
+## 15. CSS Class Existence Verification (Silent-Fallback Defect)
+
+**Provenance:** M044 Updated Edition deployment. This section records a defect
+that was reproduced, not theorized.
+
+**The defect.** The former M044 body used the classes `essayBody`, `essayP`,
+`essayH2`, `essayH3`, `essayEq`, `essayEqBoxed`, `essaySignature`. **None of
+these exist in `styles/globals.css`.** The page still rendered — with unstyled
+browser defaults, no content-width control, and excessive line wrapping on
+mobile. The header classes (`glossHeader`, `glossH1`) *did* exist, so the top of
+the page looked correct while the body was broken. The failure presented as a
+"mobile wrapping bug" but the actual cause was that **the body's entire class
+layer was absent from the stylesheet.**
+
+**Why the existing checklist missed it.** Bracket balance passes, JSX parses,
+the route resolves, the build (if run) succeeds — a page referencing
+non-existent CSS classes is valid JavaScript and valid React. Nothing in the
+prior checklist inspects whether the classes a page *uses* are classes that
+*exist*. A green structural check is not a green visual check.
+
+**Required verification — run before declaring any essay/page deployment complete:**
+
+```bash
+# Extract every className token used in the page
+grep -oE 'className="[^"]*"' pages/essays/<path>.js \
+  | sed -E 's/className="([^"]*)"/\1/' | tr ' ' '\n' | sort -u \
+  > /tmp/used_classes.txt
+
+# For each, confirm a definition exists in globals.css
+while read cls; do
+  [ -z "$cls" ] && continue
+  n=$(grep -c "\.$cls\b" styles/globals.css)
+  [ "$n" -eq 0 ] && echo "MISSING: .$cls"
+done < /tmp/used_classes.txt
+```
+
+**Rule:** Every `className` token a page uses must resolve to a definition in
+`styles/globals.css` (or an inline `style={{}}`). Any `MISSING:` line is a
+blocking defect. **Migrate to a class layer that exists — do not invent new
+CSS.** The canonical body layer known to exist and to be mobile-responsive is:
+`canonEssay`, `canonEssayWrap`, `canonEssayHeader`, `canonEssayThesis`,
+`plateDetailBlock`, `plateDetailBlockLabel`, `canonEssayBody`, `canonEssayPara`,
+`canonEssayEqBlock`, `canonEssayEq`, `canonEssayAuthor`, `canonEssayNav`,
+`canonNavLink`, `canonNavPrev`, `canonNavNext`, `canonNavIndex`.
+
+**Known failure pattern:** the legacy `essay*` body class family
+(`essayBody` / `essayP` / `essayH2` / `essayEq` / `essaySignature`) is NOT
+defined in the current stylesheet. Any page still using it is rendering
+unstyled. Treat its presence as a migration trigger.
+
+---
+
+## 16. Verification Honesty — Name What Was Not Run
+
+**Provenance:** M044 deployment, performed in an environment where
+`node_modules` was absent and network egress was disabled.
+
+**The distinction.** `python -m py_compile` compiles Python; it does not build
+Next.js. Bracket balance and a JSX structural parse detect structural breakage;
+they are **not** `next build`. A deployment run may be unable to execute the
+real build. When it cannot, the report must say so — an unrun check is reported
+as PENDING, never silently as PASS.
+
+**Required in every §4 Validation Report — the verification-tier line:**
+
+- State the toolchain actually available (`node_modules` present/absent;
+  network on/off).
+- For each verification, mark which tier it reached:
+  - `COMPILED` — real `next build` / `npm run build` executed and passed
+  - `STRUCTURAL` — bracket balance + JSX parse only (build not run)
+  - `PENDING` — could not be run in this environment; names the blocker
+- If the build was not run, the deployment is `STRUCTURAL — build PENDING`,
+  and the report must state: "Run `npm run build` locally before deploy."
+
+**Rule (extends §3 Failure Rule):** Do not report a verification tier higher
+than the one actually reached. "Bracket balance PASS" and "build PASS" are
+different claims. Reporting the first as if it were the second is the deployment
+equivalent of certifying internal integrity as external validation — the exact
+error the constitutional corpus forbids.
+
+**Adversarial-coverage caveat.** A self-authored test suite that goes green
+proves the code resists the failures its author anticipated. It does not
+establish that those are the failures that matter. Report a green suite as
+"internally verified as tested by its author," not as "verified." Independent
+adversarial coverage requires a reviewer outside the authoring loop and is
+always `PENDING` until one exists.
+
+---
+
+## 17. Metadata Override Mechanism (Per-Page OG / Twitter)
+
+**Provenance:** M044 metadata-defect fix, CORRECTED BY PRODUCTION. This section
+was rewritten after its first version was refuted by the live rendered `<head>`.
+It is retained as a worked example of the §16 discipline: a reasoned mechanism
+is not a verified one until the production surface confirms it.
+
+**Prior mechanism — WITHDRAWN.** The first version of this section claimed that
+per-page `next/head` tags win over unkeyed `next/document` defaults by
+**last-wins source order**, so keys were "harmless but not load-bearing." Status
+of that claim:
+
+> `REASONED_NOT_VERIFIED — REFUTED BY PRODUCTION`
+
+The live `<head>` at `/essays/medium/admissibility-manifesto`, fetched after
+deployment, showed `og:title: Standing State`, `og:image: .../hero_image.png` —
+the **defaults**, not the page values. Last-wins did not occur. The per-page
+tags did not win. The reasoned mechanism was wrong.
+
+**Corrected mechanism, grounded in observed behavior.** `next/head` `key`
+deduplication operates **only among `next/head` tags**. Tags emitted by
+`next/document` do **not** participate in that dedup namespace and are **not**
+reliably overridden by source order. Therefore:
+
+> **Per-page metadata overrides require coordinated identity keys at BOTH the
+> default metadata layer and the page metadata layer, and both layers must emit
+> via `next/head`. Source order, or assumed last-wins behavior, is not
+> sufficient evidence. The rendered production `<head>` is the final
+> verification surface.**
+
+**The working implementation (as deployed for M044):**
+
+- Site-default `og:*`, `twitter:*`, and `<title>` live in **`pages/_app.js` via
+  `next/head`**, each carrying a stable `key` (`og:title`, `og:description`,
+  `og:image`, `twitter:title`, `twitter:description`, `title`).
+- `pages/_document.js` retains only tags that no page overrides
+  (`og:type`, `og:site_name`, `twitter:card`, `description`, icons, fonts,
+  stylesheet links). Its conflicting OG/Twitter title/description/image defaults
+  were **removed** — leaving them there re-creates the double-emission that
+  defeated overrides.
+- Each page sets its own `og:*` / `twitter:*` / `<title>` via `next/head` using
+  the **same key values**. Matching key + same layer = documented dedup; the
+  page tag replaces the app default. Pages that set nothing inherit the default.
+- A `<link rel="canonical">` is page-specific and needs no key.
+
+**Non-negotiable verification (this defect reached production once already):**
+
+- **Verify the OG image resolves to a real file** under `public/` before deploy
+  (`ls -la public/<path>.png`).
+- **After deploy, fetch the live URL and inspect the rendered `<head>`.** Confirm
+  `og:title`, `og:description`, `og:image`, and `twitter:*` show the PAGE values,
+  not the site defaults. A green local build does not establish this — only the
+  rendered production head does. Do not report metadata as PASS on any weaker
+  surface.
+
+**Caution on `_document`-only keying.** Adding `key=` to `next/document` tags is
+NOT a verified fix — `next/document` is outside the `next/head` dedup namespace.
+Do not adopt it without confirming on the rendered production head. The verified
+path is: defaults in `_app.js` (`next/head`, keyed) + page overrides
+(`next/head`, same keys).
+
+---
+
+## 18. Route Compatibility Is Load-Bearing
+
+**Provenance:** M044. The task described migrating a "medium-style" page to the
+"DD06 essay layout." The DD06 canonical pattern lives at
+`pages/essays/canonical/[slug].js`. The literal reading — move the file to
+`canonical/` — would have **broken three inbound links**: the ESSAYS-array
+`mirrorUrl`, the page's own self-reference, and an inbound link from
+`pages/system/glossary/admissibility-delta.js`.
+
+**Rule:** "Migrate to the DD06 layout" means migrate the *layout* (the body
+class architecture, the editorial structure), **in place**, at the existing
+route — unless a route change is explicitly requested AND every inbound
+reference is updated in the same patch. Before any file move, run:
+
+```bash
+grep -rln "<existing-route-without-leading-slash>" pages/ components/ data/
+```
+
+Every hit is a link that breaks on a move. If the count is nonzero and the move
+is not explicitly authorized with those references included in the changed-files
+list, keep the route and migrate the layout in place.
+
+---
+
+## 19. Updated-Edition Migration Checklist (Historical Artifact, Present Annotation)
+
+**Provenance:** M044. For migrating a historical essay to current layout while
+preserving — not rewriting — its original inquiry.
+
+- [ ] Original argument and voice preserved where architectural or rhetorical
+- [ ] Wording amended ONLY where it implied: demonstrated universal law,
+      completed execution, established cross-domain mechanism, or validated
+      safety primitive
+- [ ] Editorial Notice present, before the Constitutional Abstract, dating the
+      original and clarifying present standing
+- [ ] Constitutional Abstract present, stating candidate vs demonstrated status
+- [ ] Registration Notes present: Historical / Architectural / Operational /
+      Referential status each stated separately
+- [ ] Cross-domain claims labeled `CANDIDATE_CORRESPONDENCE — EXPLICIT
+      MECHANISM MAPPING REQUIRED`, not asserted as established
+- [ ] References to later maturation (Engine 2, SA-018, Package 244A, etc.)
+      indicate lineage only — never imply the historical essay executed them
+- [ ] Body migrated to a class layer that exists (§15)
+- [ ] Route preserved; inbound links intact (§18)
+- [ ] Metadata per-page and image-verified (§17)
+- [ ] Verification tier reported honestly (§16)
+- [ ] Diff confirms only intended files changed
+
+**Governing objective:** preserve the inquiry, clarify the tense, accurately
+label the maturity. Historical legitimacy, present accuracy, and current
+canonical standing are three separate verdicts on one artifact; an Updated
+Edition records all three without collapsing them.
+
+---
+
 *DD06 — Deployment Doctrine. Read this file before every deployment.*
 *Updated: Constitutional trilogy session — D003 replacement · D006 deployment · C015 · M057 · canonical plate template · Engine 2 Module 76.*
+*Updated: M044 Updated-Edition session — §15 CSS class-existence verification · §16 verification-honesty tiers · §17 metadata override mechanism · §18 route compatibility · §19 Updated-Edition checklist. Each section traces to a defect reproduced during the M044 deployment, not to prediction.*
