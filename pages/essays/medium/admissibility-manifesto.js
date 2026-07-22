@@ -32,7 +32,7 @@ export default function AdmissibilityManifesto() {
   return (
     <>
       <Head>
-        <title>M044 — The Admissibility Manifesto (Updated Edition) — Standing State Press</title>
+        <title key="title">M044 — The Admissibility Manifesto (Updated Edition) — Standing State Press</title>
         <meta
           name="description"
           content="An architectural manifesto proposing Governance Capacity > Expansion Pressure, with Δ = γ − αₑff as a candidate governing inequality for exploit-pressure containment. Updated Edition: historical inquiry preserved, present constitutional standing clarified."
@@ -174,7 +174,7 @@ export default function AdmissibilityManifesto() {
               </p>
               <div className="canonEssayEqBlock">
                 <div className="canonEssayEq">
-                  <KTex math="\textbf{Governance Capacity} > \textbf{Expansion Pressure}" display />
+                  <KTex math="\text{Governance Capacity} \;>\; \text{Expansion Pressure}" display />
                 </div>
               </div>
               <p className="canonEssayPara">
@@ -348,7 +348,7 @@ export default function AdmissibilityManifesto() {
               </p>
               <div className="canonEssayEqBlock">
                 <div className="canonEssayEq">
-                  <KTex math="\textbf{Governance Capacity} > \textbf{Expansion Pressure}" display />
+                  <KTex math="\text{Governance Capacity} \;>\; \text{Expansion Pressure}" display />
                 </div>
               </div>
               <p className="canonEssayPara">
@@ -489,7 +489,7 @@ export default function AdmissibilityManifesto() {
               </p>
               <div className="canonEssayEqBlock">
                 <div className="canonEssayEq">
-                  <KTex math="\textbf{Containment inside a bounded invariant set.}" display />
+                  <KTex math="\text{Containment inside a bounded invariant set.}" display />
                 </div>
               </div>
               <p className="canonEssayPara">
@@ -615,7 +615,7 @@ export default function AdmissibilityManifesto() {
           {/* ── Final compression ── */}
           <div className="canonEssayEqBlock" style={{ marginTop: '3rem', textAlign: 'center' }}>
             <div className="canonEssayEq" style={{ fontSize: '1.5rem' }}>
-              <KTex math="\textbf{Governance Capacity} > \textbf{Expansion Pressure}" display />
+              <KTex math="\text{Governance Capacity} \;>\; \text{Expansion Pressure}" display />
             </div>
             <div style={{ textAlign: 'center', marginTop: '1rem', color: 'var(--gray-lt)', fontSize: '1rem' }}>
               Candidate invariant. Presently annotated.
