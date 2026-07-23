@@ -1006,12 +1006,30 @@ export const PLATES = [
   ],
   relatedEssay: 'C021',
 },
+{
+  id: 'P056',
+  number: 'LVI',
+  title: 'The Path of Constitutional Inquiry',
+  slug: 'the-path-of-constitutional-inquiry',
+  image: '/plates/p056-the-path-of-constitutional-inquiry.png',
+  summary: 'Visual compression of SA-020: identity remains the invariant coordinate while intelligence generates possibilities, interpretation proposes routes, reality accepts or refuses correspondence, and lawful revision continues toward arrival. Intelligence creates routes. Reality determines which routes arrive.',
+  governingCondition: '\\\\text{Identity} \\\\to \\\\text{Purpose} \\\\to \\\\text{Inquiry} \\\\to \\\\text{Observation} \\\\to \\\\text{Interpretation} \\\\to \\\\text{Reality Contact} \\\\to \\\\text{Revision} \\\\to \\\\text{Understanding} \\\\to \\\\text{Arrival}',
+  description: 'Plate LVI encodes SA-020 — The Lawful Unpacking of Wisdom: An Open Constitutional Inquiry into Intelligence, Reality Contact, and the Governance of Arrival. Classification: CONSTRUCT · OPEN INQUIRY. Jurisdiction: Rank-0 · NSRL-12. The plate compresses a candidate constitutional cycle: Identity (the invariant coordinate) → Purpose (direction gives meaning to inquiry) → Inquiry (begins from partial knowledge) → Observation (reality is observed without ownership) → Interpretation (multiple coherent routes become possible) → Reality Contact (reality accepts or refuses) → Revision (lawful maturation, not contradiction) → Understanding (correspondence increases) → Arrival (reality confirms the destination). Left register — Refused Routes: coherent, plausible, temporarily convincing, but refused by reality; the signposts mark plausible and confident routes that did not correspond. Right register — Reality Alone Renders the Final Verdict: coherence does not establish correspondence. The bridge names the ordered jurisdictions — Observer, Interpreter, Evidence — crossing above Reality, which remains outside the authority of every interpreter. Candidate definition carried on the plate: wisdom is the constitutional willingness to remain answerable to reality until the destination is reached; not the avoidance of wrong routes, but the lawful openness to correction until correspondence is achieved. Constitutional Axiom (premise, not conclusion): not-A → A → A knows A → A becomes A. This axiom is not established by the inquiry; it is the premise from which inquiry proceeds and against which every revision is measured. Four closing registers: revision is lawful maturation; lawful relationship preserves jurisdiction; constitutional inquiry governs interpretation; arrival belongs to reality. Constitutional status: SA-020 is a candidate constitutional inquiry. REGISTRATION: COMPLETE. REALITY VERDICT: PENDING. IDENTITY: PRESERVED. INQUIRY: CONTINUES. Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016 → C017 → C018 → C019 → C020 → C021 → SA-020 → P056.',
+  volume: 'Cross-Volume · Constitutional Development · Intelligence · Reality Contact · Revision · Arrival',
+  chapter: 'SA-Series · Synthesis Inquiry · Construct · Open Inquiry · The Governance of Arrival',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'SA-020',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Fifty-five plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 55,
+  description: 'Fifty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 56,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
