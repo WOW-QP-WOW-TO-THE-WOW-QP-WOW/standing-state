@@ -814,10 +814,10 @@ export default function TheLawfulUnpackingOfWisdom() {
               <span className="canonNavTitle">C021 · Wisdom in the Age of Artificial Intelligence</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.55 }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/the-constitutional-stewardship-of-functional-emergence">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Inquiry continues · No successor registered</span>
-            </span>
+              <span className="canonNavTitle">SA-021 · The Constitutional Stewardship of Functional Emergence</span>
+            </a>
           </div>
 
         </div>
