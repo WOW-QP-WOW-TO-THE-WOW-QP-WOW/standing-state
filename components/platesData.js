@@ -1024,12 +1024,30 @@ export const PLATES = [
   ],
   relatedEssay: 'SA-020',
 },
+{
+  id: 'P057',
+  number: 'LVII',
+  title: 'The Constitutional Stewardship of Functional Emergence',
+  slug: 'the-constitutional-stewardship-of-functional-emergence',
+  image: '/plates/p057-the-constitutional-stewardship-of-functional-emergence.png',
+  summary: 'Visual compression of SA-021: reality governs lawful relationships independently; intelligence discovers and stewards bounded conditions through which those relationships may express desired functions; artifacts are the observable fruit of lawful stewardship, not the governing relationship itself. Artifacts are not the deepest teachers. Functions are.',
+  governingCondition: '\\text{Reality} \\to \\text{Evidence} \\to \\text{ARC Memory} \\to \\text{Prediction} \\to \\text{Stewardship} \\to \\text{Reality Contact} \\to \\text{Correction}',
+  description: 'Plate LVII encodes SA-021 — The Constitutional Stewardship of Functional Emergence: An Open Constitutional First-Principles Inquiry into the Governing Relationship Functions Required for Lawful Functional Emergence. Classification: CONSTRUCT · OPEN CONSTITUTIONAL THESIS. Jurisdiction: Rank-0 · NSRL-12. Three Jurisdictions: Primary Governance (reality governs lawful relationships — atomic bonding, gravitation, photosynthesis, fluid dynamics — independently of any steward); Secondary Stewardship (intelligence discovers, preserves, and arranges bounded conditions under which lawful relationships may express desired functions — wind tunnels, battery cyclers, ARC environments, Engine 2); Functional Embodiment (artifacts become the observable fruit of lawful stewardship — airplanes, batteries, photovoltaic systems, synthetic organs). Constitutional Functional Continuity: different embodiments may preserve equivalent governing relationship functions while differing completely in material, geometry, mechanism, and implementation; birds and airplanes both satisfy lift, weight, thrust, drag, stability, and control; shared outcomes do not necessarily establish shared constitutional function. ARC Constitutional Cycle: Reality → Evidence → ARC Memory → Prediction → Stewardship Environment → Reality Contact → Correction; reality remains both the beginning and ending authority; prediction never supersedes evidence; correction never deletes history; failed predictions remain preserved. Engine 2 Implementation: this architecture was implemented and tested against NASA PCoE battery-aging evidence across four cells, 1280 thermal cycles, and 2089048 measurements; the independent validation gate has not yet been satisfied; reality verdict remains pending. Constitutional lifecycle: Identity → Inquiry → First-Principles Decomposition → Candidate Governing Relationship Functions → Prediction → Bounded Stewardship → Reality Contact → Evidence → Correction → Refined Stewardship → Functional Embodiment → Continued Reality Contact. Governing thesis: every lawful failed prediction remains preserved; every lawful correction strengthens stewardship; every lawful successful embodiment increases understanding of function rather than merely producing another artifact; civilizational progress is measured by the increasing capacity to discover, steward, test, preserve, and faithfully transmit the governing relationship functions through which reality continually permits new functional embodiments to emerge. Constitutional Axiom: A becomes A, because A knows it is A. Constitutional status: SA-021 is a candidate constitutional thesis. REGISTRATION: COMPLETE. REALITY VERDICT: PENDING. IDENTITY: PRESERVED. INQUIRY: CONTINUES. Dependency chain: TFAL → M002 → M085 → M086 → M087 → M088 → M089 → C014 → C015 → SA-010 → C016 → C017 → C018 → C019 → C020 → C021 → SA-020 → SA-021 → P057.',
+  volume: 'Cross-Volume · Constitutional Development · Functional Emergence · Stewardship · Reality Contact',
+  chapter: 'SA-Series · Synthesis Inquiry · Construct · Open Constitutional Thesis · The Stewardship of Functional Emergence',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'SA-021',
+},
 ]
 
 export const PLATES_META = {
   title: 'System Plates',
   subtitle: 'Canonical Structural Artifacts',
-  description: 'Fifty-six plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
-  count: 56,
+  description: 'Fifty-seven plates constitute the visual authority layer of the Standing State system. Each plate encodes a structural condition — not decorative content. Glossary fixes meaning. Plates fix form. P048 is reserved pending constitutional review of C014.',
+  count: 57,
   volume: 'Volume I + Volume II (mixed) — The Biological Sabbath of Being Healthier · The Law of Growth',
 }
