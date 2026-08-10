@@ -748,10 +748,10 @@ export default function TheConstitutionalStewardshipOfFunctionalEmergence() {
               <span className="canonNavTitle">SA-020 · The Lawful Unpacking of Wisdom</span>
             </a>
             <a className="canonNavIndex" href="/essays">Essays</a>
-            <span className="canonNavLink canonNavNext" style={{ opacity: 0.55 }}>
+            <a className="canonNavLink canonNavNext" href="/essays/canonical/arriving-alive-before-reality">
               <span className="canonNavDir">Next</span>
-              <span className="canonNavTitle">Inquiry continues · No successor registered</span>
-            </span>
+              <span className="canonNavTitle">SA-023 · Arriving Alive Before Reality</span>
+            </a>
           </div>
 
         </div>
