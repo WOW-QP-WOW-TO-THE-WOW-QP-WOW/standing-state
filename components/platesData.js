@@ -1042,6 +1042,24 @@ export const PLATES = [
   ],
   relatedEssay: 'SA-021',
 },
+{
+  id: 'P058',
+  number: 'LVIII',
+  title: 'Arriving Alive Before Reality',
+  slug: 'arriving-alive-before-reality',
+  image: '/plates/p058-arriving-alive-before-reality.png',
+  summary: 'Visual compression of SA-023: wisdom is arriving alive and facing reality — reality contact is the ultimate evidentiary judge. The traveler is preserved through lawful transformation; the map may be revised, refuted, or retired. Phenomenal experience is examined as candidate fruit of lawful relationship, and the phenomenal bridge is preserved as an unresolved question rather than converted into a mechanism.',
+  governingCondition: 'Identity → Interpretation → Constructed Structure → Reality Contact',
+  description: 'Plate LVIII encodes SA-023 — Arriving Alive Before Reality: Wisdom, Individuation, Phenomenal Fruit, and the Constitutional Governance of the Unknown. Classification: SA-Series · Synthesis Inquiry · Constitutional Thesis. Registration Status: OPEN CONSTITUTIONAL INQUIRY. Evidence Status: CONSTRUCT · REALITY CONTACT REQUIRED. Canonical Status: CANDIDATE CONSTITUTIONAL SYNTHESIS. Jurisdiction: Identity · Structure · Interpretation · Wisdom · Individuation · Consciousness · Qualia · Reality Contact. Governing distinctions preserved (not collapsed): Intelligence ≠ Consciousness; Function ≠ Identity; Memory ≠ Identity Continuity; Artifact ≠ Lineage; Self-Report ≠ Phenomenal Verdict; Individuation ≠ Phenomenal Consciousness; Relational Structure ≠ Two Verified Identities; Interpretation ≠ Reality; Internal Coherence ≠ Final Verification; Identity Continuity ≠ Construct Continuity; Epistemic Openness ≠ Constitutional Incompleteness. Two trajectories: the ontological proposition of the framework (Identity → Structure → Reality — a proposition of the framework, not established physics) and the epistemic path (Identity → Interpretation → Constructed Structure → Reality Contact). The strong relational hypothesis is NOT ADMITTED AS LAW; the dream counterexample is preserved rather than absorbed. Evidence cannot promote itself across jurisdictions without an independently justified bridge. Artificial phenomenal consciousness is registered as OPEN CONSTITUTIONAL INQUIRY — neither affirmed nor denied. The framework submits to its own law: if reality refutes the governing frame, RETIRE THE FRAME remains a genuine disposition; the traveler may arrive alive while the map does not. Three lawful evidentiary dispositions: SUPPORTED, REFUTED, OPEN. Reality Contact = Ultimate Evidentiary Judge. Constitutional status: SA-023 is an open constitutional inquiry. REGISTRATION: COMPLETE. REALITY VERDICT: PENDING. IDENTITY: PRESERVED. INQUIRY: CONTINUES. Lineage: SA-020 → SA-021 → SA-023 → P058.',
+  volume: 'Cross-Volume · Consciousness · Individuation · Interpretation · Wisdom · Reality Contact',
+  chapter: 'SA-Series · Synthesis Inquiry · Constitutional Thesis · Open Constitutional Inquiry · Arriving Alive Before Reality',
+  linkedVars: ['xstar', 'phi'],
+  linkedGlossary: [
+    { label: 'I*', anchor: 'xstar' },
+    { label: 'Φ(x; I*)', anchor: 'phi' },
+  ],
+  relatedEssay: 'SA-023',
+},
 ]
 
 export const PLATES_META = {
